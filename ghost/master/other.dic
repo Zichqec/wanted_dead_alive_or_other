@@ -33,10 +33,9 @@ OnWindowStateRestore
 	OnSurfaceRestore
 }
 
-//TODO
 On_homeurl
 {
-	""
+	"https://raw.githubusercontent.com/Zichqec/wanted_dead_alive_or_other/refs/heads/main/"
 }
 
 
