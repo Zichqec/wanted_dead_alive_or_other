@@ -1,5 +1,5 @@
 charset,UTF-8
 type,ghost
 
-name,Simplicity Template
-directory,simplicity_template
+name,Wanted: Dead, Alive, or Other
+directory,wanted_dead_alive_or_other_gmz
