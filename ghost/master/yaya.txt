@@ -9,7 +9,7 @@ dicdir, yaya_base
 
 dic, aitalk.dic
 dic, boot.dic
-dic, menu_sakura.dic
+dic, menu.dic
 dic, meta.dic
 dic, other.dic
 dic, word.dic

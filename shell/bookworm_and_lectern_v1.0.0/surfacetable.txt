@@ -1,0 +1,21 @@
+charset,UTF-8
+version,1
+option,DisableNoDefineSurfaces
+
+group,Skra
+{
+	0,Normal
+	1,Embarrassed
+	2,Surprised
+	3,Worried
+	4,Sad
+	5,Smile
+	6,Content
+	7,Angry
+	8,Nervous Smile
+	9,Embarrassed Anger
+}
+group,Kero
+{
+	10,Lectern
+}

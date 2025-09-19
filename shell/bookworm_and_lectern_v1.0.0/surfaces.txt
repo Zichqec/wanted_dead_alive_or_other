@@ -1,0 +1,1256 @@
+descript
+{
+	version,1
+}
+//animation#.interval,method
+//animation#.pattern#,method,surface,pause,X,Y
+
+//—————————————————————————————— surface___.png number ranges ——————————————————————————————
+//this is hard to understand if you aren't me. super sorry about that.
+
+//110-129 back hair dressup
+
+//500-549 setup/base eye anims 
+//550-599 eyes (demarked by two)
+//	4 is u_u, 8 is ^_^
+//	50550-50599 reserved for clipping nonsense
+
+//1000-1099 mouths yay
+
+//1100-1109 face color (subtle blush)
+//1110-1129 face dressups under bangs (glasses)
+//1130-1139 bang dressup
+//1140-1159 face dressups over bangs
+//	(no idea if anyone would want to add this but the free space is there)
+//1160-1179 eyebrows
+//1180-1199 overlay all (like lined blush)
+
+//the arms are demarked every 20 images.
+//2000-2999 right arm
+//	12000-12999 has all the expressions for the book. the numbers match up with the brows for bookworm.
+//	22000-22999 is reserved to handle applying book dressup in seriko.
+//3000-3999 left arm
+//4000-4999 together arm 
+
+
+//—————————————————————————————— SAKURA SURFACES ——————————————————————————————
+
+//setup for all (collisions and base image)
+surface0-9
+{
+	element0,replace,surface100.png,0,0
+	
+	collision0,176,92,320,136,head
+	collision1,220,33,287,90,ahoge
+	
+	//hair down
+	animation10.interval,bind
+	animation10.pattern0,interpolate,110,0,0,0
+	//hair braids
+	animation11.interval,bind
+	animation11.pattern0,interpolate,111,0,0,0
+	
+	//glasses
+	animation1110.interval,bind
+	animation1110.pattern0,overlay,1110,0,0,0
+	
+	//frayed bangs
+	animation1130.interval,runonce
+	animation1130.pattern0,overlay,1130,0,0,0
+	
+	//line blush
+	animation1180.interval,runonce
+	animation1180.pattern0,overlay,1180,0,0,0
+}
+
+//neutral
+surface0
+{
+
+}
+
+//embarrassed
+surface1
+{
+	
+}
+
+//surprised
+surface2
+{
+
+}
+
+//anxious
+surface3
+{
+
+}
+
+//discouraged
+surface4
+{
+
+}
+
+//smile
+surface5 
+{
+
+}
+
+//eyes closed 
+surface6
+{
+
+}
+
+//angry
+surface7 
+{
+
+}
+
+//nervous smile
+surface8 
+{
+
+}
+
+//angry embarassed
+surface9
+{
+
+}
+
+//—————————————————————————————— SAKURA APPENDS
+
+//soft/hard blush surfaces
+surface.append0-7,!1
+{	
+	//soft blush
+	animation80.interval,runonce
+	animation80.pattern0,overlaymultiply,1100,0,0,0
+	//hard blush
+	animation81.interval,never
+	animation81.pattern0,stop,80
+	animation81.pattern1,overlaymultiply,1101,0,0,0
+}
+surface.append1,8,9
+{	
+	//soft blush
+	animation80.interval,never
+	animation80.pattern0,stop,81
+	animation80.pattern1,overlaymultiply,1100,0,0,0
+	//hard blush
+	animation81.interval,runonce
+	animation81.pattern1,overlaymultiply,1101,0,0,0
+}
+
+//normal open eyes
+surface.append0-3,5,7,9
+{
+	//open eye
+	animation500.interval,always
+	animation500.pattern0,overlay,50500,0,0,0
+	animation500.pattern1,overlay,50500,200,0,0
+	animation500.pattern2,overlay,50501,200,0,0
+	animation500.pattern3,overlay,50502,200,0,0
+	animation500.pattern4,overlay,50503,200,0,0
+	animation500.pattern5,overlay,50504,200,0,0
+	animation500.pattern6,overlay,50503,200,0,0
+	animation500.pattern7,overlay,50502,200,0,0
+	animation500.pattern8,overlay,50501,200,0,0
+	//lid eye
+	animation502.interval,never
+	animation502.pattern0,parallelstop,(500,549)
+	animation502.pattern1,overlay,50520,0,0,0
+	animation502.pattern2,overlay,50520,200,0,0
+	animation502.pattern3,overlay,50521,200,0,0
+	animation502.pattern4,overlay,50522,200,0,0
+	animation502.pattern5,overlay,50523,200,0,0
+	animation502.pattern6,overlay,50524,200,0,0
+	animation502.pattern7,overlay,50523,200,0,0
+	animation502.pattern8,overlay,50522,200,0,0
+	animation502.pattern9,overlay,50521,200,0,0
+	animation502.pattern10,start,502
+	//u_u eyes
+	animation504.interval,never
+	animation504.pattern0,parallelstop,(500,549)
+	animation504.pattern1,overlay,554,0,0,0
+	//^_^ eyes
+	animation506.interval,never
+	animation506.pattern0,parallelstop,(500,549)
+	animation506.pattern1,overlay,558,0,0,0
+	
+	//blink
+	animation549.interval,random,5
+	animation549.pattern0,overlay,562,0,208,143
+	animation549.pattern1,overlay,560,100,208,143
+	animation549.pattern2,overlay,561,70,208,143
+	animation549.pattern3,overlay,557,100,0,0
+	animation549.pattern4,overlay,-1,100,0,0
+}
+//lid default eye 
+surface.append4
+{
+	//open eye
+	animation500.interval,never
+	animation500.pattern0,stop,502
+	animation500.pattern1,overlay,50500,0,0,0
+	animation500.pattern2,overlay,50500,200,0,0
+	animation500.pattern3,overlay,50501,200,0,0
+	animation500.pattern4,overlay,50502,200,0,0
+	animation500.pattern5,overlay,50503,200,0,0
+	animation500.pattern6,overlay,50504,200,0,0
+	animation500.pattern7,overlay,50503,200,0,0
+	animation500.pattern8,overlay,50502,200,0,0
+	animation500.pattern9,overlay,50501,200,0,0
+	animation500.pattern10,start,500
+	//lid eye
+	animation502.interval,always
+	animation502.pattern0,overlay,50520,0,0,0
+	animation502.pattern1,overlay,50520,200,0,0
+	animation502.pattern2,overlay,50521,200,0,0
+	animation502.pattern3,overlay,50522,200,0,0
+	animation502.pattern4,overlay,50523,200,0,0
+	animation502.pattern5,overlay,50524,200,0,0
+	animation502.pattern6,overlay,50523,200,0,0
+	animation502.pattern7,overlay,50522,200,0,0
+	animation502.pattern8,overlay,50521,200,0,0
+	//u_u eyes
+	animation504.interval,never
+	animation504.pattern0,stop,502
+	animation504.pattern1,overlay,554,0,0,0
+	//^_^ eyes
+	animation506.interval,never
+	animation506.pattern0,stop,502
+	animation506.pattern1,overlay,558,0,0,0
+}
+//u_u default eye 
+surface.append6
+{
+	//open eye
+	animation500.interval,never
+	animation500.pattern0,stop,504
+	animation500.pattern1,overlay,50500,0,0,0
+	animation500.pattern2,overlay,50500,200,0,0
+	animation500.pattern3,overlay,50501,200,0,0
+	animation500.pattern4,overlay,50502,200,0,0
+	animation500.pattern5,overlay,50503,200,0,0
+	animation500.pattern6,overlay,50504,200,0,0
+	animation500.pattern7,overlay,50503,200,0,0
+	animation500.pattern8,overlay,50502,200,0,0
+	animation500.pattern9,overlay,50501,200,0,0
+	animation500.pattern10,start,500
+	//lid eye
+	animation502.interval,never
+	animation502.pattern0,stop,504
+	animation502.pattern1,overlay,50520,0,0,0
+	animation502.pattern2,overlay,50520,200,0,0
+	animation502.pattern3,overlay,50521,200,0,0
+	animation502.pattern4,overlay,50522,200,0,0
+	animation502.pattern5,overlay,50523,200,0,0
+	animation502.pattern6,overlay,50524,200,0,0
+	animation502.pattern7,overlay,50523,200,0,0
+	animation502.pattern8,overlay,50522,200,0,0
+	animation502.pattern9,overlay,50521,200,0,0
+	animation502.pattern10,start,502
+	//u_u eyes
+	animation504.interval,runonce
+	animation504.pattern0,overlay,554,0,0,0
+	//^_^ eyes
+	animation506.interval,never
+	animation506.pattern0,stop,504
+	animation506.pattern1,overlay,558,0,0,0
+}
+//^_^ default eye 
+surface.append8
+{
+	//open eye
+	animation500.interval,never
+	animation500.pattern0,stop,506
+	animation500.pattern1,overlay,50500,0,0,0
+	animation500.pattern2,overlay,50500,200,0,0
+	animation500.pattern3,overlay,50501,200,0,0
+	animation500.pattern4,overlay,50502,200,0,0
+	animation500.pattern5,overlay,50503,200,0,0
+	animation500.pattern6,overlay,50504,200,0,0
+	animation500.pattern7,overlay,50503,200,0,0
+	animation500.pattern8,overlay,50502,200,0,0
+	animation500.pattern9,overlay,50501,200,0,0
+	animation500.pattern10,start,500
+	//lid eye
+	animation502.interval,never
+	animation502.pattern0,stop,506
+	animation502.pattern1,overlay,50520,0,0,0
+	animation502.pattern2,overlay,50520,200,0,0
+	animation502.pattern3,overlay,50521,200,0,0
+	animation502.pattern4,overlay,50522,200,0,0
+	animation502.pattern5,overlay,50523,200,0,0
+	animation502.pattern6,overlay,50524,200,0,0
+	animation502.pattern7,overlay,50523,200,0,0
+	animation502.pattern8,overlay,50522,200,0,0
+	animation502.pattern9,overlay,50521,200,0,0
+	animation502.pattern10,start,502
+	//u_u eyes
+	animation504.interval,never
+	animation504.pattern0,stop,506
+	animation504.pattern1,overlay,554,0,0,0
+	//^_^ eyes
+	animation506.interval,runonce
+	animation506.pattern0,overlay,558,0,0,0
+}
+
+//neutral mouth for surface0
+surface.append0
+{
+	//neutral closed mouth
+	animation1000.interval,runonce
+	animation1000.pattern0,overlay,1000,0,0,
+	//neutral open 1 (ooo)
+	animation1001.interval,never
+	animation1001.pattern0,parallelstop,(1000,1007,1008,1009)
+	animation1001.pattern1,overlay,1001,0,0,0
+	//neutral open 2 (ohh)
+	animation1002.interval,never
+	animation1002.pattern0,parallelstop,(1000,1007,1008,1009)
+	animation1002.pattern1,overlay,1002,0,0,0
+	//neutral open 3 (eee)
+	animation1003.interval,never
+	animation1003.pattern0,parallelstop,(1000,1007,1008,1009)
+	animation1003.pattern1,overlay,1003,0,0,0
+	
+	//neutral talk mouth
+	animation1006.interval,talk,4
+	animation1006.pattern0,alternativestart,(1007,1008,1009)
+	animation1007.interval,never
+	animation1007.pattern0,stop,1000
+	animation1007.pattern1,overlay,-1,0,0,0
+	animation1007.pattern2,overlay,1001,0,0,0
+	animation1007.pattern3,overlay,-1,150,0,0,0
+	animation1007.pattern4,start,1000
+	animation1008.interval,never
+	animation1008.pattern0,stop,1000
+	animation1008.pattern1,overlay,-1,0,0,0
+	animation1008.pattern2,overlay,1002,0,0,0
+	animation1008.pattern3,overlay,-1,150,0,0,0
+	animation1008.pattern4,start,1000
+	animation1009.interval,never
+	animation1009.pattern0,stop,1000
+	animation1009.pattern1,overlay,-1,0,0,0
+	animation1009.pattern2,overlay,1003,0,0,0
+	animation1009.pattern3,overlay,-1,150,0,0,0
+	animation1009.pattern4,start,1000
+	
+	//smile closed mouth
+	animation1010.interval,never
+	animation1010.pattern0,parallelstop,(1000,1007,1008,1009)
+	animation1010.pattern1,overlay,1010,0,0,0
+	//smile open 1
+	animation1011.interval,never
+	animation1011.pattern0,parallelstop,(1000,1008)
+	animation1011.pattern1,overlay,1011,0,0,0
+	//smile open 2
+	animation1012.interval,never
+	animation1012.pattern0,parallelstop,(1000,1007,1008,1009)
+	animation1012.pattern1,overlay,1012,0,0,0
+	
+	//frown closed mouth
+	animation1020.interval,never
+	animation1020.pattern0,parallelstop,(1000,1007,1008,1009)
+	animation1020.pattern1,overlay,1020,0,0,0
+	//frown open 1
+	animation1021.interval,never
+	animation1021.pattern0,parallelstop,(1000,1007,1008,1009)
+	animation1021.pattern1,overlay,1021,0,0,0
+	//frown open 2
+	animation1022.interval,never
+	animation1022.pattern0,parallelstop,(1000,1007,1008,1009)
+	animation1022.pattern1,overlay,1022,0,0,0
+}
+
+//weird open neutral mouth for surface4
+surface.append4
+{
+	//neutral closed mouth
+	animation1000.interval,never
+	animation1000.pattern0,parallelstop,(1003,1006)
+	animation1000.pattern1,overlay,1000,0,0,
+	//neutral open 1 (ooo)
+	animation1001.interval,never
+	animation1001.pattern0,parallelstop,(1003,1006)
+	animation1001.pattern1,overlay,1001,0,0,0
+	//neutral open 2 (ohh)
+	animation1002.interval,never
+	animation1002.pattern0,parallelstop,(1003,1006)
+	animation1002.pattern1,overlay,1002,0,0,0
+	//neutral open 3 (eee)
+	animation1003.interval,runonce
+	animation1003.pattern0,overlay,1003,0,0,0
+	
+	//frown talk mouth
+	animation1006.interval,talk,4
+	animation1006.pattern0,stop,1003
+	animation1006.pattern1,overlay,-1,0,0,0
+	animation1006.pattern2,overlay,1010,0,0,0
+	animation1006.pattern3,overlay,-1,150,0,0,0
+	animation1006.pattern4,start,1003
+	
+	//frown closed mouth
+	animation1010.interval,never
+	animation1010.pattern0,parallelstop,(1003,1006)
+	animation1010.pattern1,overlay,1010,0,0,0
+	//frown open 1
+	animation1011.interval,never
+	animation1011.pattern0,parallelstop,(1003,1006)
+	animation1011.pattern1,overlay,1011,0,0,0
+	//frown open 2
+	animation1012.interval,never
+	animation1012.pattern0,parallelstop,(1003,1006)
+	animation1012.pattern1,overlay,1012,0,0,0
+	
+	//smile closed mouth
+	animation1020.interval,never
+	animation1020.pattern0,parallelstop,(1003,1006)
+	animation1020.pattern1,overlay,1020,0,0,0
+	//smile open 1
+	animation1021.interval,never
+	animation1021.pattern0,parallelstop,(1003,1006)
+	animation1021.pattern1,overlay,1021,0,0,0
+	//smile open 2
+	animation1022.interval,never
+	animation1022.pattern0,parallelstop,(1003,1006)
+	animation1022.pattern1,overlay,1022,0,0,0
+}
+
+//frowning mouth
+surface.append2,3,7
+{
+	//neutral closed mouth
+	animation1000.interval,never
+	animation1000.pattern0,parallelstop,(1010,1017,1018)
+	animation1000.pattern1,overlay,1000,0,0,
+	//neutral open 1 (ooo)
+	animation1001.interval,never
+	animation1001.pattern0,parallelstop,(1010,1017,1018)
+	animation1001.pattern1,overlay,1001,0,0,0
+	//neutral open 2 (ohh)
+	animation1002.interval,never
+	animation1002.pattern0,parallelstop,(1010,1017,1018)
+	animation1002.pattern1,overlay,1002,0,0,0
+	//neutral open 3 (eee)
+	animation1003.interval,never
+	animation1003.pattern0,parallelstop,(1010,1017,1018)
+	animation1003.pattern1,overlay,1003,0,0,0
+	
+	//frown closed mouth
+	animation1010.interval,runonce
+	animation1010.pattern0,overlay,1010,0,0,0
+	//frown open 1
+	animation1011.interval,never
+	animation1011.pattern0,parallelstop,(1010,1017,1018)
+	animation1011.pattern1,overlay,1011,0,0,0
+	//frown open 2
+	animation1012.interval,never
+	animation1012.pattern0,parallelstop,(1010,1017,1018)
+	animation1012.pattern1,overlay,1012,0,0,0
+	
+	//frown talk mouth
+	animation1016.interval,talk,4
+	animation1016.pattern0,alternativestart,(1017,1018)
+	animation1017.interval,never
+	animation1017.pattern0,stop,1011
+	animation1017.pattern1,overlay,-1,0,0,0
+	animation1017.pattern2,overlay,1011,0,0,0
+	animation1017.pattern3,overlay,-1,150,0,0,0
+	animation1017.pattern4,start,1011
+	animation1018.interval,never
+	animation1018.pattern0,stop,1011
+	animation1018.pattern1,overlay,-1,0,0,0
+	animation1018.pattern2,overlay,1012,0,0,0
+	animation1018.pattern3,overlay,-1,150,0,0,0
+	animation1018.pattern4,start,1010
+	
+	//smile closed mouth
+	animation1020.interval,never
+	animation1020.pattern0,parallelstop,(1010,1017,1018)
+	animation1020.pattern1,overlay,1020,0,0,0
+	//smile open 1
+	animation1021.interval,never
+	animation1021.pattern0,parallelstop,(1010,1017,1018)
+	animation1021.pattern1,overlay,1021,0,0,0
+	//smile open 2
+	animation1022.interval,never
+	animation1022.pattern0,parallelstop,(1010,1017,1018)
+	animation1022.pattern1,overlay,1022,0,0,0
+}
+
+//frown open mouth
+surface.append1,9
+{
+	//neutral closed mouth
+	animation1000.interval,never
+	animation1000.pattern0,parallelstop,(1011,1016)
+	animation1000.pattern1,overlay,1000,0,0,
+	//neutral open 1 (ooo)
+	animation1001.interval,never
+	animation1001.pattern0,parallelstop,(1011,1016)
+	animation1001.pattern1,overlay,1001,0,0,0
+	//neutral open 2 (ohh)
+	animation1002.interval,never
+	animation1002.pattern0,parallelstop,(1011,1016)
+	animation1002.pattern1,overlay,1002,0,0,0
+	//neutral open 3 (eee)
+	animation1003.interval,never
+	animation1003.pattern0,parallelstop,(1011,1016)
+	animation1003.pattern1,overlay,1003,0,0,0
+	
+	//frown closed mouth
+	animation1010.interval,never
+	animation1010.pattern0,parallelstop,(1011,1016)
+	animation1010.pattern1,overlay,1010,0,0,0
+	//frown open 1
+	animation1011.interval,runonce
+	animation1011.pattern0,overlay,1011,0,0,0
+	//frown open 2
+	animation1012.interval,never
+	animation1012.pattern0,parallelstop,(1011,1016)
+	animation1012.pattern1,overlay,1012,0,0,0
+	
+	//frown talk mouth
+	animation1016.interval,talk,4
+	animation1016.pattern0,stop,1011
+	animation1016.pattern1,overlay,-1,0,0,0
+	animation1016.pattern2,overlay,1010,0,0,0
+	animation1016.pattern3,overlay,-1,150,0,0,0
+	animation1016.pattern4,start,1011
+	
+	//smile closed mouth
+	animation1020.interval,never
+	animation1020.pattern0,parallelstop,(1011,1016)
+	animation1020.pattern1,overlay,1020,0,0,0
+	//smile open 1
+	animation1021.interval,never
+	animation1021.pattern0,parallelstop,(1011,1016)
+	animation1021.pattern1,overlay,1021,0,0,0
+	//smile open 2
+	animation1022.interval,never
+	animation1022.pattern0,parallelstop,(1011,1016)
+	animation1022.pattern1,overlay,1022,0,0,0
+}
+
+//smile mouth
+surface.append5,6
+{
+	//neutral closed mouth
+	animation1000.interval,never
+	animation1000.pattern0,parallelstop,(1020,1027,1028)
+	animation1000.pattern1,overlay,1000,0,0,
+	//neutral open 1 (ooo)
+	animation1001.interval,never
+	animation1001.pattern0,parallelstop,(1020,1027,1028)
+	animation1001.pattern1,overlay,1001,0,0,0
+	//neutral open 2 (ohh)
+	animation1002.interval,never
+	animation1002.pattern0,parallelstop,(1020,1027,1028)
+	animation1002.pattern1,overlay,1002,0,0,0
+	//neutral open 3 (eee)
+	animation1003.interval,never
+	animation1003.pattern0,parallelstop,(1020,1027,1028)
+	animation1003.pattern1,overlay,1003,0,0,0
+	
+	//frown closed mouth
+	animation1010.interval,never
+	animation1010.pattern0,parallelstop,(1020,1027,1028)
+	animation1010.pattern1,overlay,1010,0,0,0
+	//frown open 1
+	animation1011.interval,never
+	animation1011.pattern0,parallelstop,(1020,1027,1028)
+	animation1011.pattern1,overlay,1011,0,0,0
+	//frown open 2
+	animation1012.interval,never
+	animation1012.pattern0,parallelstop,(1020,1027,1028)
+	animation1012.pattern1,overlay,1012,0,0,0
+	
+	//smile closed mouth
+	animation1020.interval,runonce
+	animation1020.pattern0,overlay,1020,0,0,0
+	//smile open 1
+	animation1021.interval,never
+	animation1021.pattern0,parallelstop,(1020,1027,1028)
+	animation1021.pattern1,overlay,1021,0,0,0
+	//smile open 2
+	animation1022.interval,never
+	animation1022.pattern0,parallelstop,(1020,1027,1028)
+	animation1022.pattern1,overlay,1022,0,0,0
+	
+	//smile talk mouth
+	animation1026.interval,talk,4
+	animation1026.pattern0,alternativestart,(1027,1028)
+	animation1027.interval,never
+	animation1027.pattern0,stop,1020
+	animation1027.pattern1,overlay,-1,0,0,0
+	animation1027.pattern2,overlay,1021,0,0,0
+	animation1027.pattern3,overlay,-1,150,0,0,0
+	animation1027.pattern4,start,1020
+	animation1028.interval,never
+	animation1028.pattern0,stop,1020
+	animation1028.pattern1,overlay,-1,0,0,0
+	animation1028.pattern2,overlay,1022,0,0,0
+	animation1028.pattern3,overlay,-1,150,0,0,0
+	animation1028.pattern4,start,1020
+}
+
+//smile open mouth
+surface.append8
+{
+	//neutral closed mouth
+	animation1000.interval,never
+	animation1000.pattern0,parallelstop,(1022,1027,1028)
+	animation1000.pattern1,overlay,1000,0,0,
+	//neutral open 1 (ooo)
+	animation1001.interval,never
+	animation1001.pattern0,parallelstop,(1022,1027,1028)
+	animation1001.pattern1,overlay,1001,0,0,0
+	//neutral open 2 (ohh)
+	animation1002.interval,never
+	animation1002.pattern0,parallelstop,(1022,1027,1028)
+	animation1002.pattern1,overlay,1002,0,0,0
+	//neutral open 3 (eee)
+	animation1003.interval,never
+	animation1003.pattern0,parallelstop,(1022,1027,1028)
+	animation1003.pattern1,overlay,1003,0,0,0
+	
+	//frown closed mouth
+	animation1010.interval,never
+	animation1010.pattern0,parallelstop,(1022,1027,1028)
+	animation1010.pattern1,overlay,1010,0,0,0
+	//frown open 1
+	animation1011.interval,never
+	animation1011.pattern0,parallelstop,(1022,1027,1028)
+	animation1011.pattern1,overlay,1011,0,0,0
+	//frown open 2
+	animation1012.interval,never
+	animation1012.pattern0,parallelstop,(1022,1027,1028)
+	animation1012.pattern1,overlay,1012,0,0,0
+	
+	//smile closed mouth
+	animation1020.interval,never
+	animation1020.pattern0,parallelstop,(1022,1027,1028)
+	animation1020.pattern1,overlay,1020,0,0,0
+	//smile open 1
+	animation1021.interval,never
+	animation1021.pattern0,parallelstop,(1022,1027,1028)
+	animation1021.pattern1,overlay,1021,0,0,0
+	//smile open 2
+	animation1022.interval,runonce
+	animation1022.pattern0,overlay,1022,0,0,0
+	
+	//smile talk mouth
+	animation1026.interval,talk,5
+	animation1026.pattern0,alternativestart,(1027,1028)
+	animation1027.interval,never
+	animation1027.pattern0,stop,1022
+	animation1027.pattern1,overlay,-1,0,0,0
+	animation1027.pattern2,overlay,1021,0,0,0
+	animation1027.pattern3,overlay,-1,150,0,0,0
+	animation1027.pattern4,start,1022
+	animation1028.interval,never
+	animation1028.pattern0,stop,1022
+	animation1028.pattern1,overlay,-1,0,0,0
+	animation1028.pattern2,overlay,1020,0,0,0
+	animation1028.pattern3,overlay,-1,150,0,0,0
+	animation1028.pattern4,start,1022
+}
+
+//neutral brows
+surface.append0,5
+{
+	//brows neutral
+	animation1160.interval,runonce
+	animation1160.pattern0,overlay,1160,0,0,0
+	//brows surprised
+	animation1161.interval,never
+	animation1161.pattern0,stop,1160,0,0,0
+	animation1161.pattern1,overlay,1161,0,0,0
+	//brows nervous
+	animation1162.interval,never
+	animation1162.pattern0,stop,1160,0,0,0
+	animation1162.pattern1,overlay,1162,0,0,0
+	//brows angry
+	animation1163.interval,never
+	animation1163.pattern0,stop,1160,0,0,0
+	animation1163.pattern1,overlay,1163,0,0,0
+}
+//surprised brows
+surface.append1,2,6
+{
+	//brows neutral
+	animation1160.interval,never
+	animation1160.pattern0,stop,1161,0,0,0
+	animation1160.pattern1,overlay,1160,0,0,0
+	//brows surprised
+	animation1161.interval,runonce
+	animation1161.pattern0,overlay,1161,0,0,0
+	//brows nervous
+	animation1162.interval,never
+	animation1162.pattern0,stop,1161,0,0,0
+	animation1162.pattern1,overlay,1162,0,0,0
+	//brows angry
+	animation1163.interval,never
+	animation1163.pattern0,stop,1161,0,0,0
+	animation1163.pattern1,overlay,1163,0,0,0
+}
+//nervous brows
+surface.append3,4,8
+{
+	//brows neutral
+	animation1160.interval,never
+	animation1160.pattern0,stop,1162,0,0,0
+	animation1160.pattern1,overlay,1160,0,0,0
+	//brows surprised
+	animation1161.interval,never
+	animation1161.pattern0,stop,1162,0,0,0
+	animation1161.pattern1,overlay,1161,0,0,0
+	//brows nervous
+	animation1162.interval,runonce
+	animation1162.pattern0,overlay,1162,0,0,0
+	//brows angry
+	animation1163.interval,never
+	animation1163.pattern0,stop,1162,0,0,0
+	animation1163.pattern1,overlay,1163,0,0,0
+}
+//angry brows
+surface.append7,9
+{
+	//brows neutral
+	animation1160.interval,never
+	animation1160.pattern0,stop,1163,0,0,0
+	animation1160.pattern1,overlay,1160,0,0,0
+	//brows surprised
+	animation1161.interval,never
+	animation1161.pattern0,stop,1163,0,0,0
+	animation1161.pattern1,overlay,1161,0,0,0
+	//brows nervous
+	animation1162.interval,never
+	animation1162.pattern0,stop,1163,0,0,0
+	animation1162.pattern1,overlay,1162,0,0,0
+	//brows angry
+	animation1163.interval,runonce
+	animation1163.pattern0,overlay,1163,0,0,0
+}
+
+//both hands at chest
+surface.append0,3,5,6
+{
+	//arm right body
+	animation2000.interval,runonce
+	animation2000.pattern0,overlay,22000,0,0,0
+	//	(book surprised)
+	animation2001.interval,never
+	animation2001.pattern0,stop,2000,0
+	animation2001.pattern1,overlay,22001,0,0,0
+	//	(book nervous)
+	animation2002.interval,never
+	animation2002.pattern0,stop,2000,0
+	animation2002.pattern1,overlay,22002,0,0,0
+	//	(book angry)
+	animation2003.interval,never
+	animation2003.pattern0,stop,2000,0
+	animation2003.pattern1,overlay,22003,0,0,0
+	//arm right lap
+	animation2020.interval,never
+	animation2020.pattern0,stop,2000,0
+	animation2020.pattern1,overlay,22020,0,0,0
+	//	(book surprised)
+	animation2021.interval,never
+	animation2021.pattern0,stop,2000,0
+	animation2021.pattern1,overlay,22021,0,0,0
+	//	(book nervous)
+	animation2022.interval,never
+	animation2022.pattern0,stop,2000,0
+	animation2022.pattern1,overlay,22022,0,0,0
+	//	(book angry)
+	animation2023.interval,never
+	animation2023.pattern0,stop,2000,0
+	animation2023.pattern1,overlay,22023,0,0,0
+	//arm right out
+	animation2040.interval,never
+	animation2040.pattern0,stop,2000,0
+	animation2040.pattern1,overlay,22040,0,0,0
+	//	(book surprised)
+	animation2041.interval,never
+	animation2041.pattern0,stop,2000,0
+	animation2041.pattern1,overlay,22041,0,0,0
+	//	(book nervous)
+	animation2042.interval,never
+	animation2042.pattern0,stop,2000,0
+	animation2042.pattern1,overlay,22042,0,0,0
+	//	(book angry)
+	animation2043.interval,never
+	animation2043.pattern0,stop,2000,0
+	animation2043.pattern1,overlay,22043,0,0,0
+	
+	//arm left body
+	animation3000.interval,runonce
+	animation3000.pattern0,overlay,3000,0,0,0
+	//arm left lap
+	animation3020.interval,never
+	animation3020.pattern0,stop,3000,0
+	animation3020.pattern1,overlay,3020,0,0,0
+	//arm left out
+	animation3040.interval,never
+	animation3040.pattern0,stop,3000,0
+	animation3040.pattern1,overlay,3040,0,0,0
+	//arm left face
+	animation3060.interval,never
+	animation3060.pattern0,stop,3000,0
+	animation3060.pattern1,overlay,3060,0,0,0
+}
+//glasses embarrassed hand combo
+surface.append1,8
+{
+	//arm right body
+	animation2000.interval,never
+	animation2000.pattern0,stop,2022,0
+	animation2000.pattern1,overlay,22000,0,0,0
+	//	(book surprised)
+	animation2001.interval,never
+	animation2001.pattern0,stop,2022,0
+	animation2001.pattern1,overlay,22001,0,0,0
+	//	(book nervous)
+	animation2002.interval,never
+	animation2002.pattern0,stop,2022,0
+	animation2002.pattern1,overlay,22002,0,0,0
+	//	(book angry)
+	animation2003.interval,never
+	animation2003.pattern0,stop,2022,0
+	animation2003.pattern1,overlay,22003,0,0,0
+	//arm right lap
+	animation2020.interval,never
+	animation2020.pattern0,stop,2022,0
+	animation2020.pattern1,overlay,22020,0,0,0
+	//	(book surprised)
+	animation2021.interval,never
+	animation2021.pattern0,stop,2022,0
+	animation2021.pattern1,overlay,22021,0,0,0
+	//	(book nervous)
+	animation2022.interval,runonce
+	animation2022.pattern0,overlay,22022,0,0,0
+	//	(book angry)
+	animation2023.interval,never
+	animation2023.pattern0,stop,2022,0
+	animation2023.pattern1,overlay,22023,0,0,0
+	//arm right out
+	animation2040.interval,never
+	animation2040.pattern0,stop,2022,0
+	animation2040.pattern1,overlay,22040,0,0,0
+	//	(book surprised)
+	animation2041.interval,never
+	animation2041.pattern0,stop,2022,0
+	animation2041.pattern1,overlay,22041,0,0,0
+	//	(book nervous)
+	animation2042.interval,never
+	animation2042.pattern0,stop,2022,0
+	animation2042.pattern1,overlay,22042,0,0,0
+	//	(book angry)
+	animation2043.interval,never
+	animation2043.pattern0,stop,2022,0
+	animation2043.pattern1,overlay,22043,0,0,0
+	
+	//arm left body
+	animation3000.interval,never
+	animation3000.pattern0,stop,3060,0
+	animation3000.pattern1,overlay,3000,0,0,0
+	//arm left lap
+	animation3020.interval,never
+	animation3020.pattern0,stop,3060,0
+	animation3020.pattern1,overlay,3020,0,0,0
+	//arm left out
+	animation3040.interval,never
+	animation3040.pattern0,stop,3060,0
+	animation3040.pattern1,overlay,3040,0,0,0
+	//arm left face
+	animation3060.interval,runonce
+	animation3060.pattern0,overlay,3060,0,0,0
+}
+//hands in lap
+surface.append4
+{
+	//arm right body
+	animation2000.interval,never
+	animation2000.pattern0,stop,2020,0
+	animation2000.pattern1,overlay,22000,0,0,0
+	//	(book surprised)
+	animation2001.interval,never
+	animation2001.pattern0,stop,2020,0
+	animation2001.pattern1,overlay,22001,0,0,0
+	//	(book nervous)
+	animation2002.interval,never
+	animation2002.pattern0,stop,2020,0
+	animation2002.pattern1,overlay,22002,0,0,0
+	//	(book angry)
+	animation2003.interval,never
+	animation2003.pattern0,stop,2020,0
+	animation2003.pattern1,overlay,22003,0,0,0
+	//arm right lap
+	animation2020.interval,runonce
+	animation2020.pattern0,overlay,22020,0,0,0
+	//	(book surprised)
+	animation2021.interval,never
+	animation2021.pattern0,stop,2020,0
+	animation2021.pattern1,overlay,22021,0,0,0
+	//	(book nervous)
+	animation2022.interval,never
+	animation2022.pattern0,stop,2020,0
+	animation2022.pattern1,overlay,22022,0,0,0
+	//	(book angry)
+	animation2023.interval,never
+	animation2023.pattern0,stop,2020,0
+	animation2023.pattern1,overlay,22023,0,0,0
+	//arm right out
+	animation2040.interval,never
+	animation2040.pattern0,stop,2020,0
+	animation2040.pattern1,overlay,22040,0,0,0
+	//	(book surprised)
+	animation2041.interval,never
+	animation2041.pattern0,stop,2020,0
+	animation2041.pattern1,overlay,22041,0,0,0
+	//	(book nervous)
+	animation2042.interval,never
+	animation2042.pattern0,stop,2020,0
+	animation2042.pattern1,overlay,22042,0,0,0
+	//	(book angry)
+	animation2043.interval,never
+	animation2043.pattern0,stop,2020,0
+	animation2043.pattern1,overlay,22043,0,0,0
+	
+	//arm left body
+	animation3000.interval,never
+	animation3000.pattern0,stop,3020
+	animation3000.pattern1,overlay,3000,0,0,0
+	//arm left lap
+	animation3020.interval,runonce=
+	animation3020.pattern0,overlay,3020,0,0,0
+	//arm left out
+	animation3040.interval,never
+	animation3040.pattern0,stop,3020,0
+	animation3040.pattern1,overlay,3040,0,0,0
+	//arm left face
+	animation3060.interval,never
+	animation3060.pattern0,stop,3020,0
+	animation3060.pattern1,overlay,3060,0,0,0
+}
+//surprised book
+surface.append2
+{
+	//arm right body
+	animation2000.interval,never
+	animation2000.pattern0,stop,2001,0
+	animation2000.pattern1,overlay,22000,0,0,0
+	//	(book surprised)
+	animation2001.interval,runonce
+	animation2001.pattern1,overlay,22001,0,0,0
+	//	(book nervous)
+	animation2002.interval,never
+	animation2002.pattern0,stop,2001,0
+	animation2002.pattern1,overlay,22002,0,0,0
+	//	(book angry)
+	animation2003.interval,never
+	animation2003.pattern0,stop,2001,0
+	animation2003.pattern1,overlay,22003,0,0,0
+	//arm right lap
+	animation2020.interval,never
+	animation2020.pattern0,stop,2001,0
+	animation2020.pattern1,overlay,22020,0,0,0
+	//	(book surprised)
+	animation2021.interval,never
+	animation2021.pattern0,stop,2001,0
+	animation2021.pattern1,overlay,22021,0,0,0
+	//	(book nervous)
+	animation2022.interval,never
+	animation2022.pattern0,stop,2001,0
+	animation2022.pattern1,overlay,22022,0,0,0
+	//	(book angry)
+	animation2023.interval,never
+	animation2023.pattern0,stop,2001,0
+	animation2023.pattern1,overlay,22023,0,0,0
+	//arm right out
+	animation2040.interval,never
+	animation2040.pattern0,stop,2001,0
+	animation2040.pattern1,overlay,22040,0,0,0
+	//	(book surprised)
+	animation2041.interval,never
+	animation2041.pattern0,stop,2001,0
+	animation2041.pattern1,overlay,22041,0,0,0
+	//	(book nervous)
+	animation2042.interval,never
+	animation2042.pattern0,stop,2001,0
+	animation2042.pattern1,overlay,22042,0,0,0
+	//	(book angry)
+	animation2043.interval,never
+	animation2043.pattern0,stop,2001,0
+	animation2043.pattern1,overlay,22043,0,0,0
+	
+	//arm left body
+	animation3000.interval,runonce
+	animation3000.pattern0,overlay,3000,0,0,0
+	//arm left lap
+	animation3020.interval,never
+	animation3020.pattern0,stop,3000,0
+	animation3020.pattern1,overlay,3020,0,0,0
+	//arm left out
+	animation3040.interval,never
+	animation3040.pattern0,stop,3000,0
+	animation3040.pattern1,overlay,3040,0,0,0
+	//arm left face
+	animation3060.interval,never
+	animation3060.pattern0,stop,3000,0
+	animation3060.pattern1,overlay,3060,0,0,0
+}
+//angry book
+surface.append7,9
+{
+	//arm right body
+	animation2000.interval,never
+	animation2000.pattern0,stop,2003,0
+	animation2000.pattern1,overlay,22000,0,0,0
+	//	(book surprised)
+	animation2001.interval,never
+	animation2001.pattern0,stop,2003,0
+	animation2001.pattern1,overlay,22001,0,0,0
+	//	(book nervous)
+	animation2002.interval,never
+	animation2002.pattern0,stop,2003,0
+	animation2002.pattern1,overlay,22002,0,0,0
+	//	(book angry)
+	animation2003.interval,runonce
+	animation2003.pattern0,overlay,22003,0,0,0
+	//arm right lap
+	animation2020.interval,never
+	animation2020.pattern0,stop,2003,0
+	animation2020.pattern1,overlay,22020,0,0,0
+	//	(book surprised)
+	animation2021.interval,never
+	animation2021.pattern0,stop,2003,0
+	animation2021.pattern1,overlay,22021,0,0,0
+	//	(book nervous)
+	animation2022.interval,never
+	animation2022.pattern0,stop,2003,0
+	animation2022.pattern1,overlay,22022,0,0,0
+	//	(book angry)
+	animation2023.interval,never
+	animation2023.pattern0,stop,2003,0
+	animation2023.pattern1,overlay,22023,0,0,0
+	//arm right out
+	animation2040.interval,never
+	animation2040.pattern0,stop,2003,0
+	animation2040.pattern1,overlay,22040,0,0,0
+	//	(book surprised)
+	animation2041.interval,never
+	animation2041.pattern0,stop,2003,0
+	animation2041.pattern1,overlay,22041,0,0,0
+	//	(book nervous)
+	animation2042.interval,never
+	animation2042.pattern0,stop,2003,0
+	animation2042.pattern1,overlay,22042,0,0,0
+	//	(book angry)
+	animation2043.interval,never
+	animation2043.pattern0,stop,2003,0
+	animation2043.pattern1,overlay,22043,0,0,0
+	
+	//arm left body
+	animation3000.interval,runonce
+	animation3000.pattern0,overlay,3000,0,0,0
+	//arm left lap
+	animation3020.interval,never
+	animation3020.pattern0,stop,3000,0
+	animation3020.pattern1,overlay,3020,0,0,0
+	//arm left out
+	animation3040.interval,never
+	animation3040.pattern0,stop,3000,0
+	animation3040.pattern1,overlay,3040,0,0,0
+	//arm left face
+	animation3060.interval,never
+	animation3060.pattern0,stop,3000,0
+	animation3060.pattern1,overlay,3060,0,0,0
+}
+
+//—————————————————————————————— KERO SURFACES ——————————————————————————————
+
+surface10
+{
+	element0,overlay,surface10.png,0,0
+	
+	animation20000.interval,bind
+	animation20000.pattern0,base,20,0,0,0
+}
+
+//—————————————————————————————— DRESS-UP/CLIPPING MANAGEMENT ——————————————————————————————
+//that damn book dressup is a problem
+
+//—————————————————————————————— ARMS
+surface22000-22003
+{
+	element0,overlay,surface2000.png,0,0
+}
+//right body normal eye
+surface22000
+{
+	animation20000.interval,bind
+	animation20000.pattern0,base,2001,0,0,0
+	animation20000.pattern1,overlay,12000,0,0,0
+}
+//right body surprised eye
+surface22001
+{
+	animation20000.interval,bind
+	animation20000.pattern0,base,2001,0,0,0
+	animation20000.pattern1,overlay,12001,0,0,0
+}
+//right body nervous eye
+surface22002
+{
+	animation20000.interval,bind
+	animation20000.pattern0,base,2001,0,0,0
+	animation20000.pattern1,overlay,12002,0,0,0
+}
+//right body angry eye
+surface22003
+{
+	animation20000.interval,bind
+	animation20000.pattern0,base,2001,0,0,0
+	animation20000.pattern1,overlay,12003,0,0,0
+}
+
+surface22020-22023
+{
+	element0,overlay,surface2020.png,0,0
+}
+//right lap normal eye
+surface22020
+{
+	animation20000.interval,bind
+	animation20000.pattern0,base,2021,0,0,0
+	animation20000.pattern1,overlay,12020,0,0,0
+}
+//right lap surprised eye
+surface22021
+{
+	animation20000.interval,bind
+	animation20000.pattern0,base,2021,0,0,0
+	animation20000.pattern1,overlay,12021,0,0,0
+}
+//right lap nervous eye
+surface22022
+{
+	animation20000.interval,bind
+	animation20000.pattern0,base,2021,0,0,0
+	animation20000.pattern1,overlay,12022,0,0,0
+}
+//right lap angry eye
+surface22023
+{
+	animation20000.interval,bind
+	animation20000.pattern0,base,2021,0,0,0
+	animation20000.pattern1,overlay,12023,0,0,0
+}
+
+surface22040-22043
+{
+	element0,overlay,surface2040.png,0,0
+}
+//right out normal eye
+surface22040
+{
+	animation20000.interval,bind
+	animation20000.pattern0,base,2041,0,0,0
+	animation20000.pattern1,overlay,12040,0,0,0
+}
+//right out surprised eye
+surface22041
+{
+	animation20000.interval,bind
+	animation20000.pattern0,base,2041,0,0,0
+	animation20000.pattern1,overlay,12041,0,0,0
+}
+//right out nervous eye
+surface22042
+{
+	animation20000.interval,bind
+	animation20000.pattern0,base,2041,0,0,0
+	animation20000.pattern1,overlay,12042,0,0,0
+}
+//right out angry eye
+surface22043
+{
+	animation20000.interval,bind
+	animation20000.pattern0,base,2041,0,0,0
+	animation20000.pattern1,overlay,12043,0,0,0
+}
+
+//—————————————————————————————— EYES
+//open
+surface50500-50504
+{
+	element0,overlay,surface500.png,0,0
+}
+//blink 1
+surface50510-50514,50519
+{
+	element0,overlay,surface550.png,0,0
+}
+//lid
+surface50520-50524,50529
+{
+	element0,overlay,surface552.png,0,0
+}
+//recoil
+surface50530-50534,50539
+{
+	element0,overlay,surface556.png,0,0
+}
+
+//actually apply the moving eye to the base color
+surface50500,50510,50520,50530
+{
+	element1,overlayfast,surface501.png,0,0
+}
+surface50501,50511,50521,50531
+{
+	element1,overlayfast,surface502.png,0,0
+}
+surface50502,50512,50522,50532
+{
+	element1,overlayfast,surface503.png,0,0
+}
+surface50503,50513,50523,50533
+{
+	element1,overlayfast,surface504.png,0,0
+}
+surface50504,50514,50524,50534
+{
+	element1,overlayfast,surface505.png,0,0
+}
+
+//open
+surface50500-50504,50509
+{
+	element2,overlay,surface549.png,0,0
+}
+//blink 1
+surface50510-50514,50519
+{
+	element2,overlay,surface551.png,0,0
+}
+//lid
+surface50520-50524,50529
+{
+	element2,overlay,surface553.png,0,0
+}
+//recoil
+surface50530-50534,50539
+{
+	element2,overlay,surface557.png,0,0
+}

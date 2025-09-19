@@ -1,0 +1,4 @@
+Charset,UTF-8
+type,shell
+name,ふわもこ魔族
+directory,fluffydemon

@@ -63,3 +63,34 @@ OnTalkRateChange
 {
 	aitalkinterval = TOINT(reference0)
 }
+//QUESTIONS LIST
+/*
+PERMANENT
+- Name?
+- Age?
+- Is this your first time working with us?
+- Have you died before?
+- How would you like to be compensated for your assistance today?
+
+RANDOM
+- Are you currently under the effect of any curses?
+- Do you have any peculiarities with your body parts that we should be aware of?
+- Do you have your own teeth? If 'no', and you have teeth upon your person, are they from a reputable source?
+- Do you require food, water, and/or charging (electrical or otherwise) for the duration of your stay?
+- Do you have allergic reactions to (word group)?
+- Are you immortal?
+- How many times on average do you regenerate limbs in a year?
+- Do you have an active agreement or similar with (word group)?
+- How tall are you, and are you flexible about it?
+- On a scale of 1 to 100, how many pounds of mass are you willing to potentially lose during the course of this experiment?
+- Would you describe yourself as being made of flesh?
+- Do you often use your (bodypart)?
+- On a scale of 1 to 10, how much do you prioritize maintaining your current form?
+- How long have you resided in this reality?
+- Where do you see yourself in 10 years? Would it change if (concerning outcome word group???)?
+- Are you currently taking any medications?
+- On a scale of 1 to 10, how likely are you to start rotting on a hot day?
+- Do you have prior history with eldritch horrors?
+- Are there any colors or textures that should be kept out of your enclosure?
+- What does your diet primarily consist of currently, and how willing are you to tolerate a permanent change?
+*/
