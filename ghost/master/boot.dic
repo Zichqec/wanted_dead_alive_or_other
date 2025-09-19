@@ -2,7 +2,7 @@ OnFirstBoot
 {
 	LastTalk = ""
 	
-	"\1\s[10]\0\s[0]Firstboot"
+	"\1\s[-1]\0\s[0]Firstboot"
 }
 
 OnInitialize
