@@ -51,12 +51,6 @@ DiedBefore.fluffydemon
 	
 }
 
-//How would you like to be compensated for your assistance today?
-HowCompensate.fluffydemon
-{
-	
-}
-
 //Are you currently under the effect of any curses?
 AnyCurses.fluffydemon
 {
@@ -173,6 +167,12 @@ ColorsTextures.fluffydemon
 
 //What does your diet primarily consist of currently, and how willing are you to tolerate a permanent change?
 PrimaryDiet.fluffydemon
+{
+	
+}
+
+//How would you like to be compensated for your assistance today?
+HowCompensate.fluffydemon
 {
 	
 }

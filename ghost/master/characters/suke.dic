@@ -54,13 +54,6 @@ DiedBefore.suke
 	"yes"
 }
 
-//How would you like to be compensated for your assistance today?
-HowCompensate.suke
-{
-	"send me a blanket, i am cold :("
-	"money so i can buy juice"
-}
-
 //Are you currently under the effect of any curses?
 AnyCurses.suke
 {
@@ -201,4 +194,11 @@ PrimaryDiet.suke
 {
 	"not much"
 	"feed me :("
+}
+
+//How would you like to be compensated for your assistance today?
+HowCompensate.suke
+{
+	"send me a blanket, i am cold :("
+	"money so i can buy juice"
 }

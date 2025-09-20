@@ -48,10 +48,10 @@ OnLastTalk
 
 OnAskQuestions : all
 {
-	_questions = Questions
 	
 	"\0\b[2]\_q\![set,autoscroll,disable]"
 	
+	_questions = Questions
 	_questionnum = 0 //NOT the same as _i
 	for _i = 0; _i < ARRAYSIZE(_questions); _i++
 	{
@@ -117,8 +117,6 @@ OnSeeOldResponses : all
 	_c = "\f[color,disable]\f[italic,1]"
 	_d = "\f[italic,default]\f[color,default]"
 	
-	_questions = Questions
-	
 	"\f[align,center]\f[height,+2]\f[bold,1]Candidate #%(_applicantnum)\f[bold,default]\f[height,default]\n\f[align,left]"
 	
 	switch reference0 <= 0
@@ -134,6 +132,7 @@ OnSeeOldResponses : all
 	}
 	"\n\f[align,left]\n"
 	
+	_questions = Questions
 	for _i = 0; _i < ARRAYSIZE(_questions); _i++
 	{
 		if ASEARCH(_i,QuestionsToAsk) == -1; continue

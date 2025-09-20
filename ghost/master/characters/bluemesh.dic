@@ -57,14 +57,6 @@ DiedBefore.bluemesh
 	"Never"
 }
 
-//How would you like to be compensated for your assistance today?
-HowCompensate.bluemesh
-{
-	"Money"
-	"Cold hard cash"
-	"Can you bring my dog back from the dead, he died 10 years ago thx"
-}
-
 //Are you currently under the effect of any curses?
 AnyCurses.bluemesh
 {
@@ -224,4 +216,12 @@ PrimaryDiet.bluemesh
 	"Food n stuff"
 	"Salad"
 	"Lotta fish. Don't take my fish."
+}
+
+//How would you like to be compensated for your assistance today?
+HowCompensate.bluemesh
+{
+	"Money"
+	"Cold hard cash"
+	"Can you bring my dog back from the dead, he died 10 years ago thx"
 }
