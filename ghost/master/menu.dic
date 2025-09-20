@@ -51,7 +51,7 @@ OnAskQuestions : all
 	
 	"\0\b[2]\_q\![set,autoscroll,disable]"
 	
-	_questions = Questions
+	_questions = QuestionsText
 	_questionnum = 0 //NOT the same as _i
 	for _i = 0; _i < ARRAYSIZE(_questions); _i++
 	{
@@ -135,7 +135,7 @@ OnSeeOldResponses : all
 	}
 	"\n\f[align,left]\n"
 	
-	_questions = Questions
+	_questions = QuestionsText
 	for _i = 0; _i < ARRAYSIZE(_questions); _i++
 	{
 		if ASEARCH(_i,QuestionsToAsk) == -1; continue
@@ -228,5 +228,11 @@ Shells now generate questions based on which shell you're on
 
 //Set up dialogue draw (1/4)
 
+
+
+
+DAY 2 PRIORITIES
+
+Need to set up the boot and firstboot sequence, and perhaps also rough out a close sequence
 */
 
