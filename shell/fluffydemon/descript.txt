@@ -1,7 +1,7 @@
 charset,Shift_JIS
 type,shell
 
-name,‚Ó‚í‚à‚±–‚‘°
+name,fluffydemon
 craftmanw,â™‚Í‚­‚³‚Þ‚Ì‚Ô‚à‚è
 craftmanurl,https://rocketsalad.studio.site/
 

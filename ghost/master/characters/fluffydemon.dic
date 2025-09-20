@@ -1,0 +1,178 @@
+Greeting.fluffydemon
+{
+	
+}
+
+Accepted.fluffydemon
+{
+	
+}
+
+Rejected.fluffydemon
+{
+	
+}
+
+RandomTalk.fluffydemon : nonoverlap
+{
+	
+}
+
+SurfaceRestore.fluffydemon
+{
+	"\1\s[-1]\0"
+	--
+	if FluffyDemonMode == 1; "\s[4]"
+	elseif FluffyDemonMode == 2; "\s[7]"
+	else; "\s[0]"
+}
+
+//Name?
+Name.fluffydemon
+{
+	
+}
+
+//Age?
+Age.fluffydemon
+{
+	
+}
+
+//Is this your first time working with us?
+FirstTime.fluffydemon
+{
+	
+}
+
+//Have you died before?
+DiedBefore.fluffydemon
+{
+	
+}
+
+//How would you like to be compensated for your assistance today?
+HowCompensate.fluffydemon
+{
+	
+}
+
+//Are you currently under the effect of any curses?
+AnyCurses.fluffydemon
+{
+	
+}
+
+//Do you have any peculiarities with your body parts that we should be aware of?
+PeculiaritiesBodyParts.fluffydemon
+{
+	
+}
+
+//Do you have your own teeth? If 'no', and you have teeth upon your person, are they from a reputable source?
+OwnTeeth.fluffydemon
+{
+	
+}
+
+//Do you require food, water, and/or charging (electrical or otherwise) for the duration of your stay?
+RequireFoodWaterCharging.fluffydemon
+{
+	
+}
+
+//Do you have allergic reactions to (word group)?
+AllergicReactions.fluffydemon
+{
+	
+}
+
+//Are you immortal?
+Immortal.fluffydemon
+{
+	
+}
+
+//How many times on average do you regenerate limbs in a year?
+RegenerateLimbs.fluffydemon
+{
+	
+}
+
+//Do you have an active agreement or similar with (word group)?
+ActiveAgreement.fluffydemon
+{
+	
+}
+
+//How tall are you, and are you flexible about it?
+HowTall.fluffydemon
+{
+	
+}
+
+//On a scale of 1 to 100, how many pounds of mass are you willing to potentially lose during the course of this experiment?
+LoseMass.fluffydemon
+{
+	
+}
+
+//Would you describe yourself as being made of flesh?
+MadeOfFlesh.fluffydemon
+{
+	
+}
+
+//Do you often use your (bodypart)?
+OftenUseBodyPart.fluffydemon
+{
+	
+}
+
+//On a scale of 1 to 10, how much do you prioritize maintaining your current form?
+PrioritizeCurrentForm.fluffydemon
+{
+	
+}
+
+//How long have you resided in this reality?
+ResidedThisReality.fluffydemon
+{
+	
+}
+
+//Where do you see yourself in 10 years? Would it change if (word group)?
+SeeSelfTenYears.fluffydemon
+{
+	
+}
+
+//Are you currently taking any medications?
+TakingMeds.fluffydemon
+{
+	
+}
+
+//On a scale of 1 to 10, how likely are you to start rotting on a hot day?
+LikelyToRot.fluffydemon
+{
+	
+}
+
+//Do you have prior history with eldritch horrors?
+HistoryEldritchHorrors.fluffydemon
+{
+	
+}
+
+//Are there any colors or textures that should be kept out of your enclosure?
+ColorsTextures.fluffydemon
+{
+	
+}
+
+//What does your diet primarily consist of currently, and how willing are you to tolerate a permanent change?
+PrimaryDiet.fluffydemon
+{
+	
+}

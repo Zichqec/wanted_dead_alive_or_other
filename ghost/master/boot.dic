@@ -9,6 +9,7 @@ OnFirstBoot
 	AcceptedCandidatesToday = 0
 	RejectedCandidatesTotal = 0
 	RejectedCandidatesToday = 0
+	FluffyDemonMode = 0
 	
 	"\1\s[-1]\0\s[0]Firstboot"
 }

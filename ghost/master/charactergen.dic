@@ -2,6 +2,7 @@ shells : array
 {
 	"bluemesh"
 	"suke"
+	"fluffydemon"
 }
 
 OnGenerateNewCharacter
@@ -12,6 +13,10 @@ OnGenerateNewCharacter
 		_newshell = ANY(shells)
 	}
 	Candidate.Shell = _newshell //TODO maybe nonoverlap later? or is random but not repeating the last one better
+	
+	if Candidate.Shell == "fluffydemon"; FluffyDemonMode = RAND(3)
+	
+	//TODO michael here somewhere later......
 	
 	NewCharacterLatch = 1
 	"\![change,shell,%(Candidate.Shell),--option=raise-event]"

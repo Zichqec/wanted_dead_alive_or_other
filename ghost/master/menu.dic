@@ -6,7 +6,8 @@ OnMouseDoubleClick
 //Because there is an all modifier here, you don't need to write -- between menu options
 OnSakuraMenu : all
 {
-	"\0\s[0]\b[2]\![set,autoscroll,disable]\_q"
+	OnSurfaceRestore
+	"\b[2]\![set,autoscroll,disable]\_q"
 	
 	"\![*]\q[Dialogue,OnAiTalk]  "
 	switch LastTalk == "" //Uses top option if there is a dialogue to repeat
@@ -60,7 +61,7 @@ OnAskQuestions : all
 		}
 		"\n\n"
 	}
-	"\n\n\_q"
+	"\n\n"
 	"\![*]\q[Back,OnSakuraMenu]  \![*]\q[Done,blank]"
 }
 
@@ -211,7 +212,7 @@ Shells now generate questions based on which shell you're on
 
 //Then, I need to add checks to force you to that shell no matter what...
 
-At some point I need to put in testing for fluffydemon to be in different modes...
+//At some point I need to put in testing for fluffydemon to be in different modes...
 
 //Need to make shell changes do the following:
 	//Maintain chosen balloon
