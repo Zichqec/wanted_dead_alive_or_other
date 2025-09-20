@@ -1,23 +1,51 @@
 OnFirstBoot
 {
 	LastTalk = ""
+	SavedResponses = IARRAY
+	GenerateQuestions
+	GenerateAnswers
+	NewCharacterLatch = 0
+	AcceptedCandidatesTotal = 0
+	AcceptedCandidatesToday = 0
+	RejectedCandidatesTotal = 0
+	RejectedCandidatesToday = 0
 	
 	"\1\s[-1]\0\s[0]Firstboot"
 }
 
 OnInitialize
 {
-	
+	if !ISVAR("SavedResponses"); SavedResponses = IARRAY //TODO i should probably just reset this here, but... maybe for our ease of use I'll put it in OnBoot
+	if !ISVAR("Candidate.Num"); Candidate.Num = 0
 	
 	if reference0 != "reload" //Reset EXCEPT when just reloading
 	{
 		LastTalk = ""
+		AcceptedCandidatesToday = 0
+		RejectedCandidatesToday = 0
 	}
+}
+
+GenerateQuestions
+{
+	QuestionsToAsk = (0,1,2,3,4) //Always present questions
+	
+	while ARRAYSIZE(QuestionsToAsk) < 10
+	{
+		_pick = RAND(25)
+		if ASEARCH(_pick,QuestionsToAsk) == -1; QuestionsToAsk ,= _pick
+	}
+	QuestionsToAsk = ASORT("int,ascending",QuestionsToAsk)
 }
 
 OnBoot
 {
-	"\0\s[0]Boot"
+	SavedResponses = IARRAY
+	Candidate.Num = 0
+	GenerateQuestions
+	GenerateAnswers
+	
+	"\1\s[-1]\0\s[0]Boot"
 }
 
 OnClose

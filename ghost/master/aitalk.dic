@@ -6,12 +6,23 @@ OnAiTalk
 	}
 	else
 	{
-		LastTalk = RandomTalk
+		if ARRAYSIZE(DialogueDraw) <= 0; DialogueDraw = ("Necromancer","Necromancer","Necromancer","Shell")
+		
+		_pick = ANY(DialogueDraw)
+		DialogueDraw[LSO] = IARRAY
+		
+		if _pick == "Shell"; LastTalk = ShellTalk
+		else; LastTalk = RandomTalk
 	}
 	LastTalk
 }
 
+ShellTalk
+{
+	EVAL("RandomTalk.%(CurrentShell)")
+}
+
 RandomTalk : nonoverlap_pool
 {
-	"\0\s[0]Dialogue."
+	"\0\s[0]Necromancer."
 }

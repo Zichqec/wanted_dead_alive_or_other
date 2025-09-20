@@ -1,0 +1,286 @@
+shells : array
+{
+	"bluemesh"
+	"suke"
+}
+
+OnGenerateNewCharacter
+{
+	_newshell = ANY(shells)
+	while _newshell == Candidate.Shell
+	{
+		_newshell = ANY(shells)
+	}
+	Candidate.Shell = _newshell //TODO maybe nonoverlap later? or is random but not repeating the last one better
+	
+	NewCharacterLatch = 1
+	"\![change,shell,%(Candidate.Shell),--option=raise-event]"
+}
+
+OnShellChanging
+{
+	if NewCharacterLatch
+	{
+		"\1\s[-1]\0\![set,alpha,0]\![get,property,OnShellChangeCoordsBefore,currentghost.scope(0).rect]"
+	}
+}
+
+OnShellChangeCoordsBefore
+{
+	ShellChange.OldLeft = TOINT(reference0[0])
+	ShellChange.OldRight = TOINT(reference0[2])
+}
+
+OnShellChanged : all
+{
+	if NewCharacterLatch
+	{
+		NewCharacterLatch = 0
+		"\1\s[-1]\0\![set,alpha,0]\![get,property,OnShellChangeCoordsAfter,currentghost.scope(0).rect]"
+	}
+	elseif SHIORI3FW.ShellName != Candidate.Shell
+	{
+		"\1\s[-1]\0\s[-1]\![change,shell,%(Candidate.Shell)]\![set,alpha,100]"
+	}
+	else //Reloading the same one
+	{
+		OnSurfaceRestore
+	}
+}
+
+OnShellChangeCoordsAfter : all
+{
+	ShellChange.NewLeft = TOINT(reference0[0])
+	ShellChange.NewRight = TOINT(reference0[2])
+	
+	_oldwidth = ShellChange.OldRight - ShellChange.OldLeft
+	_oldcenter = ShellChange.OldLeft + (_oldwidth / 2)
+	
+	
+	_newwidth = ShellChange.NewRight - ShellChange.NewLeft
+	
+	_newX = _oldcenter - (_newwidth / 2)
+	
+	"\1\s[-1]\0\![set,alpha,0]\s[0]\![move,--x=%(_newX),--y=fix,--time=0,--base=primaryscreen]\s[0]\![set,alpha,100]"
+	"\![change,balloon,%(CurrentBalloon)]"
+	RandomizeDressups
+	
+	FinishNewShellChange
+}
+
+OnBalloonChange
+{
+	CurrentBalloon = reference0
+}
+
+FinishNewShellChange
+{
+	Candidate.Num++
+	GenerateAnswers
+	EVAL("Greeting.%(CurrentShell)")
+}
+
+GenerateAnswers
+{
+	CandidateResponse = IARRAY
+	
+	//0 - currently known answer, 1 - what the answer will be if asked
+	//I don't need to do it this way?? I could generate them on the fly... might change, we'll see
+	CandidateResponse[0] = "N/A%(C_BYTE1)%(GenerateName)"
+	CandidateResponse[1] = "N/A%(C_BYTE1)%(GenerateAge)"
+	CandidateResponse[2] = "N/A%(C_BYTE1)%(GenerateFirstTime)"
+	CandidateResponse[3] = "N/A%(C_BYTE1)%(GenerateDiedBefore)"
+	CandidateResponse[4] = "N/A%(C_BYTE1)%(GenerateHowCompensate)"
+	CandidateResponse[5] = "N/A%(C_BYTE1)%(GenerateAnyCurses)"
+	CandidateResponse[6] = "N/A%(C_BYTE1)%(GeneratePeculiaritiesBodyParts)"
+	CandidateResponse[7] = "N/A%(C_BYTE1)%(GenerateOwnTeeth)"
+	CandidateResponse[8] = "N/A%(C_BYTE1)%(GenerateRequireFoodWaterCharging)"
+	CandidateResponse[9] = "N/A%(C_BYTE1)%(GenerateAllergicReactions)"
+	CandidateResponse[10] = "N/A%(C_BYTE1)%(GenerateImmortal)"
+	CandidateResponse[11] = "N/A%(C_BYTE1)%(GenerateRegenerateLimbs)"
+	CandidateResponse[12] = "N/A%(C_BYTE1)%(GenerateActiveAgreement)"
+	CandidateResponse[13] = "N/A%(C_BYTE1)%(GenerateHowTall)"
+	CandidateResponse[14] = "N/A%(C_BYTE1)%(GenerateLoseMass)"
+	CandidateResponse[15] = "N/A%(C_BYTE1)%(GenerateMadeOfFlesh)"
+	CandidateResponse[16] = "N/A%(C_BYTE1)%(GenerateOftenUseBodyPart)"
+	CandidateResponse[17] = "N/A%(C_BYTE1)%(GeneratePrioritizeCurrentForm)"
+	CandidateResponse[18] = "N/A%(C_BYTE1)%(GenerateResidedThisReality)"
+	CandidateResponse[19] = "N/A%(C_BYTE1)%(GenerateSeeSelfTenYears)"
+	CandidateResponse[20] = "N/A%(C_BYTE1)%(GenerateTakingMeds)"
+	CandidateResponse[21] = "N/A%(C_BYTE1)%(GenerateLikelyToRot)"
+	CandidateResponse[22] = "N/A%(C_BYTE1)%(GenerateHistoryEldritchHorrors)"
+	CandidateResponse[23] = "N/A%(C_BYTE1)%(GenerateColorsTextures)"
+	CandidateResponse[24] = "N/A%(C_BYTE1)%(GeneratePrimaryDiet)"
+}
+
+SaveResponses
+{
+	SavedResponses ,= "%(Candidate.Num)" + C_BYTE1 + MakeSaveResponseString
+}
+
+MakeSaveResponseString : all
+{
+	CandidateResponse[0][0,C_BYTE1] + C_BYTE1
+	CandidateResponse[1][0,C_BYTE1] + C_BYTE1
+	CandidateResponse[2][0,C_BYTE1] + C_BYTE1
+	CandidateResponse[3][0,C_BYTE1] + C_BYTE1
+	CandidateResponse[4][0,C_BYTE1] + C_BYTE1
+	CandidateResponse[5][0,C_BYTE1] + C_BYTE1
+	CandidateResponse[6][0,C_BYTE1] + C_BYTE1
+	CandidateResponse[7][0,C_BYTE1] + C_BYTE1
+	CandidateResponse[8][0,C_BYTE1] + C_BYTE1
+	CandidateResponse[9][0,C_BYTE1] + C_BYTE1
+	CandidateResponse[10][0,C_BYTE1] + C_BYTE1
+	CandidateResponse[11][0,C_BYTE1] + C_BYTE1
+	CandidateResponse[12][0,C_BYTE1] + C_BYTE1
+	CandidateResponse[13][0,C_BYTE1] + C_BYTE1
+	CandidateResponse[14][0,C_BYTE1] + C_BYTE1
+	CandidateResponse[15][0,C_BYTE1] + C_BYTE1
+	CandidateResponse[16][0,C_BYTE1] + C_BYTE1
+	CandidateResponse[17][0,C_BYTE1] + C_BYTE1
+	CandidateResponse[18][0,C_BYTE1] + C_BYTE1
+	CandidateResponse[19][0,C_BYTE1] + C_BYTE1
+	CandidateResponse[20][0,C_BYTE1] + C_BYTE1
+	CandidateResponse[21][0,C_BYTE1] + C_BYTE1
+	CandidateResponse[22][0,C_BYTE1] + C_BYTE1
+	CandidateResponse[23][0,C_BYTE1] + C_BYTE1
+	CandidateResponse[24][0,C_BYTE1]
+}
+
+
+OnDebug.SeeAllResponses : all
+{
+	//GenerateAnswers
+	
+	"\0\b[2]\_q\![set,autoscroll,disable]"
+	foreach CandidateResponse; _var
+	{
+		"%(_var[0,C_BYTE1])\n\n[half]"
+	}
+	"\x"
+}
+
+GenerateName
+{
+	EVAL("Name.%(CurrentShell)")
+}
+
+GenerateAge
+{
+	EVAL("Age.%(CurrentShell)")
+}
+
+GenerateFirstTime
+{
+	EVAL("FirstTime.%(CurrentShell)")
+}
+
+GenerateDiedBefore
+{
+	EVAL("DiedBefore.%(CurrentShell)")
+}
+
+GenerateHowCompensate
+{
+	EVAL("HowCompensate.%(CurrentShell)")
+}
+
+GenerateAnyCurses
+{
+	EVAL("AnyCurses.%(CurrentShell)")
+}
+
+GeneratePeculiaritiesBodyParts
+{
+	EVAL("PeculiaritiesBodyParts.%(CurrentShell)")
+}
+
+GenerateOwnTeeth
+{
+	EVAL("OwnTeeth.%(CurrentShell)")
+}
+
+GenerateRequireFoodWaterCharging
+{
+	EVAL("RequireFoodWaterCharging.%(CurrentShell)")
+}
+
+GenerateAllergicReactions
+{
+	EVAL("AllergicReactions.%(CurrentShell)")
+}
+
+GenerateImmortal
+{
+	EVAL("Immortal.%(CurrentShell)")
+}
+
+GenerateRegenerateLimbs
+{
+	EVAL("RegenerateLimbs.%(CurrentShell)")
+}
+
+GenerateActiveAgreement
+{
+	EVAL("ActiveAgreement.%(CurrentShell)")
+}
+
+GenerateHowTall
+{
+	EVAL("HowTall.%(CurrentShell)")
+}
+
+GenerateLoseMass
+{
+	EVAL("LoseMass.%(CurrentShell)")
+}
+
+GenerateMadeOfFlesh
+{
+	EVAL("MadeOfFlesh.%(CurrentShell)")
+}
+
+GenerateOftenUseBodyPart
+{
+	EVAL("OftenUseBodyPart.%(CurrentShell)")
+}
+
+GeneratePrioritizeCurrentForm
+{
+	EVAL("PrioritizeCurrentForm.%(CurrentShell)")
+}
+
+GenerateResidedThisReality
+{
+	EVAL("ResidedThisReality.%(CurrentShell)")
+}
+
+GenerateSeeSelfTenYears
+{
+	EVAL("SeeSelfTenYears.%(CurrentShell)")
+}
+
+GenerateTakingMeds
+{
+	EVAL("TakingMeds.%(CurrentShell)")
+}
+
+GenerateLikelyToRot
+{
+	EVAL("LikelyToRot.%(CurrentShell)")
+}
+
+GenerateHistoryEldritchHorrors
+{
+	EVAL("HistoryEldritchHorrors.%(CurrentShell)")
+}
+
+GenerateColorsTextures
+{
+	EVAL("ColorsTextures.%(CurrentShell)")
+}
+
+GeneratePrimaryDiet
+{
+	EVAL("PrimaryDiet.%(CurrentShell)")
+}

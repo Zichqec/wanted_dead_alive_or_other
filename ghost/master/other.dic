@@ -23,9 +23,11 @@ OnKeyPress
 	elseif reference0 == "r"; OnLastTalk
 }
 
-OnSurfaceRestore
+OnSurfaceRestore : all
 {
-	"\1\s[-1]\0\s[0]"
+	"\![set,alpha,100]"
+	
+	EVAL("SurfaceRestore.%(CurrentShell)")
 }
 
 OnWindowStateRestore
@@ -38,6 +40,104 @@ On_homeurl
 	"https://raw.githubusercontent.com/Zichqec/wanted_dead_alive_or_other/refs/heads/main/"
 }
 
+//May get more complex later
+CurrentShell
+{
+	SHIORI3FW.ShellName
+}
+
+//[character ID, category name, part name, option, on-1/off-0, thumbnail path]
+OnNotifyDressupInfo
+{
+	//every damn time...
+	CurrentDressups = IARRAY
+	AvailableDressups = IARRAY
+	
+	foreach reference; _dressup
+	{
+		_dressup = SPLIT(_dressup,C_BYTE1)
+		_temp = "%(_dressup[0])%(C_BYTE1)%(_dressup[1])%(C_BYTE1)%(_dressup[2])"
+		if _dressup[4] == "1"; CurrentDressups ,= _temp
+		
+		_temp += "%(C_BYTE1)%(_dressup[3])"
+		AvailableDressups ,= _temp
+	}
+}
+
+//Send scope as an argument
+RandomizeDressups : all
+{
+	_scope = 0
+	if _argv[0] != ""; _scope = _argv[0]
+	
+	"\p[%(_scope)]"
+	
+	//Remove all dressups
+	foreach CurrentDressups; _dressup
+	{
+		_dressup = SPLIT(_dressup,C_BYTE1)
+		
+		if _dressup[0] != _scope; continue
+		
+		"\![bind,%(_dressup[1]),%(_dressup[2]),0]"
+	}
+	
+	//Get categories for scope
+	_categorynames = IARRAY
+	_categoryitems = IARRAY
+	_categoryopts = IARRAY
+	foreach AvailableDressups; _dressup
+	{
+		_dressup = SPLIT(_dressup,C_BYTE1)
+		
+		if _dressup[0] != _scope; continue
+		
+		_index = ASEARCH(_dressup[1],_categorynames)
+		if _index == -1
+		{
+			_index = ARRAYSIZE(_categorynames) //Put at end
+			_categorynames[_index] = _dressup[1]
+			_categoryitems[_index] = ""
+			_categoryopts[_index] = _dressup[3]
+		}
+		
+		if _categoryitems[_index] != ""; _categoryitems[_index] += C_BYTE1
+		_categoryitems[_index] += _dressup[2]
+	}
+	
+	//Assign new dressups
+	for _i = 0; _i < ARRAYSIZE(_categorynames); _i++
+	{
+		_category = _categorynames[_i]
+		_mustselect = 0
+		_multiple = 0
+		if "mustselect" _in_ _categoryopts[_i]; _mustselect = 1
+		if "multiple" _in_ _categoryopts[_i]; _multiple = 1
+		
+		_skipchance = 4
+		_items = SPLIT(_categoryitems[_i],C_BYTE1)
+		
+		if !_mustselect //Chance to skip category
+		{
+			if RAND(_skipchance) == 0; continue
+		}
+		
+		_adding = ""
+		if _multiple
+		{
+			foreach _items; _item
+			{
+				if RAND(_skipchance) == 0; continue //Chance to skip each item
+				
+				_adding += "\![bind,%(_category),%(_item),1]"
+			}
+		}
+		
+		//If nothing was chosen in a multiple selection, or if it's mustselect
+		if _adding == ""; _adding += "\![bind,%(_category),%(ANY(_items)),1]"
+		_adding
+	}
+}
 
 //—————————————————————————————— Right click menu links ——————————————————————————————
 

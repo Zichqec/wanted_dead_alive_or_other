@@ -3,37 +3,161 @@ OnMouseDoubleClick
 	if reference5 == 0 && reference3 == 0; OnSakuraMenu //Left clicking sakure
 }
 
-SakuraMenuGreetings : nonoverlap
-{
-	"Hello."
-	"How can I help you?"
-}
-
 //Because there is an all modifier here, you don't need to write -- between menu options
 OnSakuraMenu : all
 {
-	"\0\s[0]\b[2]\![set,autoscroll,disable]"
-	if SHIORI3FW.Eventid == "OnMouseDoubleClick"; SakuraMenuGreetings //The check here is so they won't comment if you click the back button. Remove if you prefer
+	"\0\s[0]\b[2]\![set,autoscroll,disable]\_q"
 	
-	"\n\n\_q"
-	
-	"\![*]\q[Talk to me,OnAiTalk]  "
+	"\![*]\q[Dialogue,OnAiTalk]  "
 	switch LastTalk == "" //Uses top option if there is a dialogue to repeat
 	{
-		"\![*]\q[Say that again,OnLastTalk]"
-		"\![*]\f[color,disable]Say that again\f[color,default]"
+		"\![*]\q[Repeat,OnLastTalk]"
+		"\![*]\f[color,disable]Repeat\f[color,default]"
 	}
 	
 	"\n\n"
+	"\n"
+	
+	"\![*]\__q[OnAskQuestions]Ask questions\__q\n\n"
+	
+	"\![*]\__q[OnNextCandidate,accept]Accept candidate\__q  \![*]\__q[OnNextCandidate,reject]Reject candidate\__q\n\n"
+	"\n"
+	
+	"\![*]\__q[OnSeeOldResponses]Review prior answers\__q\n\n"
+	
+	"\![*]\__q[OnViewStats]View stats\__q\n\n"
+	"\n"
 	
 	"\![*]\q[Change talk rate,OnTalkRateMenu]\n\n"
 	
+	if SHIORI3FW.DebugMode; "\f[color,disable]\![*]\__q[OnDebug.SeeAllResponses]See all answers\__q\n\n\f[color,default]"
+	
+	"\n"
 	"\![*]\q[Cancel,blank]"	
 }
 
 OnLastTalk
 {
 	LastTalk
+}
+
+OnAskQuestions : all
+{
+	_questions = Questions
+	
+	"\0\b[2]\_q\![set,autoscroll,disable]"
+	
+	_questionnum = 0 //NOT the same as _i
+	for _i = 0; _i < ARRAYSIZE(_questions); _i++
+	{
+		if ASEARCH(_i,QuestionsToAsk) == -1; continue
+		_questionnum++
+		"%(_questionnum). "
+		switch CandidateResponse[_i][0,C_BYTE1] == "N/A"
+		{
+			"\f[italic,1]\__q[OnAskQuestion,%(_i)]%(_questions[_i])\__q\f[italic,default]"
+			"\_a[OnAskQuestion,%(_i)]%(_questions[_i])\_a"
+		}
+		"\n\n"
+	}
+	"\n\n\_q"
+	"\![*]\q[Back,OnSakuraMenu]  \![*]\q[Done,blank]"
+}
+
+OnAskQuestion : all
+{
+	_num = TOINT(reference0)
+	
+	_response = CandidateResponse[_num][1,C_BYTE1]
+	
+	CandidateResponse[_num] = SHIORI3FW.RemoveAllTags(_response) + C_BYTE1 + _response //Put it back in the array, minus tags for the first one
+	
+	"\0"
+	_response
+	"\n\n\_q"
+	"\![*]\q[Ask another,OnAskQuestions]  \![*]\q[Done,blank]"
+}
+
+OnNextCandidate : all
+{
+	if reference0 == "accept"
+	{
+		AcceptedCandidatesTotal++
+		AcceptedCandidatesToday++
+		SaveResponses
+		
+		EVAL("Accepted.%(CurrentShell)")
+	}
+	else
+	{
+		RejectedCandidatesTotal++
+		RejectedCandidatesToday++
+		EVAL("Rejected.%(CurrentShell)")
+	}
+	
+	"\_w[2000]" //TODO make a nice fadeout, etc
+	"\![embed,OnGenerateNewCharacter]"
+}
+
+OnSeeOldResponses : all
+{
+	if reference0 == ""; reference0 = ARRAYSIZE(SavedResponses) - 1 //Last page by default
+	
+	"\C\![lock,balloonrepaint]\c"
+	"\0\b[2]\_q\![set,autoscroll,disable]"
+	
+	_answers = SPLIT(SavedResponses[reference0],C_BYTE1)
+	_applicantnum = _answers[0]
+	_answers[0] = IARRAY //TODO maybe split this and other info off with another delimiter?
+	
+	_c = "\f[color,disable]\f[italic,1]"
+	_d = "\f[italic,default]\f[color,default]"
+	
+	_questions = Questions
+	
+	"\f[align,center]\f[height,+2]\f[bold,1]Candidate #%(_applicantnum)\f[bold,default]\f[height,default]\n\f[align,left]"
+	
+	switch reference0 <= 0
+	{
+		"\__q[OnSeeOldResponses,%(reference0 - 1)]<< Previous\__q"
+		"\f[color,disable]<< Previous\f[color,default]"
+	}
+	"\n[0]\f[align,right]"
+	switch reference0 >= ARRAYSIZE(SavedResponses) - 1
+	{
+		"\__q[OnSeeOldResponses,%(reference0 + 1)]Next >>\__q"
+		"\f[color,disable]Next >>\f[color,default]"
+	}
+	"\n\f[align,left]\n"
+	
+	for _i = 0; _i < ARRAYSIZE(_questions); _i++
+	{
+		if ASEARCH(_i,QuestionsToAsk) == -1; continue
+		"\![*]%(_questions[_i])\n"
+		"%(_c)%(_answers[_i])%(_d)\n\n"
+	}
+	"\n"
+	"\![*]\__q[OnSakuraMenu]Back\__q  \![*]\__q[blank]Done\__q"
+	"\![unlock,balloonrepaint]"
+}
+
+OnViewStats : all
+{
+	"\0\b[2]\_q\![set,autoscroll,disable]"
+	
+	"\f[align,center]\f[height,+2]\f[bold,1]Current experiment\f[bold,default]\f[height,default]\n\f[align,left]\n"
+	
+	"Candidates accepted: %(AcceptedCandidatesToday)\n"
+	"Candidates rejected: %(AcceptedCandidatesToday)\n"
+	"\n\n"
+	
+	"\f[align,center]\f[height,+2]\f[bold,1]All experiments\f[bold,default]\f[height,default]\n\f[align,left]\n"
+	
+	"Candidates accepted: %(AcceptedCandidatesTotal)\n"
+	"Candidates rejected: %(AcceptedCandidatesTotal)\n"
+	"\n\n"
+	
+	"\![*]\__q[OnSakuraMenu]Back\__q  \![*]\__q[blank]Done\__q"
 }
 
 OnTalkRateMenu : all
@@ -63,34 +187,40 @@ OnTalkRateChange
 {
 	aitalkinterval = TOINT(reference0)
 }
-//QUESTIONS LIST
-/*
-PERMANENT
-- Name?
-- Age?
-- Is this your first time working with us?
-- Have you died before?
-- How would you like to be compensated for your assistance today?
 
-RANDOM
-- Are you currently under the effect of any curses?
-- Do you have any peculiarities with your body parts that we should be aware of?
-- Do you have your own teeth? If 'no', and you have teeth upon your person, are they from a reputable source?
-- Do you require food, water, and/or charging (electrical or otherwise) for the duration of your stay?
-- Do you have allergic reactions to (word group)?
-- Are you immortal?
-- How many times on average do you regenerate limbs in a year?
-- Do you have an active agreement or similar with (word group)?
-- How tall are you, and are you flexible about it?
-- On a scale of 1 to 100, how many pounds of mass are you willing to potentially lose during the course of this experiment?
-- Would you describe yourself as being made of flesh?
-- Do you often use your (bodypart)?
-- On a scale of 1 to 10, how much do you prioritize maintaining your current form?
-- How long have you resided in this reality?
-- Where do you see yourself in 10 years? Would it change if (concerning outcome word group???)?
-- Are you currently taking any medications?
-- On a scale of 1 to 10, how likely are you to start rotting on a hot day?
-- Do you have prior history with eldritch horrors?
-- Are there any colors or textures that should be kept out of your enclosure?
-- What does your diet primarily consist of currently, and how willing are you to tolerate a permanent change?
+/*
+
+PLOTTING SPACE
+
+Okay so... I think to start I need to rig up these questions and make it generate responses per character... no worry about shell changes yet. Just something where I can click to see it gen new stuff
+
+Next up... make it so that there is a menu choice for accept/reject, and when that is done, dump the answers into a 2d array and gen a new character
+
+Next I need to make questions askable...
+
+I still need to make questions be picked from a pool each day
+
+I also need to make it so that it tracks which ones have been asked or not....... oopsie whoopsie, we might be going 3d with this array! Or maybe I just fill with N/A if no response yet...
+
+Once all of the above is complete, THEN i start poking at shells...
+
+Shells now generate questions based on which shell you're on
+
+//Next is to generate a character, and to have it pick a shell when generating.
+	//Maybe pick a shell first, switch, then generate the details? Kind of a latch dealio, but...
+
+//Then, I need to add checks to force you to that shell no matter what...
+
+At some point I need to put in testing for fluffydemon to be in different modes...
+
+//Need to make shell changes do the following:
+	//Maintain chosen balloon
+	//Move new shell to coords of old shell
+
+//Also to do:
+	//Random dressups picked when change shells (if latch tripped)
+
+//Set up dialogue draw (1/4)
+
 */
+

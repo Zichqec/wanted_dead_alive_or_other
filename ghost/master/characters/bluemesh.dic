@@ -1,0 +1,227 @@
+Greeting.bluemesh
+{
+	"\1\s[-1]\0\s[0]yo what's up"
+}
+
+Accepted.bluemesh
+{
+	"sweet"
+}
+
+Rejected.bluemesh
+{
+	"boooooo"
+}
+
+RandomTalk.bluemesh : nonoverlap
+{
+	"it's me, bluemesh"
+	"pick me"
+}
+
+SurfaceRestore.bluemesh
+{
+	"\1\s[-1]\0\s[0]"
+}
+
+//Name?
+Name.bluemesh
+{
+	"Blue"
+	"Mesh"
+	"Purple"
+}
+
+//Age?
+Age.bluemesh
+{
+	"25"
+	"30"
+	"35"
+	"Enough"
+}
+
+//Is this your first time working with us?
+FirstTime.bluemesh
+{
+	"Yep"
+	"Nope"
+	"Who are you?"
+}
+
+//Have you died before?
+DiedBefore.bluemesh
+{
+	"All the time"
+	"I'm dead right now"
+	"Never"
+}
+
+//How would you like to be compensated for your assistance today?
+HowCompensate.bluemesh
+{
+	"Money"
+	"Cold hard cash"
+	"Can you bring my dog back from the dead, he died 10 years ago thx"
+}
+
+//Are you currently under the effect of any curses?
+AnyCurses.bluemesh
+{
+	"Yeah I'm cursed to have wobbly table legs forever"
+	"Nope"
+	"None of your business"
+}
+
+//Do you have any peculiarities with your body parts that we should be aware of?
+PeculiaritiesBodyParts.bluemesh
+{
+	"Nah they're ordinary"
+	"I got a cool birthmark"
+	"I broke my leg the other day but it's fine now"
+}
+
+//Do you have your own teeth? If 'no', and you have teeth upon your person, are they from a reputable source?
+OwnTeeth.bluemesh
+{
+	"Yes these are real"
+	"Maybe"
+	"I'll never tell"
+}
+
+//Do you require food, water, and/or charging (electrical or otherwise) for the duration of your stay?
+RequireFoodWaterCharging.bluemesh
+{
+	"No"
+	"Just water"
+	"All of the above"
+}
+
+//Do you have allergic reactions to (word group)?
+AllergicReactions.bluemesh
+{
+	"Oh yeah super allergic, if I'm within 10 feet of the stuff I get a rash"
+	"Not at all"
+	"I'm allergic to, like, everything else but that"
+}
+
+//Are you immortal?
+Immortal.bluemesh
+{
+	"No"
+	"Yes"
+	"I wish"
+	"I can be if you make me so"
+}
+
+//How many times on average do you regenerate limbs in a year?
+RegenerateLimbs.bluemesh
+{
+	"Every year give or take a month"
+	"Never"
+	"?????"
+}
+
+//Do you have an active agreement or similar with (word group)?
+ActiveAgreement.bluemesh
+{
+	"No"
+	"Yeah if I die they're supposed to bring me back"
+	"None of your business"
+}
+
+//How tall are you, and are you flexible about it?
+HowTall.bluemesh
+{
+	"Taller than you"
+	"Yeah I can be flexible"
+	"Only if I'm going to be gaining height"
+}
+
+//On a scale of 1 to 100, how many pounds of mass are you willing to potentially lose during the course of this experiment?
+LoseMass.bluemesh
+{
+	"Yeah that's fine I'm not worried about it"
+	"100"
+	"0"
+}
+
+//Would you describe yourself as being made of flesh?
+MadeOfFlesh.bluemesh
+{
+	"For the most part yeah"
+	"Entirely"
+	"Well, less than you'd think"
+}
+
+//Do you often use your (bodypart)?
+OftenUseBodyPart.bluemesh
+{
+	"Not really"
+	"Now and then"
+	"Depends on my mood"
+}
+
+//On a scale of 1 to 10, how much do you prioritize maintaining your current form?
+PrioritizeCurrentForm.bluemesh
+{
+	"10, leave me as is thanks"
+	"Maybe a 7, but I wouldn't mind becoming something cool"
+	"0, let me be something else. Like a bird."
+}
+
+//How long have you resided in this reality?
+ResidedThisReality.bluemesh
+{
+	"My whole life"
+	"All of eternity"
+	"Since last week"
+}
+
+//Where do you see yourself in 10 years? Would it change if (word group)?
+SeeSelfTenYears.bluemesh
+{
+	"Ideally not in the ground"
+	"Probably at home eating snacks"
+	"Funny you should mention, I was looking at my crystal ball earlier"
+}
+
+//Are you currently taking any medications?
+TakingMeds.bluemesh
+{
+	"No"
+	"Yes"
+	"Just some ground up teeth, the usual"
+}
+
+//On a scale of 1 to 10, how likely are you to start rotting on a hot day?
+LikelyToRot.bluemesh
+{
+	"0"
+	"5"
+	"10, definitely a 10, keep me out of the heat thanks"
+}
+
+//Do you have prior history with eldritch horrors?
+HistoryEldritchHorrors.bluemesh
+{
+	"Oh yeah we go way back. WAY back."
+	"No, never met one"
+	"Well I know a friend of a friend of a friend..."
+}
+
+//Are there any colors or textures that should be kept out of your enclosure?
+ColorsTextures.bluemesh
+{
+	"I HATE red. Red means dead. You. Dead. No red."
+	"If you put velvet in with me I will cry"
+	"Nah it's all good"
+}
+
+//What does your diet primarily consist of currently, and how willing are you to tolerate a permanent change?
+PrimaryDiet.bluemesh
+{
+	"Food n stuff"
+	"Salad"
+	"Lotta fish. Don't take my fish."
+}

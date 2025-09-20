@@ -9,10 +9,13 @@ dicdir, yaya_base
 
 dic, aitalk.dic
 dic, boot.dic
+dic, charactergen.dic
 dic, menu.dic
 dic, meta.dic
 dic, other.dic
 dic, word.dic
+
+dicdir, characters
 
 msglang,english
 

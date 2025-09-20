@@ -1,0 +1,204 @@
+Greeting.suke
+{
+	"\1\s[-1]\0\s[0]Hello......."
+}
+
+Accepted.suke
+{
+	"hooray! I'm so glad..."
+}
+
+Rejected.suke
+{
+	"....... back to haunting, then"
+}
+
+RandomTalk.suke : nonoverlap
+{
+	"pick me pick me"
+	"i'm a ghost :("
+}
+
+SurfaceRestore.suke
+{
+	"\1\s[-1]\0\s[0]"
+}
+
+//Name?
+Name.suke
+{
+	"suke"
+	"sukesuke"
+	"sukesukesuke"
+}
+
+//Age?
+Age.suke
+{
+	"a lot"
+	"depends if you mean when i became a ghost, or..."
+}
+
+//Is this your first time working with us?
+FirstTime.suke
+{
+	"... no"
+	"yes"
+}
+
+//Have you died before?
+DiedBefore.suke
+{
+	"..."
+	"no i was always like this"
+	"yes"
+}
+
+//How would you like to be compensated for your assistance today?
+HowCompensate.suke
+{
+	"send me a blanket, i am cold :("
+	"money so i can buy juice"
+}
+
+//Are you currently under the effect of any curses?
+AnyCurses.suke
+{
+	"cursed to be a ghost :("
+	"no i curse people not the other way around"
+}
+
+//Do you have any peculiarities with your body parts that we should be aware of?
+PeculiaritiesBodyParts.suke
+{
+	"technically i don't have any anymore"
+	"they're ethereal"
+}
+
+//Do you have your own teeth? If 'no', and you have teeth upon your person, are they from a reputable source?
+OwnTeeth.suke
+{
+	"that depends on your definition of ""have"". must they be physical and present in your current plane of reality?"
+	"yes"
+	"no"
+}
+
+//Do you require food, water, and/or charging (electrical or otherwise) for the duration of your stay?
+RequireFoodWaterCharging.suke
+{
+	"no"
+	"I need 2 hours of sunlight per day"
+}
+
+//Do you have allergic reactions to (word group)?
+AllergicReactions.suke
+{
+	"i used to back when i had an actual body"
+	"ghosts don't have allergies. it's a perk."
+}
+
+//Are you immortal?
+Immortal.suke
+{
+	"um...... maybe?"
+	"yes but i'd like to not be..."
+}
+
+//How many times on average do you regenerate limbs in a year?
+RegenerateLimbs.suke
+{
+	"i cannot lose my limbs"
+	"they come back immediately"
+}
+
+//Do you have an active agreement or similar with (word group)?
+ActiveAgreement.suke
+{
+	"no, those all ended when i died"
+	"i used to a long time ago but not anymore"
+}
+
+//How tall are you, and are you flexible about it?
+HowTall.suke
+{
+	"sure, i'm flexible"
+	"are we counting the parts of my legs that are invisible?"
+}
+
+//On a scale of 1 to 100, how many pounds of mass are you willing to potentially lose during the course of this experiment?
+LoseMass.suke
+{
+	"well I don't have any, so... that's a bit difficult to answer"
+	"2. that's about all I can give."
+}
+
+//Would you describe yourself as being made of flesh?
+MadeOfFlesh.suke
+{
+	"that's tricky."
+	"ghostly, but sure."
+}
+
+//Do you often use your (bodypart)?
+OftenUseBodyPart.suke
+{
+	"all the time"
+	"if i could find it i would"
+}
+
+//On a scale of 1 to 10, how much do you prioritize maintaining your current form?
+PrioritizeCurrentForm.suke
+{
+	"2. i'd like to be a bird..."
+	"6. i could do with some sprucing up..."
+	"9. keeping my form means keeping my memories intact..."
+}
+
+//How long have you resided in this reality?
+ResidedThisReality.suke
+{
+	"well, i really don't?"
+	"forever"
+}
+
+//Where do you see yourself in 10 years? Would it change if (word group)?
+SeeSelfTenYears.suke
+{
+	"probably out by the sea..."
+	"maybe i'll move up to the light house"
+}
+
+//Are you currently taking any medications?
+TakingMeds.suke
+{
+	"ghosts don't take meds"
+	"no"
+}
+
+//On a scale of 1 to 10, how likely are you to start rotting on a hot day?
+LikelyToRot.suke
+{
+	"0"
+	"10"
+}
+
+//Do you have prior history with eldritch horrors?
+HistoryEldritchHorrors.suke
+{
+	"we've never met, thankfully"
+	"we hang out on a daily basis"
+}
+
+//Are there any colors or textures that should be kept out of your enclosure?
+ColorsTextures.suke
+{
+	"no"
+	"yes, i can only see in shades of blue"
+}
+
+//What does your diet primarily consist of currently, and how willing are you to tolerate a permanent change?
+PrimaryDiet.suke
+{
+	"not much"
+	"feed me :("
+}
