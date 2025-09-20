@@ -1,3 +1,8 @@
+SurfaceRestore.bluemesh
+{
+	"\1\s[-1]\0\s[0]"
+}
+
 Greeting.bluemesh
 {
 	"\1\s[-1]\0\s[0]yo what's up"
@@ -17,11 +22,6 @@ RandomTalk.bluemesh : nonoverlap
 {
 	"it's me, bluemesh"
 	"pick me"
-}
-
-SurfaceRestore.bluemesh
-{
-	"\1\s[-1]\0\s[0]"
 }
 
 //Name?

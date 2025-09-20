@@ -1,3 +1,8 @@
+SurfaceRestore.suke
+{
+	"\1\s[-1]\0\s[0]"
+}
+
 Greeting.suke
 {
 	"\1\s[-1]\0\s[0]Hello......."
@@ -17,11 +22,6 @@ RandomTalk.suke : nonoverlap
 {
 	"pick me pick me"
 	"i'm a ghost :("
-}
-
-SurfaceRestore.suke
-{
-	"\1\s[-1]\0\s[0]"
 }
 
 //Name?
