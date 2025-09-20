@@ -1,0 +1,6 @@
+charset,Shift_JIS
+craftman,Nollety
+name,suke
+type,shell
+craftmanw,Nollety
+craftmanurl,http://nore.bake-neko.net/
