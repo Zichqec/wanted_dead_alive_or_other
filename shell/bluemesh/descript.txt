@@ -13,6 +13,9 @@ sakura.bindgroup4.name,上半身,ショートキャミ
 sakura.bindgroup5.name,上半身,パーカー
 sakura.bindgroup6.name,上半身,ジャケット
 
+sakura.bindoption1.group,下半身,mustselect
+sakura.bindoption4.group,上半身,mustselect
+
 
 sakura.menuitem1,1
 sakura.menuitem2,2
