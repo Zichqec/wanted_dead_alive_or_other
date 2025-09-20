@@ -24,7 +24,11 @@ OnSakuraMenu : all
 	"\![*]\__q[OnNextCandidate,accept]Accept candidate\__q  \![*]\__q[OnNextCandidate,reject]Reject candidate\__q\n\n"
 	"\n"
 	
-	"\![*]\__q[OnSeeOldResponses]Review prior answers\__q\n\n"
+	switch ARRAYSIZE(SavedResponses) == 0
+	{
+		"\![*]\__q[OnSeeOldResponses]Review prior answers\__q\n\n"
+		"\f[color,disable]\![*]Review prior answers\f[color,default]\n\n"
+	}
 	
 	"\![*]\__q[OnViewStats]View stats\__q\n\n"
 	"\n"
