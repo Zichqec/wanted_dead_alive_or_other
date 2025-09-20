@@ -1,6 +1,6 @@
 OnMouseDoubleClick
 {
-	if reference5 == 0 && reference3 == 0; OnSakuraMenu //Left clicking sakure
+	if reference5 == 0 && reference3 == 0; OnSakuraMenu //Left clicking sakura
 }
 
 //Because there is an all modifier here, you don't need to write -- between menu options
