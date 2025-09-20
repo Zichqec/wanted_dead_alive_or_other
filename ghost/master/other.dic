@@ -33,7 +33,14 @@ OnSurfaceRestore : all
 	{
 		"\![set,alpha,100]"
 		
-		EVAL("SurfaceRestore.%(CurrentShell)")
+		if ISFUNC("SurfaceRestore.%(CurrentShell)")
+		{
+			EVAL("SurfaceRestore.%(CurrentShell)")
+		}
+		else
+		{
+			"\1\s[-1]\0\s[0]"
+		}
 	}
 }
 
