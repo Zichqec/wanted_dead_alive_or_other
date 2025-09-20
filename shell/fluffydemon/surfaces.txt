@@ -733,6 +733,7 @@ surface.append0-50
 {
 animation3.interval,bind
 animation3.pattern0,overlay,302,0,0,0
+animation3.option,background
 }
 
 
