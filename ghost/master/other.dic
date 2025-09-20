@@ -25,9 +25,16 @@ OnKeyPress
 
 OnSurfaceRestore : all
 {
-	"\![set,alpha,100]"
-	
-	EVAL("SurfaceRestore.%(CurrentShell)")
+	if SHIORI3FW.ShellName != Candidate.Shell
+	{
+		"\1\s[-1]\0\s[-1]\![change,shell,%(Candidate.Shell)]\![set,alpha,100]"
+	}
+	else
+	{
+		"\![set,alpha,100]"
+		
+		EVAL("SurfaceRestore.%(CurrentShell)")
+	}
 }
 
 OnWindowStateRestore
