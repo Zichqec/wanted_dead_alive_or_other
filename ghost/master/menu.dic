@@ -100,7 +100,9 @@ OnNextCandidate : all
 		EVAL("Rejected.%(CurrentShell)")
 	}
 	
-	"\_w[2000]" //TODO make a nice fadeout, etc
+	"\_w[500]"
+	FadeOut
+	"\_w[1000]"
 	"\![embed,OnGenerateNewCharacter]"
 }
 

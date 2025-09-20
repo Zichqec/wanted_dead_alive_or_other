@@ -66,9 +66,10 @@ OnShellChangeCoordsAfter : all
 	
 	_newX = _oldcenter - (_newwidth / 2)
 	
-	"\1\s[-1]\0\![set,alpha,0]\s[0]\![move,--x=%(_newX),--y=fix,--time=0,--base=primaryscreen]\s[0]\![set,alpha,100]"
+	"\1\s[-1]\0\![set,alpha,0]\s[0]\![move,--x=%(_newX),--y=fix,--time=0,--base=primaryscreen]\s[0]"
 	"\![change,balloon,%(CurrentBalloon)]"
 	RandomizeDressups
+	FadeIn
 	
 	FinishNewShellChange
 }

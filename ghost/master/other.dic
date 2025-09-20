@@ -47,6 +47,26 @@ On_homeurl
 	"https://raw.githubusercontent.com/Zichqec/wanted_dead_alive_or_other/refs/heads/main/"
 }
 
+FadeIn : all
+{
+	for _i = 0; _i < 100; _i++
+	{
+		"\![set,alpha,%(_i)]"
+		"\_w[10]"
+	}
+	"\![set,alpha,100]"
+}
+
+FadeOut : all
+{
+	for _i = 100; _i > 0; _i--
+	{
+		"\![set,alpha,%(_i)]"
+		"\_w[10]"
+	}
+	"\![set,alpha,0]"
+}
+
 //May get more complex later
 CurrentShell
 {
