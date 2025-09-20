@@ -29,7 +29,7 @@ OnInitialize
 
 GenerateQuestions
 {
-	QuestionsToAsk = (0,1,2,3,4) //Always present questions
+	QuestionsToAsk = (0,1,2,3,24) //Always present questions
 	
 	while ARRAYSIZE(QuestionsToAsk) < 10
 	{

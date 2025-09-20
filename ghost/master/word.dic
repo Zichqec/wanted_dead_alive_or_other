@@ -1,11 +1,10 @@
 Questions : array
 {
-	//——— Randomly assigned ———
+	//——— Always ———
 	"Name?"
 	"Age?"
 	"Is this your first time working with us?"
 	"Have you died before?"
-	"How would you like to be compensated for your assistance today?"
 	
 	//——— Randomly assigned ———
 	"Are you currently under the effect of any curses?"
@@ -28,4 +27,7 @@ Questions : array
 	"Do you have prior history with eldritch horrors?"
 	"Are there any colors or textures that should be kept out of your enclosure?"
 	"What does your diet primarily consist of currently, and how willing are you to tolerate a permanent change?"
+	
+	//——— Always ———
+	"How would you like to be compensated for your assistance today?"
 }
