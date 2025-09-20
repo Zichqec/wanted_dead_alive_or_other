@@ -53,11 +53,10 @@ OnAskQuestions : all
 	{
 		if ASEARCH(_i,QuestionsToAsk) == -1; continue
 		_questionnum++
-		"%(_questionnum). "
 		switch CandidateResponse[_i][0,C_BYTE1] == "N/A"
 		{
-			"\f[italic,1]\__q[OnAskQuestion,%(_i)]%(_questions[_i])\__q\f[italic,default]"
-			"\_a[OnAskQuestion,%(_i)]%(_questions[_i])\_a"
+			"\f[color,disable]\f[strike,1]\__q[OnAskQuestion,%(_i)]%(_questionnum). %(_questions[_i])\__q\f[strike,default]\f[color,default]"
+			"\_a[OnAskQuestion,%(_i)]%(_questionnum). %(_questions[_i])\_a"
 		}
 		"\n\n"
 	}
