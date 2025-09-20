@@ -84,6 +84,7 @@ OnAskQuestion : all
 
 OnNextCandidate : all
 {
+	"\t"
 	if reference0 == "accept"
 	{
 		AcceptedCandidatesTotal++
