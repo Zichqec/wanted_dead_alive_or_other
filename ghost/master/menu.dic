@@ -148,13 +148,13 @@ OnViewStats : all
 	"\f[align,center]\f[height,+2]\f[bold,1]Current experiment\f[bold,default]\f[height,default]\n\f[align,left]\n"
 	
 	"Candidates accepted: %(AcceptedCandidatesToday)\n"
-	"Candidates rejected: %(AcceptedCandidatesToday)\n"
+	"Candidates rejected: %(RejectedCandidatesToday)\n"
 	"\n\n"
 	
 	"\f[align,center]\f[height,+2]\f[bold,1]All experiments\f[bold,default]\f[height,default]\n\f[align,left]\n"
 	
 	"Candidates accepted: %(AcceptedCandidatesTotal)\n"
-	"Candidates rejected: %(AcceptedCandidatesTotal)\n"
+	"Candidates rejected: %(RejectedCandidatesTotal)\n"
 	"\n\n"
 	
 	"\![*]\__q[OnSakuraMenu]Back\__q  \![*]\__q[blank]Done\__q"
