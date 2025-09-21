@@ -33,14 +33,16 @@ RandomTalk.bluemesh : nonoverlap
 	"\0\b[0]\s[22]I'm ready to get started whenever you are. Just let me know where to put my stuff."
 	"\0\b[0]\s[22]I'm glad I saw your ad, this is just what I needed right now."
 	"\0\b[0]\s[8]Are you doodling something on your notes? \s[22]I wanna see."
+	"\0\b[0]\s[24]Why not commit to me as a participant right now? I'm sure I'll do great."
 }
 
 //Name?
 Name.bluemesh
 {
-	"Call me %(bluemesh.namefirst)."
-	"I'm %(bluemesh.namefirst) %(bluemesh.namelast)."
-	"%(bluemesh.namefirst) %(bluemesh.namelast)."
+	"\0\b[0]\s[20]Call me %(bluemesh.namefirst)."
+	"\0\b[0]\s[22]I'm %(bluemesh.namefirst) %(bluemesh.namelast)."
+	"\0\b[0]\s[3]%(bluemesh.namefirst) %(bluemesh.namelast)."
+	"\0\b[0]\s[29]Hmm... \s[20]Let's go with %(bluemesh.namefirst)."
 }
 
 bluemesh.namefirst
