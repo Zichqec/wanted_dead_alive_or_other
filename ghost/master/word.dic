@@ -18,7 +18,7 @@ Questions : array
 	"How tall are you, and are you flexible about it?"
 	"On a scale of 1 to 100, how many pounds of mass are you willing to potentially lose during the course of this experiment?"
 	"Would you describe yourself as being made of flesh?"
-	"Do you often use your %(oftenusebodypart)?"
+	"Do you often use your %(bodypart)?"
 	"On a scale of 1 to 10, how much do you prioritize maintaining your current form?"
 	"How long have you resided in this reality?"
 	"Where do you see yourself in 10 years? Would it change if %(concerningoutcome)?"
