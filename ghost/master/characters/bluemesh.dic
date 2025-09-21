@@ -5,223 +5,304 @@ SurfaceRestore.bluemesh
 
 Greeting.bluemesh
 {
-	"\1\s[-1]\0\s[0]yo what's up"
+	"\1\s[-1]\0\b[0]"
+	--
+	"\s[0]Finally. \s[29]I've been waiting ages to get in."
+	"\s[0]... So you're a necromancer? \s[29]Could have fooled me."
+	"\s[22]Alright, finally made it in! \s[24]No need to interview anyone else now that I'm here."
 }
 
 Accepted.bluemesh
 {
-	"sweet"
+	"\0\b[0]\s[22]Yes! Got it, woohoo!"
+	"\0\b[0]\s[22]Alright, sold!"
+	"\0\b[0]\s[22]Score! This is gonna be great."
 }
 
 Rejected.bluemesh
 {
-	"boooooo"
+	"\0\b[0]\s[2]Ah...? \w8\w8\s[4]Damn. Better luck next time, I guess."
+	"\0\b[0]\s[2]Ah...? \w8\w8\s[6]Well, that's a shame. \s[24]You'll be sorry once you realize you missed out."
+	"\0\b[0]\s[4]Ah... \s[7]Well, what do you know anyway? \s[6]If you can't see a great candidate right in front of you then maybe I don't \f[italic,1]want\f[italic,default] to be part of your crummy experiment!"
 }
 
 RandomTalk.bluemesh : nonoverlap
 {
-	"it's me, bluemesh"
-	"pick me"
+	"\0\b[0]\s[22]I've got a lot of energy, I'll be great if your experiment requires physical fitness!"
+	"\0\b[0]\s[3]What is all of this stuff, anyway? \s[29]Science equipment of some sort...?"
+	"\0\b[0]\s[22]I'm ready to get started whenever you are. Just let me know where to put my stuff."
+	"\0\b[0]\s[22]I'm glad I saw your ad, this is just what I needed right now."
+	"\0\b[0]\s[8]Are you doodling something on your notes? \s[22]I wanna see."
 }
 
 //Name?
 Name.bluemesh
 {
-	"Blue"
-	"Mesh"
-	"Purple"
+	"Call me %(bluemesh.namefirst)."
+	"I'm %(bluemesh.namefirst) %(bluemesh.namelast)."
+	"%(bluemesh.namefirst) %(bluemesh.namelast)."
+}
+
+bluemesh.namefirst
+{
+	"Liv"
+	"Olivia"
+	"Teri"
+	"Deb"
+	"Riley"
+	"Lily"
+	"Becky"
+	"Vivian"
+	"Valerie"
+	"Madge"
+	"Astrid"
+	"Rita"
+	"Josie"
+	"Zoë"
+	"Chloë"
+	"Ava"
+	"Melinda"
+	"Jo"
+	"Sandra"
+	"Cass"
+	"Desiree"
+	"Violet"
+}
+
+bluemesh.namelast
+{
+	"Steele"
+	"Robertson"
+	"Robinson"
+	"Wills"
+	"Powers"
+	"Bauer"
+	"Motor"
+	"Horsepower"
+	"Steamtrain"
+	"Locomotive"
+	"Railway"
+	"Jackson"
+	"Ironclad"
+	"Pierce"
+	"Valance"
+	"Skye"
+	"Gearson"
+	"Cog"
+	"Platinum"
+	"Bronze"
+	"Copper"
 }
 
 //Age?
 Age.bluemesh
 {
-	"25"
-	"30"
-	"35"
-	"Enough"
+	"\0\b[0]\s[6]What's it to you?"
+	"\0\b[0]\s[24]Well, I was hoping you could help with that."
+	"\0\b[0]\s[3]It's complicated. \s[6]And also none of your business."
 }
 
 //Is this your first time working with us?
 FirstTime.bluemesh
 {
-	"Yep"
-	"Nope"
-	"Who are you?"
+	"\0\b[0]\s[3]I don't think... \s[21]Hm. \w8\w8\s[29]No, definitely haven't worked with \f[italic,1]you\f[italic,default] before. \s[6]This place reeks, there's no way I'd forget a smell like that."
+	"\0\b[0]\s[29]First time I've ever seen this place."
+	"\0\b[0]\s[6]You don't remember me? \s[8]You must have a short memory, my look is pretty distinctive."
 }
 
 //Have you died before?
 DiedBefore.bluemesh
 {
-	"All the time"
-	"I'm dead right now"
-	"Never"
+	"\0\b[0]\s[29]You could say that."
+	"\0\b[0]\s[3]Just last week, in fact. \s[20]Why d'you wanna know?"
+	"\0\b[0]\s[2]No?? \s[7]Would I be standing here if I had...!?"
 }
 
 //Are you currently under the effect of any curses?
 AnyCurses.bluemesh
 {
-	"Yeah I'm cursed to have wobbly table legs forever"
-	"Nope"
-	"None of your business"
+	"\0\b[0]\s[3]Curses...? \w8\w8\s[29]Hm... \w8\w8\s[20]I guess if you count the curse that was placed on me when I was %(RAND(3) + 2) that %(makesmefaceplant)."
+	"\0\b[0]\s[29]None that I'm aware of... \s[7]Unless you know something I don't."
+	"\0\b[0]\s[24]That's classified."
+}
+
+makesmefaceplant
+{
+	"makes me face plant once per week.\n\n \s[2]Oh, it's fine though. \s[24]I took my weekly fall just yesterday, so I'm good for another 6 days at least"
+	"gives me the sniffles every time I see the color orange"
+	"makes my head hurt if I stub my toe"
+	"makes moss grow out of my back"
+	"makes my hair grow really, really slowly"
+	"makes my feet kick all night long while I'm asleep"
 }
 
 //Do you have any peculiarities with your body parts that we should be aware of?
 PeculiaritiesBodyParts.bluemesh
 {
-	"Nah they're ordinary"
-	"I got a cool birthmark"
-	"I broke my leg the other day but it's fine now"
+	"\0\b[0]\s[8]Well, I have a robot arm, but that's fine, right?"
+	"\0\b[0]\s[29]Peculiarities...? Not really."
+	"\0\b[0]\s[3]Hm... my knees pop. \s[8]Think you can fix that for me?"
 }
 
 //Do you have your own teeth? If 'no', and you have teeth upon your person, are they from a reputable source?
 OwnTeeth.bluemesh
 {
-	"Yes these are real"
-	"Maybe"
-	"I'll never tell"
+	"\0\b[0]\s[2]Huh...!? \s[7]Y-\w8yes, of course these are mine! \s[6]Sheesh, what a question..."
+	"\0\b[0]\s[5]Is it that obvious? \s[22]Yeah, I got a good source. \s[8]I'll give you their number later, it seems like you could use their services."
+	"\0\b[0]\s[24]100% all-natural teeth, created by yours truly."
 }
 
 //Do you require food, water, and/or charging (electrical or otherwise) for the duration of your stay?
 RequireFoodWaterCharging.bluemesh
 {
-	"No"
-	"Just water"
-	"All of the above"
+	"\0\b[0]\s[3]I brought my own food. \s[6]Whatever food you have, I don't trust it."
+	"\0\b[0]\s[0]I'm good, thanks. \s[20]Unless you've got snacks. \s[29]I'm not missing out on snacks."
+	"\0\b[0]\s[7]Yes, I need food and water! \s[6]What, are you a cheapskate?"
 }
 
 //Do you have allergic reactions to (word group)?
 AllergicReactions.bluemesh
 {
-	"Oh yeah super allergic, if I'm within 10 feet of the stuff I get a rash"
-	"Not at all"
-	"I'm allergic to, like, everything else but that"
+	"\0\b[0]\s[29]I used to, but then I got treatments for it. \s[20]I'm fine now."
+	"\0\b[0]\s[22]No way, I've got an immune system made of steel."
+	"\0\b[0]\s[29]Oh, yeah, my eyes get all puffy and red."
 }
 
 //Are you immortal?
 Immortal.bluemesh
 {
-	"No"
-	"Yes"
-	"I wish"
-	"I can be if you make me so"
+	"\0\b[0]\s[24]I'm working on it."
+	"\0\b[0]\s[29]I thought about it, but in the end it seemed like too much of a hassle. \s[6]Blood sacrifices, capturing souls... bah."
+	"\0\b[0]\s[0]No."
 }
 
 //How many times on average do you regenerate limbs in a year?
 RegenerateLimbs.bluemesh
 {
-	"Every year give or take a month"
-	"Never"
-	"?????"
+	"\0\b[0]\s[24]I've never lost a limb, so no idea. \s[22]I guess we could find out, though."
+	"\0\b[0]\s[2]... What exactly does this deal entail, again? \w8\w8\s[3]No, my limbs do not grow back."
+	"\0\b[0]\s[3]They don't exactly ""grow"" back, but I can get replacements as needed."
 }
 
 //Do you have an active agreement or similar with (word group)?
 ActiveAgreement.bluemesh
 {
-	"No"
-	"Yeah if I die they're supposed to bring me back"
-	"None of your business"
+	"\0\b[0]\s[6]No way."
+	"\0\b[0]\s[3]No comment."
+	"\0\b[0]\s[7]Absolutely not."
 }
 
 //How tall are you, and are you flexible about it?
 HowTall.bluemesh
 {
-	"Taller than you"
-	"Yeah I can be flexible"
-	"Only if I'm going to be gaining height"
+	"\0\b[0]\s[6]That depends which direction we're talking. \s[22]I'd take a few extra inches if you're offering."
+	"\0\b[0]\s[21]I'm 5'%(RAND(8) + 1)"". \s[7]If I come out of this any smaller you're going to regret it."
+	"\0\b[0]\s[20]Currently? 5'%(RAND(8) + 1)"". \s[21]It's not up for debate, I don't want to have to readjust all my body mods to compensate for height changes.\n\n \s[24]Unless you're footing the bill, of course."
 }
 
 //On a scale of 1 to 100, how many pounds of mass are you willing to potentially lose during the course of this experiment?
 LoseMass.bluemesh
 {
-	"Yeah that's fine I'm not worried about it"
-	"100"
-	"0"
+	"\0\b[0]\s[29]Hmm... \w8\w8\s[6]%((RAND(3) + 1) * 10) pounds at most. \s[29]Much more than that and I'll start having trouble."
+	"\0\b[0]\s[0]0. Not a chance. \s[7]I'm not having you take my muscle tone."
+	"\0\b[0]\s[3]Well... if you're compensating me for it, I guess I could allow it... \s[20]Up to 100 is fine but the more I lose the more steep the cost will be."
 }
 
 //Would you describe yourself as being made of flesh?
 MadeOfFlesh.bluemesh
 {
-	"For the most part yeah"
-	"Entirely"
-	"Well, less than you'd think"
+	"\0\b[0]\s[3]Something like that."
+	"\0\b[0]\s[8]Less than you'd think. \s[22]Bionics, baby!"
+	"\0\b[0]\s[24]Sure, for the most part."
 }
 
 //Do you often use your (bodypart)?
 OftenUseBodyPart.bluemesh
 {
-	"Not really"
-	"Now and then"
-	"Depends on my mood"
+	"\0\b[0]\s[3]Hmm... \w8\w8\s[29]Not so much these days, after the removal procedure at 18..."
+	"\0\b[0]\s[21]When the mood strikes, sure."
+	"\0\b[0]\s[3]Not really. \s[24]If you're looking to buy, I'll sell for a generous sum."
 }
 
 //On a scale of 1 to 10, how much do you prioritize maintaining your current form?
 PrioritizeCurrentForm.bluemesh
 {
-	"10, leave me as is thanks"
-	"Maybe a 7, but I wouldn't mind becoming something cool"
-	"0, let me be something else. Like a bird."
+	"\0\b[0]\s[7]A 10, obviously. \s[6]I've worked hard on perfecting my vessel."
+	"\0\b[0]\s[29]Hmm... \w8\w8\s[3]Maybe a 3...? \s[24]It's sort of a work in progress anyway."
+	"\0\b[0]\s[3]I think that depends on proposed changes... \w8\w8\s[20]If I get some kind of cool modification for doing this, then maybe I'll go for it. \s[8]But I'm not gonna let you, like, turn me into a worm or whatever."
 }
 
 //How long have you resided in this reality?
 ResidedThisReality.bluemesh
 {
-	"My whole life"
-	"All of eternity"
-	"Since last week"
+	"\0\b[0]\s[20]...? \s[29]What kind of a question is that? \w8\w8\s[3]... My whole life??"
+	"\0\b[0]\s[20]I've always resided here. \s[3]I took a trip out last week, but it was brief."
+	"\0\b[0]\s[2]Eh? What do you mean ""this"" reality?"
 }
 
 //Where do you see yourself in 10 years? Would it change if (word group)?
 SeeSelfTenYears.bluemesh
 {
-	"Ideally not in the ground"
-	"Probably at home eating snacks"
-	"Funny you should mention, I was looking at my crystal ball earlier"
+	"\0\b[0]\s[2]... Yeah, I might have to rethink some things. What exactly are we doing again?"
+	"\0\b[0]\s[3]Honestly? Probably at the body shop... \s[22]Can't imagine anything will change that."
+	"\0\b[2]... \w8\w8\s[8]That's a joke, right? \s[22]You're joking, of course you are."
 }
 
 //Are you currently taking any medications?
 TakingMeds.bluemesh
 {
-	"No"
-	"Yes"
-	"Just some ground up teeth, the usual"
+	"\0\b[0]\s[20]Not in particular, no."
+	"\0\b[0]\s[29]Oh, yeah, I have a whole complicated routine. \s[20]Don't worry though, I brought a 3-day supply with me, so it should be fine."
+	"\0\b[0]\s[20]Just painkillers and motor oil."
 }
 
 //On a scale of 1 to 10, how likely are you to start rotting on a hot day?
 LikelyToRot.bluemesh
 {
-	"0"
-	"5"
-	"10, definitely a 10, keep me out of the heat thanks"
+	"\0\b[0]\s[3]1. I'm not great with the heat, but I'm not going to start \f[italic,1]rotting\f[italic,default]..."
+	"\0\b[0]\s[0]That'd be a 1. \s[6]I'm not dead, if you couldn't tell."
+	"\0\b[0]\s[8]I'm immune to rotting, so no worries about that at all.\n\n \s[29]Now \f[italic,1]rusting\f[italic,default], on the other hand..."
 }
 
 //Do you have prior history with eldritch horrors?
 HistoryEldritchHorrors.bluemesh
 {
-	"Oh yeah we go way back. WAY back."
-	"No, never met one"
-	"Well I know a friend of a friend of a friend..."
+	"\0\b[0]\s[20]No, not really."
+	"\0\b[0]\s[8]You say that like those things are real."
+	"\0\b[0]\s[4]... One of them ate my dad. \w8\w8\s[7]If you have one here I'll tear it apart."
 }
 
 //Are there any colors or textures that should be kept out of your enclosure?
 ColorsTextures.bluemesh
 {
-	"I HATE red. Red means dead. You. Dead. No red."
-	"If you put velvet in with me I will cry"
-	"Nah it's all good"
+	"\0\b[0]\s[2]Nothing scratchy or gritty, please!"
+	"\0\b[0]\s[3]I don't feel texture too well these days, so I'm sure whatever is fine."
+	"\0\b[0]\s[21]Nothing orange-colored, please and thank you."
 }
 
 //What does your diet primarily consist of currently, and how willing are you to tolerate a permanent change?
 PrimaryDiet.bluemesh
 {
-	"Food n stuff"
-	"Salad"
-	"Lotta fish. Don't take my fish."
+	"\0\b[0]\s[29]Just the usual human diet. \s[3]Meat, greens, grains, a splash of motor oil...\n\n \s[21]I guess shaking things up might not be bad. \s[7]As long as you don't try to put me on a pescetarian diet. I hate fish."
+	"\0\b[0]\s[3]Hm, right now? I'm pretty much subsisting entirely on %(instantnoodles).\n\n \s[29]A change would probably be good for me."
+	"\0\b[0]\s[22]Anything and everything that's got meat! Meat lovers' pizza, pastrami sandwiches, BLTs; you name it, and if it's got meat stacked up on it I am THERE!\n\n ... \s[2]You're not going to make me allergic to meat, are you?"
+}
+
+instantnoodles
+{
+	"instant noodles"
+	"stovetop mac and cheese"
+	"frozen hamburgers"
+	"canned soup"
+	"whatever I... ""find""... at the farmers' market"
+	"this big stash of paper shreddings I found"
+	"soft pretzels"
 }
 
 //How would you like to be compensated for your assistance today?
 HowCompensate.bluemesh
 {
-	"Money"
-	"Cold hard cash"
-	"Can you bring my dog back from the dead, he died 10 years ago thx"
+	"\0\b[0]\s[20]Money, plain and simple. \s[21]I want to get some work done at the body shop and I'm a little short on dough at the moment."
+	"\0\b[0]\s[29]I want to arrange for an... \s[7]""accident"". \w8\w8\s[3]You gotta be able to do it remotely though, I can't have it traced back to me."
+	"\0\b[0]\s[22]Dolla dolla bills!! \s[24]Once that sweet cash is mine, I'm off to the body shop."
 }
