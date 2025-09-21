@@ -7,7 +7,7 @@ OnMouseDoubleClick
 OnSakuraMenu : all
 {
 	OnSurfaceRestore
-	"\b[2]\![set,autoscroll,disable]\_q"
+	"\b[2]\![set,autoscroll,disable]\_q\![no-autopause]"
 	
 	"\![*]\q[Dialogue,OnAiTalk]  "
 	switch LastTalk == "" //Uses top option if there is a dialogue to repeat
@@ -49,7 +49,7 @@ OnLastTalk
 OnAskQuestions : all
 {
 	
-	"\0\b[2]\_q\![set,autoscroll,disable]\f[anchorvisitedfontcolor,default.anchor]"
+	"\0\b[2]\_q\![set,autoscroll,disable]\f[anchorvisitedfontcolor,default.anchor]\![no-autopause]"
 	
 	_questions = QuestionsText
 	_questionnum = 0 //NOT the same as _i
@@ -111,16 +111,18 @@ OnSeeOldResponses : all
 	if reference0 == ""; reference0 = ARRAYSIZE(SavedResponses) - 1 //Last page by default
 	
 	"\C\![lock,balloonrepaint]\c"
-	"\0\b[2]\_q\![set,autoscroll,disable]"
+	"\0\b[2]\_q\![set,autoscroll,disable]\![no-autopause]"
 	
-	_answers = SPLIT(SavedResponses[reference0],C_BYTE1)
-	_applicantnum = _answers[0]
-	_answers[0] = IARRAY //TODO maybe split this and other info off with another delimiter?
+	
+	_answers = SavedResponses[reference0]
+	_candidatenum = _answers[0,CHR(0xFDEF)]
+	_answers = _answers[1,CHR(0xFDEF)]
+	_answers = SPLIT(_answers,C_BYTE1)
 	
 	_c = "\f[color,disable]\f[italic,1]"
 	_d = "\f[italic,default]\f[color,default]"
 	
-	"\f[align,center]\f[height,+2]\f[bold,1]Candidate #%(_applicantnum)\f[bold,default]\f[height,default]\n\f[align,left]"
+	"\f[align,center]\f[height,+2]\f[bold,1]Candidate #%(_candidatenum)\f[bold,default]\f[height,default]\n\f[align,left]"
 	
 	switch reference0 <= 0
 	{
@@ -149,7 +151,7 @@ OnSeeOldResponses : all
 
 OnViewStats : all
 {
-	"\0\b[2]\_q\![set,autoscroll,disable]"
+	"\0\b[2]\_q\![set,autoscroll,disable]\![no-autopause]"
 	
 	"\f[align,center]\f[height,+2]\f[bold,1]Current experiment\f[bold,default]\f[height,default]\n\f[align,left]\n"
 	
@@ -176,7 +178,7 @@ OnTalkRateMenu : all
 	elseif aitalkinterval == 300; _talkrate = "5 minutes"
 	elseif aitalkinterval == 600; _talkrate = "10 minutes"
 	
-	"\0\s[0]\b[2]\![set,autoscroll,disable]\_q"
+	"\0\s[0]\b[2]\![set,autoscroll,disable]\![no-autopause]\_q"
 	"Current interval: %(_talkrate)\n\n"
 	
 	"\![*]\q[Off,OnTalkRateChange,0]\n"
@@ -233,6 +235,71 @@ Shells now generate questions based on which shell you're on
 
 DAY 2 PRIORITIES
 
-Need to set up the boot and firstboot sequence, and perhaps also rough out a close sequence
+//Need to set up the boot and firstboot sequence, and perhaps also rough out a close sequence
+
+
+Experiment success criteria (may change later but just to get it started):
+
+- Must accept at least 5 candidates, otherwise insufficient data
+- Must reject at least 1 candidate and ask at least 1 question, otherwise a complete disaster due to just letting everyone in
+- Must reject at least a third of candidates, otherwise bad outcome due to unfit subjects
+- Must ask at least half of the questions, otherwise bad/neutral outcome due to unfit subjects
+- Rejecting candidates without asking questions means you're throwing out good ones, accepting candidates without asking questions means you're letting in bad ones... they count towards your "good" total if you ask at least 4ish questions, maybe 5
+
+Ways experiment can go wrong:
+- Just let everyone in
+- Not choosy enough
+- Didn't bring in enough candidates
+
+Ways it can go right:
+- Decent sample size, decent being picky with it
+- Excellent sample size, doing good at being picky
+
+
+mneeeeh... so i want _two_ metrics... amount accepted vs amount rejected, and number of questions asked
+either i have to count the questions asked on the ones that are rejected, or i need to save them... that's where this is falling apart right now, i do not have that data and i need to decide how to save it
+
 */
 
+// CalculateExperimentSuccess
+// {
+	// if ARRAYSIZE(SavedResponses) < 5
+	// {
+		// "insufficient data" //didn't accept enough people
+	// }
+	// else
+	// {
+		// _sum = 0
+		// foreach AnsweredQuestions; _total
+		// {
+			// _sum += _total
+		// }
+		
+		// if _sum == 0
+		// {
+			// "unfiltered crowd" //just let everyone in
+		// }
+		// else
+		// {
+			
+		// }
+	// }
+// }
+
+// AnsweredQuestions
+// {
+	// _output = IARRAY
+	// foreach SavedResponses; _responses
+	// {
+		// _responses = _responses[1,CHR(0xFDEF)]
+		// _responses = SPLIT(_responses,C_BYTE1)
+		
+		// _answers = 0
+		// foreach _responses; _response
+		// {
+			// if _response != "N/A"; _answers++
+		// }
+		// _output ,= _answers
+	// }
+	// _output
+// }

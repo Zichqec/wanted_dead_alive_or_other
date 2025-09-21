@@ -135,7 +135,7 @@ GenerateAnswers
 
 SaveResponses
 {
-	SavedResponses ,= "%(Candidate.Num)" + C_BYTE1 + MakeSaveResponseString
+	SavedResponses ,= "%(Candidate.Num)" + CHR(0xFDEF) + MakeSaveResponseString
 }
 
 MakeSaveResponseString : all

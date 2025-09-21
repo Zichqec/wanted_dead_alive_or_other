@@ -60,6 +60,8 @@ OnBoot
 	GenerateQuestions
 	
 	BootingLatch = 1
+	//LastExperimentOutcome = NextExperimentOutcome
+	//NextExperimentOutcome = "insufficient data"
 	
 	"\1\s[-1]\0\s[-1]\t\![change,shell,master,--option=raise-event]"
 }
