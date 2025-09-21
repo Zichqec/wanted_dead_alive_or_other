@@ -24,7 +24,7 @@ OnGenerateNewCharacter
 
 OnShellChanging
 {
-	if NewCharacterLatch
+	if NewCharacterLatch || BootingLatch
 	{
 		"\1\s[-1]\0\![set,alpha,0]\![get,property,OnShellChangeCoordsBefore,currentghost.scope(0).rect]"
 	}
@@ -38,9 +38,8 @@ OnShellChangeCoordsBefore
 
 OnShellChanged : all
 {
-	if NewCharacterLatch
+	if NewCharacterLatch || BootingLatch
 	{
-		NewCharacterLatch = 0
 		"\1\s[-1]\0\![set,alpha,0]\![get,property,OnShellChangeCoordsAfter,currentghost.scope(0).rect]"
 	}
 	elseif SHIORI3FW.ShellName != Candidate.Shell
@@ -68,10 +67,25 @@ OnShellChangeCoordsAfter : all
 	
 	"\1\s[-1]\0\![set,alpha,0]\s[0]\![move,--x=%(_newX),--y=fix,--time=0,--base=primaryscreen]\s[0]"
 	"\![change,balloon,%(CurrentBalloon)]"
-	RandomizeDressups
-	FadeIn
 	
-	FinishNewShellChange
+	if BootingLatch
+	{
+		BootingLatch = 0
+		
+		"\![set,alpha,100]\t"
+		BootDialogue
+		"\x"
+		FadeOut
+		OnGenerateNewCharacter
+	}
+	else
+	{
+		NewCharacterLatch = 0
+		RandomizeDressups
+		FadeIn
+		
+		FinishNewShellChange
+	}
 }
 
 OnBalloonChange

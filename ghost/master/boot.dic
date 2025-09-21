@@ -1,17 +1,30 @@
-OnFirstBoot
+OnFirstBoot : all
 {
 	LastTalk = ""
 	SavedResponses = IARRAY
 	GenerateQuestions
 	GenerateAnswers
 	NewCharacterLatch = 0
+	BootingLatch = 0
 	AcceptedCandidatesTotal = 0
 	AcceptedCandidatesToday = 0
 	RejectedCandidatesTotal = 0
 	RejectedCandidatesToday = 0
 	FluffyDemonMode = 0
+	Candidate.Num = 0
 	
-	"\1\s[-1]\0\s[0]Firstboot"
+	"\1\s[-1]\0\s[0]\t"
+	
+	"It's interview time, nerds.\x"
+	"Gonna interview SO many people. It'll be great.\x"
+	
+	FadeOut
+	OnGenerateNewCharacter
+}
+
+BootDialogue
+{
+	"Time for another dreary day of interviews... who's up first?"
 }
 
 OnInitialize
@@ -45,9 +58,10 @@ OnBoot
 	SavedResponses = IARRAY
 	Candidate.Num = 0
 	GenerateQuestions
-	GenerateAnswers
 	
-	"\1\s[-1]\0\s[0]Boot"
+	BootingLatch = 1
+	
+	"\1\s[-1]\0\s[-1]\t\![change,shell,master,--option=raise-event]"
 }
 
 OnClose
