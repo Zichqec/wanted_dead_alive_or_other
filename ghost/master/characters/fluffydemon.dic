@@ -1,3 +1,4 @@
+//1 = mouth, 2 = eye
 SurfaceRestore.fluffydemon
 {
 	"\1\s[-1]\0"
@@ -9,170 +10,619 @@ SurfaceRestore.fluffydemon
 
 Greeting.fluffydemon
 {
-	
+	if FluffyDemonMode == 1
+	{
+		
+	}
+	elseif FluffyDemonMode == 2
+	{
+		
+	}
+	else
+	{
+		"\1\s[-1]\0\b[0]\s[2]My turn! It's my turn!"
+		"\1\s[-1]\0\b[0]\s[12]Hello! Hello, hello, hello!"
+		"\1\s[-1]\0\b[0]\s[0]Hello. \s[40]I have responded to your summons."
+	}
 }
 
 Accepted.fluffydemon
 {
-	
+	if FluffyDemonMode == 1
+	{
+		
+	}
+	elseif FluffyDemonMode == 2
+	{
+		
+	}
+	else
+	{
+		"\0\b[0]\s[13]Yay! I'll do my best to give you interesting results!"
+		"\0\b[0]\s[1]Perfect. This'll be fun!"
+		"\0\b[0]\s[11]Heheh... Good luck."
+	}
 }
 
 Rejected.fluffydemon
 {
-	
+	if FluffyDemonMode == 1
+	{
+		
+	}
+	elseif FluffyDemonMode == 2
+	{
+		
+	}
+	else
+	{
+		"\0\b[0]\s[30]Oh...\n\n \s[40]You'll regret this."
+		"\0\b[0]\s[3]Unfortunate... \s[0]but I was getting bored anyway. Bye!"
+		"\0\b[0]\s[31]... You should hope that I forget about you before we meet again."
+	}
 }
 
 RandomTalk.fluffydemon : nonoverlap
 {
-	
+	if FluffyDemonMode == 1
+	{
+		
+	}
+	elseif FluffyDemonMode == 2
+	{
+		
+	}
+	else
+	{
+		"\0\b[0]\s[3]Sooo... Having a clipboard seems fun. \s[1]You should let me have it."
+		"\0\b[0]\s[12]I bet you meet a lot of desperate people with a job like this! \s[14]I can smell the suffering from here..."
+		"\0\b[0]\s[0]I don't know a lot about this necromancy stuff, but I have eaten lots of necromancers before, so... \s[1]I feel pretty confident!"
+		"\0\b[0]\s[40]Pick me, pick me, pick me, pick me...\n\n \f[bold,1]Pick me.\f[bold,default]"
+		"\0\b[0]\s[1]Heheh...\n\n \s[12]Heheheheheh...\n\n \s[41]Uweheheheheheheheheh..."
+	}
 }
 
 //Name?
 Name.fluffydemon
 {
-	
+	if FluffyDemonMode == 1
+	{
+		
+	}
+	elseif FluffyDemonMode == 2
+	{
+		
+	}
+	else
+	{
+		"\0\b[0]\s[12]%(NameFluffyDemon)!"
+		"\0\b[0]\s[0]I could tell you... \s[41]but all knowledge has a price..."
+		"\0\b[0]\s[23]Uhm... I think it was... \s[21]%(NameFluffyDemon)? Maybe?"
+	}
 }
 
 //Age?
 Age.fluffydemon
 {
-	
+	if FluffyDemonMode == 1
+	{
+		
+	}
+	elseif FluffyDemonMode == 2
+	{
+		
+	}
+	else
+	{
+		"\0\b[0]\s[1]Uhm... Uh... \s[2]I forget!"
+		"\0\b[0]\s[23]Of... this body? Or all my bodies?"
+		"\0\b[0]\s[0]%(RAND(5000) + 2) %(demonyears), give or take."
+	}
 }
 
 //Is this your first time working with us?
 FirstTime.fluffydemon
 {
-	
+	if FluffyDemonMode == 1
+	{
+		
+	}
+	elseif FluffyDemonMode == 2
+	{
+		
+	}
+	else
+	{
+		"\0\b[0]\s[20]Maaaybe...?"
+		"\0\b[0]\s[11]No! I sleep in the vents!"
+		"\0\b[0]\s[1]Yes, so please take care of me..."
+	}
 }
 
 //Have you died before?
 DiedBefore.fluffydemon
 {
-	
+	if FluffyDemonMode == 1
+	{
+		
+	}
+	elseif FluffyDemonMode == 2
+	{
+		
+	}
+	else
+	{
+		"\0\b[0]\s[1]Heh... heheh... \s[40]uweheheheheh..."
+		"\0\b[0]\s[23]That's a complicated answer."
+		"\0\b[0]\s[2]Nope!"
+	}
 }
 
 //Are you currently under the effect of any curses?
 AnyCurses.fluffydemon
 {
-	
+	if FluffyDemonMode == 1
+	{
+		
+	}
+	elseif FluffyDemonMode == 2
+	{
+		
+	}
+	else
+	{
+		"\0\b[0]\s[0]... Well... \s[11]That's a secret..."
+		"\0\b[0]\s[22]You know what they say! One person's curse, another person's unspeakable burden that they can't share with anyone without their heart exploding!"
+		"\0\b[0]\s[14]I'm pretty sure I'm made of curses..."
+	}
 }
 
 //Do you have any peculiarities with your body parts that we should be aware of?
 PeculiaritiesBodyParts.fluffydemon
 {
-	
+	if FluffyDemonMode == 1
+	{
+		
+	}
+	elseif FluffyDemonMode == 2
+	{
+		
+	}
+	else
+	{
+		"\0\b[0]\s[12]Sooo many!"
+		"\0\b[0]\s[40]Everything about me is... very... normal."
+		"\0\b[0]\s[23]Sometimes my %(teenytinyfoot) falls off. Does that count...?"
+	}
 }
 
 //Do you have your own teeth? If 'no', and you have teeth upon your person, are they from a reputable source?
 OwnTeeth.fluffydemon
 {
-	
+	if FluffyDemonMode == 1
+	{
+		
+	}
+	elseif FluffyDemonMode == 2
+	{
+		
+	}
+	else
+	{
+		"\0\b[0]\s[2]Some people call them that!"
+		"\0\b[0]\s[12]Heheh... I grow them myself..."
+		"\0\b[0]\s[1]Teeth...? \s[11]I steal them when I run out! \s[14]Humans have so many more than they need..."
+	}
 }
 
 //Do you require food, water, and/or charging (electrical or otherwise) for the duration of your stay?
 RequireFoodWaterCharging.fluffydemon
 {
-	
+	if FluffyDemonMode == 1
+	{
+		
+	}
+	elseif FluffyDemonMode == 2
+	{
+		
+	}
+	else
+	{
+		"\0\b[0]\s[3]Charging...? \s[40]I love electrocution..."
+		"\0\b[0]\s[20]No... I can't swim..."
+		"\0\b[0]\s[12]Are you going to feed me? \s[13]Okay! I'm ready! Aaa!"
+	}
 }
 
 //Do you have allergic reactions to (word group)?
 AllergicReactions.fluffydemon
 {
-	
+	if FluffyDemonMode == 1
+	{
+		
+	}
+	elseif FluffyDemonMode == 2
+	{
+		
+	}
+	else
+	{
+		"\0\b[0]\s[23]...? I thought those were made up..."
+		"\0\b[0]\s[11]Demons don't have allergies... \s[12]Demons give people allergies..."
+		"\0\b[0]\s[0]Nooo no no... \s[1]No, no, no, no. \s[2]I just get a little itchy and my fur starts falling out, nothing serious!"
+	}
 }
 
 //Are you immortal?
 Immortal.fluffydemon
 {
-	
+	if FluffyDemonMode == 1
+	{
+		
+	}
+	elseif FluffyDemonMode == 2
+	{
+		
+	}
+	else
+	{
+		"\0\b[0]\s[1]Of course!\n\n \s[21]Unless I die, I guess."
+		"\0\b[0]\s[13]When I die, I'll come back as a worm until I grow all my parts again! \s[12]Which is basically the same thing."
+		"\0\b[0]\s[23]...? Why wouldn't I be?"
+	}
 }
 
 //How many times on average do you regenerate limbs in a year?
 RegenerateLimbs.fluffydemon
 {
-	
+	if FluffyDemonMode == 1
+	{
+		
+	}
+	elseif FluffyDemonMode == 2
+	{
+		
+	}
+	else
+	{
+		"\0\b[0]\s[21]Uhm... How many does it count as if you rip it off before it's done because it wasn't growing back right?"
+		"\0\b[0]\s[41]I want to know the same about you."
+		"\0\b[0]\s[3]Oh... I don't know... A dozen or so..."
+	}
 }
 
 //Do you have an active agreement or similar with (word group)?
 ActiveAgreement.fluffydemon
 {
-	
+	if FluffyDemonMode == 1
+	{
+		
+	}
+	elseif FluffyDemonMode == 2
+	{
+		
+	}
+	else
+	{
+		"\0\b[0]\s[13]Heheheh... \s[40]You're funny."
+		"\0\b[0]\s[1]I make lots of deals with lots of people! \s[11]And lots of not-people."
+		"\0\b[0]\s[20]I don't know... \s[22]Probably!"
+	}
 }
 
 //How tall are you, and are you flexible about it?
 HowTall.fluffydemon
 {
-	
+	if FluffyDemonMode == 1
+	{
+		
+	}
+	elseif FluffyDemonMode == 2
+	{
+		
+	}
+	else
+	{
+		"\0\b[0]\s[1]It changes with what I eat... \s[12]You should test it! Feed me a giraffe!"
+		"\0\b[0]\s[3]I'm very flexible. \s[2]Do you want to see me roll into a ball?"
+		"\0\b[0]\s[13]Today I'm %(pocketsized)!"
+	}
 }
 
 //On a scale of 1 to 100, how many pounds of mass are you willing to potentially lose during the course of this experiment?
 LoseMass.fluffydemon
 {
-	
+	if FluffyDemonMode == 1
+	{
+		
+	}
+	elseif FluffyDemonMode == 2
+	{
+		
+	}
+	else
+	{
+		"\0\b[0]\s[13]All of them! 100 million!"
+		"\0\b[0]\s[0]I already have negative mass."
+		"\0\b[0]\s[23]Uhm... That depends on if you mean fur or meat..."
+	}
 }
 
 //Would you describe yourself as being made of flesh?
 MadeOfFlesh.fluffydemon
 {
-	
+	if FluffyDemonMode == 1
+	{
+		
+	}
+	elseif FluffyDemonMode == 2
+	{
+		
+	}
+	else
+	{
+		"\0\b[0]\s[2]Yes! I add flesh to myself all the time!"
+		"\0\b[0]\s[20]Not really... I'm mostly screams and magic under my skin."
+		"\0\b[0]\s[0]Only sometimes."
+	}
 }
 
 //Do you often use your (bodypart)?
 OftenUseBodyPart.fluffydemon
 {
-	
+	if FluffyDemonMode == 1
+	{
+		
+	}
+	elseif FluffyDemonMode == 2
+	{
+		
+	}
+	else
+	{
+		"\0\b[0]\s[20]...? \s[22]I don't think I have anything like that!"
+		"\0\b[0]\s[3]Oh... You know... When there's no other option..."
+		"\0\b[0]\s[12]I use all %(RAND(18) + 2) of them every day!"
+	}
 }
 
 //On a scale of 1 to 10, how much do you prioritize maintaining your current form?
 PrioritizeCurrentForm.fluffydemon
 {
-	
+	if FluffyDemonMode == 1
+	{
+		
+	}
+	elseif FluffyDemonMode == 2
+	{
+		
+	}
+	else
+	{
+		"\0\b[0]\s[0]1. I'm not worried at all! \s[40]Whatever you do, I can always put myself back how I was before."
+		"\0\b[0]\s[11]10! ... No... \s[12]0! ... Wait... \s[14]Which one means I don't care?\n\n ... \s[13]5! It's 5!"
+		"\0\b[0]\s[20]I'm usually thinking about keeping my shape as something that humans can understand, so... 7?"
+	}
 }
 
 //How long have you resided in this reality?
 ResidedThisReality.fluffydemon
 {
-	
+	if FluffyDemonMode == 1
+	{
+		
+	}
+	elseif FluffyDemonMode == 2
+	{
+		
+	}
+	else
+	{
+		"\0\b[0]\s[23]I portaled over for this interview...?"
+		"\0\b[0]\s[2]For as long as I've been alive!"
+		"\0\b[0]\s[41]I don't."
+	}
 }
 
 //Where do you see yourself in 10 years? Would it change if (word group)?
 SeeSelfTenYears.fluffydemon
 {
-	
+	if FluffyDemonMode == 1
+	{
+		
+	}
+	elseif FluffyDemonMode == 2
+	{
+		
+	}
+	else
+	{
+		"\0\b[0]\s[23]I don't use mirrors..."
+		"\0\b[0]\s[30]Being summoned by a cult with no respect for my free time, regardless of the circumstances... \s[31]but I wouldn't mind if someone took my place."
+		"\0\b[0]\s[3]10 years? Uhm... \s[14]Molting, probably... \s[13]Unless I end up bald by then?"
+	}
 }
 
 //Are you currently taking any medications?
 TakingMeds.fluffydemon
 {
-	
+	if FluffyDemonMode == 1
+	{
+		
+	}
+	elseif FluffyDemonMode == 2
+	{
+		
+	}
+	else
+	{
+		"\0\b[0]\s[12]Only the fun ones!"
+		"\0\b[0]\s[1]Heheh, why would I need any? \s[2]It's not like I get sick!"
+		"\0\b[0]\s[23]Does blood count?"
+	}
 }
 
 //On a scale of 1 to 10, how likely are you to start rotting on a hot day?
 LikelyToRot.fluffydemon
 {
-	
+	if FluffyDemonMode == 1
+	{
+		
+	}
+	elseif FluffyDemonMode == 2
+	{
+		
+	}
+	else
+	{
+		"\0\b[0]\s[2]10! I love rotting! \s[12]I do it on cold days, too!"
+		"\0\b[0]\s[0]Want to find out?\n\n \s[40]Let's rot together."
+		"\0\b[0]\s[23]Unless it's hot enough for your skin to melt... 1."
+	}
 }
 
 //Do you have prior history with eldritch horrors?
 HistoryEldritchHorrors.fluffydemon
 {
-	
+	if FluffyDemonMode == 1
+	{
+		
+	}
+	elseif FluffyDemonMode == 2
+	{
+		
+	}
+	else
+	{
+		"\0\b[0]\s[40]Who knows..."
+		"\0\b[0]\s[12]Yes, I love meeting new people!"
+		"\0\b[0]\s[0]Nothing that'll interfere with your experiments, I'm sure."
+	}
 }
 
 //Are there any colors or textures that should be kept out of your enclosure?
 ColorsTextures.fluffydemon
 {
-	
+	if FluffyDemonMode == 1
+	{
+		
+	}
+	elseif FluffyDemonMode == 2
+	{
+		
+	}
+	else
+	{
+		"\0\b[0]\s[1]If anything is too smooth, I can scratch it up myself!"
+		"\0\b[0]\s[20]I get a little confused when there's a lot of pink around... \s[23]Where does that pink end and my pink begin...?"
+		"\0\b[0]\s[41]You'll know if I find any problems."
+	}
 }
 
 //What does your diet primarily consist of currently, and how willing are you to tolerate a permanent change?
 PrimaryDiet.fluffydemon
 {
-	
+	if FluffyDemonMode == 1
+	{
+		
+	}
+	elseif FluffyDemonMode == 2
+	{
+		
+	}
+	else
+	{
+		"\0\b[0]\s[14]I don't care as long as it tastes good..."
+		"\0\b[0]\s[0]As long as it was alive at some point, I don't mind what I eat."
+		"\0\b[0]\s[1]The most nutritious food of all! \s[12]Suffering!\n\n\s[41]I never run out."
+	}
 }
 
 //How would you like to be compensated for your assistance today?
 HowCompensate.fluffydemon
 {
-	
+	if FluffyDemonMode == 1
+	{
+		
+	}
+	elseif FluffyDemonMode == 2
+	{
+		
+	}
+	else
+	{
+		"\0\b[0]\s[13]Meat! Meat! Meat! Meat!"
+		"\0\b[0]\s[21]What does that mean...? \s[23]I don't get it..."
+		"\0\b[0]\s[0]Money is fine... I need to visit %(thegroomery)."
+	}
+}
+
+demonyears
+{
+	"centuries"
+	"decades"
+	"years"
+	"months"
+	"weeks"
+	"days"
+	"hours"
+	"minutes"
+}
+
+NameFluffyDemon
+{
+	"Arragartha"
+	"Enreggre"
+	"Albadon"
+	"Katama"
+	"Niik"
+	"Bwo"
+	"Tipapapa"
+	"Teeth"
+	"Fwoo"
+	"Destroyer"
+	"Geen"
+	"Vivisector"
+	"Cruutag"
+	"Mrek"
+	"Skraaff"
+}
+
+pocketsized
+{
+	"pocket sized"
+	"people sized"
+	"as big as a tree"
+	"as small as a bean"
+	"tall enough to touch the ceiling fan"
+	"small enough to fit under the desk"
+	"small enough to nap in the bottom drawer of the filing cabinet"
+	"647 ft... but I'm bent over right now, so I don't look it"
+	"perfectly sized to drive a car"
+	"about as tall as you"
+	"as big as a house"
+	"shrunk down to fit inside, but when I leave I'll go back to normal size"
+}
+
+teenytinyfoot
+{
+	"teeny tiny foot"
+	"fluffy little wing"
+	"big sharp claw"
+	"dangerously pointy horn"
+	"whole tail"
+}
+
+thegroomery
+{
+	"the groomery"
+	"the Underworld"
+	"space"
+	"the aquarium"
+	"the zoo"
+	"a witch"
+	"abandoned mineshafts"
+	"the grocery store"
+	"my past self"
+	"the trenches"
 }
