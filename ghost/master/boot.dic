@@ -66,8 +66,19 @@ OnBoot
 
 OnClose
 {
-	"\0\s[0]Farewell."
-	"\0\s[0]Goodbye."
+	"\0\![set,serikotalk,false]"
+	--
+	"That seems like enough...\n\n "
+	--
+	"\![embed,OnCloseFade]" //so that \t doesn't take effect until here, so you can cancel
+	--
+	"Time to close up and start doing Science™."
 	--
 	"\w8\w8\-"
+}
+
+OnCloseFade : all
+{
+	"\t"
+	FadeOut
 }
