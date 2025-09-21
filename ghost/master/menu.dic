@@ -49,7 +49,7 @@ OnLastTalk
 OnAskQuestions : all
 {
 	
-	"\0\b[2]\_q\![set,autoscroll,disable]"
+	"\0\b[2]\_q\![set,autoscroll,disable]\f[anchorvisitedfontcolor,default.anchor]"
 	
 	_questions = QuestionsText
 	_questionnum = 0 //NOT the same as _i
