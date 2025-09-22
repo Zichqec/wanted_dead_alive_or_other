@@ -12,7 +12,9 @@ Greeting.fluffydemon
 {
 	if FluffyDemonMode == 1
 	{
-		
+		"\1\s[-1]\0\b[0]\s[6]Kekekekek... Salutations..."
+		"\1\s[-1]\0\b[0]\s[5]Kukukuku... Smells nice..."
+		"\1\s[-1]\0\b[0]\s[4]Keekeke... My turn..."
 	}
 	elseif FluffyDemonMode == 2
 	{
@@ -30,7 +32,9 @@ Accepted.fluffydemon
 {
 	if FluffyDemonMode == 1
 	{
-		
+		"\0\b[0]\s[46]Keekeke... The deal is made..."
+		"\0\b[0]\s[4]Kekekekek... So we are bound..."
+		"\0\b[0]\s[5]Kukukuku... I eagerly await your next move..."
 	}
 	elseif FluffyDemonMode == 2
 	{
@@ -48,7 +52,9 @@ Rejected.fluffydemon
 {
 	if FluffyDemonMode == 1
 	{
-		
+		"\0\b[0]\s[36]So be it. A decision made cannot be taken back. \s[35]Fate shall see that our paths cross again, and when they do, your regrets will not save you.\n\n \s[34]I look forward to that day."
+		"\0\b[0]\s[44]Very well. I shall await your departure."
+		"\0\b[0]\s[5]Kukukuku... Perhaps next time you will make a better choice."
 	}
 	elseif FluffyDemonMode == 2
 	{
@@ -66,7 +72,9 @@ RandomTalk.fluffydemon : nonoverlap
 {
 	if FluffyDemonMode == 1
 	{
-		
+		"\0\b[0]\s[5]... %(DemonMood)..."
+		"\0\b[0]\s[4]Kek... Where are the others... I want a taste... Kukuku..."
+		"\0\b[0]\s[6]Keekeke... Smells like %(demonsmells)..."
 	}
 	elseif FluffyDemonMode == 2
 	{
@@ -87,7 +95,9 @@ Name.fluffydemon
 {
 	if FluffyDemonMode == 1
 	{
-		
+		"\0\b[0]\s[5]Kek... %(NameFluffyDemon) %(NameFluffyDemonTitle)..."
+		"\0\b[0]\s[6]Kukukuku... You will know once the pact is sealed..."
+		"\0\b[0]\s[4]Keekeke... %(NameFluffyDemon) %(NameFluffyDemonTitle)... For now..."
 	}
 	elseif FluffyDemonMode == 2
 	{
@@ -106,7 +116,9 @@ Age.fluffydemon
 {
 	if FluffyDemonMode == 1
 	{
-		
+		"\0\b[0]\s[5]Kekekekekek... What will you offer to know..."
+		"\0\b[0]\s[6]Kukukuku... %(RAND(5000) + 2) %(demonyears) of this incarnation..."
+		"\0\b[0]\s[4]Keekeke... Centuries..."
 	}
 	elseif FluffyDemonMode == 2
 	{
@@ -125,7 +137,9 @@ FirstTime.fluffydemon
 {
 	if FluffyDemonMode == 1
 	{
-		
+		"\0\b[0]\s[46]Kekekekekek... Have you forgotten...?"
+		"\0\b[0]\s[5]Kukukuku... The first of many..."
+		"\0\b[0]\s[6]Keekeke... Another deal to be struck..."
 	}
 	elseif FluffyDemonMode == 2
 	{
@@ -144,7 +158,9 @@ DiedBefore.fluffydemon
 {
 	if FluffyDemonMode == 1
 	{
-		
+		"\0\b[0]\s[4]Kekekekekek... Death is a figment... easily overcome..."
+		"\0\b[0]\s[34]Kukukuku... You shall not be the one to slay me..."
+		"\0\b[0]\s[24]Keekeke... To be tempted by the unknown..."
 	}
 	elseif FluffyDemonMode == 2
 	{
@@ -163,7 +179,9 @@ AnyCurses.fluffydemon
 {
 	if FluffyDemonMode == 1
 	{
-		
+		"\0\b[0]\s[45]Kukukuku... Curses draw their power from me..."
+		"\0\b[0]\s[4]Kekekekekek... My existence is the curse..."
+		"\0\b[0]\s[26]Keekeke... You sense it... A dangerous ability..."
 	}
 	elseif FluffyDemonMode == 2
 	{
@@ -182,7 +200,9 @@ PeculiaritiesBodyParts.fluffydemon
 {
 	if FluffyDemonMode == 1
 	{
-		
+		"\0\b[0]\s[24]Kek... The taste of them is strange..."
+		"\0\b[0]\s[5]Kukukuku... They bite..."
+		"\0\b[0]\s[45]Keekeke... Indeed..."
 	}
 	elseif FluffyDemonMode == 2
 	{
@@ -201,7 +221,9 @@ OwnTeeth.fluffydemon
 {
 	if FluffyDemonMode == 1
 	{
-		
+		"\0\b[0]\s[4]Kekekekekek... Yes... Would you like one...?"
+		"\0\b[0]\s[6]Kukukuku... Many to collect..."
+		"\0\b[0]\s[5]Keekeke... All well earned..."
 	}
 	elseif FluffyDemonMode == 2
 	{
@@ -220,7 +242,9 @@ RequireFoodWaterCharging.fluffydemon
 {
 	if FluffyDemonMode == 1
 	{
-		
+		"\0\b[0]\s[46]Keekeke... Our bond shall be sufficient..."
+		"\0\b[0]\s[4]Kukukuku... Flesh and blood... Rip and tear..."
+		"\0\b[0]\s[5]Kekekekekek... These are of no concern..."
 	}
 	elseif FluffyDemonMode == 2
 	{
@@ -239,7 +263,9 @@ AllergicReactions.fluffydemon
 {
 	if FluffyDemonMode == 1
 	{
-		
+		"\0\b[0]\s[35]Kukukuku... I am not as weak as mortals..."
+		"\0\b[0]\s[6]Kekekekekek... What an amusing notion..."
+		"\0\b[0]\s[24]Keekeke... Such things are to remain unspoken..."
 	}
 	elseif FluffyDemonMode == 2
 	{
@@ -258,7 +284,9 @@ Immortal.fluffydemon
 {
 	if FluffyDemonMode == 1
 	{
-		
+		"\0\b[0]\s[44]Kek... Would you like to find out...?"
+		"\0\b[0]\s[5]Kukukuku... You could be as well..."
+		"\0\b[0]\s[6]Keekeke... The form changes... but is never destroyed..."
 	}
 	elseif FluffyDemonMode == 2
 	{
@@ -277,7 +305,9 @@ RegenerateLimbs.fluffydemon
 {
 	if FluffyDemonMode == 1
 	{
-		
+		"\0\b[0]\s[34]Keekeke... A trivial matter... Not worth counting..."
+		"\0\b[0]\s[6]Kekekekekek... To devour is my nature... My flesh is no exception... When the hunger strikes, I feed..."
+		"\0\b[0]\s[25]Kukukuku... To be torn asunder is a necessary ritual... beneath each dark moon..."
 	}
 	elseif FluffyDemonMode == 2
 	{
@@ -296,7 +326,9 @@ ActiveAgreement.fluffydemon
 {
 	if FluffyDemonMode == 1
 	{
-		
+		"\0\b[0]\s[45]Kukukuku... I am the one with which agreements are made..."
+		"\0\b[0]\s[34]Keekeke... The idea that I would stoop to such lows..."
+		"\0\b[0]\s[6]Kekekekekek... Most certainly..."
 	}
 	elseif FluffyDemonMode == 2
 	{
@@ -315,7 +347,9 @@ HowTall.fluffydemon
 {
 	if FluffyDemonMode == 1
 	{
-		
+		"\0\b[0]\s[5]Keekeke... A matter of perception... Shall I change for you...?"
+		"\0\b[0]\s[34]Kek... Come closer... Find out yourself..."
+		"\0\b[0]\s[26]Kukukuku... I am presented with the unknown..."
 	}
 	elseif FluffyDemonMode == 2
 	{
@@ -334,7 +368,9 @@ LoseMass.fluffydemon
 {
 	if FluffyDemonMode == 1
 	{
-		
+		"\0\b[0]\s[45]Kekekekekek... I intend to feed well... Grow well..."
+		"\0\b[0]\s[6]Kukukuku... Such things are no concern of mine..."
+		"\0\b[0]\s[4]%(RAND(80) + 20)."
 	}
 	elseif FluffyDemonMode == 2
 	{
@@ -353,7 +389,9 @@ MadeOfFlesh.fluffydemon
 {
 	if FluffyDemonMode == 1
 	{
-		
+		"\0\b[0]\s[24]Kek... Only after I've eaten my fill..."
+		"\0\b[0]\s[4]Kukukuku... Not at all..."
+		"\0\b[0]\s[45]Keekeke... Would you like a look inside...?"
 	}
 	elseif FluffyDemonMode == 2
 	{
@@ -372,7 +410,9 @@ OftenUseBodyPart.fluffydemon
 {
 	if FluffyDemonMode == 1
 	{
-		
+		"\0\b[0]\s[25]Kukukuku... To use... To consume... Whatever you want, I can create more..."
+		"\0\b[0]\s[6]Keekeke... Oh, yes..."
+		"\0\b[0]\s[4]Kekekekekek... These are not mine..."
 	}
 	elseif FluffyDemonMode == 2
 	{
@@ -391,7 +431,9 @@ PrioritizeCurrentForm.fluffydemon
 {
 	if FluffyDemonMode == 1
 	{
-		
+		"\0\b[0]\s[5]Kukukuku... This form is only for your comfort..."
+		"\0\b[0]\s[34]Kek... To rid me of these confines... would be acceptable..."
+		"\0\b[0]\s[6]%(RAND(9) + 1)."
 	}
 	elseif FluffyDemonMode == 2
 	{
@@ -410,7 +452,9 @@ ResidedThisReality.fluffydemon
 {
 	if FluffyDemonMode == 1
 	{
-		
+		"\0\b[0]\s[5]Kekekekekek... I have always existed... in one form or another..."
+		"\0\b[0]\s[44]Keekeke... It was your call that caused me to manifest..."
+		"\0\b[0]\s[6]Kukukuku... This is the only one I know..."
 	}
 	elseif FluffyDemonMode == 2
 	{
@@ -429,7 +473,9 @@ SeeSelfTenYears.fluffydemon
 {
 	if FluffyDemonMode == 1
 	{
-		
+		"\0\b[0]\s[44]Kek... kekekekek... It would not be the first time..."
+		"\0\b[0]\s[35]Kukukuku... So long as I have debts owed to me... my plans will not be changed so easily..."
+		"\0\b[0]\s[6]Keekeke... I intend to destroy those that see themselves as my rivals... Such complications will be accounted for... now that it has been brought to my attention..."
 	}
 	elseif FluffyDemonMode == 2
 	{
@@ -448,7 +494,9 @@ TakingMeds.fluffydemon
 {
 	if FluffyDemonMode == 1
 	{
-		
+		"\0\b[0]\s[4]Keekeke... Contamination has been known to happen..."
+		"\0\b[0]\s[25]Kukukuku... For my... indigestion..."
+		"\0\b[0]\s[6]Kek... Unnecessary..."
 	}
 	elseif FluffyDemonMode == 2
 	{
@@ -467,7 +515,9 @@ LikelyToRot.fluffydemon
 {
 	if FluffyDemonMode == 1
 	{
-		
+		"\0\b[0]\s[5]Kukukuku... The force of the mind can make many strange things happen... You never know..."
+		"\0\b[0]\s[26]%(RAND(9) + 1)."
+		"\0\b[0]\s[4]Keekeke... I devour the rot... It never spreads..."
 	}
 	elseif FluffyDemonMode == 2
 	{
@@ -486,7 +536,9 @@ HistoryEldritchHorrors.fluffydemon
 {
 	if FluffyDemonMode == 1
 	{
-		
+		"\0\b[0]\s[44]Kek... kekekekek... kukukuku..."
+		"\0\b[0]\s[6]Kek... What do you believe... you are speaking to..."
+		"\0\b[0]\s[35]Let us not dredge up bad memories... \s[45]I would hate to rethink our relationship..."
 	}
 	elseif FluffyDemonMode == 2
 	{
@@ -505,7 +557,9 @@ ColorsTextures.fluffydemon
 {
 	if FluffyDemonMode == 1
 	{
-		
+		"\0\b[0]\s[6]No."
+		"\0\b[0]\s[35]Kek... I do not tolerate... the shine of gold..."
+		"\0\b[0]\s[24]Kukukuku... I find %(wool) to be... itchy..."
 	}
 	elseif FluffyDemonMode == 2
 	{
@@ -524,7 +578,9 @@ PrimaryDiet.fluffydemon
 {
 	if FluffyDemonMode == 1
 	{
-		
+		"\0\b[0]\s[4]Kekekekekek... If it moves... I will eat it...\n\n \s[44]If it doesn't move... I will still eat it..."
+		"\0\b[0]\s[6]Kukukuku... I only know hunger... and satiation... The process is irrelevant..."
+		"\0\b[0]\s[5]Keekeke... I find myself curious... Do as you will..."
 	}
 	elseif FluffyDemonMode == 2
 	{
@@ -543,7 +599,9 @@ HowCompensate.fluffydemon
 {
 	if FluffyDemonMode == 1
 	{
-		
+		"\0\b[0]\s[46]To gain my assistance, your soul shall be bound to my essence. You may alter my physical form as you wish, and I will call when I have found a use for you.\n\n \s[45]You will not argue. You will not fight. You will do as I instruct.\n\n \s[4]Then, you will be free once more. Our arrangement completed."
+		"\0\b[0]\s[24]I want... to eat you... Rip off your limbs... Swallow your innards... \s[44]Leave your husk for the vermin..."
+		"\0\b[0]\s[5]Allow me my choice of another you've accepted... Take me to their room and look the other way... That is all I desire."
 	}
 	elseif FluffyDemonMode == 2
 	{
@@ -555,6 +613,48 @@ HowCompensate.fluffydemon
 		"\0\b[0]\s[21]What does that mean...? \s[23]I don't get it..."
 		"\0\b[0]\s[0]Money is fine... I need to visit %(thegroomery)."
 	}
+}
+
+DemonMood
+{
+	"Hungry"
+	"Waiting"
+	"Biting"
+	"Chewing"
+	"Gnawing"
+	"Impatient"
+	"Quiet"
+	"Breathing"
+	"Heart racing"
+	"Blood pumping"
+	"Magic pulsing"
+	"Frustration"
+	"Angry"
+	"Agitation"
+	"Bored"
+	"Contempt"
+	"Suspicious"
+}
+demonsmells
+{
+	"fear"
+	"sweat"
+	"ink"
+	"rot"
+	"dust"
+	"ash"
+	"maggots"
+	"fungus"
+	"mold"
+	"blood"
+	"meat"
+	"smoke"
+	"antiseptic"
+	"bleach"
+	"ammonia"
+	"opportunity"
+	"ambition"
+	"pride"
 }
 
 demonyears
@@ -586,6 +686,24 @@ NameFluffyDemon
 	"Cruutag"
 	"Mrek"
 	"Skraaff"
+}
+
+NameFluffyDemonTitle
+{
+	"of the End"
+	"the Accusor"
+	"the Fallen"
+	"the Risen"
+	"of the Pit"
+	"of Darkness"
+	"of Fire"
+	"of Dread"
+	"of the Throne"
+	"of Chaos"
+	"of Entropy"
+	"the Demon"
+	"the Greater"
+	"the Lesser"
 }
 
 pocketsized
@@ -625,4 +743,20 @@ thegroomery
 	"the grocery store"
 	"my past self"
 	"the trenches"
+}
+
+wool
+{
+	"wool"
+	"plastic"
+	"glass"
+	"cork"
+	"cotton"
+	"bronze"
+	"iron"
+	"ice"
+	"wood"
+	"resin"
+	"paper"
+	"cardboard"
 }
