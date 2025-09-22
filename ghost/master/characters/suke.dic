@@ -1,21 +1,28 @@
 SurfaceRestore.suke
 {
-	"\1\s[-1]\0\s[0]"
+	"\1\s[-1]\0\s[22]"
+	"\1\s[-1]\0\s[26]"
 }
 
 Greeting.suke
 {
-	"\1\s[-1]\0\s[0]Hello......."
+	"\1\s[-1]\0\b[0]\s[22]... Hello."
+	"\1\s[-1]\0\b[0]\s[25]Greetings."
+	"\1\s[-1]\0\b[0]\s[22]Hm... \w8\s[24]Ah?\n\n ... \s[5]I see, my turn has come..."
 }
 
 Accepted.suke
 {
-	"hooray! I'm so glad..."
+	"\0\b[0]\s[22]Wonderful... thank you. \s[25]I shall look forward to it."
+	"\0\b[0]\s[26]Excellent. \s[22]Thank you for your time and efforts... I will look forward to discussing the details of my compensation later."
+	"\0\b[0]\s[22]Ah... that is a relief to hear. \s[26]This means a great deal to me, thank you.\n\n \s[25]I shall remember your kindness..."
 }
 
 Rejected.suke
 {
-	"....... back to haunting, then"
+	"\0\b[0]\s[0]...\n\n \w8\w8\s[6]...\n\n \w8\w8\w8\w8\s[7]You will regret this."
+	"\0\b[0]\s[2]No...? \w8\w8\s[29]No!? \w8\w8After I came all this way...!? \s[28]You can't be serious!!\n\n \w8\w8\w8\w8\s[30]a\f[height,+1]a\f[height,+1]a\f[height,+1]a\f[height,+1]a\f[height,+1]a\f[height,+1]a\f[height,+1]a\f[height,+1]a\f[height,+1]A\f[height,+1]A\f[height,+1]A\f[height,+1]A\f[height,+1]A\f[height,+1]A\f[height,+1]A\f[height,+1]H\f[height,+1]H\f[height,+1]H\f[height,+1]H\f[height,+1]!\f[height,+1]!\f[height,+1]!\f[height,default]\n\n \w8\w8\f[height,+2]\f[bold,1]\s[31]YOU. YOU WILL RUE THIS DAY.\f[bold,default]\f[height,default]"
+	"\0\b[0]\s[24]... \w8\w8\s[6]I see. \w8\w8\s[4]It was not meant to be...\n\n \w8\w8\s[8]Very well then. I shall leave this place... Thank you for your time."
 }
 
 RandomTalk.suke : nonoverlap
@@ -27,178 +34,225 @@ RandomTalk.suke : nonoverlap
 //Name?
 Name.suke
 {
-	"suke"
-	"sukesuke"
-	"sukesukesuke"
+	"\0\b[0]\s[24]My name...? \s[0]... \s[6]I'm afraid I don't remember it any longer... My apologies."
+	"\0\b[0]\s[0]My name... \s[21]I am forbidden from speaking it in my current form. My apologies."
+	"\0\b[0]\s[26]Ah, of course... my name is %(suke.namelist). \s[23]Thank you for asking it."
+}
+
+suke.namelist
+{
+	"Mary"
+	"Jo-ann"
+	"Katherine"
+	"Elizabeth"
+	"Beth"
+	"Rachel"
+	"Tiffany"
+	"Wanda"
+	"Simone"
+	"Sarah"
+	"Madeline"
+	"Priscilla"
+	"Victoria"
+	"Cecilia"
+	"Leann"
+	"Eleanor"
+	"Julie"
+	"Heather"
+	"Gracie"
+	"Alison"
+	"Margaret"
+	"Erin"
 }
 
 //Age?
 Age.suke
 {
-	"a lot"
-	"depends if you mean when i became a ghost, or..."
+	"\0\b[0]\s[22]Well... it's a little hard to say, isn't it? \s[5]I've been... like this... for quite some time now. \s[26]I suppose it doesn't matter too much these days."
+	"\0\b[0]\s[6]Hmm... \s[5]Well, assuming you want to know the age my physical body was when I took this form, I was %(RAND(10) + 20) years old at the time."
+	"\0\b[0]\s[26]I have seen the passing of approximately %((RAND(30) + 20) * 10) years."
 }
 
 //Is this your first time working with us?
 FirstTime.suke
 {
-	"... no"
-	"yes"
+	"\0\b[0]\s[26]Yes, that is correct."
+	"\0\b[0]\s[22]I believe so... I have no particular recollection of this place."
+	"\0\b[0]\s[24]I had thought so, but... \s[26]This place is giving me an odd sense of déjà vu!\n\n \s[25]Perhaps you know more than you are letting on, hm...?"
 }
 
 //Have you died before?
 DiedBefore.suke
 {
-	"..."
-	"no i was always like this"
-	"yes"
+	"\0\b[0]\s[22]... I shall refrain from commenting."
+	"\0\b[0]\s[26]Is that not self-evident...?"
+	"\0\b[0]\s[22]We have a saying in the ethereal plane... ""ghosts are made, not born.""\n\n \w8\w8\s[26]I jest, of course. \w8\s[25]Meeting other ghosts is quite rare, and those I do meet are not often... \f[italic,1]whole\f[italic,default]."
 }
 
 //Are you currently under the effect of any curses?
 AnyCurses.suke
 {
-	"cursed to be a ghost :("
-	"no i curse people not the other way around"
+	"\0\b[0]\s[22]Indeed so, it keeps me bound to this mortal plane. \s[26]Hopefully not for much longer..."
+	"\0\b[0]\s[0]People often assume that, from seeing my current form... \s[2]The truth is that I'm still here of my own volition.\n\n ... \s[26]It's a tricky topic, so let's leave it at that, shall we?"
+	"\0\b[0]\s[22]I am indeed. Just a little soul-binding that keeps me anchored to this mortal plane we are speaking on... \s[26]There's no issue with that, is there?"
 }
 
 //Do you have any peculiarities with your body parts that we should be aware of?
 PeculiaritiesBodyParts.suke
 {
-	"technically i don't have any anymore"
-	"they're ethereal"
+	"\0\b[0]\s[0]Hm, peculiarities... \s[2]I suppose I should inform you that my legs don't actually exist below the knee."
+	"\0\b[0]\s[22]Well, that depends on your definition of ""peculiar""... \s[5]Are ethereal body parts acceptable?"
+	"\0\b[0]\s[22]My original body still exists... \s[26]It's rotting in a crypt somewhere. \s[25]It doesn't bother me in my day-to-day, but perhaps it will be important for your work?"
 }
 
 //Do you have your own teeth? If 'no', and you have teeth upon your person, are they from a reputable source?
 OwnTeeth.suke
 {
-	"that depends on your definition of ""have"". must they be physical and present in your current plane of reality?"
-	"yes"
-	"no"
+	"\0\b[0]\s[5]Well, now, that depends on your definition of ""have""... \s[26] I used to have them, at least."
+	"\0\b[0]\s[22]I have no teeth that I am able to hand over to you, if that is what you are asking."
+	"\0\b[0]\s[26]Certainly, I have my own teeth. \w8\w8\s[22]Whether you will be able to access said teeth is another matter entirely..."
 }
 
 //Do you require food, water, and/or charging (electrical or otherwise) for the duration of your stay?
 RequireFoodWaterCharging.suke
 {
-	"no"
-	"I need 2 hours of sunlight per day"
+	"\0\b[0]\s[22]None of the above."
+	"\0\b[0]\s[26]Not in particular. One of the perks of being ethereal."
+	"\0\b[0]\s[5]If I am required to be in the sunlight for any length of time, I will need sufficient time at night to reconstitute myself."
 }
 
 //Do you have allergic reactions to (word group)?
 AllergicReactions.suke
 {
-	"i used to back when i had an actual body"
-	"ghosts don't have allergies. it's a perk."
+	"\0\b[0]\s[26]I have no allergies whatsoever."
+	"\0\b[0]\s[5]I do not."
+	"\0\b[0]\s[22]I used to, back when I inhabited my mortal body. \w8\s[26]These days, not so much."
 }
 
 //Are you immortal?
 Immortal.suke
 {
-	"um...... maybe?"
-	"yes but i'd like to not be..."
+	"\0\b[0]\s[22]That depends on your definition of ""immortality""... \s[26]Does it count if the person in question is no longer among the living?"
+	"\0\b[0]\s[25]Hm... an interesting question, to be sure.\n\n \w8\s[26]I've spent a great deal of time on this mortal plane, and will continue to do so for the foreseeable future... \s[22]Call it immortality if you wish."
+	"\0\b[0]\s[26]It is a bit hard to ""live forever"" when one is already dead!"
 }
 
 //How many times on average do you regenerate limbs in a year?
 RegenerateLimbs.suke
 {
-	"i cannot lose my limbs"
-	"they come back immediately"
+	"\0\b[0]\s[26]I would be quite impressed if you can separate my limbs from my body... \s[25]That being said, I would prefer to keep them attached."
+	"\0\b[0]\s[22]My original body is quite dead, so I would say that it never regenerates limbs..."
+	"\0\b[0]\s[26]If my limbs are separated from me, I can bring them back within moments. \s[22]It's one of the benefits of a form such as this.\n\n \s[5]I suppose, then, that the answer to your question depends entirely on how often I am attacked or otherwise dismembered in a year..."
 }
 
 //Do you have an active agreement or similar with (word group)?
 ActiveAgreement.suke
 {
-	"no, those all ended when i died"
-	"i used to a long time ago but not anymore"
+	"\0\b[0]\s[22]Ah... \w8\w8\s[25]I used to, a very, very long time ago. \s[26]That contract was severed at the end of my mortal life, however. I have no such agreement now."
+	"\0\b[0]\s[22]... \w8\w8I do. \w8\w8\s[25]Unfortunately, that is all I am permitted to say on the matter."
+	"\0\b[0]\s[22]No, nothing of the sort."
 }
 
 //How tall are you, and are you flexible about it?
 HowTall.suke
 {
-	"sure, i'm flexible"
-	"are we counting the parts of my legs that are invisible?"
+	"\0\b[0]\s[22]Hm... it's a little hard to say for certain, seeing as I float across the ground.\n\n \s[26]If you count from my knees up, I'm about 4'%(RAND(5) + 1)"".\n\n \s[22]I can't imagine this fact will be changeable."
+	"\0\b[0]\s[5]Supposing that you are asking how tall my original body was, at the time of my demise I was 6'%(RAND(2) + 1)"".\n\n \s[2]I would be quite surprised if your experiment makes a difference."
+	"\0\b[0]\s[22]I am not certain anymore... \s[26]So, I suppose it does not matter if it changes."
 }
 
 //On a scale of 1 to 100, how many pounds of mass are you willing to potentially lose during the course of this experiment?
 LoseMass.suke
 {
-	"well I don't have any, so... that's a bit difficult to answer"
-	"2. that's about all I can give."
+	"\0\b[0]\s[25]I cannot lose any mass. \s[26]Not for lack of willingness, only for the fact that I have none to begin with!"
+	"\0\b[0]\s[22]Ethereal beings tend to be lacking when it comes to mass. My apologies."
+	"\0\b[0]\s[25]It is quite impossible to take mass from a being that has none, isn't it?"
 }
 
 //Would you describe yourself as being made of flesh?
 MadeOfFlesh.suke
 {
-	"that's tricky."
-	"ghostly, but sure."
+	"\0\b[0]\s[22]Hm... \s[25]Does ethereal flesh count? \s[26]If so, then yes, I'd say so."
+	"\0\b[0]\s[22]Not particularly, these days."
+	"\0\b[0]\s[26]I used to be, once upon a time. \s[22]These days it's much more difficult to say for certain."
 }
 
 //Do you often use your (bodypart)?
 OftenUseBodyPart.suke
 {
-	"all the time"
-	"if i could find it i would"
+	"\0\b[0]\s[25]Hm... in a physical sense? No, not really.\n\n \s[26]In a metaphorical sense, all the time."
+	"\0\b[0]\s[22]One has to wonder if I could be considered to even possess such things, in this state..."
+	"\0\b[0]\s[26]Oh, certainly. \s[27]Some things are very important to ghosts, you know."
 }
 
 //On a scale of 1 to 10, how much do you prioritize maintaining your current form?
 PrioritizeCurrentForm.suke
 {
-	"2. i'd like to be a bird..."
-	"6. i could do with some sprucing up..."
-	"9. keeping my form means keeping my memories intact..."
+	"\0\b[0]\s[22]My current form contains many memories of my past life... I'd like to retain it for that reason. \s[25]So, I would have to say a 10."
+	"\0\b[0]\s[26]My, how intriguing. \s[27]I wonder what other forms are attainable...?\n\n \s[22]I wouldn't mind a change now and then... \s[26]Let us say it is a 4."
+	"\0\b[0]\s[21]Ah... perhaps a 1. \s[6]Is that bad of me? \s[4]It's just that my current form has difficult memories tangled up in it... \s[8]A fresh start might be what I need."
 }
 
 //How long have you resided in this reality?
 ResidedThisReality.suke
 {
-	"well, i really don't?"
-	"forever"
+	"\0\b[0]\s[0]Hmm... what counts as ""residing""? \s[5]Ah, but perhaps you are not referring to the mortal plane and ethereal plane... \s[26]I would say I've resided here all my life, and all the time after my life, as well."
+	"\0\b[0]\s[24]""Reality""...? \s[22]How interesting... You don't seem to speak of the mortal and ethereal planes. \s[26]Those are all that I know, so I would have to say I have never left this reality since the day I was born, to my knowledge."
+	"\0\b[0]\s[25]My, you're an astute one, aren't you...? \s[26]I entered this reality shortly before attaining my current form. \s[22]The details surrounding the matter are irrelevant these days."
 }
 
 //Where do you see yourself in 10 years? Would it change if (word group)?
 SeeSelfTenYears.suke
 {
-	"probably out by the sea..."
-	"maybe i'll move up to the light house"
+	"\0\b[0]\s[22]I can't imagine much will change the course of my fate."
+	"\0\b[0]\s[26]I learned a long time ago that it's not worth trying to predict the future, so you will have to forgive me if I refrain from answering."
+	"\0\b[0]\s[6]Well... \w8\w8\w8\w8\s[8]Truthfully, I'm not sure I could handle that. \w8\w8How awful..."
 }
 
 //Are you currently taking any medications?
 TakingMeds.suke
 {
-	"ghosts don't take meds"
-	"no"
+	"\0\b[0]\s[22]I make sure I get plenty of moonlight whenever it's available. \s[26]Although I'm not sure it's what you'd traditionally consider ""medication""."
+	"\0\b[0]\s[22]As I do not have a living body to maintain, I am not."
+	"\0\b[0]\s[22]I have yet to meet a ghost that is capable of capable of consuming such things. \s[25]If I meet one, I'll tell you, hm?"
 }
 
 //On a scale of 1 to 10, how likely are you to start rotting on a hot day?
 LikelyToRot.suke
 {
-	"0"
-	"10"
+	"\0\b[0]\s[22]That depends on if we are speaking of the remnants of my physical body or not..."
+	"\0\b[0]\s[25]Well, I do not rot, but the sun will disperse my ethereal form quite rapidly. \s[26]So, perhaps a 10?"
+	"\0\b[0]\s[22]Thankfully, ethereal flesh is quite well protected... \s[26]It will never rot as I am unaffected by heat in the first place."
 }
 
 //Do you have prior history with eldritch horrors?
 HistoryEldritchHorrors.suke
 {
-	"we've never met, thankfully"
-	"we hang out on a daily basis"
+	"\0\b[0]\s[22]Thankfully, I have avoided contact with such things during my existence up to now."
+	"\0\b[0]\s[22]I'm afraid not. \s[26]We've simply never crossed paths."
+	"\0\b[0]\s[25]I am not sure that I would be floating here if I had... \s[22]So, no."
 }
 
 //Are there any colors or textures that should be kept out of your enclosure?
 ColorsTextures.suke
 {
-	"no"
-	"yes, i can only see in shades of blue"
+	"\0\b[0]\s[22]An ""enclosure""... \s[26]How quaint!"
+	"\0\b[0]\s[0]Hm... \s[6]Truthfully, since I died my color perception has been very strange. \s[26]It may be best to avoid color altogether."
+	"\0\b[0]\s[0]Texture... \w8\w8\s[26]I don't really remember what the sensation was like! \w8\w8\s[22]It does not matter to me either way."
 }
 
 //What does your diet primarily consist of currently, and how willing are you to tolerate a permanent change?
 PrimaryDiet.suke
 {
-	"not much"
-	"feed me :("
+	"\0\b[0]\s[22]I am not capable of eating anything these days. Alas..."
+	"\0\b[0]\s[26]Ah, a diet! How intriguing... \w8\w8\s[22]Unfortunately, such a question is not applicable in my current form."
+	"\0\b[0]\s[24]Diet...? \s[26]Well, I do partake in the occasional moth, when one chances across my path...\n\n \s[25]Not that my body needs any kind of nourishment, they simply have a pleasing crunch..."
 }
 
 //How would you like to be compensated for your assistance today?
 HowCompensate.suke
 {
-	"send me a blanket, i am cold :("
-	"money so i can buy juice"
+	"\0\b[0]\s[22]... \w8\w8\s[25]I would like for a certain group of criminals to receive retribution for their actions. \s[5]Yes, as payment, I want to see my murderers brought to justice...\n\n \s[6]Taken from their families as I once was, carried out into the cold... \w8\w8\s[7]And torn to pieces, one by one.\n\n \_w[2000]... \s[26]That's not too great a task, is it...?"
+	"\0\b[0]\s[1]Well... \s[6]I hope it's not too much to ask, but... \s[8]I would like you to send my lover to be with me.\n\n \w8\w8\s[4]I left %(ANY('him','her')) behind when I died, and... I want to be reunited once more, by any means necessary. \s[26]It's possible, isn't it...?"
+	"\0\b[0]\s[22]Compensation... \s[5]Well, I hope it isn't too much to ask of you, but... \s[6]I would like your assistance in finally leaving this plane and moving on into the afterlife.\n\n \s[26]I've spent enough time wandering the world in anguish... \s[25]I want to be free."
 }
