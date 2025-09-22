@@ -82,6 +82,12 @@ OnShellChangeCoordsAfter : all
 	{
 		NewCharacterLatch = 0
 		RandomizeDressups
+		
+		if ISFUNC("SurfaceRestore.%(Candidate.Shell)")
+		{
+			EVAL("SurfaceRestore.%(Candidate.Shell)")
+		}
+		
 		FadeIn
 		
 		FinishNewShellChange
