@@ -35,7 +35,8 @@ OnSakuraMenu : all
 	
 	"\![*]\q[Change talk rate,OnTalkRateMenu]\n\n"
 	
-	if SHIORI3FW.DebugMode; "\f[color,disable]\![*]\__q[OnDebug.SeeAllResponses]See all answers\__q\n\n\f[color,default]"
+	//if SHIORI3FW.DebugMode; "\f[color,disable]\![*]\__q[OnDebug.SeeAllResponses]See all answers\__q\n\n\f[color,default]"
+	if SHIORI3FW.DebugMode; "\f[color,disable]\![*]\__q[OnDebug.SwitchTo]Switch to...\__q\n\n\f[color,default]"
 	
 	"\n"
 	"\![*]\q[Cancel,blank]"	
@@ -178,7 +179,7 @@ OnTalkRateMenu : all
 	elseif aitalkinterval == 300; _talkrate = "5 minutes"
 	elseif aitalkinterval == 600; _talkrate = "10 minutes"
 	
-	"\0\s[0]\b[2]\![set,autoscroll,disable]\![no-autopause]\_q"
+	"\0\b[2]\![set,autoscroll,disable]\![no-autopause]\_q"
 	"Current interval: %(_talkrate)\n\n"
 	
 	"\![*]\q[Off,OnTalkRateChange,0]\n"
@@ -303,3 +304,28 @@ either i have to count the questions asked on the ones that are rejected, or i n
 	// }
 	// _output
 // }
+
+OnDebug.SwitchTo : all
+{
+	"\0\b[2]\![set,autoscroll,disable]\![no-autopause]\_q"
+	
+	"\![*]\__q[OnDebug.SwitchToShell,bluemesh]bluemesh\__q\n"
+	"\![*]\__q[OnDebug.SwitchToShell,suke]suke\__q\n"
+	"\![*]\__q[OnDebug.SwitchToShell,fluffydemon,0]fluffydemon (normal)\__q\n"
+	"\![*]\__q[OnDebug.SwitchToShell,fluffydemon,1]fluffydemon (mouth)\__q\n"
+	"\![*]\__q[OnDebug.SwitchToShell,fluffydemon,2]fluffydemon (eye)\__q\n"
+	"\![*]\__q[OnDebug.SwitchToShell,weissvern]weissvern\__q\n"
+	
+	"\n\n"
+	"\![*]\q[Back,OnSakuraMenu]  \![*]\q[Cancel,blank]"
+}
+
+OnDebug.SwitchToShell : all
+{
+	if reference0 == "fluffydemon"; FluffyDemonMode = TOINT(reference1)
+	
+	Candidate.Shell = reference0
+	NewCharacterLatch = 1
+	FadeOut
+	"\![change,shell,%(Candidate.Shell),--option=raise-event]"
+}
