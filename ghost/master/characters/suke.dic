@@ -5,9 +5,9 @@ SurfaceRestore.suke
 
 Greeting.suke
 {
-	"\1\s[-1]\0\b[0]\s[22]... Hello."
-	"\1\s[-1]\0\b[0]\s[25]Greetings."
-	"\1\s[-1]\0\b[0]\s[22]Hm... \w8\s[24]Ah?\n\n ... \s[5]I see, my turn has come..."
+	"\0\b[0]\s[22]... Hello."
+	"\0\b[0]\s[25]Greetings."
+	"\0\b[0]\s[22]Hm... \w8\s[24]Ah?\n\n ... \s[5]I see, my turn has come..."
 }
 
 Accepted.suke

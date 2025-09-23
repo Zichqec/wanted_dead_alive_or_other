@@ -5,11 +5,9 @@ SurfaceRestore.bluemesh
 
 Greeting.bluemesh
 {
-	"\1\s[-1]\0\b[0]"
-	--
-	"\s[0]Finally. \s[29]I've been waiting ages to get in."
-	"\s[0]... So you're a necromancer? \s[29]Could have fooled me."
-	"\s[22]Alright, finally made it in! \s[24]No need to interview anyone else now that I'm here."
+	"\0\b[0]\s[0]Finally. \s[29]I've been waiting ages to get in."
+	"\0\b[0]\s[0]... So you're a necromancer? \s[29]Could have fooled me."
+	"\0\b[0]\s[22]Alright, finally made it in! \s[24]No need to interview anyone else now that I'm here."
 }
 
 Accepted.bluemesh
