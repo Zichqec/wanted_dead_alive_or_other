@@ -1,0 +1,174 @@
+SurfaceRestore.TEMPLATE
+{
+	"\1\s[-1]\0\s[0]"
+}
+
+Greeting.TEMPLATE
+{
+	//"\1\s[-1]\0\b[0]\s[0]"
+}
+
+Accepted.TEMPLATE
+{
+	//"\1\s[-1]\0\b[0]\s[0]"
+}
+
+Rejected.TEMPLATE
+{
+	//"\1\s[-1]\0\b[0]\s[0]"
+}
+
+RandomTalk.TEMPLATE : nonoverlap
+{
+	//"\1\s[-1]\0\b[0]\s[0]"
+}
+
+//Name?
+Name.TEMPLATE
+{
+	//"\1\s[-1]\0\b[0]\s[0]"
+}
+
+//Age?
+Age.TEMPLATE
+{
+	//"\1\s[-1]\0\b[0]\s[0]"
+}
+
+//Is this your first time working with us?
+FirstTime.TEMPLATE
+{
+	//"\1\s[-1]\0\b[0]\s[0]"
+}
+
+//Have you died before?
+DiedBefore.TEMPLATE
+{
+	//"\1\s[-1]\0\b[0]\s[0]"
+}
+
+//Are you currently under the effect of any curses?
+AnyCurses.TEMPLATE
+{
+	//"\1\s[-1]\0\b[0]\s[0]"
+}
+
+//Do you have any peculiarities with your body parts that we should be aware of?
+PeculiaritiesBodyParts.TEMPLATE
+{
+	//"\1\s[-1]\0\b[0]\s[0]"
+}
+
+//Do you have your own teeth? If 'no', and you have teeth upon your person, are they from a reputable source?
+OwnTeeth.TEMPLATE
+{
+	//"\1\s[-1]\0\b[0]\s[0]"
+}
+
+//Do you require food, water, and/or charging (electrical or otherwise) for the duration of your stay?
+RequireFoodWaterCharging.TEMPLATE
+{
+	//"\1\s[-1]\0\b[0]\s[0]"
+}
+
+//Do you have allergic reactions to (word group)?
+AllergicReactions.TEMPLATE
+{
+	//"\1\s[-1]\0\b[0]\s[0]"
+}
+
+//Are you immortal?
+Immortal.TEMPLATE
+{
+	//"\1\s[-1]\0\b[0]\s[0]"
+}
+
+//How many times on average do you regenerate limbs in a year?
+RegenerateLimbs.TEMPLATE
+{
+	//"\1\s[-1]\0\b[0]\s[0]"
+}
+
+//Do you have an active agreement or similar with (word group)?
+ActiveAgreement.TEMPLATE
+{
+	//"\1\s[-1]\0\b[0]\s[0]"
+}
+
+//How tall are you, and are you flexible about it?
+HowTall.TEMPLATE
+{
+	//"\1\s[-1]\0\b[0]\s[0]"
+}
+
+//On a scale of 1 to 100, how many pounds of mass are you willing to potentially lose during the course of this experiment?
+LoseMass.TEMPLATE
+{
+	//"\1\s[-1]\0\b[0]\s[0]"
+}
+
+//Would you describe yourself as being made of flesh?
+MadeOfFlesh.TEMPLATE
+{
+	//"\1\s[-1]\0\b[0]\s[0]"
+}
+
+//Do you often use your (bodypart)?
+OftenUseBodyPart.TEMPLATE
+{
+	//"\1\s[-1]\0\b[0]\s[0]"
+}
+
+//On a scale of 1 to 10, how much do you prioritize maintaining your current form?
+PrioritizeCurrentForm.TEMPLATE
+{
+	//"\1\s[-1]\0\b[0]\s[0]"
+}
+
+//How long have you resided in this reality?
+ResidedThisReality.TEMPLATE
+{
+	//"\1\s[-1]\0\b[0]\s[0]"
+}
+
+//Where do you see yourself in 10 years? Would it change if (word group)?
+SeeSelfTenYears.TEMPLATE
+{
+	//"\1\s[-1]\0\b[0]\s[0]"
+}
+
+//Are you currently taking any medications?
+TakingMeds.TEMPLATE
+{
+	//"\1\s[-1]\0\b[0]\s[0]"
+}
+
+//On a scale of 1 to 10, how likely are you to start rotting on a hot day?
+LikelyToRot.TEMPLATE
+{
+	//"\1\s[-1]\0\b[0]\s[0]"
+}
+
+//Do you have prior history with eldritch horrors?
+HistoryEldritchHorrors.TEMPLATE
+{
+	//"\1\s[-1]\0\b[0]\s[0]"
+}
+
+//Are there any colors or textures that should be kept out of your enclosure?
+ColorsTextures.TEMPLATE
+{
+	//"\1\s[-1]\0\b[0]\s[0]"
+}
+
+//What does your diet primarily consist of currently, and how willing are you to tolerate a permanent change?
+PrimaryDiet.TEMPLATE
+{
+	//"\1\s[-1]\0\b[0]\s[0]"
+}
+
+//How would you like to be compensated for your assistance today?
+HowCompensate.TEMPLATE
+{
+	//"\1\s[-1]\0\b[0]\s[0]"
+}
