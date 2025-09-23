@@ -3,6 +3,7 @@ shells : array
 	"bluemesh"
 	"suke"
 	"fluffydemon"
+	"weissvern"
 }
 
 OnGenerateNewCharacter

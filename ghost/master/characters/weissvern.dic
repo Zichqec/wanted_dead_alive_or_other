@@ -1,0 +1,379 @@
+SurfaceRestore.weissvern
+{
+	"\1\s[-1]\0\s[0]"
+}
+
+Greeting.weissvern
+{
+	"\0\b[0]\s[65]At last, at last, at last!!"
+	"\0\b[0]\s[60]Hello!! I'm ready to start!!"
+	"\0\b[0]\s[0]... \w8\w8\s[20]I've been waiting... \w8\w8\s[27]SO long outside!!\n\n \s[42]If you turn me away I'll... \w8\s[20]I'll... \w8\w8\s[25]I'll have lots of tasty things to eat soon. \w8\s[65]Maybe it's not so bad to wait a little longer."
+}
+
+Accepted.weissvern
+{
+	"\0\b[0]\s[65]Yay! I'm so excited to get started! \s[60]We can discuss the specifics of my compensation later."
+	"\0\b[0]\s[60]Nice! Good choice! \s[65]This town is spared... for now."
+	"\0\b[0]\s[65]Hooray! I \f[italic,1]always\f[italic,default] get what I want!"
+}
+
+Rejected.weissvern
+{
+	"\0\b[0]\s[0]... \_w[2000]\s[5]Well, I know what I'm doing tonight! \w8\w8\s[65]Enjoy the flames!"
+	"\0\b[0]\s[4]Aw... and I thought this town was kind of cute, too.\n\n \w8\w8\s[65]Well, I'll get back in line and give you another chance!"
+	"\0\b[0]\s[41]... \w8\w8Wow. \s[75]You do not care about your fellow citizens at all, do you? \w8\w8\s[65]Drat, that makes you so much less exploitable! \s[7]I'll need to find another strategy..."
+}
+
+RandomTalk.weissvern : nonoverlap
+{
+	"\0\b[0]\s[65]This is gonna be so much fun!"
+	"\0\b[0]\s[8]I'm gonna get so much tasty food later... \s[60]I'm really looking forward to it!"
+	"\0\b[0]\s[5]Ooh... \w8\w8\s[60]You've got some shiny stuff here! \s[65]I'm gonna take it back to my cave!"
+	"\0\b[0]\s[7]Hm... \w8\w8What is \f[italic,1]that\f[italic,default] thing...?\n\n ... \s[60]It's shiny..."
+	"\0\b[0]\s[65]I want a snack! Got any small critters around here?"
+	
+	"\0\b[0]\s[41]Is this gonna take much longer? \s[26]I'm so hungry I could eat a horse! \w8\w8\s[65]We should get one later!"
+	"\0\b[0]\s[43]What's a ""necromancer"", anyway? \s[60]I saw the line outside and heard you were offering good rewards for some help, \w4\s[65]so I decided to give it a try!"
+	"\0\b[0]\s[40]Hey, do you have dinner planned yet? \s[65]I think we should roast some %(sheep)!"
+	"\0\b[0]\s[60]Your hoard is kind of impressive, for a human! \s[65]So cute!"
+	"\0\b[0]\s[6]Sniff sniff...\n\n \_w[2000]\s[9]Something around here smells \f[italic,1]amazingly\f[italic,default] delicious..."
+}
+
+//Name?
+Name.weissvern
+{
+	"\0\b[0]\s[43]Gosh, do you want me to recite the whole thing? \s[65]Dragon names are really long, you know! \w8\s[25]Especially if I have to translate it into your tongue..."
+	"\0\b[0]\s[40]Oh, um... \s[60]Names are such a bother! \s[63]I definitely didn't forget half of it and won't have to ask my friends for help later..."
+	"\0\b[0]\s[43]Wow, like, the whole thing? \w8\s[0]Ok, here goes!\n\n \s[60]%(weissvern.dragonname)!\n\n \w8\w8\s[65]Did you get all that?"
+}
+
+weissvern.dragonname : all
+{
+	//of the [] and the [] and the [] and the []; of the [] and the [] and the []; heartscale!
+	
+	_generations = RAND(4) + 3 //3-6
+	
+	"Of the "
+	for _i = 0; _i < _generations; _i++
+	{
+		if _i > 0; " and the "
+		weissvern.dragonfirst
+		weissvern.dragonlast
+		"s"
+	}
+	"; of the "
+	for _i = 0; _i < _generations; _i++
+	{
+		if _i > 0; " and the "
+		weissvern.dragonfirst
+		weissvern.dragonlast
+		"s"
+	}
+	"; "
+	
+	weissvern.dragonfirst
+	weissvern.dragonlast
+}
+
+weissvern.dragonfirst
+{
+	"Heart"
+	"Rain"
+	"Ice"
+	"Flame"
+	"Sun"
+	"Wind"
+	"Sky"
+	"Thunder"
+	"Shadow"
+	"Mountain"
+	"Waterfall"
+	"Gorge"
+	"River"
+	"Stone"
+	"Frost"
+	"Gold"
+	"Silver"
+	"Copper"
+	"Bronze"
+	"Ruby"
+	"Sapphire"
+	"Emerald"
+	"Topaz"
+	"Amethyst"
+	"Geode"
+	"Crystal"
+	"Opal"
+	"Tungsten"
+	"Cobalt"
+	"Platinum"
+	"Star"
+}
+
+weissvern.dragonlast
+{
+	"scale"
+	"fang"
+	"wing"
+	"claw"
+	"talon"
+	"shredder"
+	"tearer"
+	"ripper"
+	"blood"
+	"hunter"
+	"heart"
+	"fear"
+	"fire"
+	"blaze"
+	"tail"
+	"horn"
+	"flight"
+	"stalker"
+	"growler"
+	"punisher"
+	"watcher"
+	"breaker"
+	"crasher"
+}
+
+//Age?
+Age.weissvern
+{
+	"\0\b[0]\s[0]I'm %(RAND(30) + 20)! \w8\w8\w8\s[5]Oh, wait, you probably mean human years, don't you?\n\n \w8\w8\s[25]Umm... that would be... \_w[2000]\s[60]I have no idea!"
+	"\0\b[0]\s[0]My age? \w8\w8\s[5]My age... \_w[2000]\s[0]Hey, what year is it on the human calendar again? \s[65]I forget!"
+	"\0\b[0]\s[60]%(RAND(30) + 20) dragon cycles, give or take a few where I lost count of the seasons!"
+}
+
+//Is this your first time working with us?
+FirstTime.weissvern
+{
+	"\0\b[0]\s[65]Definitely! I'd remember a tasty-looking morsel like you!" //she definitely wouldn't
+	"\0\b[0]\s[41]Um... \w8\w8\s[77]working with you... \w8\w8\w8\w8\s[65]Yeah, probably!"
+	"\0\b[0]\s[60]Not a clue! Places like this are a dime a dozen in human towns. \s[65]I've been all sorts of places, so I don't always remember what I've seen where, y'know?"
+}
+
+//Have you died before?
+DiedBefore.weissvern
+{
+	"\0\b[0]\s[7]Hmm... \w8\w8Have I ever died... \w8\w8\w8\w8\s[43]\f[italic,1]Have\f[italic,default] I ever died...?"
+	"\0\b[0]\s[0]I was an egg for a while when I was really young. \s[65]Does that count?"
+	"\0\b[0]\s[7]Umm... \_w[2000]\s[63]Is this one of those human things I don't know much about...?"
+}
+
+//Are you currently under the effect of any curses?
+AnyCurses.weissvern
+{
+	"\0\b[0]\s[77]Curses! \s[7]I tried to get Midas' Touch a while back, but they said it doesn't work with claws! \w8\w8\s[26]So... \s[25]yeah, I'd call that a curse!"
+	"\0\b[0]\s[5]Curses, curses... \_w[2000]\s[0]Well, this one time I ate a little fairy and it said something about cursing me with foolishness for a thousand years.\n\n \w8\s[65]Can't say I've noticed anything strange since then, though, so who knows what that's about!"
+	"\0\b[0]\s[65]Oh, yeah, I got like a dozen of those! \s[60]It comes with the territory.\n\n \w8\w8\s[41]Did you need a list? \w8\w8\s[20]... I might have to get back to you on that later."
+}
+
+//Do you have any peculiarities with your body parts that we should be aware of?
+PeculiaritiesBodyParts.weissvern
+{
+	"\0\b[0]\s[7]Peculiarities...? \_w[2000]\s[65]Nah! I'm just me!"
+	"\0\b[0]\s[5]Um... \w8\w8\s[0]What would be peculiar about them?"
+	"\0\b[0]\s[60]Not really! Scaly as always!"
+}
+
+//Do you have your own teeth? If 'no', and you have teeth upon your person, are they from a reputable source?
+OwnTeeth.weissvern
+{
+	"\0\b[0]\s[65]Do I ever! I take great care of my teeth! \s[60]Gotta keep them in top condition for ripping and tearing and wooing suitors." //(ripping and tearing) and (wooing suitors)... or (ripping and tearing and wooing) suitors...
+	"\0\b[0]\s[77]Of COURSE I have good teeth!! \s[75]What kind of dragon do you think I am!? \w8\w8\s[6]I'd never let substandard teeth into my hoard."
+	"\0\b[0]\s[41]Teeth... \w8\w8\s[7]teeth... \_w[2000]\s[25]Oh, yeah! \s[65]Yeah, I've got plenty of teeth! \s[60]No worries about that!"
+}
+
+//Do you require food, water, and/or charging (electrical or otherwise) for the duration of your stay?
+RequireFoodWaterCharging.weissvern
+{
+	"\0\b[0]\s[60]I saw there's a pig farm nearby, so I can take care of food myself!"
+	"\0\b[0]\s[0]Oh, I'm not worried too about it! \s[60]You look tasty, so I'll have food one way or another."
+	"\0\b[0]\s[60]The cool thing about being a dragon is that I can have a barbeque anytime, anywhere! \s[65]I'm sure I'll be fine!"
+	"\0\b[0]\s[60]Well, you can either feed me, or you can accept a few extra candidates and I'll feed myself!"
+	"\0\b[0]\s[65]Neglect to feed me at your own peril!"
+}
+
+//Do you have allergic reactions to (word group)?
+AllergicReactions.weissvern
+{
+	"\0\b[0]\s[20]... \w8\w8Yeah." //i NEED this to hit on "gold" SO badly
+	"\0\b[0]\s[2]Gosh, that can be an allergy...? \_w[2000]\s[25]I need to see my doctor!"
+	"\0\b[0]\s[60]Nope, not at all!"
+}
+
+//Are you immortal?
+Immortal.weissvern
+{
+	"\0\b[0]\s[65]With how short your human lifespans are, does it really make a difference?"
+	"\0\b[0]\s[65]Sure am!"
+	"\0\b[0]\s[5]Y'know, they say no dragon has ever died of old age. \s[2]But what if, like... all the old ones just get slain before the natural end of their lifespan...?\n\n \_w[2000]\s[65]Yeah, I dunno, probably!"
+}
+
+//How many times on average do you regenerate limbs in a year?
+RegenerateLimbs.weissvern
+{
+	"\0\b[0]\s[7]Regenerate limbs... \w8\w8\s[27]Like... like how often do I bring them back to my cave? \w8\w8\s[60]Um, thousands, probably! \s[65]How long are human years again?"
+	"\0\b[0]\s[7]Limbs... \w8\w8\s[27]Like... \w8\w8\s[42]as in tree limbs? How often do I plant trees?\n\n \w8\w8\s[60]Well, I don't usually go out of my way to plant trees, but I do cause the occasional forest fire... and that results in lots of new tree growth!"
+	"\0\b[0]\s[7]... Limbs... \w8\w8\s[43]I don't know any healing magic. \s[60]So, I guess none! \s[65]That was an easy one."
+}
+
+//Do you have an active agreement or similar with (word group)?
+ActiveAgreement.weissvern
+{
+	"\0\b[0]\s[60]Oh sure sure sure. \s[65]I leave the habitat alone, I get lots of %(gold)!"
+	"\0\b[0]\s[43]Not currently... \s[0]but I bet I could get one if I tried!"
+	"\0\b[0]\s[44]... No. \w8\s[75]But I'll reclaim what's mine eventually!"
+}
+
+gold
+{
+	"gold"
+	"silver"
+	"bronze"
+	"copper"
+	"tasty sheep"
+}
+
+//How tall are you, and are you flexible about it?
+HowTall.weissvern
+{
+	"\0\b[0]\s[7]Um... \w8\w8\s[60]I guess I'm pretty tall when I fly! \s[65]I can fly high in the sky or low to the ground, so yeah, I'd say I'm flexible too!"
+	"\0\b[0]\s[0]About two and a half tail-lengths! \s[65]I'm very flexible too, I do stretches every day to maintain proper flying form."
+	"\0\b[0]\s[40]Height doesn't matter so much when you can fly! \w8\w8\s[65]Sooo I dunno!"
+}
+
+//On a scale of 1 to 100, how many pounds of mass are you willing to potentially lose during the course of this experiment?
+LoseMass.weissvern
+{
+	"\0\b[0]\s[7]Mass... \w8\w8\s[42]Um... \w8\w8\s[27]I... \_w[2000]\s[65]I dunno what that means! Pass!"
+	"\0\b[0]\s[7]Mass... \w8\w8\s[42]Is that an animal? \w8\w8\s[60]I guess all of them, since I don't actually have any right now, ha."
+	"\0\b[0]\s[7]Ooh, gosh, that's a tricky one... \w8\w8\s[42]Um... \_w[2000]\s[60]Well, if it's coming out of my hoard, no way! \s[65]Set one foot inside my cave and you've just become dinner!"
+}
+
+//Would you describe yourself as being made of flesh?
+MadeOfFlesh.weissvern
+{
+	"\0\b[0]\s[65]Sure, if you'd prefer!"
+	"\0\b[0]\s[60]Two parts flesh to one part scales!"
+	"\0\b[0]\s[0]Sure, I don't see why not!"
+}
+
+//Do you often use your (bodypart)?
+OftenUseBodyPart.weissvern
+{
+	"\0\b[0]\s[7]... \_w[2000]\s[42]Is that a human thing?"
+	"\0\b[0]\s[63]Um... \w8\w8I'm not really sure? \s[60]I usually have more important things to worry about, like ""what's for dinner tonight""!"
+	"\0\b[0]\s[5]Um... \_w[2000]\s[65]I don't think dragons have those!"
+}
+
+//On a scale of 1 to 10, how much do you prioritize maintaining your current form?
+PrioritizeCurrentForm.weissvern
+{
+	"\0\b[0]\s[65]A 10! I'm perfect as I am now!"
+	"\0\b[0]\s[7]Hm... \w8\w8I like how I am overall, but it WOULD be cool to have %(setofhorns)... \w8\w8\s[42]Let's say 8."
+	"\0\b[0]\s[43]My form...? \w8\w8\s[7]Like... my athletic ability? \w8\w8\s[65]A 10 for sure! It's really important that I stay limber and quick on my feet, so I can hunt %(sheep) and stuff!"
+}
+
+setofhorns
+{
+	"another set of horns"
+	"more claws"
+	"more teeth"
+	"an extra pair of eyes"
+	"more legs"
+	"another tail"
+	"more scales"
+	"another pair of ears"
+	"a second head"
+	"a longer tongue"
+	"another pair of arms"
+	//resists the urge to put "cat ears"...
+}
+
+sheep
+{
+	"sheep"
+	"goats"
+	"wild boar"
+	"chickens"
+	"elk"
+}
+
+//How long have you resided in this reality?
+ResidedThisReality.weissvern
+{
+	"\0\b[0]\s[7]Reality... \w8\w8\s[42]Is this a human term for something? \w8\w8\s[60]Never heard of it, sorry!"
+	"\0\b[0]\s[43]Reality...? \w8\w8\s[65]Oh, I get it, that's the name of this town, right? \w8\w8\s[60]I don't really reside here, I just came to scope the place out and see what I could get out of it."
+	"\0\b[0]\s[77]Whoa... that's a tough question... \w8\w8\w8\s[60]If I knew what a ""reality"" was, I'd tell you for sure!"
+}
+
+//Where do you see yourself in 10 years? Would it change if (word group)?
+SeeSelfTenYears.weissvern
+{
+	"\0\b[0]\s[60]Oh, I'm sure it's fine! \s[65]I'll be terrorizing the countryside, same as ever!"
+	"\0\b[0]\s[0]Are we counting in human years? \s[65]I can't imagine things will be much different! Human time passes so quickly!"
+	"\0\b[0]\s[40]Probably in my cave, same as ever. \s[60]Human trifles generally don't affect me; \s[65]if it's too much of a problem I just set it on fire and it usually resolves itself!"
+}
+
+//Are you currently taking any medications?
+TakingMeds.weissvern
+{
+	"\0\b[0]\s[7]Medications... \w8\w8\s[43]I don't think I have any of those. \s[60]But if they're worth having, sure, I'll take lots of them for my hoard!"
+	"\0\b[0]\s[42]Hmm... \s[7]medications... \w8\w8\s[41]Is that a new human term for gold, or something? \s[65]I'm taking lots of gold, all the time!"
+	"\0\b[0]\s[43]Medications... \w8\w8\s[44]Do you have them? \s[42]Are they shiny?\n\n \w8\w8\s[7]I'll look into this later... \s[70]If they're shiny, I'll be taking ALL of the medications this town has to offer."
+}
+
+//On a scale of 1 to 10, how likely are you to start rotting on a hot day?
+LikelyToRot.weissvern
+{
+	"\0\b[0]\s[63]Um... that would be a 1! \s[60]Can't say the same for the bandits that tried to rob my cave last week, though."
+	"\0\b[0]\s[60]Oh, not at all, don't worry about that! \s[65]Dragon scales are great for keeping cool in hot weather!"
+	"\0\b[0]\s[7]Hmm... \w8\w8\s[42]How hot are we talking?\n\n \s[7]I don't really know how hot a dragon would have to get to start rotting, but I know someone I could ask..."
+}
+
+//Do you have prior history with eldritch horrors?
+HistoryEldritchHorrors.weissvern
+{
+	"\0\b[0]\s[60]Oh, I think I ate one of those for breakfast once!"
+	"\0\b[0]\s[40]What's an ""eldritch horror""? \s[65]Is it tasty?"
+	"\0\b[0]\s[7]Hmm... \w8\w8\s[42]I'm not really sure. \w8\w8\s[41]Do they smell like %(cheese)? \s[43]I remember having an encounter with a creature like that once..."
+}
+
+cheese
+{
+	"cheese"
+	"flies"
+	"garlic"
+	"fish"
+	"rotting flesh"
+	"burnt hair"
+	"beetles"
+	"burning wood"
+	"smoke"
+}
+
+//Are there any colors or textures that should be kept out of your enclosure?
+ColorsTextures.weissvern
+{
+	"\0\b[0]\s[5]Well, there's nothing that needs to be kept out, buuut... \s[0]If there's no gold for me to sleep on, I might die! \w8\w8\s[75]Or you might die, one or the other."
+	"\0\b[0]\s[60]Oh, I don't mind whatever, so long as there's a sizeable pile of gold for me to sleep on top of! \w8\s[65]And take home with me afterwards!"
+	"\0\b[0]\s[40]As long as I'm surrounded by a sufficient amount of precious metals and gemstones, it's all good! \w8\w8\s[75]Don't skimp out though, I'll find a way to get what I'm owed!"
+}
+
+//What does your diet primarily consist of currently, and how willing are you to tolerate a permanent change?
+PrimaryDiet.weissvern
+{
+	"\0\b[0]\s[40]Oh, you know, deer and sheep and stuff. \s[60]Whatever I manage to catch!\n\n \s[43]I guess I wouldn't mind trying to incorporate more seafood into my diet. \s[65]I've heard it's tasty once you get used to it!"
+	"\0\b[0]\s[0]Whatever I can catch in my claws! \s[60]Though sometimes I get a bit lazy and just take what's convenient. \s[65]If it's dead and nobody else has laid a claim to it yet, it's mine!"
+	"\0\b[0]\s[60]My diet is pretty varied! \s[35]Especially those first few days after I've burned down a town... \s[65]Feasts aplenty, you just gotta dig through some smoldering remains to find them!"
+}
+
+//How would you like to be compensated for your assistance today?
+HowCompensate.weissvern
+{
+	"\0\b[0]\s[75]I want one bag of gold pieces delivered to my cave every moon until the day you perish. \w8\s[60]Failure to comply will be met with scorching flames and the destruction of everything you've ever built!"
+	"\0\b[0]\s[60]I'm going to have some friends in the area soon, and I want to schedule the delivery of some animals for a feast. \s[65]Pigs, chickens, cattle, and more; there'll be a lot to organize!"
+	"\0\b[0]\s[40]Oh, nothing too much... \s[60]I just want you to come back to my cave and join my hoard. \s[65]That's not so bad, right? I'll even feed you!"
+}
