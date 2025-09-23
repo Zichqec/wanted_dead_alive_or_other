@@ -5,9 +5,9 @@ SurfaceRestore.goldfish
 
 Greeting.goldfish
 {
-	"\0\b[0]\s[0]Greetings. \s[103]My name is %(bowl.namefirst) %(bowl.namelast). \s[503]It is a pleasure to make your acquaintance.\n\n \s[302]I have come here to escort my [TODO idk the word, or could be a word group], he has taken an interest in your work and the promised rewards.\n\n \s[102]Your patience is appreciated as I translate between you and he."
-	"\0\b[0]\s[103]Greetings, we are pleased to make your acquaintance. \s[102]I am here as escort for my [TODO]. \s[106]He has expressed interest in your advertisement, and wished to partake in this interview process.\n\n \s[500]Your patience is appreciated as I translate messages for both your understanding."
-	"\0\b[0]\s[202]Ah... please be careful not to splash.\n\n \s[500]My apologies. My name is %(bowl.namefirst), I am here as escort for my [TODO]. \s[302]We saw your advertisement, and he wished to try for the opportunity himself.\n\n \s[103]It is an exciting prospect. Do forgive us if some amount of water is lost on the floor..."
+	"\0\b[0]\s[0]Greetings. \s[103]My name is %(bowl.namefirst) %(bowl.namelast). \s[503]It is a pleasure to make your acquaintance.\n\n \s[302]I have come here to escort my client, he has taken an interest in your work and the promised rewards.\n\n \s[102]Your patience is appreciated as I translate between you and he."
+	"\0\b[0]\s[103]Greetings, we are pleased to make your acquaintance. \s[102]My name is %(bowl.namefirst) %(bowl.namelast), and I am here as escort for my client. \s[106]He has expressed interest in your advertisement, and wished to partake in this interview process.\n\n \s[500]Your patience is appreciated as I translate messages for both your understanding."
+	"\0\b[0]\s[202]Ah... please be careful not to splash.\n\n \s[500]My apologies. My name is %(bowl.namefirst) %(bowl.namelast), I am here as escort for my client. \s[302]We saw your advertisement, and he wished to try for the opportunity himself.\n\n \s[103]It is an exciting prospect. Do forgive us if some amount of water is lost on the floor..."
 }
 
 bowl.namefirst
@@ -16,21 +16,72 @@ bowl.namefirst
 	"Harmony"
 	"Atlantica"
 	"River"
+	"Crystal"
+	"Glassia"
+	"Pacifica"
+	"Marina"
+	"Brooke"
+	"Delphine"
+	"Fountina"
+	"Lily"
+	"Chelsea"
+	"Jessea"
+	"Sydney"
+	"Mery"
+	"Meryl"
+	"Sandra"
+	"Cora"
+	"Angelica"
+	"Pearl"
+	"Marlene"
+	"Lusea"
+	"Darsea"
+	"Cassea"
+	"Nansea"
+	"Dolly"
+	"Shelley"
+	"Elise"
+	"Eleanora"
+	"Whitney"
+	"Molly"
+	"Cerulea"
+	"Casea"
+	"Trasea"
+	"Lasea"
 }
 
 bowl.namelast
 {
-	""
+	"Springs"
+	"Rounds"
+	"Seas"
+	"Falls"
+	"Prism"
+	"Scales"
+	"Tides"
+	"Currents"
+	"Swells"
+	"Albatross"
+	"Droplets"
+	"Dewdrop"
+	"Splash"
+	"Hollows"
+	"Boule"
+	"Raffel"
 }
 
 Accepted.goldfish
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[202]Ah... \w8\w8\s[211]Most excellent, he is pleased.\n\n \w8\w8\s[601]Thank you for your time, we will not disappoint."
+	"\0\b[0]\s[106]Wonderful. \w8\w8\s[203]My client is pleased as well.\n\n \w8\w8\s[601]Thank you for this opportunity."
+	"\0\b[0]\s[103]Excellent... \s[203]I am pleased to hear it, \w8\s[211]and it seems my client is, too.\n\n \w8\w8\s[601]We appreciate your generosity."
 }
 
 Rejected.goldfish
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[300]Ah... \w8\w8\s[500]I see.\n\n \w8\w8...\n\n \w8\w8...\n\n \w8\w8\s[501]Well, although we are both disappointed, thank you for your time."
+	"\0\b[0]\s[300]Ah... \w8\w8\s[500]I understand. \w8\w8\s[514]I will find a way to explain this to him... on our way out.\n\n \w8\w8\s[501]Thank you for your time."
+	"\0\b[0]\s[500]I see... \w8\w8\s[300]It can't be helped, then. \w8\w8\s[103]I will find a way to break the news gently.\n\n \w8\w8\s[501]Thank you for your time."
 }
 
 RandomTalk.goldfish : nonoverlap
@@ -41,7 +92,35 @@ RandomTalk.goldfish : nonoverlap
 //Name?
 Name.goldfish
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[103]My client's name is %(goldfish.name). \s[601]He is delighted to meet you."
+	"\0\b[0]\s[103]My client goes by %(goldfish.name). \s[406]He is glad you have asked."
+	"\0\b[0]\s[103]My client is called %(goldfish.name). \s[211]He is pleased by your inquiry, thank you."
+}
+
+//TODO lots more of these, please...
+goldfish.name
+{
+	"Finn"
+	"Finnegan"
+	"Goldie"
+	"Nemo"
+	"Poseidon"
+	"Bubbles"
+	"Streak"
+	"Orangie"
+	"Splash"
+	"Eddy"
+	"Turtle"
+	"Spot"
+	"Pebble"
+	"Submarine"
+	"Freddie"
+	"Captain"
+	"Jolly Rodger"
+	"Cutlass"
+	"Coin"
+	"Shark"
+	"Whale"
 }
 
 //Age?
@@ -56,7 +135,9 @@ Age.goldfish
 //Is this your first time working with us?
 FirstTime.goldfish
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[103]Yes, it is."
+	"\0\b[0]\s[103]Yes."
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[103]Yes, it appears that way."
 }
 
 //Have you died before?
@@ -70,31 +151,41 @@ DiedBefore.goldfish
 //Are you currently under the effect of any curses?
 AnyCurses.goldfish
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[302]...\n\n \w8\w8...\n\n \w8\w8\s[103]No, he is not aware of any curses on his person."
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[109]It seems he is affected by a minor curse which restricts his swimming patterns. \s[106]We hope this will not be an issue."
+	"\0\b[0]\s[300]Ah...\n\n \w8\w8\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[303]He is not under the effect of any curses, no. \s[507]However, I'm afraid the same cannot be said of myself...\n\n \w8\w8\s[303]It is a complicated matter. I would prefer to not give out personal details unless it is absolutely necessary."
 }
 
 //Do you have any peculiarities with your body parts that we should be aware of?
 PeculiaritiesBodyParts.goldfish
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[103]None in particular."
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[103]Indeed not. \s[109]My client is an ordinary goldfish with no particular medical conditions or other concerns."
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[303]One of his fins on the left side is slightly smaller than the others, apparently. \s[106]Hopefully this will not be a concern. I am informed it does not impact his swimming to a noticeable degree."
 }
 
 //Do you have your own teeth? If 'no', and you have teeth upon your person, are they from a reputable source?
 OwnTeeth.goldfish
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[103]Indeed, these are a feature my client posesses. \s[306]Apparently they fall out and re-grow regularly, and are a common feature among goldfish."
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[312]Ah... \w8\w8\s[103]Y-yes. Goldfish do indeed have teeth, and so my client naturally posesses a set as well.\n\n \s[303]He has... \s[504]Er... \w8\w8\s[601]Offered to spit some out for you...??\s[501]"
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[103]Indeed, my client posesses a set of teeth near his throat, as all goldfish do."
 }
 
 //Do you require food, water, and/or charging (electrical or otherwise) for the duration of your stay?
 RequireFoodWaterCharging.goldfish
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[103]I have brought our own supply of fish flakes and clean water, to ensure my client's comfort and health at all times. \s[109]It is a necessary precaution to ensure the pH and other variables of the water are appropriate for his needs.\n\n \s[106]If our stay is to last longer than one week, please inform me so that I may make arrangements."
+	"\0\b[0]\s[106]I have brought sufficient supplies with us for a stay of one week. \s[103]If your experiment requires a longer stay, please inform me so that I may make arrangements.\n\n \s[109]The safety and comfort of my client are my top priorities at all times, so I will manage the care of his water and his food."
+	"\0\b[0]\s[103]It would be dangerous for both myself and my client if I permitted the use of unauthorized water. \s[109]I have also brought a sufficient supply of fish flakes.\n\n \s[0]Nothing more will be needed, but thank you for your inquiry."
 }
 
 //Do you have allergic reactions to (word group)?
 AllergicReactions.goldfish
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[103]It seems not."
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[103]He is uncertain."
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[303]It seems to be... a difficult question to answer. \s[501]My apologies."
 }
 
 //Are you immortal?
@@ -108,89 +199,149 @@ Immortal.goldfish
 //How many times on average do you regenerate limbs in a year?
 RegenerateLimbs.goldfish
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[103]Apparently, he used to do it commonly as a younger fish. \s[106]These days, his fins don't often become damaged."
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[106]My client has had no need to attempt such an action, although he assures you he is capable of it."
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[103]Currently, he is re-growing anywhere between 4 and 6 fins each calendar year. \s[109]He states that the number varies depending on whether his interactions with other fish result in fin damage."
 }
 
 //Do you have an active agreement or similar with (word group)?
 ActiveAgreement.goldfish
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[103]No, he does not."
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[103]No, he has no such agreement."
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[108]He says there is one... \s[306]but he assures you that it will not be an issue whatsoever."
 }
 
 //How tall are you, and are you flexible about it?
 HowTall.goldfish
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[103]My client was last measured at %(RAND(4) + 5).%(RAND(9) + 1)%(RAND(10)) centimeters from mouth to tail tip. \s[300]If you need height from top to bottom specifically, we would need to take a measurement."
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[103]He is not certain of his current length, as he has grown somewhat since his last measure.\n\n \s[309]He is not opposed to the idea of gaining length as a part of these proceedings."
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[108]He says he can be flexible. \s[309]However, he would like to get an up-to-date measurement taken before the experiment begins."
 }
 
 //On a scale of 1 to 100, how many pounds of mass are you willing to potentially lose during the course of this experiment?
 LoseMass.goldfish
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[0]... \w8\w8\s[103]My client is a goldfish. He weighs less than 1 pound in total. \s[309]Please restate your question in tenths of an ounce if you would like me to relay it to him, otherwise I cannot oblige."
+	"\0\b[0]\s[0]... \w8\w8\s[303]My client weighs less than an ounce. To ask this of him would be absurd.\n\n \s[106]Forgive me, but I cannot relay this question to him as it is."
+	"\0\b[0]\s[0]... \s[303]You are aware that this interview is for the goldfish swimming in my bowl, and not myself, correct? \s[103]We are two separate people.\n\n \s[306]He weighs less than an ounce, so this is a completely impossible thing to ask of him. \s[0]My apologies for any confusion."
 }
 
 //Would you describe yourself as being made of flesh?
 MadeOfFlesh.goldfish
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[103]Yes."
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[103]Indeed. Flesh and scales."
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[108]Yes. However, he claims to have ingested some small plastic pieces when he was smaller... \s[303]He wishes for you to be aware of this in case it classes him differently."
 }
 
 //Do you often use your (bodypart)?
 OftenUseBodyPart.goldfish
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[103]He has never heard of this concept."
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[103]He is unfamiliar with such things."
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[306]He knows some friends who have them, but they are not commonly found in goldfish."
 }
 
 //On a scale of 1 to 10, how much do you prioritize maintaining your current form?
 PrioritizeCurrentForm.goldfish
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[103]He indicates a 10. \s[109]He says that his current form is perfect and he has no desire to change it."
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[302]Ah, I see... \s[103]He says perhaps a 4. \s[109]His current form is quite familiar to him, but he is intrigued by the idea of having %(legs)..."
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[103]He is completely ambivalent about the idea. \s[109]Which, I suppose, makes it a 1."
+}
+
+legs
+{
+	"legs"
+	"hair"
+	"a prehensile tail"
+	"feet"
+	"arms"
+	"hands"
+	"toes"
+	"fingers"
 }
 
 //How long have you resided in this reality?
 ResidedThisReality.goldfish
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[103]He is unsure of what you mean by reality... \s[304]Which is to say, to his knowledge he has been here all his life."
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[103]He claims to have spent another life in a reality not far from here..."
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[103]For his entire adult life. \s[306]He is unsure about his status before then."
 }
 
 //Where do you see yourself in 10 years? Would it change if (word group)?
 SeeSelfTenYears.goldfish
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[103]He hopes he will still be alive to enjoy the simple comforts of his tank."
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[103]He cannot think ahead that far."
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[103]His plans for world domination remain unchanged."
 }
 
 //Are you currently taking any medications?
 TakingMeds.goldfish
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[109]He is not taking any medications, but his water is strictly monitored to maintain a certain pH level, as well as other controlled variables."
+	"\0\b[0]\s[109]He has prescription fish flakes. \s[309]I have brought the bottle, in case you need to see the ingredients."
+	"\0\b[0]\s[103]He does not take any medications. \s[109]His water is strictly controlled to ensure a safe and comfortable environment for him, but that is a typical part of goldfish care."
 }
 
 //On a scale of 1 to 10, how likely are you to start rotting on a hot day?
 LikelyToRot.goldfish
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[103]A hot day is usually not an issue. \s[303]However, I typically bring a parasol with me to avoid keeping my client in the sun for long periods of time."
+	"\0\b[0]\s[300]For him to rot, he would first need to be dead... \w8\w8\s[309]At that point, I believe we would have much more pressing concerns."
+	"\0\b[0]\s[103]This should be no concern unless the heat is very extreme. \w8\s[109]In such a case, I may need to withdraw for my own safety as well."
 }
 
 //Do you have prior history with eldritch horrors?
 HistoryEldritchHorrors.goldfish
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[103]No, he has never met such a being."
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[103]He is not sure what an eldritch horror is. \s[300]I imagine that answers your question sufficiently."
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[103]Once, in a previous life. \s[303]Although he does not wish to share details."
 }
 
 //Are there any colors or textures that should be kept out of your enclosure?
 ColorsTextures.goldfish
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[103]He will need no such things, as my bowl will serve as his habitat for the duration.\n\n \s[0]... I would personally prefer hard surfaces over carpeting, upholstery, etc."
+	"\0\b[0]\s[103]I will take care of all his needs in this regard, since he will remain within my bowl except in circumstances where he absolutely cannot.\n\n \w8\w8\s[300]... If I may make one small request for myself, I would prefer for %(velvet) to be avoided. \w8\s[310]It's... \w8\w8\s[305]unpleasant."
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[103]He has an affinity for yellows, oranges, and golds. \s[303]He would be pleased if more of these colors are present in our surroundings than others."
+}
+
+velvet
+{
+	"velvet"
+	"cardboard"
+	"carpet"
+	"gravel"
+	"chalk"
 }
 
 //What does your diet primarily consist of currently, and how willing are you to tolerate a permanent change?
 PrimaryDiet.goldfish
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[103]My client's diet is made up entirely of fish flakes. \s[101]A change is not possible."
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[103]Currently, he only eats fish flakes. \s[109]However, he is open to the idea of trying other things if you are able to make them edible for him."
+	"\0\b[0]\s[0]... \s[303]My client eats fish flakes. \s[103]Any changes you want to make to that must be run by my company to ensure my client's safety and long-term health."
 }
 
 //How would you like to be compensated for your assistance today?
 HowCompensate.goldfish
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[103]He requests a lifetime supply of fish flakes."
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[103]He wishes to be enlarged to a massive size, capable of traversing the oceans with ease."
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[109]He would like your assistance in obtaining tickets for %(amusicconcert) he had been planning to attend. \s[303]They sold out before we were able to get clearance for the two of us to go with one ticket."
+}
+
+amusicconcert
+{
+	"a music concert"
+	"a fireworks show"
+	"a magic show"
+	"an aquarium tour"
+	"a metalworking shop"
 }
