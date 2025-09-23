@@ -1,0 +1,8 @@
+charset,Shift_JIS
+craftman,uv
+craftmanw,‚µ‚à‚ñ‚«‚ñ–¡‘X`ŠÛ
+name,weissvern
+type,shell
+craftmanurl,http://ozuakihi.pv.land.to/
+
+seriko.use_self_alpha,1
