@@ -315,6 +315,8 @@ OnDebug.SwitchTo : all
 	"\![*]\__q[OnDebug.SwitchToShell,fluffydemon,1]fluffydemon (mouth)\__q\n"
 	"\![*]\__q[OnDebug.SwitchToShell,fluffydemon,2]fluffydemon (eye)\__q\n"
 	"\![*]\__q[OnDebug.SwitchToShell,weissvern]weissvern\__q\n"
+	"\![*]\__q[OnDebug.SwitchToShell,goldfish]goldfish\__q\n"
+	"\![*]\__q[OnDebug.SwitchToShell,bookworm]bookworm\__q\n"
 	
 	"\n\n"
 	"\![*]\q[Back,OnSakuraMenu]  \![*]\q[Cancel,blank]"
