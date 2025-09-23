@@ -32,8 +32,26 @@ RandomTalk.bluemesh : nonoverlap
 	"\0\b[0]\s[3]What is all of this stuff, anyway? \s[29]Science equipment of some sort...?"
 	"\0\b[0]\s[22]I'm ready to get started whenever you are. Just let me know where to put my stuff."
 	"\0\b[0]\s[22]I'm glad I saw your ad, this is just what I needed right now."
-	"\0\b[0]\s[8]Are you doodling something on your notes? \s[22]I wanna see."
-	"\0\b[0]\s[24]Why not commit to me as a participant right now? I'm sure I'll do great."
+	"\0\b[0]\s[8]Are you doodling something on your notes? \s[22]I wanna see!"
+	"\0\b[0]\s[24]Why not commit to me as a participant right now? I'm%(br)sure I'll do great."
+	"\0\b[0]\s[29]Hey, when's this experiment supposed to end, anyway? \s[24]They have a special deal at the body shop and I want to make sure I'm not gonna miss it."
+	"\0\b[0]\s[29]Hmm... \w8\w8\s[3]mmm...\n\n \w8\w8\s[8]I gotta say, your sense of style is pretty tacky. \s[22]Nothing that can't be improved with %(somebionics) and a fresh coat of paint, though."
+	_girl = "girl"; if Candidate.Num % 2 == 1; _girl = "boy"
+	"\0\b[0]\s[22]This is so sick, my %(_girl)friend is never gonna believe me."
+	"\0\b[0]\s[3]Is this interview gonna go on for much longer? \s[29]I'm kinda getting bored..."
+}
+
+somebionics
+{
+	"some bionics"
+	"a pivot to bionics"
+	"more gears"
+	"less nerd stuff"
+	"some racing posters"
+	"several trash bags"
+	"a chunky set of speakers"
+	"more piercings"
+	"more skull decorations"
 }
 
 //Name?
