@@ -90,6 +90,14 @@ CurrentShell
 	SHIORI3FW.ShellName
 }
 
+//!!! NOT FOR USE IN QUESTIONS !!!
+//It will cause trouble there!!! we'll just have to deal with it. This is ok for randomtalk and things like boot/close/acceptance/rejection though
+br
+{
+	if SHIORI3FW.BalloonName == "SSPデフォルト+"; " \c[char,1]\n"
+	else; " "
+}
+
 //[character ID, category name, part name, option, on-1/off-0, thumbnail path]
 OnNotifyDressupInfo
 {
