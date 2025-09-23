@@ -1,7 +1,6 @@
 SurfaceRestore.suke
 {
 	"\1\s[-1]\0\s[22]"
-	"\1\s[-1]\0\s[26]"
 }
 
 Greeting.suke
@@ -27,8 +26,31 @@ Rejected.suke
 
 RandomTalk.suke : nonoverlap
 {
-	"pick me pick me"
-	"i'm a ghost :("
+	"\0\b[0]\s[25]How interesting... \s[22]This place is very lively indeed, though I suspect most other applicants are unaware."
+	"\0\b[0]\s[22]Hmm hmm..."
+	"\0\b[0]\s[25]Choosing suitable candidates is very challenging, isn't%(br)it? \w8\s[22]I understand. \s[26]Please take your time."
+	"\0\b[0]\s[24]This is quite a fascinating place... \s[26]I wonder, did you set up your laboratory here knowing that, or did this great crowd of spirits come along later?"
+	"\0\b[0]\s[24]I must admit, I am surprised by the amount of equipment you seem to have gathered in this place... \s[26]It's quite impressive."
+	
+	_awitch = ""; _size = ARRAYSIZE(awitch); _awitch = awitch[Candidate.Num % _size] //"Don't seed stuff" i said... "It'll be fine" i said.......
+	"\0\b[0]\s[25]I do hope we can come to an agreement... \w8\w8\s[26]I tried to make a similar deal with %(_awitch), but for various reasons, we did not follow through with it."
+	"\0\b[0]\s[25]Hm... \w8\w8\s[26]There is much which can be seen from the ethereal plane that is unknown on the mortal one. \w8\w8\s[22]I wonder if you are aware of how much your true nature shows through..."
+	"\0\b[0]\s[22]The moon... I feel it in the sky."
+	"\0\b[0]\s[22]I do hope you are considering my application carefully..."
+	"\0\b[0]\s[22]Perhaps after this, I'll... \w8\w8\s[25]Well. I suppose that depends on the details of our agreement..."
+}
+
+awitch : array
+{
+	"a witch"
+	"a wizard"
+	"a fae"
+	"a demon"
+	"a certain group of experts"
+	"a priest"
+	"a vampire"
+	"a werewolf"
+	"another spirit more connected to the mortal plane"
 }
 
 //Name?
@@ -253,6 +275,6 @@ PrimaryDiet.suke
 HowCompensate.suke
 {
 	"\0\b[0]\s[22]... \w8\w8\s[25]I would like for a certain group of criminals to receive retribution for their actions. \s[5]Yes, as payment, I want to see my murderers brought to justice...\n\n \s[6]Taken from their families as I once was, carried out into the cold... \w8\w8\s[7]And torn to pieces, one by one.\n\n \_w[2000]... \s[26]That's not too great a task, is it...?"
-	"\0\b[0]\s[1]Well... \s[6]I hope it's not too much to ask, but... \s[8]I would like you to send my lover to be with me.\n\n \w8\w8\s[4]I left %(ANY('him','her')) behind when I died, and... I want to be reunited once more, by any means necessary. \s[26]It's possible, isn't it...?"
+	"\0\b[0]\s[1]Well... \s[6]I hope it's not too much to ask, but... \s[8]I would like you to send my lover to be with me.\n\n \w8\w8\s[4]I left %(ANY('him','her','them')) behind when I died, and... I want to be reunited once more, by any means necessary. \s[26]It's possible, isn't it...?"
 	"\0\b[0]\s[22]Compensation... \s[5]Well, I hope it isn't too much to ask of you, but... \s[6]I would like your assistance in finally leaving this plane and moving on into the afterlife.\n\n \s[26]I've spent enough time wandering the world in anguish... \s[25]I want to be free."
 }
