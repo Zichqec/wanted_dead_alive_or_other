@@ -306,7 +306,7 @@ ResidedThisReality.weissvern
 {
 	"\0\b[0]\s[7]Reality... \w8\w8\s[42]Is this a human term for something? \w8\w8\s[60]Never heard of it, sorry!"
 	"\0\b[0]\s[43]Reality...? \w8\w8\s[65]Oh, I get it, that's the name of this town, right? \w8\w8\s[60]I don't really reside here, I just came to scope the place out and see what I could get out of it."
-	"\0\b[0]\s[77]Whoa... that's a tough question... \w8\w8\w8\s[60]If I knew what a ""reality"" was, I'd tell you for sure!"
+	"\0\b[0]\s[77]Whoa... that's a tough question...\n\n \w8\w8\w8\s[60]If I knew what a ""reality"" was, I'd tell you for sure!"
 }
 
 //Where do you see yourself in 10 years? Would it change if (word group)?
