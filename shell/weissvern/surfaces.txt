@@ -5,12 +5,11 @@ descript
 version,0
 }
 
-surface.append0-100.!10
+surface.append0-100,!10
 {
 collision0,179,8,240,92,Horn
 collision1,272,12,318,90,Horn
 collision2,363,238,452,306,Hand
-collision3,204,215,297,269,Bust
 collision4,62,387,105,454,Hand
 collision5,153,92,216,154,Ear
 collision6,75,352,151,493,Tail
