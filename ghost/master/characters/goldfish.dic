@@ -1,0 +1,196 @@
+SurfaceRestore.goldfish
+{
+	"\1\s[-1]\0\s[0]"
+}
+
+Greeting.goldfish
+{
+	"\0\b[0]\s[0]Greetings. \s[103]My name is %(bowl.namefirst) %(bowl.namelast). \s[503]It is a pleasure to make your acquaintance.\n\n \s[302]I have come here to escort my [TODO idk the word, or could be a word group], he has taken an interest in your work and the promised rewards.\n\n \s[102]Your patience is appreciated as I translate between you and he."
+	"\0\b[0]\s[103]Greetings, we are pleased to make your acquaintance. \s[102]I am here as escort for my [TODO]. \s[106]He has expressed interest in your advertisement, and wished to partake in this interview process.\n\n \s[500]Your patience is appreciated as I translate messages for both your understanding."
+	"\0\b[0]\s[202]Ah... please be careful not to splash.\n\n \s[500]My apologies. My name is %(bowl.namefirst), I am here as escort for my [TODO]. \s[302]We saw your advertisement, and he wished to try for the opportunity himself.\n\n \s[103]It is an exciting prospect. Do forgive us if some amount of water is lost on the floor..."
+}
+
+bowl.namefirst
+{
+	"Claire"
+	"Harmony"
+	"Atlantica"
+	"River"
+}
+
+bowl.namelast
+{
+	""
+}
+
+Accepted.goldfish
+{
+	//"\0\b[0]\s[0]"
+}
+
+Rejected.goldfish
+{
+	//"\0\b[0]\s[0]"
+}
+
+RandomTalk.goldfish : nonoverlap
+{
+	//"\0\b[0]\s[0]"
+}
+
+//Name?
+Name.goldfish
+{
+	//"\0\b[0]\s[0]"
+}
+
+//Age?
+Age.goldfish
+{
+	_age = RAND(10) + 3 //we are assuming optimal water. do you think she has less than optimal water? no way!!
+	"\0\b[0]\s[103]He has just passed %(_age) years of age."
+	"\0\b[0]\s[103]He will be turning %(_age) years old next month."
+	"\0\b[0]\s[103]He is currently %(_age) years old."
+}
+
+//Is this your first time working with us?
+FirstTime.goldfish
+{
+	//"\0\b[0]\s[0]"
+}
+
+//Have you died before?
+DiedBefore.goldfish
+{
+	"\0\b[0]\s[103]No, he has not."
+	"\0\b[0]\s[103]No, his life has not ceased since it began."
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[103]For a brief time in his early life, it seems."
+}
+
+//Are you currently under the effect of any curses?
+AnyCurses.goldfish
+{
+	//"\0\b[0]\s[0]"
+}
+
+//Do you have any peculiarities with your body parts that we should be aware of?
+PeculiaritiesBodyParts.goldfish
+{
+	//"\0\b[0]\s[0]"
+}
+
+//Do you have your own teeth? If 'no', and you have teeth upon your person, are they from a reputable source?
+OwnTeeth.goldfish
+{
+	//"\0\b[0]\s[0]"
+}
+
+//Do you require food, water, and/or charging (electrical or otherwise) for the duration of your stay?
+RequireFoodWaterCharging.goldfish
+{
+	//"\0\b[0]\s[0]"
+}
+
+//Do you have allergic reactions to (word group)?
+AllergicReactions.goldfish
+{
+	//"\0\b[0]\s[0]"
+}
+
+//Are you immortal?
+Immortal.goldfish
+{
+	"\0\b[0]\s[103]Indeed not."
+	"\0\b[0]\s[103]Certainly not."
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[103]Apparently, it is quite complicated."
+}
+
+//How many times on average do you regenerate limbs in a year?
+RegenerateLimbs.goldfish
+{
+	//"\0\b[0]\s[0]"
+}
+
+//Do you have an active agreement or similar with (word group)?
+ActiveAgreement.goldfish
+{
+	//"\0\b[0]\s[0]"
+}
+
+//How tall are you, and are you flexible about it?
+HowTall.goldfish
+{
+	//"\0\b[0]\s[0]"
+}
+
+//On a scale of 1 to 100, how many pounds of mass are you willing to potentially lose during the course of this experiment?
+LoseMass.goldfish
+{
+	//"\0\b[0]\s[0]"
+}
+
+//Would you describe yourself as being made of flesh?
+MadeOfFlesh.goldfish
+{
+	//"\0\b[0]\s[0]"
+}
+
+//Do you often use your (bodypart)?
+OftenUseBodyPart.goldfish
+{
+	//"\0\b[0]\s[0]"
+}
+
+//On a scale of 1 to 10, how much do you prioritize maintaining your current form?
+PrioritizeCurrentForm.goldfish
+{
+	//"\0\b[0]\s[0]"
+}
+
+//How long have you resided in this reality?
+ResidedThisReality.goldfish
+{
+	//"\0\b[0]\s[0]"
+}
+
+//Where do you see yourself in 10 years? Would it change if (word group)?
+SeeSelfTenYears.goldfish
+{
+	//"\0\b[0]\s[0]"
+}
+
+//Are you currently taking any medications?
+TakingMeds.goldfish
+{
+	//"\0\b[0]\s[0]"
+}
+
+//On a scale of 1 to 10, how likely are you to start rotting on a hot day?
+LikelyToRot.goldfish
+{
+	//"\0\b[0]\s[0]"
+}
+
+//Do you have prior history with eldritch horrors?
+HistoryEldritchHorrors.goldfish
+{
+	//"\0\b[0]\s[0]"
+}
+
+//Are there any colors or textures that should be kept out of your enclosure?
+ColorsTextures.goldfish
+{
+	//"\0\b[0]\s[0]"
+}
+
+//What does your diet primarily consist of currently, and how willing are you to tolerate a permanent change?
+PrimaryDiet.goldfish
+{
+	//"\0\b[0]\s[0]"
+}
+
+//How would you like to be compensated for your assistance today?
+HowCompensate.goldfish
+{
+	//"\0\b[0]\s[0]"
+}
