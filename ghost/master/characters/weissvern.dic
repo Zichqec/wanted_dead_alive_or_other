@@ -367,7 +367,7 @@ PrimaryDiet.weissvern
 {
 	"\0\b[0]\s[40]Oh, you know, deer and sheep and stuff. \s[60]Whatever I manage to catch!\n\n \s[43]I guess I wouldn't mind trying to incorporate more seafood into my diet. \s[65]I've heard it's tasty once you get used to it!"
 	"\0\b[0]\s[0]Whatever I can catch in my claws! \s[60]Though sometimes I get a bit lazy and just take what's convenient. \s[65]If it's dead and nobody else has laid a claim to it yet, it's mine!"
-	"\0\b[0]\s[60]My diet is pretty varied! \s[35]Especially those first few days after I've burned down a town... \s[65]Feasts aplenty, you just gotta dig through some smoldering remains to find them!"
+	"\0\b[0]\s[60]My diet is pretty varied! \s[25]Especially those first few days after I've burned down a town... \s[65]Feasts aplenty, you just gotta dig through some smoldering remains to find them!"
 }
 
 //How would you like to be compensated for your assistance today?
