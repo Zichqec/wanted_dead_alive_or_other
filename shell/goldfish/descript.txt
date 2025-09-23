@@ -1,0 +1,28 @@
+charset,Shift_JIS
+name,goldfish
+type,shell
+id,lady-goldfish-bowl_arranged
+craftman,tukinami seika
+craftmanw,月波 清火
+craftmanurl,https://github.com/tukinami
+
+seriko.use_self_alpha,1
+
+readme,readme.txt
+
+// オーナードローメニュー
+menu.background.bitmap.filename,menu/menu_background.png
+menu.foreground.bitmap.filename,menu/menu_foreground.png
+menu.sidebar.bitmap.filename,menu/menu_sidebar.png
+
+menu.background.alignment,leftbottom
+menu.foreground.alignment,leftbottom
+menu.sidebar.alignment,top
+
+menu.background.font.color.r,30
+menu.background.font.color.g,35
+menu.background.font.color.b,40
+
+menu.foreground.font.color.r,20
+menu.foreground.font.color.g,25
+menu.foreground.font.color.b,30

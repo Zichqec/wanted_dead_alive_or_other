@@ -1,0 +1,4 @@
+charset,Shift_JIS
+name,‹à‹›”«—ßì:[‘‹
+type,shell
+directory,lady-goldfish-bowl_arranged
