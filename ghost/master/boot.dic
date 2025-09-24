@@ -13,6 +13,7 @@ OnFirstBoot : all
 	Candidate.Variant = 0
 	Candidate.Num = 0
 	Candidate.Status = -1 //-1 undetermined, 0 rejected, 1 accepted, 2 michael??
+	RecentShells = IARRAY
 	
 	"\1\s[-1]\0\s[0]\t"
 	
@@ -38,6 +39,7 @@ OnInitialize
 		LastTalk = ""
 		AcceptedCandidatesToday = 0
 		RejectedCandidatesToday = 0
+		RecentShells = IARRAY
 	}
 }
 

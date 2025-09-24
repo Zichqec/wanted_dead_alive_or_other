@@ -11,12 +11,14 @@ shells : array
 
 OnGenerateNewCharacter
 {
+	RecentShells ,= Candidate.Shell
+	if ARRAYSIZE(RecentShells) > 3; RecentShells[0] = IARRAY
 	_newshell = ANY(shells)
-	while _newshell == Candidate.Shell
+	while ASEARCH(_newshell,RecentShells) != -1
 	{
 		_newshell = ANY(shells)
 	}
-	Candidate.Shell = _newshell //TODO maybe nonoverlap later? or is random but not repeating the last one better
+	Candidate.Shell = _newshell
 	
 	if Candidate.Shell == "fluffydemon"; Candidate.Variant = RAND(3)
 	else; Candidate.Variant = -1
