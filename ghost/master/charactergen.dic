@@ -5,6 +5,7 @@ shells : array
 	"fluffydemon"
 	"weissvern"
 	"goldfish"
+	"vampire"
 }
 
 OnGenerateNewCharacter

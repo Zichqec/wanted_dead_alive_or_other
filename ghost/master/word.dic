@@ -32,6 +32,7 @@ Questions : array
 	"How would you like to be compensated for your assistance today?"
 }
 
+//CANNOT contain "the sun" due to vampire's commentary
 allergicreactionsto
 {
 	"latex"

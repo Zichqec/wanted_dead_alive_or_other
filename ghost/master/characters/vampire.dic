@@ -5,170 +5,336 @@ SurfaceRestore.vampire
 
 Greeting.vampire
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[0]Greetings. \s[2]It brings me great pleasure to meet you. \w8\s[23]Your facilities are... quite remarkable.\n\n \w8\w8\s[0]But never mind that. Shall we begin?"
+	"\0\b[0]\s[5]Ah, so this is the famed necromancer... The spell-weaver who makes the dead walk. \s[0]We shall see if the tales are true. \s[2]Shall we begin?"
+	"\0\b[0]\s[2]Ah... inside at last. \s[48]Away from the din just beyond your door. \w8\w8\s[0]Tranquility...\n\n \s[2]At least for a moment. Let us begin, yes?"
 }
 
 Accepted.vampire
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[2]Splendid... I am glad we could reach an agreement. \s[8]I look forward to our work together."
+	"\0\b[0]\s[0]Ah... how quickly you have decided. \w8\s[2]I am surprised, but not displeased...\n\n \w8\s[8]I will look forward to the results of our cooperation."
+	"\0\b[0]\s[0]It seems we have an agreement, then. \s[2]This will be most interesting... \s[8]I look forward to seeing how events unfold."
 }
 
 Rejected.vampire
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[2]I see... \w8\s[5]That is most unfortunate. \w8\w8\s[41]I will find what I seek elsewhere."
+	"\0\b[0]\s[0]... Are you quite sure? \w8\s[2]There is still time to change your mind...\n\n \w8\s[23]I will sit in the corner for a time before I leave. \s[8]Do tell me if you reconsider..."
+	"\0\b[0]\s[0]Ah... how very mortal of you to rush such a decision. \w8\s[8]No matter. If you will not provide what I seek with a fair and honest trade, \w4\s[21]then perhaps more... \f[italic,1]forceful\f[italic,default] measures may prove useful.\n\n \s[9]Farewell... for now."
 }
 
 RandomTalk.vampire : nonoverlap
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[22]Such... \s[23]interesting interior design sense."
+	"\0\b[0]\s[2]I believe our agreement will be of great benefit to us both, but please do not feel the need to rush such a decision... \w8\w8\s[46]The crowd outside can wait."
+	"\0\b[0]\s[0]It has been some time since I walked among mortals... \s[2]You're really quite fascinating.\n\n \w8\s[8]Such weak bodies and short-term thoughts... it is hard to imagine I ever existed that way, once upon a time."
+	"\0\b[0]\s[2]I am glad to see that the windows appear to be largely disused. \s[8]A lack of sunlight will suit my needs well."
+	"\0\b[0]\s[0]I do not attend these sorts of affairs often. \s[2]However, your advertisement gave me pause... \s[8]What %(anamusing) opportunity."
+	
+	"\0\b[0]\s[23]Hm... \s[2]Try to purge it though you may, I can smell the remnants of your... prior endeavors." //........ that. is like. an old way of speaking isn't it. i feel like it is but also i'm half convinced i'm using that wrong/made it up
+	"\0\b[0]\s[0]You appear to need some assistance with getting bloodstains out of fabrics... \w8\s[2]An amateur mistake, certainly, but one that can be rectified."
+	"\0\b[0]\s[23]I am not accustomed to spending time in newly constructed buildings such as this. \s[0]When was it built? Sometime within the past two centuries, I would assume?"
+	"\0\b[0]\s[23]How interesting... \w8\s[2]It seems we share similar tastes, in some regards."
+	"\0\b[0]\s[8]I am quite curious to discover how many will be attending this experiment of yours. \s[21]It might be interesting %(tohavecompany)."
+}
+
+anamusing
+{
+	"an amusing"
+	"an interesting"
+	"an incredible"
+	"a wonderful"
+	"a fascinating"
+	"a serendipitous"
+}
+
+havecompany
+{
+	"to have a great deal of company"
+	"with a small, close-knit group"
+	"with a chaotic crowd where various complaints are unlikely to be pursued"
+	"to find myself among a few weak-willed ones"
 }
 
 //Name?
 Name.vampire
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[0]%(vampire.namegen). \w8\s[2]You may have met some of my progeny."
+	"\0\b[0]\s[0]I am %(vampire.namegen). \w8\s[8]Yes, the one and only... \w8\s[2]There are many imitators, but I am the original."
+	"\0\b[0]\s[0]You are speaking with %(vampire.namegen). \w8\s[2]A name I am sure you know well."
+}
+
+vampire.namegen : all
+{
+	if RAND(2)
+	{
+		vampire.nameprefix
+		" "
+	}
+	vampire.namefirst
+	" "
+	vampire.namelast
+	if RAND(2)
+	{
+		" "
+		vampire.namesuffix
+	}
+}
+
+vampire.nameprefix
+{
+	"Count"
+	"Baron"
+	"Sir"
+	"Duke"
+	"Prince"
+	"Chancellor"
+}
+
+vampire.namefirst
+{
+	"Richard"
+	"Maldrus"
+	"Cornelius"
+	"Edward"
+	"George"
+	"Gregory"
+	"Hadrian"
+	"Victor"
+	"Lucius"
+	"Matthew"
+	"Bartholomew"
+	"Zacharie"
+}
+
+vampire.namelast
+{
+	"Livingston" //i cANT HELP IT
+	"Cornelius"
+	"Caesar"
+	"Trueblood"
+	"Valentine"
+}
+
+vampire.namesuffix
+{
+	"I"
+	"II"
+	"III"
+	"IV"
+	"V"
+	"VI"
+	"VII"
+	"VIII"
 }
 
 //Age?
 Age.vampire
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[0]Hmm... \w8\w8\s[28]Your mortal calendar systems have changed since my early years.\n\n \w8\w8\s[5]I have seen the passing of approximately %(RAND(2400) + 300) winters."
+	"\0\b[0]\s[2]Ah... When one has existed for such a long time, the specific number of years ceases to have much meaning.\n\n \w8\w8\s[23]Seasons come, seasons go... \w8\s[22]Civilizations and their date systems rise and fall. \w8\w8\s[2]The only thing that is constant is the need for sustenance and shelter."
+	"\0\b[0]\s[2]I had thought you might ask... \w8\w8\s[49]The trouble is, I spent some number of %(centuries) within the confines of %(acave).\n\n \w8\s[48]Being trapped in an isolated space, \w4\s[53]without a supply of blood to keep one alert and oriented... \w8\s[57]has a way of making the passage of time unknowable. My apologies."
+}
+
+acave
+{
+	"a cave"
+	"a dungeon"
+	"a vampire hunter's basement"
+	"a coffin"
+	"the basement of an old cathedral"
+	"my mind palace"
+	"a broom closet with a faulty lock"
+}
+
+centuries
+{
+	"centuries"
+	"years"
+	"decades"
 }
 
 //Is this your first time working with us?
 FirstTime.vampire
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[0]Indeed so. \s[2]If all goes to plan, I look forward to future efforts as well..."
+	"\0\b[0]\s[0]Hmm... \w8\w8\s[2]I wonder."
+	"\0\b[0]\s[0]It is indeed. \s[2]I wished to apply for a previous experiment you were conducting, but unfortunately I was rather occupied that week..."
 }
 
 //Have you died before?
 DiedBefore.vampire
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[0]Once, as a part of my turning."
+	"\0\b[0]\s[2]Indeed, as all vampires have. \w8\w8\s[0]Though, naturally, I now reside in the space between life and death.\n\n \w8\s[8]Some would not call this a true death, but they are ignorant of the details surrounding the process..."
+	"\0\b[0]\s[0]I have ""died"" many times... \w8\s[2]All in vain. The vampire blood runs strong."
 }
 
 //Are you currently under the effect of any curses?
 AnyCurses.vampire
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[0]Some would call vampirism a curse. \w8\s[2]I would not."
+	"\0\b[0]\s[2]Besides the obvious, no."
+	"\0\b[0]\s[8]I have tracked down every being that has ever laid a curse upon me... \w8\s[21]Let us say, my curses are no longer."
 }
 
 //Do you have any peculiarities with your body parts that we should be aware of?
 PeculiaritiesBodyParts.vampire
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[0]Nothing out of the ordinary for a vampire."
+	"\0\b[0]\s[0]I suppose that depends on your familiarity with vampire biology...\n\n \w8\w8\s[2]Please ensure that my accomodations are a few degrees warmer than what you would use for a mortal."
+	"\0\b[0]\s[2]No, my vampiric regeneration ensures good health as long as I feed regularly."
 }
 
 //Do you have your own teeth? If 'no', and you have teeth upon your person, are they from a reputable source?
 OwnTeeth.vampire
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[21]Ha! \w8\s[9]An amusing question."
+	"\0\b[0]\s[9]Would you like to see them? \w8\s[21]I would be happy to oblige."
+	"\0\b[0]\s[8]Teeth are vitally important for vampires, and a great source of vampiric pride. You'll seldom meet one that acquires lesser teeth from another being."
 }
 
 //Do you require food, water, and/or charging (electrical or otherwise) for the duration of your stay?
 RequireFoodWaterCharging.vampire
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[28]Hm... \w8\w8\s[0]On any other day, I would have requested a supply of fresh blood. \s[2]However, another applicant outside was becoming quite agitated while we were waiting in line, \w4\s[20]and, well...\n\n \w8\w8\s[9]Let us say it will not be an issue for the time being."
+	"\0\b[0]\s[0]I will require a supply of fresh blood daily. \w8\s[8]It may be easiest to simply room me with another mortal applicant, in which case I will handle my sustenance needs for myself..."
+	"\0\b[0]\s[0]A supply of fresh blood is a daily necessity for me. \s[2]A little wine has various benefits, as well..."
 }
 
 //Do you have allergic reactions to (word group)?
 AllergicReactions.vampire
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[0]Not particularly."
+	"\0\b[0]\s[23]To that, no. \s[0]However, one could say that I am ""allergic"" to the sun... \s[8]I would appreciate if its accursed rays are kept far from my flesh."
+	"\0\b[0]\s[23]Hmm... \w8\w8\s[0]This is not something I have tested since my turning. \s[2]Perhaps we will find out together."
 }
 
 //Are you immortal?
 Immortal.vampire
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[0]Quite so."
+	"\0\b[0]\s[0]Indeed, unless you subscribe to the belief that a creature must technically be ""living"" to be ""immortal""."
+	"\0\b[0]\s[0]I do not age, and will never be slain by time alone."
 }
 
 //How many times on average do you regenerate limbs in a year?
 RegenerateLimbs.vampire
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[0]It is a bit beyond my powers to regenerate a limb from nothing. \s[2]However, if the severed limb is replaced where it was, it can be reattached with the consumption of enough blood..."
+	"\0\b[0]\s[0]Being in the space between life and death as I am, I cannot bring back limbs once they are lost.\n\n \w8\w8\s[2]However, if they are not lost, merely detached... I have my ways."
+	"\0\b[0]\s[0]I have never lost a limb, and therefore cannot comment on the matter."
 }
 
 //Do you have an active agreement or similar with (word group)?
 ActiveAgreement.vampire
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[3]... \w8\w8No."
+	"\0\b[0]\s[47]To stoop so low would be beneath me."
+	"\0\b[0]\s[0]... \w8\w8\s[2]Amusing."
 }
 
 //How tall are you, and are you flexible about it?
 HowTall.vampire
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[0]6'%(RAND(7) + 1)"", if you require specificity. \w8\w8\s[2]All of which I would like to keep."
+	"\0\b[0]\s[23]Hmm... \w8\w8\s[0]I am not certain in the measuring system of this millenia. \s[2]Perhaps you have a measuring device?"
+	"\0\b[0]\s[0]I stand at a stature of more than 4 and a half cubits. \s[2]Some flexibility may be permitted... \s[8]on the basis that I believe I will be able to recover it of my own accord."
 }
 
 //On a scale of 1 to 100, how many pounds of mass are you willing to potentially lose during the course of this experiment?
 LoseMass.vampire
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[0]Hm... \w8\w8\s[2]This is not a great deal of concern to me, but let us say no more than %(RAND(3) + 1)0."
+	"\0\b[0]\s[2]Intriguing... \w8\s[23]I suppose I may be persuaded to part with a few. \s[0]Perhaps not more than %(RAND(11) + 5)."
+	"\0\b[0]\s[3]... \w8\w8\s[2]You are quite crafty. \w8\s[8]Amusing, but I will not agree to this."
 }
 
 //Would you describe yourself as being made of flesh?
 MadeOfFlesh.vampire
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[0]Indeed, flesh and blood. \w8\w8\s[2]Though, perhaps the blood part is greater."
+	"\0\b[0]\s[0]I would, generally speaking."
+	"\0\b[0]\s[2]Vampiric flesh, but flesh nonetheless."
 }
 
 //Do you often use your (bodypart)?
 OftenUseBodyPart.vampire
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[2]I believe you misunderstand what it is to be a vampire..."
+	"\0\b[0]\s[0]My own? No. \w8\Those of others? \w8\s[2]Most certainly."
+	"\0\b[0]\s[0]Hm... \s[2]I believe you can deduce that on your own."
 }
 
 //On a scale of 1 to 10, how much do you prioritize maintaining your current form?
 PrioritizeCurrentForm.vampire
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[0]A 10. \w8\s[2]I do not wish to give up my charm."
+	"\0\b[0]\s[2]I took on vampirism to preserve my current form, and I am pleased with that decision. \w8\s[8]So to answer your question, 10."
+	"\0\b[0]\s[0]I have never once considered reversing my vampiric gifts. \s[2]Maintaining myself as I am now is a top priority, so I would say the number is 10."
 }
 
 //How long have you resided in this reality?
 ResidedThisReality.vampire
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[0]I do not trifle with other realities. I have remained in this one since the day of my birth."
+	"\0\b[0]\s[2]Other realities are of no concern to me. I have spent my entire life here, and see no reason to change that fact."
+	"\0\b[0]\s[0]I have been offered the opportunity to explore what lies beyond now and then... \w8\s[8]However, I have made only brief visits."
 }
 
 //Where do you see yourself in 10 years? Would it change if (word group)?
 SeeSelfTenYears.vampire
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[2]10 years is nothing at all. Life will not change drastically in the time it takes me to blink."
+	"\0\b[0]\s[0]Ah, mortal timescales... \w8\w8\s[2]I would hardly notice the passage of 100 years, much less 10."
+	"\0\b[0]\s[0]10 years... \w8\w8\s[2]how quaint."
 }
 
 //Are you currently taking any medications?
 TakingMeds.vampire
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[23]I am currently taking iron supplements."
+	"\0\b[0]\s[0]I have no need for such things, so long as I continue to have a steady supply of blood."
+	"\0\b[0]\s[0]To live in such a fragile body... \w8\w8\s[2]A horrifying state of being. You should discard it when you have the chance."
 }
 
 //On a scale of 1 to 10, how likely are you to start rotting on a hot day?
 LikelyToRot.vampire
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[2]I will not rot, provided I have a sufficient supply of blood."
+	"\0\b[0]\s[21]Ha, do you believe me to be a zombie? \w8\s[9]Most amusing... \w8\s[2]You will understand your error with time."
+	"\0\b[0]\s[2]Though my body may not be considered ""living"" on its own, it is not what would be regarded by most as a ""corpse"".\n\n \w8\w8\s[0]Which is to say that rot is not a concern, provided I have ample supply of blood."
 }
 
 //Do you have prior history with eldritch horrors?
 HistoryEldritchHorrors.vampire
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[3]Only briefly. \w8\w8\s[32]Once was enough."
+	"\0\b[0]\s[3]Extensively, much to my chagrin... \w8\s[48]They must be kept sated for existence to continue in a comfortable fashion, so I do what I must."
+	"\0\b[0]\s[0]I am pleased to be able to say no. \w8\w8\s[2]I have heard they can be quite... frustrating."
 }
 
 //Are there any colors or textures that should be kept out of your enclosure?
 ColorsTextures.vampire
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[0]While I require a regular blood supply, I would prefer that the blood remain inside bodies until the moment of consumption.\n\n \w8\s[2]That is to say, please do not cover the walls, ceiling, floors, furniture, nor any other surface with it... \w8\s[8]It can be quite intoxicating when it is scattered about."
+	"\0\b[0]\s[2]I do not accept fake leather, or similar cheap substitutes. Please keep them out of my vicinity."
+	"\0\b[0]\s[0]It would be best if the room is decorated in colors other than red. \w8\w8\s[2]It makes spills easier to detect."
 }
 
 //What does your diet primarily consist of currently, and how willing are you to tolerate a permanent change?
 PrimaryDiet.vampire
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[0]Blood... \w8\s[2]and a little wine.\n\n \s[3]It is not possible for me to give up blood as a source of sustenance. Do take this into account."
+	"\0\b[0]\s[0]Besides blood, I consume all manner of fine dining. \s[2]I have a very wide palate, so giving up a category or two is of no concern."
+	"\0\b[0]\s[0]I consume blood, and a wide variety of food that is generally suitable for humans. \w8The specifics of my cuisine can change, I am quite open when it comes to flavors.\n\n \w8\s[2]The blood, however, is not for consideration. I would not give it up even if I could."
 }
 
 //How would you like to be compensated for your assistance today?
 HowCompensate.vampire
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[2]Ah... my request is quite simple. \w8\s[8]I would like a modest sample of blood from each of the other applicants you approve, stored securely in discrete blood bags and stowed in a chilled container for transport to my home.\n\n \w8\w8\s[2]This should be a simple matter, no?"
+	"\0\b[0]\s[2]Yes, compensation... \s[8]I would like the opportunity to speak with the other participants in this experiment, to create my own deals with them.\n\n \w8\w8\s[2]Worry not, I'll not interfere with your plans... no agreements of mine will come into effect until we have dispersed."
+	"\0\b[0]\s[2]Hm... yes, now that I have had a chance to assess you for myself, I do believe you would be suitable. \w8\s[0]I am seeking new vampiric companions and wish to extend this opportunity to you.\n\n \w8\w8\s[8]Yes, indeed, you may consider this your own interview as well. \s[9]Accept me, and I will accept you into my fold... \s[21]You will live a life filled with the greatest finery the world has to offer, with a stable blood supply and safety from the harsh rays of the sun.\n\n \w8\w8\s[2]You may take time to consider my offer... I understand that the prospect of embracing immortality is a daunting one when you are used to thinking on a human timescale."
 }
