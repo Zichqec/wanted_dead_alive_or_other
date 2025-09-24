@@ -48,6 +48,7 @@ OnShellChangeCoordsBefore
 
 OnShellChanged : all
 {
+	LastTalk = "" //Prevent repeating dialogues belonging to other shells...
 	if NewCharacterLatch || BootingLatch
 	{
 		"\1\s[-1]\0\![set,alpha,0]\![get,property,OnShellChangeCoordsAfter,currentghost.scope(0).rect]"
