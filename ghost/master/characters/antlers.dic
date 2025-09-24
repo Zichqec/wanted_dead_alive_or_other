@@ -6,7 +6,7 @@ SurfaceRestore.antlers
 Greeting.antlers
 {
 	"\0\b[0]\s[5]Hail, and well met."
-	"\0\b[0]\s[0]Greetings."
+	"\0\b[0]\s[0]Tidings, city creature."
 	"\0\b[0]\s[5]Well met, friend. \w8\s[8]Though, whether you are truly a friend, or indeed a foe, remains to be seen..."
 }
 
@@ -88,8 +88,8 @@ FirstTime.antlers
 //Have you died before?
 DiedBefore.antlers
 {
-	"\0\b[0]\s[0]I have not. \s[3]Though I have come close, a few times."
-	"\0\b[0]\s[6]I have had a near death experience once before... but I have never stepped across to the other side, no."
+	"\0\b[0]\s[0]Not in this lifetime. \s[3]Though I have come close, a few times."
+	"\0\b[0]\s[6]Many times... \s[8]I go where the winds take me, in whatever form they choose."
 	"\0\b[0]\s[8]In a previous life, I was %(agazelle)."
 }
 
