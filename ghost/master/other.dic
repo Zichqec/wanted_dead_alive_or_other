@@ -345,7 +345,7 @@ CalculateExperimentSuccess
 		
 		if _candidatestatus == 0; _rejectednum++
 		elseif _candidatestatus == 1; _acceptednum++
-		//NO MICHAEL
+		//NO MICHAEL ... actually TODO maybe he needs to count as a rejection? But also a good decision... hm!
 		
 		_asked = 0
 		foreach _answers; _answer
