@@ -6,7 +6,7 @@ SurfaceRestore.goldfish
 Greeting.goldfish
 {
 	"\0\b[0]\s[0]Greetings. \s[103]My name is %(bowl.namefirst) %(bowl.namelast). \s[503]It is a pleasure to make your acquaintance.\n\n \s[302]I have come here to escort my client, he has taken an interest in your work and the promised rewards.\n\n \s[102]Your patience is appreciated as I translate between you and he."
-	"\0\b[0]\s[103]Greetings, we are pleased to make your acquaintance. \s[102]My name is %(bowl.namefirst) %(bowl.namelast), and I am here as escort for my client. \s[106]He has expressed interest in your advertisement, and wished to partake in this interview process.\n\n \s[500]Your patience is appreciated as I translate messages for both your understanding."
+	"\0\b[0]\s[103]Greetings, we are pleased to make your acquaintance.%(br)\s[102]My name is %(bowl.namefirst) %(bowl.namelast), and I am here as escort for my client. \s[106]He has expressed interest in your advertisement, and wished to partake in this interview process.\n\n \s[500]Your patience is appreciated as I translate messages for both your understanding."
 	"\0\b[0]\s[202]Ah... please be careful not to splash.\n\n \s[500]My apologies. My name is %(bowl.namefirst) %(bowl.namelast), I am here as escort for my client. \s[302]We saw your advertisement, and he wished to try for the opportunity himself.\n\n \s[103]It is an exciting prospect. Do forgive us if some amount of water is lost on the floor..."
 }
 
@@ -86,7 +86,17 @@ Rejected.goldfish
 
 RandomTalk.goldfish : nonoverlap
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[103]My client wishes to express his fascination with your laboratory. \s[303]It is certainly... a new experience."
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[103]My client is expecting mealtime soon. Will this interview last for much longer? \s[106]We may wish to take a break and come back, if that is acceptable..."
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[101]My client wishes to reiterate his appreciation of your consideration."
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[109]My client wishes to assure you that if accepted, you will have his full cooperation throughout the experiment."
+	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[103]My client has expressed concern about some of the other applicants we saw while standing in line. \s[109]My client's safety is of the utmost importance, please ensure that no others will harm him during our time here."
+	
+	"\0\b[0]\s[103]Please ensure there are no leaks in the ceiling of our room. \s[306]I do not bring my parasol indoors, and having unknown liquids contaminating his water could be... \s[310]quite bad."
+	"\0\b[0]\s[200]\w8\w8\w8\w8\s[211]Ah... \w8\w8I know it is exciting, but please be careful..."
+	"\0\b[0]\s[103]Would you be able to provide me with a glass of water? \s[303]If it is not too much to ask.\n\n \w8\w8\w8\w8\s[112]Ah, not for him. \s[109]It is for myself."
+	"\0\b[0]\s[106]If you have need for direct access to my client, please ask me for assistance. \w8\s[310]It can be difficult to remove fingerprints from the glass."
+	"\0\b[0]\s[108]I suppose I should have brought gloves... \w8\w8\s[308]If you have some that I would be able to use during our stay, I would appreciate it."
 }
 
 //Name?
