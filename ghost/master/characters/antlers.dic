@@ -5,7 +5,7 @@ SurfaceRestore.antlers
 
 Greeting.antlers
 {
-	"\0\b[0]\s[5]Hail, and well met."
+	"\0\b[0]\s[5]Hail, and well met. \w8\s[8]The wind has brought me to your door... I wonder what will transpire?"
 	"\0\b[0]\s[0]Tidings, city creature."
 	"\0\b[0]\s[5]Well met, friend. \w8\s[8]Though, whether you are truly a friend, or indeed a foe, remains to be seen..."
 }
