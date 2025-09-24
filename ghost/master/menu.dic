@@ -276,51 +276,9 @@ Ways it can go right:
 
 mneeeeh... so i want _two_ metrics... amount accepted vs amount rejected, and number of questions asked
 either i have to count the questions asked on the ones that are rejected, or i need to save them... that's where this is falling apart right now, i do not have that data and i need to decide how to save it
-
 */
 
-// CalculateExperimentSuccess
-// {
-	// if ARRAYSIZE(SavedResponses) < 5
-	// {
-		// "insufficient data" //didn't accept enough people
-	// }
-	// else
-	// {
-		// _sum = 0
-		// foreach AnsweredQuestions; _total
-		// {
-			// _sum += _total
-		// }
-		
-		// if _sum == 0
-		// {
-			// "unfiltered crowd" //just let everyone in
-		// }
-		// else
-		// {
-			
-		// }
-	// }
-// }
 
-// AnsweredQuestions
-// {
-	// _output = IARRAY
-	// foreach SavedResponses; _responses
-	// {
-		// _responses = _responses[1,CHR(0xFDEF)]
-		// _responses = SPLIT(_responses,C_BYTE1)
-		
-		// _answers = 0
-		// foreach _responses; _response
-		// {
-			// if _response != "N/A"; _answers++
-		// }
-		// _output ,= _answers
-	// }
-	// _output
-// }
 
 OnDebug.SwitchTo : all
 {

@@ -2,8 +2,9 @@ OnFirstBoot : all
 {
 	LastTalk = ""
 	SavedResponses = IARRAY
+	PreviousResponses = IARRAY
 	GenerateQuestions
-	GenerateAnswers
+	//GenerateAnswers
 	NewCharacterLatch = 0
 	BootingLatch = 0
 	AcceptedCandidatesTotal = 0
@@ -26,7 +27,7 @@ OnFirstBoot : all
 
 BootDialogue
 {
-	"Time for another dreary day of interviews... who's up first?"
+	"\_qLast experiment: %(CalculateExperimentSuccess)"
 }
 
 OnInitialize
@@ -58,6 +59,8 @@ GenerateQuestions
 
 OnBoot
 {
+	//Only save the last state if anything happened, otherwise assume it was a mistake
+	if ARRAYSIZE(SavedResponses) > 0; PreviousResponses = SavedResponses
 	SavedResponses = IARRAY
 	Candidate.Num = 0
 	GenerateQuestions

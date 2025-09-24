@@ -301,6 +301,86 @@ MorseList : array
 	"!|-.-.--" //Nonstandard, but probably common enough to want?
 }
 
+
+/*
+	REVISED:
+	0. Collected no responses, act as though this session did not happen (as it likely happened by mistake)
+	1. Accepted no candidates, performed no experiment
+	2. Not enough candidates
+	3. Just let everyone in without checks
+	4. Didn't filter well enough
+	5. Did ok, decent sample size
+	6. Filtered well, excellent sample size
+	
+	If accepted no candidates: fail for reason 1
+	If not met minimum number of candidates: fail for reason 2
+	If all candidates have 0 questions asked: fail for reason 3
+	If not enough candidates were rejected OR the number of bad decisions is too great: fail for reason 4
+	If number of good decisions is decent: succeed for reason 5
+	If number of good decisions is very high: succeed for reason 6
+	
+	Numbers (may be adjusted later):
+	Minimum candidates required for an experiment: 5
+	Minimum number of candidates to be rejected: 1/3
+	Minimum number of good decisions to succeed: 1/2
+	Minimum number of good decisions to succeed spectacularly: 2/3
+*/
+
+CalculateExperimentSuccess
+{
+	LOGGING("====================================================================")
+	_acceptednum = 0
+	_rejectednum = 0
+	_gooddecisions = 0
+	_baddecisions = 0
+	_noanswers = 0
+	_responsenum = ARRAYSIZE(PreviousResponses)
+	//Don't forget michael lol, he does NOT count towards ANYTHING
+	
+	foreach PreviousResponses; _response
+	{
+		_response = SPLIT(_response,CHR(0xFDEF))
+		_candidatestatus = _response[0][1,C_BYTE1]
+		_answers = SPLIT(_response[1],C_BYTE1)
+		
+		if _candidatestatus == 0; _rejectednum++
+		elseif _candidatestatus == 1; _acceptednum++
+		//NO MICHAEL
+		
+		_asked = 0
+		foreach _answers; _answer
+		{
+			if _answer != "N/A"; _asked++
+		}
+		
+		//10 questions seen at a time, 15 expected N/A
+		if _asked == 0; _noanswers++
+		
+		if _asked >= 6; _gooddecisions++
+		else; _baddecisions++
+	}
+	
+	if _acceptednum == 0; "Accepted no candidates" //1
+	elseif _acceptednum < 5; "Not enough candidates" //2
+	elseif _acceptednum == _noanswers; "No filtering" //3
+	else
+	{
+		_rejectionsrequired = CEIL(TOREAL(_responsenum) / 3)
+		_gooddecisionsrequired = CEIL(TOREAL(_responsenum) / 2)
+		_verygooddecisionsrequired = (CEIL(TOREAL(_responsenum) / 3) * 2) //2/3 I hope?
+		
+		LOGGING("_gooddecisions: %(_gooddecisions)")
+		LOGGING("_gooddecisionsrequired: %(_gooddecisionsrequired)")
+		LOGGING("_verygooddecisionsrequired: %(_verygooddecisionsrequired)")
+		if _rejectednum >= _rejectionsrequired && _gooddecisions >= _gooddecisionsrequired
+		{
+			if _gooddecisions >= _verygooddecisionsrequired; "Excellent filtering" //6
+			else; "Good filtering" //5
+		}
+		else; "Poor filtering" //4
+	}
+}
+
 //—————————————————————————————— Right click menu links ——————————————————————————————
 
 //Takes an array of alternating names and urls, and formats them for use with the right click menu
