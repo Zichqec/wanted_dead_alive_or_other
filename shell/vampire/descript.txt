@@ -1,7 +1,7 @@
 charset,Shift_JIS
-name,ようこそヴァンパイア
+name,vampire
 type,shell
-id,Vamp
+id,vampire
 craftman,arinosumuki
 craftmanw,蟻の住む木
 craftmanurl,http://seizonkakuninbasyo.web.fc2.com/
@@ -17,6 +17,7 @@ sakura.bindgroup80.name,髪,ほつれ
 sakura.bindgroup101.name,服,血付き
 sakura.bindgroup100.name,服,通常
 sakura.bindgroup100.default,1
+sakura.bindoption100.group,服,mustselect
 
 sakura.bindgroup200.name,顔,アイシャドウ
 sakura.bindgroup201.name,顔,血

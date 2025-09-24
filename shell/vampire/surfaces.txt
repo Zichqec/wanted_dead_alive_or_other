@@ -3,6 +3,9 @@ charset, Shift_JIS
 descript
 {
 Version,1
+
+//satolist.palette.offset,223,32
+//satolist.palette.frame,150,150
 }
 
 
