@@ -115,9 +115,9 @@ bluemesh.namelast
 //Age?
 Age.bluemesh
 {
-	"\0\b[0]\s[6]What's it to you?"
-	"\0\b[0]\s[24]Well, I was hoping you could help with that."
-	"\0\b[0]\s[3]It's complicated. \s[6]And also none of your business."
+	"\0\b[0]\s[29]Does it matter? \s[3]I'm old enough for whatever."
+	"\0\b[0]\s[24]How old are \f[italic,1]you?\f[italic,default]"
+	"\0\b[0]\s[3]Older than 25, let's leave it at that."
 }
 
 //Is this your first time working with us?
@@ -131,8 +131,8 @@ FirstTime.bluemesh
 //Have you died before?
 DiedBefore.bluemesh
 {
-	"\0\b[0]\s[29]You could say that."
-	"\0\b[0]\s[3]Just last week, in fact. \s[20]Why d'you wanna know?"
+	"\0\b[0]\s[29]I don't think so? \s[3]I guess it kinda depends how you define it."
+	"\0\b[0]\s[3]My folks think I'm dead, but what do they know, psh."
 	"\0\b[0]\s[2]No?? \s[7]Would I be standing here if I had...!?"
 }
 
@@ -141,7 +141,7 @@ AnyCurses.bluemesh
 {
 	"\0\b[0]\s[3]Curses...? \w8\w8\s[29]Hm... \w8\w8\s[20]I guess if you count the curse that was placed on me when I was %(RAND(3) + 2) that %(makesmefaceplant)."
 	"\0\b[0]\s[29]None that I'm aware of... \s[7]Unless you know something I don't."
-	"\0\b[0]\s[24]That's classified."
+	"\0\b[0]\s[3]No?? \s[29]I don't usually get mixed up with, like, witches or whatever."
 }
 
 makesmefaceplant
@@ -190,7 +190,7 @@ AllergicReactions.bluemesh
 Immortal.bluemesh
 {
 	"\0\b[0]\s[24]I'm working on it."
-	"\0\b[0]\s[29]I thought about it, but in the end it seemed like too much of a hassle. \s[6]Blood sacrifices, capturing souls... bah."
+	"\0\b[0]\s[24]Not yet... but with enough bionic implants I will be eventually."
 	"\0\b[0]\s[0]No."
 }
 
@@ -238,7 +238,7 @@ MadeOfFlesh.bluemesh
 OftenUseBodyPart.bluemesh
 {
 	"\0\b[0]\s[3]Hmm... \w8\w8\s[29]Not so much these days, after the removal procedure at 18..."
-	"\0\b[0]\s[21]When the mood strikes, sure."
+	"\0\b[0]\s[29]... Is that a joke or something?"
 	"\0\b[0]\s[3]Not really. \s[24]If you're looking to buy, I'll sell for a generous sum."
 }
 
@@ -254,7 +254,7 @@ PrioritizeCurrentForm.bluemesh
 ResidedThisReality.bluemesh
 {
 	"\0\b[0]\s[20]...? \s[29]What kind of a question is that? \w8\w8\s[3]... My whole life??"
-	"\0\b[0]\s[20]I've always resided here. \s[3]I took a trip out last week, but it was brief."
+	"\0\b[0]\s[29]Do you mean virtual reality or something...? \s[20]I don't really go there, not in my interests."
 	"\0\b[0]\s[2]Eh? What do you mean ""this"" reality?"
 }
 
@@ -285,9 +285,9 @@ LikelyToRot.bluemesh
 //Do you have prior history with eldritch horrors?
 HistoryEldritchHorrors.bluemesh
 {
-	"\0\b[0]\s[20]No, not really."
+	"\0\b[0]\s[29]... Who're they? \s[3]Is that like a gang or something?"
 	"\0\b[0]\s[8]You say that like those things are real."
-	"\0\b[0]\s[4]... One of them ate my dad. \w8\w8\s[7]If you have one here I'll tear it apart."
+	"\0\b[0]\s[2]No no no no, I do not want to hear monster stories."
 }
 
 //Are there any colors or textures that should be kept out of your enclosure?
@@ -295,7 +295,7 @@ ColorsTextures.bluemesh
 {
 	"\0\b[0]\s[2]Nothing scratchy or gritty, please!"
 	"\0\b[0]\s[3]I don't feel texture too well these days, so I'm sure whatever is fine."
-	"\0\b[0]\s[21]Nothing orange-colored, please and thank you."
+	"\0\b[0]\s[7]I hate orange. Keep it away from me."
 }
 
 //What does your diet primarily consist of currently, and how willing are you to tolerate a permanent change?
