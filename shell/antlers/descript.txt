@@ -30,6 +30,5 @@ menu.sidebar.alignment,bottom
 
 
 
-
-sakura.bindgroup0.default,1
+sakura.bindgroup1000.name,Blossoms,Blossoms
 
