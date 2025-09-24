@@ -317,6 +317,7 @@ OnDebug.SwitchTo : all
 	"\![*]\__q[OnDebug.SwitchToShell,weissvern]weissvern\__q\n"
 	"\![*]\__q[OnDebug.SwitchToShell,goldfish]goldfish\__q\n"
 	"\![*]\__q[OnDebug.SwitchToShell,vampire]vampire\__q\n"
+	"\![*]\__q[OnDebug.SwitchToShell,antlers]antlers\__q\n"
 	
 	"\n\n"
 	"\![*]\q[Back,OnSakuraMenu]  \![*]\q[Cancel,blank]"

@@ -5,7 +5,9 @@ SurfaceRestore.antlers
 
 Greeting.antlers
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[5]Hail, and well met."
+	"\0\b[0]\s[0]Greetings."
+	"\0\b[0]\s[5]Well met, friend. \w8\s[8]Though, whether you are truly a friend, or indeed a foe, remains to be seen..."
 }
 
 Accepted.antlers
@@ -26,149 +28,266 @@ RandomTalk.antlers : nonoverlap
 //Name?
 Name.antlers
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[5]Name matters not for one such as I... \s[8]I simply go where the winds take me."
+	"\0\b[0]\s[0]Hm... \w8\s[5]I used to have a name, a very long time ago. \s[6]However, many seasons have passed since then, \w4\s[8]and names that go unspoken have a way of leaving to find new bearers."
+	"\0\b[0]\s[0]Ah... \s[8]It has been a long time since I bothered with such things.\n\n \w8\w8\s[5]If you must, I suppose you may call me %(antlers.namegen)."
+}
+
+antlers.namegen
+{
+	"July"
+	"August"
+	"October"
+	"Clove"
+	"Twig"
+	"Thistle"
+	"Thorn"
+	"Bramble"
+	"Storm"
+	"River"
+	"Stream"
+	"Creek"
+	"Shore"
+	"Leaf"
+	"Pond"
+	"Beetle"
 }
 
 //Age?
 Age.antlers
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[3]This winter will mark my %(antlers.agegen)."
+	"\0\b[0]\s[5]Does it matter? \s[0]Perhaps so...\n\n \w8\w8\s[6]I have seen enough winters that I have counted them across my hands more than twice over."
+	"\0\b[0]\s[6]Seasons come and seasons go... \s[8]I have watched this cycle approximately %(RAND(11) + 25) times."
+}
+
+//I don't have time to deal with the goddamn ordinals...
+antlers.agegen
+{
+	"25th"
+	"26th"
+	"27th"
+	"28th"
+	"29th"
+	"30th"
+	"31st"
+	"32nd"
+	"33rd"
+	"34th"
+	"35th"
 }
 
 //Is this your first time working with us?
 FirstTime.antlers
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[0]Yes. \s[3]This is the first time I have entered this city... \s[5]so I am certain I have never been here before."
+	"\0\b[0]\s[0]Indeed. \s[6]I don't usually have much cause to spend time in heavily populated areas..."
+	"\0\b[0]\s[8]Do you not track those who come through your doors...?\n\n \w8\s[5]Yes, we've met once before, though perhaps you do not recall the experience... \s[8]I certainly do."
 }
 
 //Have you died before?
 DiedBefore.antlers
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[0]I have not. \s[3]Though I have come close, a few times."
+	"\0\b[0]\s[6]I have had a near death experience once before... but I have never stepped across to the other side, no."
+	"\0\b[0]\s[8]In a previous life, I was %(agazelle)."
+}
+
+agazelle
+{
+	"a gazelle"
+	"a giraffe"
+	"a beetle"
+	"a hummingbird"
+	"a necromancer like you"
+	"much more... volatile"
+	"a rabbit"
+	"a raccoon"
+	"under the influence of a wizard"
+	"a lion"
+	"a pixie"
+	"a dryad"
+	"a wren"
+	"a sparrow"
+	"a robin"
+	"a knight"
+	"a bard"
+	"a fish"
 }
 
 //Are you currently under the effect of any curses?
 AnyCurses.antlers
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[6]None currently."
+	"\0\b[0]\s[3]To my knowledge, no. \s[6]But the hunters are crafty..."
+	"\0\b[0]\s[3]Under the full moon, I turn into a beast form and lose control of myself. \s[5]It is good that the moon is not full tonight."
 }
 
 //Do you have any peculiarities with your body parts that we should be aware of?
 PeculiaritiesBodyParts.antlers
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[0]Nothing out of the ordinary for my kind."
+	"\0\b[0]\s[5]My antlers will begin shedding soon."
+	"\0\b[0]\s[6]Perhaps not a ""body part"", so much, \w4\s[2]but I have a very touchy fight-or-flight response.\n\n \s[5]Please be careful with sudden movements, lest my body parts come flailing unbidden in your direction..."
 }
 
 //Do you have your own teeth? If 'no', and you have teeth upon your person, are they from a reputable source?
 OwnTeeth.antlers
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[0]I have my own. \s[3]I do not collect others."
+	"\0\b[0]\s[6]I have teeth. \s[2]They are not the savage and tearing teeth of a predator, \w4\s[5]but I imagine they will suffice."
+	"\0\b[0]\s[0]Teeth are quite necessary for life in the woods. \s[5]I am pleased to report I have a full set."
 }
 
 //Do you require food, water, and/or charging (electrical or otherwise) for the duration of your stay?
 RequireFoodWaterCharging.antlers
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[0]I will need food and water. \s[6]Foliage is preferred, but raw meat or bark will do in a pinch."
+	"\0\b[0]\s[0]Food and water are basic necessities for me. \s[6]I prefer an herbivorous diet, when I can get it."
+	"\0\b[0]\s[0]I will require food and water, \s[3]although I am not sure the food that is available in this city will be suitable for me...\n\n \s[0]If you are able to acquire a large amount of %(bark), that would be preferable."
+}
+
+bark
+{
+	"bark"
+	"moss"
+	"leaves"
+	"ferns"
+	"branches with young buds on them"
 }
 
 //Do you have allergic reactions to (word group)?
 AllergicReactions.antlers
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[0]I do not."
+	"\0\b[0]\s[0]Not that I am aware of."
+	"\0\b[0]\s[3]I am uncertain... \s[5]My apologies."
 }
 
 //Are you immortal?
 Immortal.antlers
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[0]I will come back in another form once I die, but this is not what most would consider immortality, to my understanding."
+	"\0\b[0]\s[6]No."
+	"\0\b[0]\s[0]It is possible to kill me."
 }
 
 //How many times on average do you regenerate limbs in a year?
 RegenerateLimbs.antlers
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[5]Assuming my antlers count, once per year."
+	"\0\b[0]\s[3]Would antlers count as a limb...? \s[2]And if so, would they be 1 limb, or does each individual antler count...?\n\n \w8\w8\s[8]I'll say that my antlers grow and shed once per year, and let you figure out the details from there..."
+	"\0\b[0]\s[6]I grow in a new set of antlers every year. \s[5]It is a regular feature of life in this sort of body."
 }
 
 //Do you have an active agreement or similar with (word group)?
 ActiveAgreement.antlers
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[3]Alas, no."
+	"\0\b[0]\s[7]No such agreement exists."
+	"\0\b[0]\s[8]I may have something of that nature..."
 }
 
 //How tall are you, and are you flexible about it?
 HowTall.antlers
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[3]Hm... \s[5]I suppose I have to be, since it technically changes when my antlers grow in. \s[8]Currently I am quite tall..."
+	"\0\b[0]\s[0]I would tell you that I am as tall as the rock I passed by yesterday, or tall enough to reach the low hanging branches of the apple tree I visited last week without having to climb... \s[6]But I don't suppose those are useful measures for you without a reference."
+	"\0\b[0]\s[3]I don't know how height is measured in this civilisation, \w4\s[0]but regardless, my total stature fluctuates as my antlers grow in and shed."
 }
 
 //On a scale of 1 to 100, how many pounds of mass are you willing to potentially lose during the course of this experiment?
 LoseMass.antlers
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[6]Hm... \w8\w8\s[0]%((RAND(4) + 1) * 5) at the most."
+	"\0\b[0]\s[3]I suppose it would not hurt anything if you took my antlers... \s[6]So accounting for that, perhaps %((RAND(4) + 3) * 5)?"
+	"\0\b[0]\s[6]A curious question... \s[3]If agreeing will increase my odds of acceptance, then I suppose I could perhaps part with some... \w8\w8\s[2]But no more than %((RAND(4) + 3) * 5)."
 }
 
 //Would you describe yourself as being made of flesh?
 MadeOfFlesh.antlers
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[0]Yes."
+	"\0\s[0]\s[6]Indeed."
+	"\0\b[0]\s[8]The hunters would like to think so."
 }
 
 //Do you often use your (bodypart)?
 OftenUseBodyPart.antlers
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[5]I don't often have need for such things."
+	"\0\b[0]\s[4]... Is this a trick question?"
+	"\0\b[0]\s[8]Less than you might think."
 }
 
 //On a scale of 1 to 10, how much do you prioritize maintaining your current form?
 PrioritizeCurrentForm.antlers
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[5]1. \s[8]This form is fleeting and will be replaced with another in my next life regardless."
+	"\0\b[0]\s[0]Perhaps a 3. \s[6]I do rather enjoy this body, \w4\s[8]but all things must come to an end eventually."
+	"\0\b[0]\s[5]A 10, at least until after I have received my compensation from you. \s[8]After that, I am unconcerned... the winds will pull us, twist us, and form us as they may."
 }
 
 //How long have you resided in this reality?
 ResidedThisReality.antlers
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[5]I am a wanderer, but of this reality only."
+	"\0\b[0]\s[3]My current life, and many more before it. \s[4]I briefly had a stint where I travelled with some demons, but... \s[5]It has been so long that I've lost many of the details."
+	"\0\b[0]\s[5]I have never left it. \s[8]Not in this life, nor any prior."
 }
 
 //Where do you see yourself in 10 years? Would it change if (word group)?
 SeeSelfTenYears.antlers
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[8]Such questions are not worth contemplating. \s[5]The winds will take me where they like... I'm sure it will be interesting."
+	"\0\b[0]\s[3]Hopefully not here... \s[8]Otherwise, I go where the winds take me, so the destination is unknown at this particular moment."
+	"\0\b[0]\s[6]The great unknown of the future... \s[3]Everything follows cycles. \s[5]No matter what comes, nature will return to stability eventually. \s[8]I will follow the guidance of the wind then as I do now."
 }
 
 //Are you currently taking any medications?
 TakingMeds.antlers
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[3]Medications...? \w8\s[5]Pardon, I'm not familiar with this term."
+	"\0\b[0]\s[8]Ah... I have heard of these. \s[5]However, I am a wanderer with no doctor, and as such, do not have any medications to take."
+	"\0\b[0]\s[6]I create my own plant-based remedies in my travels. \s[5]I am not using any of them currently, however, as I am not sick or injured."
 }
 
 //On a scale of 1 to 10, how likely are you to start rotting on a hot day?
 LikelyToRot.antlers
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[4]I suppose that depends whether I am dead or alive at that particular moment..."
+	"\0\b[0]\s[3]If by ""start rotting"" you mean ""get killed by the hunters and become a carcass"", I suppose it would be more likely on a hot day, when I am tired and searching for water...\n\n \w8\s[8]Still, I am quite good at eluding them, so perhaps a 3?"
+	"\0\b[0]\s[7]I will not rot until and unless I am a corpse. \s[6]As I have no experience of being a corpse for any length of time, I am not sure what the likelihood would be..."
 }
 
 //Do you have prior history with eldritch horrors?
 HistoryEldritchHorrors.antlers
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[4]Hm... \s[3]I do, though I am not keen on divulging details."
+	"\0\b[0]\s[6]I have not observed any such creatures in this lifetime. \s[3]In my previous life, however..."
+	"\0\b[0]\s[6]To my knowledge, no."
 }
 
 //Are there any colors or textures that should be kept out of your enclosure?
 ColorsTextures.antlers
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[6]Nothing in particular."
+	"\0\b[0]\s[3]I am not keen on fluorescent orange. \s[4]It is a color the hunters like to use... they seem to think I cannot detect it."
+	"\0\b[0]\s[0]I would prefer textures closer to what can be found in nature. \s[3]Smooth floors and walls are somewhat... offputting."
 }
 
 //What does your diet primarily consist of currently, and how willing are you to tolerate a permanent change?
 PrimaryDiet.antlers
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[0]Browse. \w8\w8\s[3]I suppose a change would be acceptable."
+	"\0\b[0]\s[0]I forage. \s[3]Leaves, berries, bark... the occasional meat or grubs. \s[6]I take what I can get.\n\n \w8\w8\s[0]A change would be alright so long as it does not extremely restrict my food supply, or require me to stay within city limits."
+	"\0\b[0]\s[3]Whatever is available in my vicinity. \s[6]Mushrooms, berries, grasses, bark, leaves... \w8\s[5]Occasionally bugs or small fish.\n\n \s[3]I would prefer not to change things too much, but... it would be doable if it is necessary."
 }
 
 //How would you like to be compensated for your assistance today?
 HowCompensate.antlers
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[6]I am here to request your assistance in a personal matter. \w8\s[7]My sister perished some time ago at the hands of the hunters, and I would like to have her resurrected. \w8\s[8]We reincarnate together, you see... \s[5]She can only come back when I finally die.\n\n \s[3]However, when she was trapped, I was not there... \s[0]and so I am currently stuck on my own, and she is waiting in a sort of limbo state.\n\n \s[6]I could join her and move to the next life... \s[8]but I do like this current form, and would like a little more time with it if it's possible."
+	"\0\b[0]\s[3]I am here seeking a curse... \s[0]You see, there are hunters pursuing me. \s[2]Quite relentlessly, I might add. \s[5]What they don't know is that I have various curses placed upon them, to ensure their shots never hit...\n\n \s[8]It is good to have these curses re-applied every so often. It makes certain that anyone new who joins their group is similarly harmless..."
+	"\0\b[0]\s[4]The food I have been able to forage is quite poor this season... \s[0]I am simply seeking a supply of food for the winter, \w4\s[5]and a blessing for the land that it may bear more fruit in the following years."
 }
