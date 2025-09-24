@@ -67,7 +67,7 @@ Name.vampire
 
 vampire.namegen : all
 {
-	if RAND(2)
+	if RAND(4)
 	{
 		vampire.nameprefix
 		" "
@@ -106,6 +106,24 @@ vampire.namefirst
 	"Matthew"
 	"Bartholomew"
 	"Zacharie"
+	"Vance"
+	"Alfred"
+	"Oren"
+	"Bryant"
+	"Adrian"
+	"Alphonse"
+	"Mortimer"
+	"Roderick"
+	"Ervin"
+	"Bernard"
+	"Wilfrid"
+	"Frederic"
+	"Sebastian"
+	"Basil"
+	"Jonathan"
+	"Romulus"
+	"Vladimir"
+	"Demetrius"
 }
 
 vampire.namelast
@@ -115,6 +133,24 @@ vampire.namelast
 	"Caesar"
 	"Trueblood"
 	"Valentine"
+	"Devilrain"
+	"Darkrune"
+	"Redbone"
+	"Paterson"
+	"Chapman"
+	"Howlett"
+	"Abberton"
+	"Suthmeer"
+	"Dreadshade"
+	"Coldheart"
+	"Ellingham"
+	"Bouchard"
+	"Sinclair"
+	"Krauss"
+	"Nicodemeus"
+	"Grimhaunt"
+	"Farshriek"
+	"Warbrood"
 }
 
 vampire.namesuffix
