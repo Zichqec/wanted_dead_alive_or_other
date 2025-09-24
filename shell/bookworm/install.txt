@@ -1,4 +1,0 @@
-charset,UTF-8
-type,shell
-name,Bookworm & Lectern
-directory,bookworm_and_lectern
