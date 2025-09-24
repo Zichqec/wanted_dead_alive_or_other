@@ -7,7 +7,7 @@ Greeting.vampire
 {
 	"\0\b[0]\s[0]Greetings. \s[2]It brings me great pleasure to meet you. \w8\s[23]Your facilities are... quite remarkable.\n\n \w8\w8\s[0]But never mind that. Shall we begin?"
 	"\0\b[0]\s[5]Ah, so this is the famed necromancer... The spell-weaver who makes the dead walk. \s[0]We shall see if the tales are true. \s[2]Shall we begin?"
-	"\0\b[0]\s[2]Ah... inside at last. \s[48]Away from the din just beyond your door. \w8\w8\s[0]Tranquility...\n\n \s[2]At least for a moment. Let us begin, yes?"
+	"\0\b[0]\s[2]Ah... inside at last. \s[48]Away from the din just beyond your door.\n\n \w8\w8\s[0]Tranquility... \s[2]at least for a moment. Let us begin, yes?"
 }
 
 Accepted.vampire
