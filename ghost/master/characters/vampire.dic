@@ -67,7 +67,7 @@ Name.vampire
 
 vampire.namegen : all
 {
-	if RAND(4)
+	if RAND(4) == 0
 	{
 		vampire.nameprefix
 		" "
@@ -75,7 +75,7 @@ vampire.namegen : all
 	vampire.namefirst
 	" "
 	vampire.namelast
-	if RAND(2)
+	if RAND(2) == 0
 	{
 		" "
 		vampire.namesuffix
