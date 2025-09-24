@@ -6,6 +6,7 @@ shells : array
 	"weissvern"
 	"goldfish"
 	"vampire"
+	"antlers"
 }
 
 OnGenerateNewCharacter

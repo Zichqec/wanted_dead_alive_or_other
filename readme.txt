@@ -18,3 +18,6 @@ by 月波 清火 https://github.com/tukinami
 
 Freeshell "ようこそヴァンパイア"
 by 蟻の住む木 http://seizonkakuninbasyo.web.fc2.com/
+
+Freeshell "枯枝角" //TODO maybe double check lol
+by ３号生 http://deceit.ikaduchi.com/

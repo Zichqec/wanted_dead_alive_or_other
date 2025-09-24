@@ -1,0 +1,174 @@
+SurfaceRestore.antlers
+{
+	"\1\s[-1]\0\s[0]"
+}
+
+Greeting.antlers
+{
+	//"\0\b[0]\s[0]"
+}
+
+Accepted.antlers
+{
+	//"\0\b[0]\s[0]"
+}
+
+Rejected.antlers
+{
+	//"\0\b[0]\s[0]"
+}
+
+RandomTalk.antlers : nonoverlap
+{
+	//"\0\b[0]\s[0]"
+}
+
+//Name?
+Name.antlers
+{
+	//"\0\b[0]\s[0]"
+}
+
+//Age?
+Age.antlers
+{
+	//"\0\b[0]\s[0]"
+}
+
+//Is this your first time working with us?
+FirstTime.antlers
+{
+	//"\0\b[0]\s[0]"
+}
+
+//Have you died before?
+DiedBefore.antlers
+{
+	//"\0\b[0]\s[0]"
+}
+
+//Are you currently under the effect of any curses?
+AnyCurses.antlers
+{
+	//"\0\b[0]\s[0]"
+}
+
+//Do you have any peculiarities with your body parts that we should be aware of?
+PeculiaritiesBodyParts.antlers
+{
+	//"\0\b[0]\s[0]"
+}
+
+//Do you have your own teeth? If 'no', and you have teeth upon your person, are they from a reputable source?
+OwnTeeth.antlers
+{
+	//"\0\b[0]\s[0]"
+}
+
+//Do you require food, water, and/or charging (electrical or otherwise) for the duration of your stay?
+RequireFoodWaterCharging.antlers
+{
+	//"\0\b[0]\s[0]"
+}
+
+//Do you have allergic reactions to (word group)?
+AllergicReactions.antlers
+{
+	//"\0\b[0]\s[0]"
+}
+
+//Are you immortal?
+Immortal.antlers
+{
+	//"\0\b[0]\s[0]"
+}
+
+//How many times on average do you regenerate limbs in a year?
+RegenerateLimbs.antlers
+{
+	//"\0\b[0]\s[0]"
+}
+
+//Do you have an active agreement or similar with (word group)?
+ActiveAgreement.antlers
+{
+	//"\0\b[0]\s[0]"
+}
+
+//How tall are you, and are you flexible about it?
+HowTall.antlers
+{
+	//"\0\b[0]\s[0]"
+}
+
+//On a scale of 1 to 100, how many pounds of mass are you willing to potentially lose during the course of this experiment?
+LoseMass.antlers
+{
+	//"\0\b[0]\s[0]"
+}
+
+//Would you describe yourself as being made of flesh?
+MadeOfFlesh.antlers
+{
+	//"\0\b[0]\s[0]"
+}
+
+//Do you often use your (bodypart)?
+OftenUseBodyPart.antlers
+{
+	//"\0\b[0]\s[0]"
+}
+
+//On a scale of 1 to 10, how much do you prioritize maintaining your current form?
+PrioritizeCurrentForm.antlers
+{
+	//"\0\b[0]\s[0]"
+}
+
+//How long have you resided in this reality?
+ResidedThisReality.antlers
+{
+	//"\0\b[0]\s[0]"
+}
+
+//Where do you see yourself in 10 years? Would it change if (word group)?
+SeeSelfTenYears.antlers
+{
+	//"\0\b[0]\s[0]"
+}
+
+//Are you currently taking any medications?
+TakingMeds.antlers
+{
+	//"\0\b[0]\s[0]"
+}
+
+//On a scale of 1 to 10, how likely are you to start rotting on a hot day?
+LikelyToRot.antlers
+{
+	//"\0\b[0]\s[0]"
+}
+
+//Do you have prior history with eldritch horrors?
+HistoryEldritchHorrors.antlers
+{
+	//"\0\b[0]\s[0]"
+}
+
+//Are there any colors or textures that should be kept out of your enclosure?
+ColorsTextures.antlers
+{
+	//"\0\b[0]\s[0]"
+}
+
+//What does your diet primarily consist of currently, and how willing are you to tolerate a permanent change?
+PrimaryDiet.antlers
+{
+	//"\0\b[0]\s[0]"
+}
+
+//How would you like to be compensated for your assistance today?
+HowCompensate.antlers
+{
+	//"\0\b[0]\s[0]"
+}

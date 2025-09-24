@@ -1,0 +1,4 @@
+Charset,UTF-8
+type,shell
+name,枯枝角
+directory,BodtTuno
