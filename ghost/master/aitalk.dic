@@ -24,5 +24,8 @@ ShellTalk
 
 RandomTalk : nonoverlap_pool
 {
-	"\s[0]Necromancer."
+	"It might be worth testing the %(flexibility) of %(bodypart) %(atrest). Though, the current schedule is rather crammed as it stands..."
+	"The line has gotten %(longer) since I last checked."
+	"Ah, I should check the %(bandage) inventory."
+	"...? Sounds like something is rampaging in the other room... Is it getting louder?\n\n \f[bold,1]THUD! CRUNCH!\n\n \f[bold,default]... The alarms haven't been triggered, so it's probably fine... Just act normal..."
 }
