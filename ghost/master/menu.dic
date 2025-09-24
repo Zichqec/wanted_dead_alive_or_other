@@ -88,18 +88,20 @@ OnNextCandidate : all
 	"\t"
 	if reference0 == "accept"
 	{
+		Candidate.Status = 1
 		AcceptedCandidatesTotal++
 		AcceptedCandidatesToday++
-		SaveResponses
 		
 		EVAL("Accepted.%(CurrentShell)")
 	}
 	else
 	{
+		Candidate.Status = 0
 		RejectedCandidatesTotal++
 		RejectedCandidatesToday++
 		EVAL("Rejected.%(CurrentShell)")
 	}
+	SaveResponses
 	
 	"\_w[1000]"
 	FadeOut
@@ -114,16 +116,25 @@ OnSeeOldResponses : all
 	"\C\![lock,balloonrepaint]\c"
 	"\0\b[2]\_q\![set,autoscroll,disable]\![no-autopause]"
 	
+	_response = SavedResponses[reference0]
+	_response = SPLIT(_response,CHR(0xFDEF))
+	_candidateinfo = SPLIT(_response[0],C_BYTE1)
+	_answers = SPLIT(_response[1],C_BYTE1)
 	
-	_answers = SavedResponses[reference0]
-	_candidatenum = _answers[0,CHR(0xFDEF)]
-	_answers = _answers[1,CHR(0xFDEF)]
-	_answers = SPLIT(_answers,C_BYTE1)
+	_candidatenum = _candidateinfo[0] //Saving the number sort of became redundant now that I'm saving them all, but... whatever
+	_candidatestatus = _candidateinfo[1]
+	_candidateshell = _candidateinfo[2]
+	_candidatevariant = _candidateinfo[3]
+	
+	_statusdisplay = "[VANISHED]"
+	if _candidatestatus == 0; _statusdisplay = "[REJECTED]"
+	elseif _candidatestatus == 1; _statusdisplay = "[ACCEPTED]"
+	elseif _candidatestatus == 2; _statusdisplay = "[MICHAEL]" //???
 	
 	_c = "\f[color,disable]\f[italic,1]"
 	_d = "\f[italic,default]\f[color,default]"
 	
-	"\f[align,center]\f[height,+2]\f[bold,1]Candidate #%(_candidatenum)\f[bold,default]\f[height,default]\n\f[align,left]"
+	"\f[align,center]\f[height,+2]\f[bold,1]Candidate #%(_candidatenum)\f[bold,default]\f[height,default]\n %(_statusdisplay) \n\f[align,left]"
 	
 	switch reference0 <= 0
 	{
@@ -142,8 +153,14 @@ OnSeeOldResponses : all
 	for _i = 0; _i < ARRAYSIZE(_questions); _i++
 	{
 		if ASEARCH(_i,QuestionsToAsk) == -1; continue
+		
 		"\![*]%(_questions[_i])\n"
-		"%(_c)%(_answers[_i])%(_d)\n\n"
+		
+		if _candidateshell == "fluffydemon" && _candidatevariant == "2"
+		{
+			"%(_c)%(DecodeMorse(_answers[_i]))%(_d)\n\n"
+		}
+		else; "%(_c)%(_answers[_i])%(_d)\n\n"
 	}
 	"\n"
 	"\![*]\__q[OnSakuraMenu]Back\__q  \![*]\__q[blank]Done\__q"
@@ -325,8 +342,9 @@ OnDebug.SwitchTo : all
 
 OnDebug.SwitchToShell : all
 {
-	if reference0 == "fluffydemon"; FluffyDemonMode = TOINT(reference1)
+	if reference0 == "fluffydemon"; Candidate.Variant = TOINT(reference1)
 	
+	Candidate.Num-- //Counteract the increase...
 	Candidate.Shell = reference0
 	NewCharacterLatch = 1
 	FadeOut

@@ -191,6 +191,116 @@ RandomizeDressups : all
 	}
 }
 
+EncodeMorse
+{
+	_cipherlist = MorseList
+	_letterlist = IARRAY
+	_codelist = IARRAY
+	foreach _cipherlist; _item
+	{
+		_item = SPLIT(_item,"|")
+		_letterlist ,= _item[0]
+		_codelist ,= _item[1]
+	}
+	
+	_words = SPLIT(_argv[0]," ")
+	_output = ""
+	foreach _words; _word
+	{
+		if _output != ""; _output += " /"
+		for _i = 0; _i < STRLEN(_word); _i++
+		{
+			if _output != ""; _output += " "
+			_letter = SUBSTR(_word,_i,1)
+			_index = ASEARCH(TOUPPER(_letter),_letterlist)
+			_output += _codelist[_index]
+		}
+	}
+	_output
+}
+
+DecodeMorse
+{
+	_cipherlist = MorseList
+	_letterlist = IARRAY
+	_codelist = IARRAY
+	foreach _cipherlist; _item
+	{
+		_item = SPLIT(_item,"|")
+		_letterlist ,= _item[0]
+		_codelist ,= _item[1]
+	}
+	
+	_words = SPLIT(_argv[0],"/")
+	_output = ""
+	foreach _words; _word
+	{
+		if _output != ""; _output += " "
+		_letters = SPLIT(_word," ")
+		foreach _letters; _letter
+		{
+			_index = ASEARCH(_letter,_codelist)
+			_output += _letterlist[_index]
+		}
+	}
+	_output
+}
+
+MorseList : array
+{
+	//To add a new code, just duplicate one of these lines and change the items on either side!
+	"A|.-"
+	"B|-..."
+	"C|-.-."
+	"D|-.."
+	"E|."
+	"F|..-."
+	"G|--."
+	"H|...."
+	"I|.."
+	"J|.---"
+	"K|-.-"
+	"L|.-.."
+	"M|--"
+	"N|-."
+	"O|---"
+	"P|.--."
+	"Q|--.-"
+	"R|.-."
+	"S|..."
+	"T|-"
+	"U|..-"
+	"V|...-"
+	"W|.--"
+	"X|-..-"
+	"Y|-.--"
+	"Z|--.."
+	"0|-----"
+	"1|.----"
+	"2|..---"
+	"3|...--"
+	"4|....-"
+	"5|....."
+	"6|-...."
+	"7|--..."
+	"8|---.."
+	"9|----."
+	".|.-.-.-"
+	",|--..--"
+	"?|..--.."
+	"'|.----."
+	"/|-..-."
+	"(|-.--."
+	")|-.--.-"
+	":|---..."
+	"=|-...-"
+	"+|.-.-."
+	"-|-....-"
+	'"|.-..-.'
+	"@|.--.-."
+	"!|-.-.--" //Nonstandard, but probably common enough to want?
+}
+
 //—————————————————————————————— Right click menu links ——————————————————————————————
 
 //Takes an array of alternating names and urls, and formats them for use with the right click menu

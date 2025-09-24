@@ -18,7 +18,11 @@ OnGenerateNewCharacter
 	}
 	Candidate.Shell = _newshell //TODO maybe nonoverlap later? or is random but not repeating the last one better
 	
-	if Candidate.Shell == "fluffydemon"; FluffyDemonMode = RAND(3)
+	if Candidate.Shell == "fluffydemon"; Candidate.Variant = RAND(3)
+	else; Candidate.Variant = -1
+	
+	//-1 undetermined, 0 rejected, 1 accepted, 2 michael??
+	Candidate.Status = -1
 	
 	//TODO michael here somewhere later......
 	
@@ -145,7 +149,8 @@ GenerateAnswers
 
 SaveResponses
 {
-	SavedResponses ,= "%(Candidate.Num)" + CHR(0xFDEF) + MakeSaveResponseString
+	_characterdetails = "%(Candidate.Num)%(C_BYTE1)%(Candidate.Status)%(C_BYTE1)%(Candidate.Shell)%(C_BYTE1)%(Candidate.Variant)"
+	SavedResponses ,= _characterdetails + CHR(0xFDEF) + MakeSaveResponseString
 }
 
 MakeSaveResponseString : all

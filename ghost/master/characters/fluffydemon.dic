@@ -3,20 +3,20 @@ SurfaceRestore.fluffydemon
 {
 	"\1\s[-1]\0"
 	--
-	if FluffyDemonMode == 1; "\s[4]"
-	elseif FluffyDemonMode == 2; "\s[7]"
+	if Candidate.Variant == 1; "\s[4]"
+	elseif Candidate.Variant == 2; "\s[7]"
 	else; "\s[0]"
 }
 
 Greeting.fluffydemon
 {
-	if FluffyDemonMode == 1
+	if Candidate.Variant == 1
 	{
 		"\1\s[-1]\0\b[0]\s[6]Kekekekek... Salutations..."
 		"\1\s[-1]\0\b[0]\s[5]Kukukuku... Smells nice..."
 		"\1\s[-1]\0\b[0]\s[4]Keekeke... My turn..."
 	}
-	elseif FluffyDemonMode == 2
+	elseif Candidate.Variant == 2
 	{
 		//Greetings. I hope you're having a good day today. I look forward to our interrogation.
 		"\1\s[-1]\0\b[0]\![no-autopause]\s[7]--. .-. . . - .. -. --. ... .-.-.- / .. / .... --- .--. . / -.-- --- ..- .----. .-. . / .... .- ...- .. -. --. / .- / --. --- --- -.. / -.. .- -.-- / - --- -.. .- -.-- .-.-.- / .. / .-.. --- --- -.- / ..-. --- .-. .-- .- .-. -.. / - --- / --- ..- .-. / .. -. - . .-. .-. --- --. .- - .. --- -. .-.-.-"
@@ -35,13 +35,13 @@ Greeting.fluffydemon
 
 Accepted.fluffydemon
 {
-	if FluffyDemonMode == 1
+	if Candidate.Variant == 1
 	{
 		"\0\b[0]\s[46]Keekeke... The deal is made..."
 		"\0\b[0]\s[4]Kekekekek... So we are bound..."
 		"\0\b[0]\s[5]Kukukuku... I eagerly await your next move..."
 	}
-	elseif FluffyDemonMode == 2
+	elseif Candidate.Variant == 2
 	{
 		//Wonderful. I'm glad that we could reach an understanding. I look forward to working with you.
 		"\0\b[0]\![no-autopause]\s[8].-- --- -. -.. . .-. ..-. ..- .-.. .-.-.- / .. .----. -- / --. .-.. .- -.. / - .... .- - / .-- . / -.-. --- ..- .-.. -.. / .-. . .- -.-. .... / .- -. / ..- -. -.. . .-. ... - .- -. -.. .. -. --. .-.-.- /\s[9] .. / .-.. --- --- -.- / ..-. --- .-. .-- .- .-. -.. / - --- / .-- --- .-. -.- .. -. --. / .-- .. - .... / -.-- --- ..- .-.-.-"
@@ -60,13 +60,13 @@ Accepted.fluffydemon
 
 Rejected.fluffydemon
 {
-	if FluffyDemonMode == 1
+	if Candidate.Variant == 1
 	{
 		"\0\b[0]\s[36]So be it. A decision made cannot be taken back. \s[35]Fate shall see that our paths cross again, and when they do, your regrets will not save you.\n\n \s[34]I look forward to that day."
 		"\0\b[0]\s[44]Very well. I shall await your departure."
 		"\0\b[0]\s[5]Kukukuku... Perhaps next time you will make a better choice."
 	}
-	elseif FluffyDemonMode == 2
+	elseif Candidate.Variant == 2
 	{
 		//A foolish decision, made by a foolish spellcaster. Your ego will put you in the ire of beings much less forgiving than I. I wish you luck for when that day comes.
 		"\0\b[0]\![no-autopause]\s[47].- / ..-. --- --- .-.. .. ... .... / -.. . -.-. .. ... .. --- -. --..-- / -- .- -.. . / -... -.-- / .- / ..-. --- --- .-.. .. ... .... / ... .--. . .-.. .-.. -.-. .- ... - . .-. .-.-.- /\s[48] -.-- --- ..- .-. / . --. --- / .-- .. .-.. .-.. / .--. ..- - / -.-- --- ..- / .. -. / - .... . / .. .-. . / --- ..-. / -... . .. -. --. ... / -- ..- -.-. .... / .-.. . ... ... / ..-. --- .-. --. .. ...- .. -. --. / - .... .- -. / .. .-.-.- \n\n\w8\w8\s[9].. / .-- .. ... .... / -.-- --- ..- / .-.. ..- -.-. -.- / ..-. --- .-. / .-- .... . -. / - .... .- - / -.. .- -.-- / -.-. --- -- . ... .-.-.-"
@@ -85,7 +85,7 @@ Rejected.fluffydemon
 
 RandomTalk.fluffydemon : nonoverlap
 {
-	if FluffyDemonMode == 1
+	if Candidate.Variant == 1
 	{
 		"\0\b[0]\s[5]... %(DemonMood)..."
 		"\0\b[0]\s[4]Kek... Where are the others... I want a taste... Kukuku..."
@@ -93,7 +93,7 @@ RandomTalk.fluffydemon : nonoverlap
 		"\0\b[0]\s[5]Kukukuku... Take your time... I do not tire... but you will..."
 		"\0\b[0]\s[4]Kekekekekek... Why are you so far away... Come closer..."
 	}
-	elseif FluffyDemonMode == 2
+	elseif Candidate.Variant == 2
 	{
 		//The weather is nice today, isn't it?
 		"\0\b[0]\![no-autopause]\s[7]- .... . / .-- . .- - .... . .-. / .. ... / -. .. -.-. . / - --- -.. .- -.-- --..-- / .. ... -. .----. - / .. - ..--.."
@@ -129,13 +129,13 @@ RandomTalk.fluffydemon : nonoverlap
 //Name?
 Name.fluffydemon
 {
-	if FluffyDemonMode == 1
+	if Candidate.Variant == 1
 	{
 		"\0\b[0]\s[5]Kek... %(NameFluffyDemon) %(NameFluffyDemonTitle)..."
 		"\0\b[0]\s[6]Kukukuku... You will know once the pact is sealed..."
 		"\0\b[0]\s[4]Keekeke... %(NameFluffyDemon) %(NameFluffyDemonTitle)... For now..."
 	}
-	elseif FluffyDemonMode == 2
+	elseif Candidate.Variant == 2
 	{
 		//%(NameFluffyDemonEye).
 		"\0\b[0]\![no-autopause]\s[7]%(NameFluffyDemonEye) .-.-.-"
@@ -155,13 +155,13 @@ Name.fluffydemon
 //Age?
 Age.fluffydemon
 {
-	if FluffyDemonMode == 1
+	if Candidate.Variant == 1
 	{
 		"\0\b[0]\s[5]Kekekekekek... What will you offer to know..."
 		"\0\b[0]\s[6]Kukukuku... %(RAND(5000) + 2) %(demonyears) of this incarnation..."
 		"\0\b[0]\s[4]Keekeke... Centuries..."
 	}
-	elseif FluffyDemonMode == 2
+	elseif Candidate.Variant == 2
 	{
 		//%(eyenumbers) %(demonyearseye).
 		"\0\b[0]\![no-autopause]\s[9]%(eyenumbers) / %(demonyearseye) .-.-.-"
@@ -181,13 +181,13 @@ Age.fluffydemon
 //Is this your first time working with us?
 FirstTime.fluffydemon
 {
-	if FluffyDemonMode == 1
+	if Candidate.Variant == 1
 	{
 		"\0\b[0]\s[46]Kekekekekek... Have you forgotten...?"
 		"\0\b[0]\s[5]Kukukuku... The first of many..."
 		"\0\b[0]\s[6]Keekeke... Another deal to be struck..."
 	}
-	elseif FluffyDemonMode == 2
+	elseif Candidate.Variant == 2
 	{
 		//Yes, it is.
 		"\0\b[0]\![no-autopause]\s[7]-.-- . ... --..-- / .. - / .. ... .-.-.-"
@@ -207,13 +207,13 @@ FirstTime.fluffydemon
 //Have you died before?
 DiedBefore.fluffydemon
 {
-	if FluffyDemonMode == 1
+	if Candidate.Variant == 1
 	{
 		"\0\b[0]\s[4]Kekekekekek... Death is a figment... easily overcome..."
 		"\0\b[0]\s[34]Kukukuku... You shall not be the one to slay me..."
 		"\0\b[0]\s[24]Keekeke... To be tempted by the unknown..."
 	}
-	elseif FluffyDemonMode == 2
+	elseif Candidate.Variant == 2
 	{
 		//Most demons were mortals at one point, who then perished with their souls bound to a dark power. The only demons that have not likewise are barred from walking this realm. Thus, any demon you meet has died to be born, whether they remember it or not.
 		"\0\b[0]\![no-autopause]\s[8]-- --- ... - / -.. . -- --- -. ... / .-- . .-. . / -- --- .-. - .- .-.. ... / .- - / --- -. . / .--. --- .. -. - --..-- / .-- .... --- / - .... . -. / .--. . .-. .. ... .... . -.. / .-- .. - .... / - .... . .. .-. / ... --- ..- .-.. ... / -... --- ..- -. -.. / - --- / .- / -.. .- .-. -.- / .--. --- .-- . .-. .-.-.- /\s[29] - .... . / --- -. .-.. -.-- / -.. . -- --- -. ... / - .... .- - / .... .- ...- . / -. --- - / .-.. .. -.- . .-- .. ... . / .- .-. . / -... .- .-. .-. . -.. / ..-. .-. --- -- / .-- .- .-.. -.- .. -. --. / - .... .. ... / .-. . .- .-.. -- .-.-.- \n\n\w8\w8\s[7]- .... ..- ... --..-- / .- -. -.-- / -.. . -- --- -. / -.-- --- ..- / -- . . - / .... .- ... / -.. .. . -.. / - --- / -... . / -... --- .-. -. --..-- / .-- .... . - .... . .-. / - .... . -.-- / .-. . -- . -- -... . .-. / .. - / --- .-. / -. --- - .-.-.-"
@@ -233,13 +233,13 @@ DiedBefore.fluffydemon
 //Are you currently under the effect of any curses?
 AnyCurses.fluffydemon
 {
-	if FluffyDemonMode == 1
+	if Candidate.Variant == 1
 	{
 		"\0\b[0]\s[45]Kukukuku... Curses draw their power from me..."
 		"\0\b[0]\s[4]Kekekekekek... My existence is the curse..."
 		"\0\b[0]\s[26]Keekeke... You sense it... A dangerous ability..."
 	}
-	elseif FluffyDemonMode == 2
+	elseif Candidate.Variant == 2
 	{
 		//The physical form of a demon is inherently held together by curses. We are always cursed, whether we feel the ramifications or not.
 		"\0\b[0]\![no-autopause]\s[7]- .... . / .--. .... -.-- ... .. -.-. .- .-.. / ..-. --- .-. -- / --- ..-. / .- / -.. . -- --- -. / .. ... / .. -. .... . .-. . -. - .-.. -.-- / .... . .-.. -.. / - --- --. . - .... . .-. / -... -.-- / -.-. ..- .-. ... . ... .-.-.- /\s[28] .-- . / .- .-. . / .- .-.. .-- .- -.-- ... / -.-. ..- .-. ... . -.. --..-- / .-- .... . - .... . .-. / .-- . / ..-. . . .-.. / - .... . / .-. .- -- .. ..-. .. -.-. .- - .. --- -. ... / --- .-. / -. --- - .-.-.-"
@@ -259,13 +259,13 @@ AnyCurses.fluffydemon
 //Do you have any peculiarities with your body parts that we should be aware of?
 PeculiaritiesBodyParts.fluffydemon
 {
-	if FluffyDemonMode == 1
+	if Candidate.Variant == 1
 	{
 		"\0\b[0]\s[24]Kek... The taste of them is strange..."
 		"\0\b[0]\s[5]Kukukuku... They bite..."
 		"\0\b[0]\s[45]Keekeke... Indeed..."
 	}
-	elseif FluffyDemonMode == 2
+	elseif Candidate.Variant == 2
 	{
 		//Not unless you are unfamiliar with demon biology.
 		"\0\b[0]\![no-autopause]\s[27]-. --- - / ..- -. .-.. . ... ... / -.-- --- ..- / .- .-. . / ..- -. ..-. .- -- .. .-.. .. .- .-. / .-- .. - .... / -.. . -- --- -. / -... .. --- .-.. --- --. -.-- .-.-.-"
@@ -285,13 +285,13 @@ PeculiaritiesBodyParts.fluffydemon
 //Do you have your own teeth? If 'no', and you have teeth upon your person, are they from a reputable source?
 OwnTeeth.fluffydemon
 {
-	if FluffyDemonMode == 1
+	if Candidate.Variant == 1
 	{
 		"\0\b[0]\s[4]Kekekekekek... Yes... Would you like one...?"
 		"\0\b[0]\s[6]Kukukuku... Many to collect..."
 		"\0\b[0]\s[5]Keekeke... All well earned..."
 	}
-	elseif FluffyDemonMode == 2
+	elseif Candidate.Variant == 2
 	{
 		//I don't have any need for teeth.
 		"\0\b[0]\![no-autopause]\s[7].. / -.. --- -. .----. - / .... .- ...- . / .- -. -.-- / -. . . -.. / ..-. --- .-. / - . . - .... .-.-.-"
@@ -311,13 +311,13 @@ OwnTeeth.fluffydemon
 //Do you require food, water, and/or charging (electrical or otherwise) for the duration of your stay?
 RequireFoodWaterCharging.fluffydemon
 {
-	if FluffyDemonMode == 1
+	if Candidate.Variant == 1
 	{
 		"\0\b[0]\s[46]Keekeke... Our bond shall be sufficient..."
 		"\0\b[0]\s[4]Kukukuku... Flesh and blood... Rip and tear..."
 		"\0\b[0]\s[5]Kekekekekek... These are of no concern..."
 	}
-	elseif FluffyDemonMode == 2
+	elseif Candidate.Variant == 2
 	{
 		//No. However, I would appreciate the freedom to wander the halls at night and scratch at the walls and doors to terrify the other participants.
 		"\0\b[0]\![no-autopause]/s[7]-. --- .-.-.- \n\n\w8\w8\s[8].... --- .-- . ...- . .-. --..-- / .. / .-- --- ..- .-.. -.. / .- .--. .--. .-. . -.-. .. .- - . / - .... . / ..-. .-. . . -.. --- -- / - --- / .-- .- -. -.. . .-. / - .... . / .... .- .-.. .-.. ... / .- - / -. .. --. .... - / .- -. -.. / ... -.-. .-. .- - -.-. .... / .- - / - .... . / .-- .- .-.. .-.. ... / .- -. -.. / -.. --- --- .-. ... / - --- / - . .-. .-. .. ..-. -.-- / - .... . / --- - .... . .-. / .--. .- .-. - .. -.-. .. .--. .- -. - ... .-.-.-"
@@ -337,13 +337,13 @@ RequireFoodWaterCharging.fluffydemon
 //Do you have allergic reactions to (word group)?
 AllergicReactions.fluffydemon
 {
-	if FluffyDemonMode == 1
+	if Candidate.Variant == 1
 	{
 		"\0\b[0]\s[35]Kukukuku... I am not as weak as mortals..."
 		"\0\b[0]\s[6]Kekekekekek... What an amusing notion..."
 		"\0\b[0]\s[24]Keekeke... Such things are to remain unspoken..."
 	}
-	elseif FluffyDemonMode == 2
+	elseif Candidate.Variant == 2
 	{
 		//No, I do not currently harbor that curse.
 		"\0\b[0]\![no-autopause]\s[7]-. --- --..-- / .. / -.. --- / -. --- - / -.-. ..- .-. .-. . -. - .-.. -.-- / .... .- .-. -... --- .-. / - .... .- - / -.-. ..- .-. ... . .-.-.-"
@@ -363,13 +363,13 @@ AllergicReactions.fluffydemon
 //Are you immortal?
 Immortal.fluffydemon
 {
-	if FluffyDemonMode == 1
+	if Candidate.Variant == 1
 	{
 		"\0\b[0]\s[44]Kek... Would you like to find out...?"
 		"\0\b[0]\s[5]Kukukuku... You could be as well..."
 		"\0\b[0]\s[6]Keekeke... The form changes... but is never destroyed..."
 	}
-	elseif FluffyDemonMode == 2
+	elseif Candidate.Variant == 2
 	{
 		//Technically, no. Practically, yes.
 		"\0\b[0]\![no-autopause]\s[7]- . -.-. .... -. .. -.-. .- .-.. .-.. -.-- --..-- / -. --- .-.-.- / .--. .-. .- -.-. - .. -.-. .- .-.. .-.. -.-- --..-- / -.-- . ... .-.-.-"
@@ -389,13 +389,13 @@ Immortal.fluffydemon
 //How many times on average do you regenerate limbs in a year?
 RegenerateLimbs.fluffydemon
 {
-	if FluffyDemonMode == 1
+	if Candidate.Variant == 1
 	{
 		"\0\b[0]\s[34]Keekeke... A trivial matter... Not worth counting..."
 		"\0\b[0]\s[6]Kekekekekek... To devour is my nature... My flesh is no exception... When the hunger strikes, I feed..."
 		"\0\b[0]\s[25]Kukukuku... To be torn asunder is a necessary ritual... beneath each dark moon..."
 	}
-	elseif FluffyDemonMode == 2
+	elseif Candidate.Variant == 2
 	{
 		//It's perhaps better to ask how many per week. To which my answer is %(eyenumbers).
 		"\0\b[0]\![no-autopause]\s[28].. - .----. ... / .--. . .-. .... .- .--. ... / -... . - - . .-. / - --- / .- ... -.- / .... --- .-- / -- .- -. -.-- / .--. . .-. / .-- . . -.- .-.-.- /\s[27] - --- / .-- .... .. -.-. .... / -- -.-- / .- -. ... .-- . .-. / .. ... / %(eyenumbers) .-.-.-"
@@ -415,13 +415,13 @@ RegenerateLimbs.fluffydemon
 //Do you have an active agreement or similar with (word group)?
 ActiveAgreement.fluffydemon
 {
-	if FluffyDemonMode == 1
+	if Candidate.Variant == 1
 	{
 		"\0\b[0]\s[45]Kukukuku... I am the one with which agreements are made..."
 		"\0\b[0]\s[34]Keekeke... The idea that I would stoop to such lows..."
 		"\0\b[0]\s[6]Kekekekekek... Most certainly..."
 	}
-	elseif FluffyDemonMode == 2
+	elseif Candidate.Variant == 2
 	{
 		//Usually I do, but I closed my agreements before coming here.
 		"\0\b[0]\![no-autopause]\s[28]..- ... ..- .- .-.. .-.. -.-- / .. / -.. --- --..-- / -... ..- - / .. / -.-. .-.. --- ... . -.. / -- -.-- / .- --. .-. . . -- . -. - ... / -... . ..-. --- .-. . / -.-. --- -- .. -. --. / .... . .-. . .-.-.-"
@@ -441,13 +441,13 @@ ActiveAgreement.fluffydemon
 //How tall are you, and are you flexible about it?
 HowTall.fluffydemon
 {
-	if FluffyDemonMode == 1
+	if Candidate.Variant == 1
 	{
 		"\0\b[0]\s[5]Keekeke... A matter of perception... Shall I change for you...?"
 		"\0\b[0]\s[34]Kek... Come closer... Find out yourself..."
 		"\0\b[0]\s[26]Kukukuku... I am presented with the unknown..."
 	}
-	elseif FluffyDemonMode == 2
+	elseif Candidate.Variant == 2
 	{
 		//Undecided, but yes, I am.
 		"\0\b[0]\![no-autopause]\s[8]..- -. -.. . -.-. .. -.. . -.. --..-- / -... ..- - / -.-- . ... --..-- / .. / .- -- .-.-.-"
@@ -467,13 +467,13 @@ HowTall.fluffydemon
 //On a scale of 1 to 100, how many pounds of mass are you willing to potentially lose during the course of this experiment?
 LoseMass.fluffydemon
 {
-	if FluffyDemonMode == 1
+	if Candidate.Variant == 1
 	{
 		"\0\b[0]\s[45]Kekekekekek... I intend to feed well... Grow well..."
 		"\0\b[0]\s[6]Kukukuku... Such things are no concern of mine..."
 		"\0\b[0]\s[4]%(RAND(80) + 20)."
 	}
-	elseif FluffyDemonMode == 2
+	elseif Candidate.Variant == 2
 	{
 		//Unfortunately, you don't have the tools capable of measuring that regardless of my answer.
 		"\0\b[0]\![no-autopause]\s[27]..- -. ..-. --- .-. - ..- -. .- - . .-.. -.-- --..-- / -.-- --- ..- / -.. --- -. .----. - / .... .- ...- . / - .... . / - --- --- .-.. ... / -.-. .- .--. .- -... .-.. . / --- ..-. / -- . .- ... ..- .-. .. -. --. / - .... .- - / .-. . --. .- .-. -.. .-.. . ... ... / --- ..-. / -- -.-- / .- -. ... .-- . .-. .-.-.-"
@@ -493,13 +493,13 @@ LoseMass.fluffydemon
 //Would you describe yourself as being made of flesh?
 MadeOfFlesh.fluffydemon
 {
-	if FluffyDemonMode == 1
+	if Candidate.Variant == 1
 	{
 		"\0\b[0]\s[24]Kek... Only after I've eaten my fill..."
 		"\0\b[0]\s[4]Kukukuku... Not at all..."
 		"\0\b[0]\s[45]Keekeke... Would you like a look inside...?"
 	}
-	elseif FluffyDemonMode == 2
+	elseif Candidate.Variant == 2
 	{
 		//No.
 		"\0\b[0]\![no-autopause]\s[7]-. --- .-.-.-"
@@ -519,13 +519,13 @@ MadeOfFlesh.fluffydemon
 //Do you often use your (bodypart)?
 OftenUseBodyPart.fluffydemon
 {
-	if FluffyDemonMode == 1
+	if Candidate.Variant == 1
 	{
 		"\0\b[0]\s[25]Kukukuku... To use... To consume... Whatever you want, I can create more..."
 		"\0\b[0]\s[6]Keekeke... Oh, yes..."
 		"\0\b[0]\s[4]Kekekekekek... These are not mine..."
 	}
-	elseif FluffyDemonMode == 2
+	elseif Candidate.Variant == 2
 	{
 		//Not consciously.
 		"\0\b[0]\![no-autopause]\s[7]-. --- - / -.-. --- -. ... -.-. .. --- ..- ... .-.. -.-- .-.-.-"
@@ -545,13 +545,13 @@ OftenUseBodyPart.fluffydemon
 //On a scale of 1 to 10, how much do you prioritize maintaining your current form?
 PrioritizeCurrentForm.fluffydemon
 {
-	if FluffyDemonMode == 1
+	if Candidate.Variant == 1
 	{
 		"\0\b[0]\s[5]Kukukuku... This form is only for your comfort..."
 		"\0\b[0]\s[34]Kek... To rid me of these confines... would be acceptable..."
 		"\0\b[0]\s[6]%(RAND(9) + 1)."
 	}
-	elseif FluffyDemonMode == 2
+	elseif Candidate.Variant == 2
 	{
 		//1. It doesn't truly belong to me in the first place.
 		"\0\b[0]\![no-autopause]\s[8].---- .-.-.- / .. - / -.. --- . ... -. .----. - / - .-. ..- .-.. -.-- / -... . .-.. --- -. --. / - --- / -- . / .. -. / - .... . / ..-. .. .-. ... - / .--. .-.. .- -.-. . .-.-.-"
@@ -571,13 +571,13 @@ PrioritizeCurrentForm.fluffydemon
 //How long have you resided in this reality?
 ResidedThisReality.fluffydemon
 {
-	if FluffyDemonMode == 1
+	if Candidate.Variant == 1
 	{
 		"\0\b[0]\s[5]Kekekekekek... I have always existed... in one form or another..."
 		"\0\b[0]\s[44]Keekeke... It was your call that caused me to manifest..."
 		"\0\b[0]\s[6]Kukukuku... This is the only one I know..."
 	}
-	elseif FluffyDemonMode == 2
+	elseif Candidate.Variant == 2
 	{
 		//I was born here.
 		"\0\b[0]\![no-autopause]\s[7].. / .-- .- ... / -... --- .-. -. / .... . .-. . .-.-.-"
@@ -597,13 +597,13 @@ ResidedThisReality.fluffydemon
 //Where do you see yourself in 10 years? Would it change if (word group)?
 SeeSelfTenYears.fluffydemon
 {
-	if FluffyDemonMode == 1
+	if Candidate.Variant == 1
 	{
 		"\0\b[0]\s[44]Kek... kekekekek... It would not be the first time..."
 		"\0\b[0]\s[35]Kukukuku... So long as I have debts owed to me... my plans will not be changed so easily..."
 		"\0\b[0]\s[6]Keekeke... I intend to destroy those that see themselves as my rivals... Such complications will be accounted for... now that it has been brought to my attention..."
 	}
-	elseif FluffyDemonMode == 2
+	elseif Candidate.Variant == 2
 	{
 		//My future is not my own to dictate.
 		"\0\b[0]\![no-autopause]\s[48]-- -.-- / ..-. ..- - ..- .-. . / .. ... / -. --- - / -- -.-- / --- .-- -. / - --- / -.. .. -.-. - .- - . .-.-.-"
@@ -623,13 +623,13 @@ SeeSelfTenYears.fluffydemon
 //Are you currently taking any medications?
 TakingMeds.fluffydemon
 {
-	if FluffyDemonMode == 1
+	if Candidate.Variant == 1
 	{
 		"\0\b[0]\s[4]Keekeke... Contamination has been known to happen..."
 		"\0\b[0]\s[25]Kukukuku... For my... indigestion..."
 		"\0\b[0]\s[6]Kek... Unnecessary..."
 	}
-	elseif FluffyDemonMode == 2
+	elseif Candidate.Variant == 2
 	{
 		//I do not have a doctor to prescribe medications.
 		"\0\b[0]\![no-autopause]\s[8].. / -.. --- / -. --- - / .... .- ...- . / .- / -.. --- -.-. - --- .-. / - --- / .--. .-. . ... -.-. .-. .. -... . / -- . -.. .. -.-. .- - .. --- -. ... .-.-.-"
@@ -649,13 +649,13 @@ TakingMeds.fluffydemon
 //On a scale of 1 to 10, how likely are you to start rotting on a hot day?
 LikelyToRot.fluffydemon
 {
-	if FluffyDemonMode == 1
+	if Candidate.Variant == 1
 	{
 		"\0\b[0]\s[5]Kukukuku... The force of the mind can make many strange things happen... You never know..."
 		"\0\b[0]\s[26]%(RAND(9) + 1)."
 		"\0\b[0]\s[4]Keekeke... I devour the rot... It never spreads..."
 	}
-	elseif FluffyDemonMode == 2
+	elseif Candidate.Variant == 2
 	{
 		//It would take extreme circumstances beyond my control.
 		"\0\b[0]\![no-autopause]\s[29].. - / .-- --- ..- .-.. -.. / - .- -.- . / . -..- - .-. . -- . / -.-. .. .-. -.-. ..- -- ... - .- -. -.-. . ... / -... . -.-- --- -. -.. / -- -.-- / -.-. --- -. - .-. --- .-.. .-.-.-"
@@ -675,13 +675,13 @@ LikelyToRot.fluffydemon
 //Do you have prior history with eldritch horrors?
 HistoryEldritchHorrors.fluffydemon
 {
-	if FluffyDemonMode == 1
+	if Candidate.Variant == 1
 	{
 		"\0\b[0]\s[44]Kek... kekekekek... kukukuku..."
 		"\0\b[0]\s[6]Kek... What do you believe... you are speaking to..."
 		"\0\b[0]\s[35]Let us not dredge up bad memories... \s[45]I would hate to rethink our relationship..."
 	}
-	elseif FluffyDemonMode == 2
+	elseif Candidate.Variant == 2
 	{
 		//Many philosophers have speculated that demons are themselves related to eldritch horrors. In which case, yes, extensively.
 		"\0\b[0]\![no-autopause]\s[9]-- .- -. -.-- / .--. .... .. .-.. --- ... --- .--. .... . .-. ... / .... .- ...- . / ... .--. . -.-. ..- .-.. .- - . -.. / - .... .- - / -.. . -- --- -. ... / .- .-. . / - .... . -- ... . .-.. ...- . ... / .-. . .-.. .- - . -.. / - --- / . .-.. -.. .-. .. - -.-. .... / .... --- .-. .-. --- .-. ... .-.-.- /\s[7] .. -. / .-- .... .. -.-. .... / -.-. .- ... . --..-- / -.-- . ... --..-- / . -..- - . -. ... .. ...- . .-.. -.-- .-.-.-"
@@ -701,13 +701,13 @@ HistoryEldritchHorrors.fluffydemon
 //Are there any colors or textures that should be kept out of your enclosure?
 ColorsTextures.fluffydemon
 {
-	if FluffyDemonMode == 1
+	if Candidate.Variant == 1
 	{
 		"\0\b[0]\s[6]No."
 		"\0\b[0]\s[35]Kek... I do not tolerate... the shine of gold..."
 		"\0\b[0]\s[24]Kukukuku... I find %(wool) to be... itchy..."
 	}
-	elseif FluffyDemonMode == 2
+	elseif Candidate.Variant == 2
 	{
 		//I can cope with minor irritations.
 		"\0\b[0]\![no-autopause]\s[8].. / -.-. .- -. / -.-. --- .--. . / .-- .. - .... / -- .. -. --- .-. / .. .-. .-. .. - .- - .. --- -. ... .-.-.-"
@@ -727,13 +727,13 @@ ColorsTextures.fluffydemon
 //What does your diet primarily consist of currently, and how willing are you to tolerate a permanent change?
 PrimaryDiet.fluffydemon
 {
-	if FluffyDemonMode == 1
+	if Candidate.Variant == 1
 	{
 		"\0\b[0]\s[4]Kekekekekek... If it moves... I will eat it...\n\n \s[44]If it doesn't move... I will still eat it..."
 		"\0\b[0]\s[6]Kukukuku... I only know hunger... and satiation... The process is irrelevant..."
 		"\0\b[0]\s[5]Keekeke... I find myself curious... Do as you will..."
 	}
-	elseif FluffyDemonMode == 2
+	elseif Candidate.Variant == 2
 	{
 		//I feed from negative energy. Anything else would become inconvenient.
 		"\0\b[0]\![no-autopause]\s[8].. / ..-. . . -.. / ..-. .-. --- -- / -. . --. .- - .. ...- . / . -. . .-. --. -.-- .-.-.- /\s[38] .- -. -.-- - .... .. -. --. / . .-.. ... . / .-- --- ..- .-.. -.. / -... . -.-. --- -- . / .. -. -.-. --- -. ...- . -. .. . -. - .-.-.-"
@@ -753,13 +753,13 @@ PrimaryDiet.fluffydemon
 //How would you like to be compensated for your assistance today?
 HowCompensate.fluffydemon
 {
-	if FluffyDemonMode == 1
+	if Candidate.Variant == 1
 	{
 		"\0\b[0]\s[46]To gain my assistance, your soul shall be bound to my essence. You may alter my physical form as you wish, and I will call when I have found a use for you.\n\n \s[45]You will not argue. You will not fight. You will do as I instruct.\n\n \s[4]Then, you will be free once more. Our arrangement completed."
 		"\0\b[0]\s[24]I want... to eat you... Rip off your limbs... Swallow your innards... \s[44]Leave your husk for the vermin..."
 		"\0\b[0]\s[5]Allow me my choice of another you've accepted... Take me to their room and look the other way... That is all I desire."
 	}
-	elseif FluffyDemonMode == 2
+	elseif Candidate.Variant == 2
 	{
 		//The experience will be enough payment. I hope to carry what I learn here forward into my next life, alongside other debts I have every intention to cash in. I have something of a savings plan in the works, and this will be a nice addition to it.
 		"\s[8]- .... . / . -..- .--. . .-. .. . -. -.-. . / .-- .. .-.. .-.. / -... . / . -. --- ..- --. .... / .--. .- -.-- -- . -. - .-.-.- / .. / .... --- .--. . / - --- / -.-. .- .-. .-. -.-- / .-- .... .- - / .. / .-.. . .- .-. -. / .... . .-. . / ..-. --- .-. .-- .- .-. -.. / .. -. - --- / -- -.-- / -. . -..- - / .-.. .. ..-. . --..-- / .- .-.. --- -. --. ... .. -.. . / --- - .... . .-. / -.. . -... - ... / .. / .... .- ...- . / . ...- . .-. -.-- / .. -. - . -. - .. --- -. / - --- / -.-. .- ... .... / .. -. .-.-.- \n\n\w8\w8\s[9].. / .... .- ...- . / ... --- -- . - .... .. -. --. / --- ..-. / .- / ... .- ...- .. -. --. ... / .--. .-.. .- -. / .. -. / - .... . / .-- --- .-. -.- ... --..-- / .- -. -.. / - .... .. ... / .-- .. .-.. .-.. / -... . / .- / -. .. -.-. . / .- -.. -.. .. - .. --- -. / - --- / .. - .-.-.-"

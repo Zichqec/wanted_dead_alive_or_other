@@ -10,8 +10,9 @@ OnFirstBoot : all
 	AcceptedCandidatesToday = 0
 	RejectedCandidatesTotal = 0
 	RejectedCandidatesToday = 0
-	FluffyDemonMode = 0
+	Candidate.Variant = 0
 	Candidate.Num = 0
+	Candidate.Status = -1 //-1 undetermined, 0 rejected, 1 accepted, 2 michael??
 	
 	"\1\s[-1]\0\s[0]\t"
 	
