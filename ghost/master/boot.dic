@@ -29,9 +29,33 @@ OnFirstBoot : all
 	OnGenerateNewCharacter
 }
 
+//Italics already applied
 BootDialogue
 {
-	"\_qLast experiment: %(ExperimentSuccessLabel(LastExperimentResult))"
+	if LastExperimentResult == 1 //Not enough candidates
+	{
+		
+	}
+	elseif LastExperimentResult == 2 //No filtering
+	{
+		
+	}
+	elseif LastExperimentResult == 3 //Poor filtering
+	{
+		
+	}
+	elseif LastExperimentResult == 4 //Good filtering
+	{
+		
+	}
+	elseif LastExperimentResult == 5 //Excellent filtering
+	{
+		
+	}
+	else //Accepted no candidates
+	{
+		
+	}
 }
 
 OnInitialize
