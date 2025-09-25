@@ -20,13 +20,20 @@ OnFirstBoot : all
 	LastExperimentResult = 0
 	ExperimentResults = (0,0,0,0,0,0)
 	
-	"\1\s[-1]\0\s[0]\t"
 	
-	"It's interview time, nerds.\x"
-	"Gonna interview SO many people. It'll be great.\x"
-	
+	FirstBootDialogue
 	FadeOut
 	OnGenerateNewCharacter
+}
+
+FirstBootDialogue : all
+{
+	"\1\s[-1]\0\s[0]\t"
+	
+	"\f[italic,1]It's been too long since I've been here, watching the clock tick down...\n\n \w8Pen, check. Clipboard, check. Ample supply of paper, check. Key... where is the key for the door?\x"
+	"\f[italic,1]Aha... there it is. I must have lost it in the chaos after the... incident. That's 3 months of my life I will not be getting back... and a few ribs.\n\n \w8\w8Who'd have thought a creature that large could move so fast? If only I'd managed to keep it contained, I would have loved to study its movements in greater detail...\x"
+	"\f[italic,1]Well, there's no sense dwelling on it when I have other tasks to get to.\n\n Prolonged recovery time has given me ample opportunity to work through my to-do list, trimming old items and adding new ones of interest...\n\n I don't have time for idle flights of fancy. I'll have to work nonstop if I want to get caught up...\x"
+	"\f[italic,1]Ah... and right on time, I can see a line beginning to form outside. It seems my advertisement has done well.\n\n Good, plenty to pick and choose from... Best get started.\x"
 }
 
 //Italics already applied
