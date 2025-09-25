@@ -92,9 +92,9 @@ antlers.namegen
 //Age?
 Age.antlers
 {
-	"\0\b[0]\s[3]This winter will mark my %(antlers.agegen)."
-	"\0\b[0]\s[5]Does it matter? \w8\s[0]Perhaps so...\n\n \w8\w8\s[6]I have seen enough winters that I have counted them across my hands more than twice over."
-	"\0\b[0]\s[6]Seasons come and seasons go... \s[8]I have watched this cycle approximately %(RAND(11) + 25) times."
+	"\0\b[0]\s[3]This winter will mark my %(antlers.agegen) in this life."
+	"\0\b[0]\s[5]Does it matter? \w8\s[0]Perhaps so...\n\n \w8\w8\s[6]I have seen enough winters that I have counted them across these hands more than twice over."
+	"\0\b[0]\s[6]Seasons come and seasons go... \s[8]I have watched this cycle approximately %(RAND(11) + 25) times in this form."
 }
 
 //I don't have time to deal with the goddamn ordinals...
