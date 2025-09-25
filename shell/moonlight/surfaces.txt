@@ -1,6 +1,9 @@
 descript
 {
 version,1
+
+//satolist.palette.offset,73,22
+//satolist.palette.frame,100,100
 }
 
 surface0,3,6,9

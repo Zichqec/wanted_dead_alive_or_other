@@ -5,7 +5,9 @@ SurfaceRestore.moonlight
 
 Greeting.moonlight
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[0]Greetings. \s[2]Blessings of the moon upon you."
+	"\0\b[0]\s[0]Ah... \s[2]At last, I am graced by your presence."
+	"\0\b[0]\s[0]Greetings. \s[2]I am pleased to be able to meet with you face to face this night. \s[6]What would you ask of me?"
 }
 
 Accepted.moonlight
@@ -20,115 +22,150 @@ Rejected.moonlight
 
 RandomTalk.moonlight : nonoverlap
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[2]The moon smiles upon us this night."
 }
 
 //Name?
 Name.moonlight
 {
-	//"\0\b[0]\s[0]"
+	//"\0\b[0]\s[0]" //arthur....... hm
 }
 
 //Age?
 Age.moonlight
 {
-	//"\0\b[0]\s[0]"
+	_age = RAND(10) + 25
+	"\0\b[0]\s[3]%(_age)."
+	"\0\b[0]\s[18]I have seen approximately %(_age * 12) cycles of the moon... \s[1]Or, %(_age) years, if you prefer to count by the sun."
+	"\0\b[0]\s[0]I will be turning %(_age) years old soon after the projected end of your experiment."
 }
 
 //Is this your first time working with us?
 FirstTime.moonlight
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[6]Yes, it is. \s[12]I have not worked with any necromancer before, so I ask that you forgive my inexperience..."
+	"\0\b[0]\s[6]Yes, although it is not my first experience with researchers. \s[8]I am prepared for what lies ahead."
+	"\0\b[0]\s[0]No, far from it. \s[8]Our past agreements have gone well, so I have returned once more..."
 }
 
 //Have you died before?
 DiedBefore.moonlight
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[9]Hm... it's a little hard to say. \s[11]I had one experience many moons ago that could perhaps be considered a ""death""... though not in the truest sense. \w8\s[12]I am sorry if it is confusing, I am not sure how to explain it in clearer terms."
+	"\0\b[0]\s[3]No, I have never had an experience like that."
+	"\0\b[0]\s[3]I have come close on occasion. \s[4]I have seen the other side, brushed against it briefly... \s[5]but I have never stepped across."
 }
 
 //Are you currently under the effect of any curses?
 AnyCurses.moonlight
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[2]I am blessed by the moon. It is not a curse."
+	"\0\b[0]\s[12]Some would say that... \s[1]I would say they are wrong."
+	"\0\b[0]\s[8]Were the moon full tonight, you would see my true form... \s[18]The wolf inside.\n\n \w8\s[23]Track the moon carefully, dear friend, as I am liable to lose myself in its gaze."
 }
 
 //Do you have any peculiarities with your body parts that we should be aware of?
 PeculiaritiesBodyParts.moonlight
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[11]I am not certain what you mean by ""peculiar""... \s[6]Would additional hair count?"
+	"\0\b[0]\s[18]They will change quite drastically if the moon becomes full while I am here."
+	"\0\b[0]\s[1]They are normal for what I am."
 }
 
 //Do you have your own teeth? If 'no', and you have teeth upon your person, are they from a reputable source?
 OwnTeeth.moonlight
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[0]I have my own."
+	"\0\b[0]\s[2]I have many trophies... \s[1]However, I elected not to bring them with me. \s[0]The only teeth on my person are my own."
+	"\0\b[0]\s[19]Ah... \s[20]I lack a full set, after a certain... incident. \w8\s[21]My apologies, I hope this will not be a hindrance."
 }
 
 //Do you require food, water, and/or charging (electrical or otherwise) for the duration of your stay?
 RequireFoodWaterCharging.moonlight
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[0]Food and water will suffice."
+	"\0\b[0]\s[2]Food and water are necessary. \s[1]I am not picky about my diet as long as there is some meat in it."
+	"\0\b[0]\s[2]I need only basic food and water. \s[1]You may leave any meat raw, I'll take care of it myself."
 }
 
 //Do you have allergic reactions to (word group)?
 AllergicReactions.moonlight
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[13]I do... will this be a problem?"
+	"\0\b[0]\s[14]Hm... \w8\s[15]Under certain circumstances, yes."
+	"\0\b[0]\s[24]Not usually."
 }
 
 //Are you immortal?
 Immortal.moonlight
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[2]I do not fear death. \s[7]I will join the moon in the heavens... \s[8]A tranquility that could never be achieved here on earth."
+	"\0\b[0]\s[6]Unfortunately, no... \s[8]My service to the moon will draw to a close eventually."
+	"\0\b[0]\s[8]If the moon wishes, I will serve her forever..."
 }
 
 //How many times on average do you regenerate limbs in a year?
 RegenerateLimbs.moonlight
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[5]Hm... \w8\s[18]Well, they don't ""regenerate"", per se... \s[16]but they do certainly transform. \w8\s[17]I would say that happens about 12 times in any given year..."
+	"\0\b[0]\s[12]That is not something I am capable of, unfortunately."
+	"\0\b[0]\s[9]Hm... \w8\s[11]It depends on how you define ""regenerate"". \s[12]If you mean strictly after having a limb removed, then it has never happened."
 }
 
 //Do you have an active agreement or similar with (word group)?
 ActiveAgreement.moonlight
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[18]My only agreement is with my mistress, the moon..."
+	"\0\b[0]\s[18]I have no agreements except those approved by the moon..."
+	"\0\b[0]\s[2]I do not personally make such agreements. \s[18]That is the domain of the moon to dictate... I only follow where she leads."
 }
 
 //How tall are you, and are you flexible about it?
 HowTall.moonlight
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[2]Indeed, it is flexible... \s[17]it varies based on the phase of the moon."
+	"\0\b[0]\s[1]Hm... \w8\s[0]I would say that I am usually 5'%(RAND(4) + 8)"". \s[2]However, there are those who have claimed I am 8'%(RAND(11) + 1)""...\n\n \s[0]Some amount of flexibility is permissible."
+	"\0\b[0]\s[1]Well... \w8\s[18]it's a bit complicated. \s[17]One of the moon's many gifts is great stature...\n\n \w8\w8\s[0]That being said, for the purposes of your experiment, I would prefer not to make any large changes."
 }
 
 //On a scale of 1 to 100, how many pounds of mass are you willing to potentially lose during the course of this experiment?
 LoseMass.moonlight
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[4]Hm... \w8\w8\s[5]I suppose I may permit up to %((RAND(4) + 1) * 10)."
+	"\0\b[0]\s[5]Any such changes will need the approval of my mistress... \s[18]The moon wishes for us to remain in peak physical shape, after all."
+	"\0\b[0]\s[18]The moon will decide how much you may take... \s[17]Though your request may be declined outright."
 }
 
 //Would you describe yourself as being made of flesh?
 MadeOfFlesh.moonlight
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[0]Flesh... \w8\s[18]and perhaps fur."
+	"\0\b[0]\s[2]Flesh indeed, though what kind varies..."
+	"\0\b[0]\s[1]Oh, most certainly."
 }
 
 //Do you often use your (bodypart)?
 OftenUseBodyPart.moonlight
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[2]I do use ""mine""... \s[1]in a sense."
+	"\0\b[0]\s[1]I suppose so, though not all would consider them ""mine""..."
+	"\0\b[0]\s[2]Indeed, they are quite important for various rituals, so I always make sure to have a good supply on hand..."
 }
 
 //On a scale of 1 to 10, how much do you prioritize maintaining your current form?
 PrioritizeCurrentForm.moonlight
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[17]Which one?"
+	"\0\b[0]\s[2]A 10. \s[18]The moon has blessed me with this form, I mustn't throw it away."
+	"\0\b[0]\s[18]I will leave that in the hands of the moon... \s[16]Please consult with her at your earliest convenience."
 }
 
 //How long have you resided in this reality?
 ResidedThisReality.moonlight
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[6]The moon has not seen fit to take me to any worlds other than this."
+	"\0\b[0]\s[2]I have spent my entire life here, and foresee no reason for that to change."
+	"\0\b[0]\s[1]Hm... \s[2]What \f[bold,1]is\f[bold,default] a reality, truly?"
 }
 
 //Where do you see yourself in 10 years? Would it change if (word group)?
