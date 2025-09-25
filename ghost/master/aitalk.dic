@@ -12,7 +12,13 @@ OnAiTalk
 		DialogueDraw[LSO] = IARRAY
 		
 		if _pick == "Shell"; LastTalk = ShellTalk
-		else; LastTalk = "\0\![set,serikotalk,false]\f[italic,1]" + RandomTalk + "\f[italic,false]"
+		else
+		{
+			_talk = ""
+			if Candidate.Shell == "michael"; _talk = MichaelTalk
+			else; _talk = RandomTalk
+			LastTalk = "\0\![set,serikotalk,false]\f[italic,1]" + _talk + "\f[italic,false]"
+		}
 	}
 	LastTalk
 }
@@ -20,6 +26,30 @@ OnAiTalk
 ShellTalk
 {
 	EVAL("RandomTalk.%(CurrentShell)")
+}
+
+MichaelTalk : nonoverlap_pool
+{
+	"Leave leave leave leave leave."
+	"Stay cool... Don't show signs of weakness... He'll leave eventually."
+	"What do I have to do to get him out the door this time...?"
+	"Maybe I should make a pact with one of the demons still waiting in line..."
+	"Just act normal... Just act normal... Just act normal..."
+	"Leave, you miserable pest of a man."
+	"Ugh..."
+	"My suffering knows no bounds."
+	"I can feel my efficiency slipping away..."
+	"There is no experiment. There is no line. There is no passage of time.\n\n \w8\w8There is only Michael."
+	"If any deity or other powerful being out there would like a new devout follower, send me relief in this moment of agony..."
+	"Sometimes, I wonder if I suffer this way because a curse has been placed upon me. But no matter how many %(mediums) I have spoken to, they all say the same thing... No curse or bad luck that would cause these terrible encounters.\n\n \w8\w8And so, my suffering continues..."
+	"If I kill him %(andthrowindumpster), will he stay dead this time?"
+	"Every minute he stands here in my way is another minute I am not completing useful interviews..."
+	"My mind is going numb. An inevitable effect of being in close proximity of \f[italic,default]him\f[italic,1]..."
+	"Maybe if I ignore him, he'll go away..."
+	"Get out get out get out get out."
+	"Why is this my lot in life?"
+	"Don't look at him... Don't let him take delight in your torment..."
+	"All I ask is to %(beleftalone), and do I get it? No I do not."
 }
 
 RandomTalk : nonoverlap_pool
@@ -36,6 +66,18 @@ RandomTalk : nonoverlap_pool
 	"... Did I forget to clean the %(gravedirt) from the rug?"
 	"Is my leg itching because my leg is itchy, or is it itching because the insects are back..."
 	"If interviews can be completed at an average time of 12.5 minutes, then across a single work week, 576 test subjects could be acquired. More than enough for weeks of uninterrupted experimentation.\n\n ... 120 hours of interviews may require more stimulants than currently available."
+	"I may need to test the %(flexibility) again... It will be a bit of a setback, but given the new information that has come to light, the original results are no longer useful and must be discarded."
+	"Had I chosen a different field, I might be interested in studying whether interviews truly do stretch the passage of time..."
+	"Always more materials to be procured... Need to find a new source of %(hay)."
+	"I should get that light fixed... the flickering is irritating.\n\n But then, if a candidate becomes irritable due to the light, that is useful information I might not gain otherwise...\n\n The things I must tolerate."
+	"Do I smell %(agasleak)...? \w8\w8Hmm, check that later..."
+	"One, two, three, four... %(agoodstart)"
+	"I need to get another set of those clicky pens. Those were definitely better."
+	"I still haven't repaired %(thatholeinthewall)... I'll do it after this experiment is tied up. They can manage until then."
+	"If the turnout is good enough today, maybe I could conduct \f[italic,default]two\f[italic,1] experiments...\n\n \w8\w8No, don't get ahead of yourself. Stay focused..."
+	"It would be ideal if this experiment didn't result in further %(damagetothewalls). \w8\w8Unlikely, but ideal."
+	"We can't always get what we want... but, we might be able to make do with a large enough sample size."
+	"I wonder, would I get higher quality applicants if I %(advertisedontv)?"
 	
 	if AcceptedCandidatesToday + RejectedCandidatesToday < 5
 	{
