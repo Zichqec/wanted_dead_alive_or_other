@@ -318,6 +318,7 @@ OnDebug.SwitchTo : all
 	"\![*]\__q[OnDebug.SwitchToShell,vampire]vampire\__q\n"
 	"\![*]\__q[OnDebug.SwitchToShell,antlers]antlers\__q\n"
 	"\![*]\__q[OnDebug.SwitchToShell,moonlight]moonlight\__q\n"
+	"\![*]\__q[OnDebug.SwitchToShell,pinknoise]pinknoise\__q\n"
 	"\![*]\__q[OnDebug.SwitchToShell,michael]michael\__q\n"
 	
 	"\n\n"

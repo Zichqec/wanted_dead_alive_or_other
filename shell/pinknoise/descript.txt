@@ -1,6 +1,6 @@
 charset,Shift_JIS
 
-name,1/f(エフブンノイチ)
+name,pinknoise
 
 type,shell
 

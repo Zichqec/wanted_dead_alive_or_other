@@ -9,6 +9,7 @@ shells : array
 	"antlers"
 	"michael"
 	"moonlight"
+	"pinknoise"
 }
 
 OnGenerateNewCharacter
