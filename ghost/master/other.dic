@@ -304,13 +304,13 @@ MorseList : array
 
 /*
 	REVISED:
-	0. Collected no responses, act as though this session did not happen (as it likely happened by mistake)
-	1. Accepted no candidates, performed no experiment
-	2. Not enough candidates
-	3. Just let everyone in without checks
-	4. Didn't filter well enough
-	5. Did ok, decent sample size
-	6. Filtered well, excellent sample size
+	-1. Collected no responses, act as though this session did not happen (as it likely happened by mistake)
+	0. Accepted no candidates, performed no experiment
+	1. Not enough candidates
+	2. Just let everyone in without checks
+	3. Didn't filter well enough
+	4. Did ok, decent sample size
+	5. Filtered well, excellent sample size
 	
 	If accepted no candidates: fail for reason 1
 	If not met minimum number of candidates: fail for reason 2
@@ -360,9 +360,12 @@ CalculateExperimentSuccess
 		else; _baddecisions++
 	}
 	
-	if _acceptednum == 0; "Accepted no candidates" //1
-	elseif _acceptednum < 5; "Not enough candidates" //2
-	elseif _acceptednum == _noanswers; "No filtering" //3
+	AcceptedCandidatesLast = _acceptednum
+	RejectedCandidatesLast = _rejectednum
+	
+	if _acceptednum == 0; 0 //"Accepted no candidates"
+	elseif _acceptednum < 5; 1 //"Not enough candidates"
+	elseif _acceptednum == _noanswers; 2 //"No filtering"
 	else
 	{
 		_rejectionsrequired = CEIL(TOREAL(_responsenum) / 3)
@@ -374,11 +377,29 @@ CalculateExperimentSuccess
 		LOGGING("_verygooddecisionsrequired: %(_verygooddecisionsrequired)")
 		if _rejectednum >= _rejectionsrequired && _gooddecisions >= _gooddecisionsrequired
 		{
-			if _gooddecisions >= _verygooddecisionsrequired; "Excellent filtering" //6
-			else; "Good filtering" //5
+			if _gooddecisions >= _verygooddecisionsrequired; 5 //"Excellent filtering"
+			else; 4 //"Good filtering"
 		}
-		else; "Poor filtering" //4
+		else; 3 //"Poor filtering"
 	}
+}
+
+ExperimentSuccessLabel
+{
+	switch _argv[0]
+	{
+		"Accepted no candidates"
+		"Not enough candidates"
+		"No filtering"
+		"Poor filtering"
+		"Good filtering"
+		"Excellent filtering"
+	}
+}
+
+emdash
+{
+	"\f[name,calibri]—\f[name,default]"
 }
 
 //—————————————————————————————— Right click menu links ——————————————————————————————

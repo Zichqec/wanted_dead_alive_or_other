@@ -9,12 +9,16 @@ OnFirstBoot : all
 	BootingLatch = 0
 	AcceptedCandidatesTotal = 0
 	AcceptedCandidatesToday = 0
+	AcceptedCandidatesLast = 0
 	RejectedCandidatesTotal = 0
 	RejectedCandidatesToday = 0
+	RejectedCandidatesLast = 0
 	Candidate.Variant = 0
 	Candidate.Num = 0
 	Candidate.Status = -1 //-1 undetermined, 0 rejected, 1 accepted, 2 michael??
 	RecentShells = IARRAY
+	LastExperimentResult = 0
+	ExperimentResults = (0,0,0,0,0,0)
 	
 	"\1\s[-1]\0\s[0]\t"
 	
@@ -27,13 +31,14 @@ OnFirstBoot : all
 
 BootDialogue
 {
-	"\_qLast experiment: %(CalculateExperimentSuccess)"
+	"\_qLast experiment: %(ExperimentSuccessLabel(LastExperimentResult))"
 }
 
 OnInitialize
 {
 	if !ISVAR("SavedResponses"); SavedResponses = IARRAY //TODO i should probably just reset this here, but... maybe for our ease of use I'll put it in OnBoot
 	if !ISVAR("Candidate.Num"); Candidate.Num = 0
+	if !ISVAR("ExperimentResults"); ExperimentResults = (0,0,0,0,0,0)
 	
 	if reference0 != "reload" //Reset EXCEPT when just reloading
 	{
@@ -60,14 +65,17 @@ GenerateQuestions
 OnBoot
 {
 	//Only save the last state if anything happened, otherwise assume it was a mistake
-	if ARRAYSIZE(SavedResponses) > 0; PreviousResponses = SavedResponses
+	if ARRAYSIZE(SavedResponses) > 0
+	{
+		PreviousResponses = SavedResponses
+		LastExperimentResult = CalculateExperimentSuccess
+		ExperimentResults[LastExperimentResult]++
+	}
 	SavedResponses = IARRAY
 	Candidate.Num = 0
 	GenerateQuestions
 	
 	BootingLatch = 1
-	//LastExperimentOutcome = NextExperimentOutcome
-	//NextExperimentOutcome = "insufficient data"
 	
 	"\1\s[-1]\0\s[-1]\t\![change,shell,master,--option=raise-event]"
 }
