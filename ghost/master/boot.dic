@@ -29,9 +29,43 @@ OnFirstBoot : all
 	OnGenerateNewCharacter
 }
 
+//Italics already applied
 BootDialogue
 {
-	"\_qLast experiment: %(ExperimentSuccessLabel(LastExperimentResult))"
+	if LastExperimentResult == 1 //Not enough candidates
+	{
+		"After all the effort I put in, I wasn't able to find enough candidates to reach my minimum sample size for the last experiment. At least %(madegoodpracticematerial)... That's something even if the results were inconclusive.\n\n What a pain... This little setback is going to cost me weeks of effort to overcome. Let's hope there are a lot of usable candidates in line today..."
+	}
+	elseif LastExperimentResult == 2 //No filtering
+	{
+		"At last, I've finally gotten this place in working condition again... I need to make more efforts to filter who is coming in here, I cannot just approve them all.\n\n The sheer chaos of %(AcceptedCandidatesLast) unruly test subjects... Ugh, it took forever to %(getthestainsout).\n\n I'll be a little more selective today... there are plenty of potentials lined up outside, I am sure there will be no shortage if I reject the unsuitable ones."
+	}
+	elseif LastExperimentResult == 3 //Poor filtering
+	{
+		"Too many poor candidates in the last experiment... I think the whole thing will have to be written off as a loss.\n\n I should be more astute when making my selections. I want to get through this quickly, but if I don't ask enough questions, it's easy to let bad candidates slip in... and I can only wonder how many good candidates I've turned away.\n\n Well, another day, another round of interviews... There is never a shortage of bodies, so let's try this again."
+	}
+	elseif LastExperimentResult == 4 //Good filtering
+	{
+		"Time for another round of interviews... it's nice to have finally completed the last project. For once, I had a decent group that was relatively easy to work with. I'd like to carry that success forward with the next group...\n\n If I want even better results, I would have to consider being more rigorous about getting thorough information from candidate I speak to... Even if they seem easy to filter out immediately, I might be turning away good candidates.\n\n Something to consider... we'll see how it goes."
+	}
+	elseif LastExperimentResult == 5 //Excellent filtering
+	{
+		"Ahh... back to the interview process. My favorite mind-numbing task...\n\n After how smoothly the last experiment went, I'm somewhat dreading having to find a whole new pool of suitable candidates. If only the previous batch hadn't %(alldied).\n\n Well, it is what it is... Science must continue, so I'll find a way."
+	}
+	else //Accepted no candidates
+	{
+		"What a disaster. I couldn't find a single candidate to approve last time, and the whole project had to be scrapped... which means my entire schedule for the next 3 months had to be thrown out and reworked!\n\n Hopefully there are better candidates today... There's only one way to find out. Ugh..."
+	}
+}
+
+CloseDialogue
+{
+	//The embed is so that \t doesn't take effect until that point, so you can cancel
+	"That's all I have time for today...\n\n \![embed,OnCloseFade]I'd better go and disperse the crowd outside. Then, we can begin..."
+	"Hm, I think I'll call it there...\n\n \![embed,OnCloseFade]If I lock the door, will the crowd disperse on its own...?"
+	"That's enough of that for today...\n\n \![embed,OnCloseFade]Let's hope that's good enough. Time to get to it."
+	"I think that's about all the interviewing I can take for today...\n\n \![embed,OnCloseFade]Ugh, still have to go through all my notes and get things organized..."
+	"I can feel a headache coming on... time to wrap this up.\n\n \![embed,OnCloseFade]The others outside will probably realize interviews have ended on their own, right...?"
 }
 
 OnInitialize
@@ -82,15 +116,11 @@ OnBoot
 
 OnClose
 {
-	"\0\![set,serikotalk,false]"
+	"\0\![set,serikotalk,false]\f[italic,1]"
 	--
-	"That seems like enough...\n\n "
+	CloseDialogue
 	--
-	"\![embed,OnCloseFade]" //so that \t doesn't take effect until here, so you can cancel
-	--
-	"Time to close up and start doing Science™."
-	--
-	"\w8\w8\-"
+	"\f[italic,default]\_w[2000]\-"
 }
 
 OnCloseFade : all

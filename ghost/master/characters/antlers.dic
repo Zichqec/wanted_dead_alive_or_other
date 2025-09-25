@@ -27,7 +27,7 @@ Rejected.antlers
 RandomTalk.antlers : nonoverlap
 {
 	"\0\b[0]\s[6]All this noise... \w8\s[5]I do not understand how you city-dwellers withstand it."
-	"\0\b[0]\s[3]The more time I spend in the city, the more I fear I will never see gentle swaying of leaves in a breeze ever again, or hear the bubbling of a nearby brook...\n\n \w8\s[6]When this business has concluded, I will be distancing myself from the city as quickly as possible."
+	"\0\b[0]\s[3]The more time I spend in the city, the more I fear I will never see gentle swaying of leaves in a breeze ever again, or hear the bubbling of a nearby brook...\n\n \w8\s[6]When this business has concluded, I will be distancing myself from civilisation as quickly as possible."
 	"\0\b[0]\s[6]The air in here is foul... stagnant."
 	"\0\b[0]\s[3]It is too... smooth in here. \w8\s[5]I think a nice %(setofrabbittracks) would do wonders to break it up and make it feel more welcoming and lively."
 	"\0\b[0]\s[3]Hm... \w8\s[4]There are a lot of garish colors here. \w8\s[8]How anyone can spend long stretches of time in such an environment, I do not know..."
@@ -36,7 +36,7 @@ RandomTalk.antlers : nonoverlap
 	"\0\b[0]\s[3]I wonder... \w8\w8\s[4]Well. \s[5]Perhaps that thought ought not be expressed... \s[8]The winds will guide me through."
 	"\0\b[0]\s[4]Is that %(agiantrat)...? \w8\w8... \s[8]Well, it's none of my business."
 	"\0\b[0]\s[5]I wonder, does this place feel as oppressive to you as it does to me, or is this your oasis where you feel at ease...?"
-	"\0\b[0]\s[6]The wind does not reach indoors very well... \w8\s[3]It is strange to feel so disconnected from it. \s[2]So... boxed in.\n\n \w8\w8\s[8]I am sure I will return to my wanderings soon enough... nothing could truly keep me from them for long."
+	"\0\b[0]\s[6]The wind does not reach indoors very well... \w8\s[3]It is strange to feel so disconnected from it. \s[2]So... boxed in.\n\n \w8\w8\s[8]I am certain I will return to my wanderings soon enough... nothing could truly keep me from them for long."
 }
 
 setofrabbittracks

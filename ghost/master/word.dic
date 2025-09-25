@@ -144,8 +144,6 @@ bodypart
 	"bones"
 	"ears"
 	"circuits"
-	//"blood"
-	//"soul"
 	"legs"
 	"knuckles"
 	"kidneys"
@@ -155,11 +153,13 @@ bodypart
 	"knees"
 	"vertebrae"
 	"nostrils"
-	//"thorax"
 	"teeth"
 	"tonsils"
 	"stomachs"
 	"lymph nodes"
+	//"blood"
+	//"soul"
+	//"thorax"
 }
 
 concerningoutcome
@@ -299,6 +299,35 @@ flexibility
 	"flight time"
 }
 
+hay
+{
+	"hay"
+	"%(honey)"
+	"%(gravedirt)"
+	"bone powder"
+	"stinging nettles"
+	"fairy dust"
+	"silver"
+	"charcoal"
+	"enbalming fluid"
+	"formaldehyde"
+	"powdered ivory"
+	"moleskin"
+	"cotton"
+	"air freshener"
+	"essential oils"
+	"birch bark"
+	"pen ink"
+	"syringes"
+	"H\f[sub,1]2\f[sub,default]O\f[sub,1]2\f[sub,default]"
+	"tungsten shavings"
+	"orange zest"
+	"powdered egg whites"
+	"maggots"
+	"mercury"
+	"iron"
+}
+
 honey
 {
 	"honey"
@@ -329,6 +358,15 @@ longer
 	"hungrier"
 }
 
+mediums
+{
+	"mediums"
+	"witches"
+	"wizards"
+	"fae"
+	"spellcasters"
+}
+
 gravedirt
 {
 	"grave dirt"
@@ -344,4 +382,151 @@ gravedirt
 	"salt"
 	"pepper"
 	"mustard seeds"
+}
+
+andthrowindumpster
+{
+	"and throw him in the dumpster out back"
+	"and throw his body down the well"
+	"and bury him under the shed"
+	"and burn his corpse"
+	"and submerge him in %(honey)"
+	"and throw him in the river"
+	"in the next 10 seconds"
+	"with insecticide"
+	"and remove his brain"
+	"and feed him to one of the demons in line"
+	"and don't let his body out of my sight"
+	"with my own two fists"
+}
+
+beleftalone
+{
+	"be left alone"
+	"have some peace and quiet"
+	"be left to my own devices"
+	"have a quiet round of interviews with no Michael in sight"
+	"not be disturbed while I am working"
+	"not have my laboratory invaded by annoying researchers"
+	"have a little peace and quiet to carry out my work undisturbed"
+	"conduct a round of interviews without being beseiged by rival scientists"
+	"have some space to myself"
+}
+
+agasleak
+{
+	"a gas leak"
+	"something rotting in that cupboard"
+	"mold"
+	"smoke"
+	"burning hair"
+}
+
+agoodstart
+{
+	"Off to a good start."
+	"How many more can I cross off this list?"
+	"So many pages are damaged after the last incident."
+	"I think there is room for another, if I rearrange things slightly."
+	"A lot of tiles got cracked in the last experiment, I'll have to order more soon."
+	"Well, maybe I shouldn't count that one..."
+	"I'll have to get more fly paper."
+	"After that, I can be done with this set and move on to the next phase. At long last..."
+}
+
+thatholeinthewall
+{
+	"that hole in the wall"
+	"the ladder"
+	"the stairs"
+	"that leak in the ceiling"
+	"the refrigerator"
+	"the microwave"
+}
+
+damagetothewalls
+{
+	"damage to the walls"
+	"stains in the carpeting"
+	"scratches on the floor"
+	"strain on my arrangement with %(thelandlord)"
+}
+
+thelandlord
+{
+	"the landlord"
+	"the undertaker"
+	"the flower shop next door"
+	"the underworld"
+	"the mayor"
+}
+
+advertisedontv
+{
+	"advertised on television"
+	"handed out flyers"
+	"stopped posting advertisements on that seedy message board"
+	"coordinated with a scryer"
+	"threw a coin in the well"
+	"spent some time reworking the requirements on my advertisement"
+	"hired an artist to make my advertisement look more professional"
+	"let them all stand outside for a while, so that some of them get bored and leave"
+	"held interviews on a day when it is %(rainy)"
+}
+
+rainy
+{
+	"rainy"
+	"sunny"
+	"windy"
+	"humid"
+	"cold"
+	"hot"
+}
+
+getthestainsout
+{
+	"get the %(stains) out"
+	"repair all the broken windows"
+	"pick up all the broken glass"
+	"bury the remains"
+	"track down all the families and inform them of... what transpired"
+	"get all of the questionnaires filled in without them copying each other's answers"
+	"bind their souls"
+}
+
+stains
+{
+	"stains"
+	"smell"
+	"blood"
+}
+
+alldied
+{
+	"all died"
+	"rejected my offer to stay on for another experiment for further compensation"
+	"run out of usable %(bodypart)"
+	"gotten lost beyond the veil"
+	"melted together into a horrible mutant that now lives in the basement with the others"
+	"punched a hole in the wall and escaped"
+	"started infighting"
+	"stopped breathing"
+	"decided to return home to their families"
+	"freaked out and demanded to be let go"
+	"been so upset about learning how useful %(bodypart) are"
+	"disappeared mysteriously"
+	"vanished without a trace"
+	"gotten into the solvents"
+}
+
+madegoodpracticematerial
+{
+	"they made good practice material"
+	"I was able to get some %(bodypart) for later use"
+	"I got a chance to practice some of my lesser-used techniques"
+	"they agreed to leave good reviews"
+	"I got to demo some new techniques that may help with later work"
+	"I got a chance to organize some of my paperwork a bit better"
+	"they didn't scream"
 }

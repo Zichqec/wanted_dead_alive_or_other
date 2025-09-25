@@ -84,7 +84,7 @@ OnShellChangeCoordsAfter : all
 		BootingLatch = 0
 		
 		"\![set,alpha,100]\t"
-		BootDialogue
+		"\f[italic,1]" + BootDialogue + "\f[italic,default]"
 		"\x"
 		FadeOut
 		OnGenerateNewCharacter
