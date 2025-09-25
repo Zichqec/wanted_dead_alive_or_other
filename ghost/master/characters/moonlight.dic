@@ -12,23 +12,66 @@ Greeting.moonlight
 
 Accepted.moonlight
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[2]Wonderful... \s[18]the moon will be pleased. \w8\s[0]I shall await further instruction."
+	"\0\b[0]\s[1]Excellent... \s[2]I am glad we could come to an agreement. \s[18]The moon will be pleased with my success."
+	"\0\b[0]\s[2]I can see I was correct to come here... \s[0]Thank you. \s[16]The moon will be most pleased with my efforts..."
 }
 
 Rejected.moonlight
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[11]No? \w8\s[12]... I see. \w8\w8\s[17]Well, then, I shall continue my search elsewhere... \s[18]Thank you for your time."
+	"\0\b[0]\s[12]Ah... \w8unfortunate. \w8\w8\s[8]I shall take my leave, then... \s[7]Good luck with your experiment."
+	"\0\b[0]\s[4]No...? \w8\s[12]How unfortunate, I had thought the prospect was tantalizing for us both...\n\n \w8\w8\s[18]No matter. \s[17]I am hardly one to complain about an invigorating hunt."
 }
 
 RandomTalk.moonlight : nonoverlap
 {
-	"\0\b[0]\s[2]The moon smiles upon us this night."
+	"\0\b[0]\s[18]The moon smiles upon us this night."
+	"\0\b[0]\s[2]Do you ever listen to the howls of the wolves? \w8\s[1]What do they say to you?"
+	"\0\b[0]\s[18]The air is just right for a relaxing stroll under the moonlight..."
+	"\0\b[0]\s[7]You do not seem to be influenced by the moon... \s[8]A pity. \w8\w8\s[0]You should consider pledging yourself to her."
+	"\0\b[0]\s[0]I am glad to meet a fellow creature of the night. \w8\s[2]We may not be bonded by blood, but we both share a great deal of time under the moon..."
+	
+	"\0\b[0]\s[12]A cloud drifted in front of the moon just before I entered... \w8\s[11]I hope it does not mean anything."
+	"\0\b[0]\s[2]The sky outside is almost completely clear, you know. \w8\s[18]I was quite enjoying my time in line..."
+	"\0\b[0]\s[0]Whether you follow her or not, I am sure the moon will be guiding you towards the right decision... \w8\s[18]So please, do not fret over it."
+	"\0\b[0]\s[8]I hope the other acolytes manage well without me for a while. \w8\s[7]They have assured me they will be fine in my absence, but..."
+	"\0\b[0]\s[24]Hm... \w8\w8\s[23]I want to hunt."
 }
 
 //Name?
 Name.moonlight
 {
-	//"\0\b[0]\s[0]" //arthur....... hm
+	"\0\b[0]\s[8]I am but a servant of the moon... \s[18]I have no need of an individual moniker."
+	"\0\b[0]\s[1]Ah... names. \s[2]We do not usually use them at the shrine... \w8\w8\s[7]If you select me as a candidate, I'll pick one for your usage."
+	"\0\b[0]\s[2]Lately, I have been using %(moonlight.namefirst) %(moonlight.namelast)."
+}
+
+moonlight.namefirst
+{
+	"Wolfgang"
+	"Conan"
+	"Lowell"
+	"Boris"
+	"Connor"
+	"Ralph"
+	"Odin"
+	"Randall"
+	"Wolfe"
+}
+
+moonlight.namelast
+{
+	"Atlas"
+	"Triton"
+	"Alberon"
+	"Luan"
+	"Lunaire"
+	"Fullmoon"
+	"Newmoon"
+	"Gibbous"
+	"Apogee"
+	"Perigee"
 }
 
 //Age?
@@ -171,41 +214,55 @@ ResidedThisReality.moonlight
 //Where do you see yourself in 10 years? Would it change if (word group)?
 SeeSelfTenYears.moonlight
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[2]My fate is in the hands of the moon..."
+	"\0\b[0]\s[0]I go where the moon takes me... \s[8]I would not pretend to know what she has in store."
+	"\0\b[0]\s[17]My life is stable as it is now... I cannot see it changing much."
 }
 
 //Are you currently taking any medications?
 TakingMeds.moonlight
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[2]Some over the counter vitamin D."
+	"\0\b[0]\s[0]I am not."
+	"\0\b[0]\s[16]Ordinary anti-flea topical ointment."
 }
 
 //On a scale of 1 to 10, how likely are you to start rotting on a hot day?
 LikelyToRot.moonlight
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[18]The sun's rays are ever so harsh, aren't they..."
+	"\0\b[0]\s[18]The moon protects me from such things with her gentle light."
+	"\0\b[0]\s[17]Perhaps a 3, by some definitions..."
 }
 
 //Do you have prior history with eldritch horrors?
 HistoryEldritchHorrors.moonlight
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[0]None whatsoever."
+	"\0\b[0]\s[2]Well... \w8\s[1]Some say the moon is eldritch in nature... \s[18]So, I suppose it depends on how much you subscribe to that belief."
+	"\0\b[0]\s[1]Some would say I've pledged my life to one... \s[18]I say that detail is irrelevant."
 }
 
 //Are there any colors or textures that should be kept out of your enclosure?
 ColorsTextures.moonlight
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[0]I have no color or texture preferences. \s[1]I only ask that sunlight be kept away."
+	"\0\b[0]\s[8]Paint the room in silver... \s[18]I would like to feel close to the moon even while I cannot see her."
+	"\0\b[0]\s[0]I do not have any textural preferences, but I do request that silver and related metals be kept away from any place I am to occupy. \s[8]I am quite allergic."
 }
 
 //What does your diet primarily consist of currently, and how willing are you to tolerate a permanent change?
 PrimaryDiet.moonlight
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[2]I eat a fairly balanced diet. \s[0]I am sure some change will be acceptable."
+	"\0\b[0]\s[18]As long as I can continue to eat meat, I believe the moon will be pleased..."
+	"\0\b[0]\s[0]A change should be no problem. \s[17]So long as meat is still an option in some form or another..."
 }
 
 //How would you like to be compensated for your assistance today?
 HowCompensate.moonlight
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[8]I am organizing a great banquet for my mistress, the moon... \w8\s[18]I believe she will be most pleased with several blood sacrifices.\n\n \w8\w8\s[16]When your experiment has concluded, I would like you to turn the other participants over to me so that I may bring them to the Lunar Feast. \s[1]It is convenient, no?"
+	"\0\b[0]\s[2]The shrine I attend to offers regular blood sacrifices to our mistress, the moon. \w8\s[9]However, we have lost some of our suppliers recently... \s[8]so, I am here in hopes of making a deal.\n\n \w8\s[0]You perform these experiments on a fairly regular basis, do you not? \s[1]I would like for you to divert the occasional still-living subject to us.\n\n \w8\s[2]It may prove mutually beneficial if you have anything you need... disposed of."
+	"\0\b[0]\s[0]Oh, nothing too involved... \s[2]I just want you to come out into the woods for a walk with me afterwards. \s[1]Alone... under the moonlight.\n\n \w8\s[18]You'll get to meet my mistress and bask in her light... \s[16]Won't that be wonderful?"
 }
