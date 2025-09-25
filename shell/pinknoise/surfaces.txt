@@ -1,0 +1,4792 @@
+charset,Shift_JIS
+
+descript
+{
+	version,1
+}
+
+//sakura側触り判定
+
+surface0-9,60,20-29,70,30,34,35,39,100-109,160,120-129,170,130,134,135,139,200-209,260,220-229,270,239,300-309,360,320-329,370,339
+{
+	collision0,117,1,219,50,Head
+	collision1,141,47,195,92,Face
+	collision2,4,211,44,249,Hand
+	collision3,227,259,253,299,Hand
+	collision4,118,138,208,187,Bust
+	collision5,51,284,265,435,Skirt
+	collision6,108,445,203,480,Sox
+}
+
+
+surface1000-1009,1060,1020-1029,1070,1030,1034,1035,1039,1100-1109,1160,1120-1129,1170,1130,1134,1135,1139,1200-1209,1260,1220-1229,1270,1239,1300-1309,1360,1320-1329,1370,1339
+{
+	collision0,117,1,219,50,Head
+	collision1,141,47,195,92,Face
+	collision2,144,177,186,221,Hand
+	collision4,118,138,208,187,Bust
+	collision5,51,284,265,435,Skirt
+	collision6,108,445,203,480,Sox
+}
+
+
+surface2000-2009,2060,2020-2029,2070,2030,2034,2035,2039,2100-2109,2160,2120-2129,2170,2130,2134,2135,2139,2200-2209,2260,2220-2229,2270,2239,2300-2309,2360,2320-2329,2370,2339
+{
+	collision0,117,1,219,50,Head
+	collision1,141,47,195,92,Face
+	collision2,136,249,189,281,Hand
+	collision4,133,116,203,178,Bust
+	collision5,51,284,265,435,Skirt
+	collision6,108,445,203,480,Sox
+}
+
+
+surface3000-3009,3060,3020-3029,3070,3030,3034,3035,3039,3100-3109,3160,3120-3129,3170,3130,3134,3135,3139,3200-3209,3260,3220-3229,3270,3239,3300-3309,3360,3320-3329,3370,3339
+{
+	collision0,117,1,219,50,Head
+	collision1,141,47,195,92,Face
+	collision2,94,212,127,240,Hand
+	collision3,214,88,247,133,Hand
+	collision4,116,131,208,183,Bust
+	collision5,51,284,265,435,Skirt
+	collision6,108,445,203,480,Sox
+}
+
+
+surface4000-4009,4060,4020-4029,4070,4030,4034,4035,4039,4100-4109,4160,4120-4129,4170,4130,4134,4135,4139,4200-4209,4260,4220-4229,4270,4239,4300-4309,4360,4320-4329,4370,4339
+{
+	collision0,117,1,219,50,Head
+	collision1,141,47,195,92,Face
+	collision2,113,169,137,193,Hand
+	collision4,118,122,210,182,Bust
+	collision5,51,284,265,435,Skirt
+	collision6,108,445,203,480,Sox
+}
+
+
+surface5000-5009,5060,5020-5029,5070,5030,5034,5035,5039,5100-5109,5160,5120-5129,5170,5130,5134,5135,5139,5200-5209,5260,5220-5229,5270,5239,5300-5309,5360,5320-5329,5370,5339
+{
+	collision0,117,1,219,50,Head
+	collision1,141,47,195,92,Face
+	collision2,22,204,44,231,Hand
+	collision3,280,222,301,249,Hand
+	collision4,118,130,207,189,Bust
+	collision5,25,224,302,429,Skirt
+	collision6,108,445,203,480,Sox
+}
+
+
+
+//kero側触り判定
+
+
+
+//sakura側設定
+
+surface0
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face000.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,6,0,0,0
+	animation1.pattern1,overlayfast,60,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,6,30,0,0
+	animation2.pattern1,overlayfast,60,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,6,50,0,0
+	animation3.pattern1,overlayfast,60,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,6,50,0,0
+	animation3.pattern5,overlayfast,60,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface1
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face001.png,129,36
+}
+
+surface2
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face002.png,129,36
+}
+
+surface3
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face003.png,129,36
+}
+
+surface4
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face004.png,129,36
+}
+
+surface5
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face005.png,129,36
+}
+
+surface6
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face006.png,129,36
+}
+
+surface7
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face007.png,129,36
+}
+
+surface8
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face008.png,129,36
+}
+
+surface9
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face009.png,129,36
+}
+
+surface60
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face060.png,129,36
+}
+
+
+
+surface20
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face020.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,26,0,0,0
+	animation1.pattern1,overlayfast,70,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,26,30,0,0
+	animation2.pattern1,overlayfast,70,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,26,50,0,0
+	animation3.pattern1,overlayfast,70,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,26,50,0,0
+	animation3.pattern5,overlayfast,70,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface21
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face021.png,129,36
+}
+
+surface22
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face022.png,129,36
+}
+
+surface23
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face023.png,129,36
+}
+
+surface24
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face024.png,129,36
+}
+
+surface25
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face025.png,129,36
+}
+
+surface26
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face026.png,129,36
+}
+
+surface27
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face027.png,129,36
+}
+
+surface28
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face028.png,129,36
+}
+
+surface29
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face029.png,129,36
+}
+
+surface70
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face070.png,129,36
+}
+
+
+
+surface30
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face030.png,129,36
+}
+
+surface34
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face034.png,129,36
+}
+
+surface35
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face035.png,129,36
+}
+
+surface39
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face039.png,129,36
+}
+
+
+surface100
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face100.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,106,0,0,0
+	animation1.pattern1,overlayfast,160,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,106,30,0,0
+	animation2.pattern1,overlayfast,160,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,106,50,0,0
+	animation3.pattern1,overlayfast,160,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,106,50,0,0
+	animation3.pattern5,overlayfast,160,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface101
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face101.png,129,36
+}
+
+surface102
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face102.png,129,36
+}
+
+surface103
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face103.png,129,36
+}
+
+surface104
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face104.png,129,36
+}
+
+surface105
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face105.png,129,36
+}
+
+surface106
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face106.png,129,36
+}
+
+surface107
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face107.png,129,36
+}
+
+surface108
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face108.png,129,36
+}
+
+surface109
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face109.png,129,36
+}
+
+surface160
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face160.png,129,36
+}
+
+
+
+surface120
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face120.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,126,0,0,0
+	animation1.pattern1,overlayfast,170,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,126,30,0,0
+	animation2.pattern1,overlayfast,170,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,126,50,0,0
+	animation3.pattern1,overlayfast,170,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,126,50,0,0
+	animation3.pattern5,overlayfast,170,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface121
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face121.png,129,36
+}
+
+surface122
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face122.png,129,36
+}
+
+surface123
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face123.png,129,36
+}
+
+surface124
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face124.png,129,36
+}
+
+surface125
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face125.png,129,36
+}
+
+surface126
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face126.png,129,36
+}
+
+surface127
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face127.png,129,36
+}
+
+surface128
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face128.png,129,36
+}
+
+surface129
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face129.png,129,36
+}
+
+surface170
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face170.png,129,36
+}
+
+
+
+surface130
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face130.png,129,36
+}
+
+surface134
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face134.png,129,36
+}
+
+surface135
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face135.png,129,36
+}
+
+surface139
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face139.png,129,36
+}
+
+
+surface200
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face200.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,206,0,0,0
+	animation1.pattern1,overlayfast,260,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,206,30,0,0
+	animation2.pattern1,overlayfast,260,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,206,50,0,0
+	animation3.pattern1,overlayfast,260,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,206,50,0,0
+	animation3.pattern5,overlayfast,260,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface201
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face201.png,129,36
+}
+
+surface202
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face202.png,129,36
+}
+
+surface203
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face203.png,129,36
+}
+
+surface204
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face204.png,129,36
+}
+
+surface205
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face205.png,129,36
+}
+
+surface206
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face206.png,129,36
+}
+
+surface207
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face207.png,129,36
+}
+
+surface208
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face208.png,129,36
+}
+
+surface209
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face209.png,129,36
+}
+
+surface260
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face260.png,129,36
+}
+
+
+
+surface220
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face220.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,226,0,0,0
+	animation1.pattern1,overlayfast,270,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,226,30,0,0
+	animation2.pattern1,overlayfast,270,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,226,50,0,0
+	animation3.pattern1,overlayfast,270,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,226,50,0,0
+	animation3.pattern5,overlayfast,270,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface221
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face221.png,129,36
+}
+
+surface222
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face222.png,129,36
+}
+
+surface223
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face223.png,129,36
+}
+
+surface224
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face224.png,129,36
+}
+
+surface225
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face225.png,129,36
+}
+
+surface226
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face226.png,129,36
+}
+
+surface227
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face227.png,129,36
+}
+
+surface228
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face228.png,129,36
+}
+
+surface229
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face229.png,129,36
+}
+
+surface270
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face270.png,129,36
+}
+
+surface239
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face239.png,129,36
+}
+
+
+surface300
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face300.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,306,0,0,0
+	animation1.pattern1,overlayfast,360,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,306,30,0,0
+	animation2.pattern1,overlayfast,360,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,306,50,0,0
+	animation3.pattern1,overlayfast,360,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,306,50,0,0
+	animation3.pattern5,overlayfast,360,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface301
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face301.png,129,36
+}
+
+surface302
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face302.png,129,36
+}
+
+surface303
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face303.png,129,36
+}
+
+surface304
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face304.png,129,36
+}
+
+surface305
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face305.png,129,36
+}
+
+surface306
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face306.png,129,36
+}
+
+surface307
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face307.png,129,36
+}
+
+surface308
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face308.png,129,36
+}
+
+surface309
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face309.png,129,36
+}
+
+surface360
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face360.png,129,36
+}
+
+
+
+surface320
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face320.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,326,0,0,0
+	animation1.pattern1,overlayfast,370,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,326,30,0,0
+	animation2.pattern1,overlayfast,370,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,326,50,0,0
+	animation3.pattern1,overlayfast,370,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,326,50,0,0
+	animation3.pattern5,overlayfast,370,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface321
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face321.png,129,36
+}
+
+surface322
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face322.png,129,36
+}
+
+surface323
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face323.png,129,36
+}
+
+surface324
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face324.png,129,36
+}
+
+surface325
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face325.png,129,36
+}
+
+surface326
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face326.png,129,36
+}
+
+surface327
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face327.png,129,36
+}
+
+surface328
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face328.png,129,36
+}
+
+surface329
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face329.png,129,36
+}
+
+surface370
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face370.png,129,36
+}
+
+
+surface339
+{
+	element0,overlay,surface0.png,0,0
+	element1,overlayfast,face339.png,129,36
+}
+
+
+
+//指組み--------------------------------------------------------------------
+
+
+surface1000
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face000.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,1006,0,0,0
+	animation1.pattern1,overlayfast,1060,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,1006,30,0,0
+	animation2.pattern1,overlayfast,1060,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,1006,50,0,0
+	animation3.pattern1,overlayfast,1060,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,1006,50,0,0
+	animation3.pattern5,overlayfast,1060,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface1001
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face001.png,129,36
+}
+
+surface1002
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face002.png,129,36
+}
+
+surface1003
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face003.png,129,36
+}
+
+surface1004
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face004.png,129,36
+}
+
+surface1005
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face005.png,129,36
+}
+
+surface1006
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face006.png,129,36
+}
+
+surface1007
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face007.png,129,36
+}
+
+surface1008
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face008.png,129,36
+}
+
+surface1009
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face009.png,129,36
+}
+
+surface1060
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face060.png,129,36
+}
+
+
+
+surface1020
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face020.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,1026,0,0,0
+	animation1.pattern1,overlayfast,1070,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,1026,30,0,0
+	animation2.pattern1,overlayfast,1070,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,1026,50,0,0
+	animation3.pattern1,overlayfast,1070,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,1026,50,0,0
+	animation3.pattern5,overlayfast,1070,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface1021
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face021.png,129,36
+}
+
+surface1022
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face022.png,129,36
+}
+
+surface1023
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face023.png,129,36
+}
+
+surface1024
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face024.png,129,36
+}
+
+surface1025
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face025.png,129,36
+}
+
+surface1026
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face026.png,129,36
+}
+
+surface1027
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face027.png,129,36
+}
+
+surface1028
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face028.png,129,36
+}
+
+surface1029
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face029.png,129,36
+}
+
+surface1070
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face070.png,129,36
+}
+
+
+
+surface1030
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face030.png,129,36
+}
+
+surface1034
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face034.png,129,36
+}
+
+surface1035
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face035.png,129,36
+}
+
+surface1039
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face039.png,129,36
+}
+
+
+
+surface1100
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face100.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,1106,0,0,0
+	animation1.pattern1,overlayfast,1160,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,1106,30,0,0
+	animation2.pattern1,overlayfast,1160,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,1106,50,0,0
+	animation3.pattern1,overlayfast,1160,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,1106,50,0,0
+	animation3.pattern5,overlayfast,1160,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface1101
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face101.png,129,36
+}
+
+surface1102
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face102.png,129,36
+}
+
+surface1103
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face103.png,129,36
+}
+
+surface1104
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face104.png,129,36
+}
+
+surface1105
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face105.png,129,36
+}
+
+surface1106
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face106.png,129,36
+}
+
+surface1107
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face107.png,129,36
+}
+
+surface1108
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face108.png,129,36
+}
+
+surface1109
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face109.png,129,36
+}
+
+surface1160
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face160.png,129,36
+}
+
+
+
+surface1120
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face120.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,1126,0,0,0
+	animation1.pattern1,overlayfast,1170,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,1126,30,0,0
+	animation2.pattern1,overlayfast,1170,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,1126,50,0,0
+	animation3.pattern1,overlayfast,1170,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,1126,50,0,0
+	animation3.pattern5,overlayfast,1170,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface1121
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face121.png,129,36
+}
+
+surface1122
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face122.png,129,36
+}
+
+surface1123
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face123.png,129,36
+}
+
+surface1124
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face124.png,129,36
+}
+
+surface1125
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face125.png,129,36
+}
+
+surface1126
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face126.png,129,36
+}
+
+surface1127
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face127.png,129,36
+}
+
+surface1128
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face128.png,129,36
+}
+
+surface1129
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face129.png,129,36
+}
+
+surface1170
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face170.png,129,36
+}
+
+
+
+surface1130
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face130.png,129,36
+}
+
+surface1134
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face134.png,129,36
+}
+
+surface1135
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face135.png,129,36
+}
+
+surface1139
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face139.png,129,36
+}
+
+
+surface1200
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face200.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,1206,0,0,0
+	animation1.pattern1,overlayfast,1260,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,1206,30,0,0
+	animation2.pattern1,overlayfast,1260,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,1206,50,0,0
+	animation3.pattern1,overlayfast,1260,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,1206,50,0,0
+	animation3.pattern5,overlayfast,1260,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface1201
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face201.png,129,36
+}
+
+surface1202
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face202.png,129,36
+}
+
+surface1203
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face203.png,129,36
+}
+
+surface1204
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face204.png,129,36
+}
+
+surface1205
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face205.png,129,36
+}
+
+surface1206
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face206.png,129,36
+}
+
+surface1207
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face207.png,129,36
+}
+
+surface1208
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face208.png,129,36
+}
+
+surface1209
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face209.png,129,36
+}
+
+surface1260
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face260.png,129,36
+}
+
+
+
+surface1220
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face220.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,1226,0,0,0
+	animation1.pattern1,overlayfast,1270,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,1226,30,0,0
+	animation2.pattern1,overlayfast,1270,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,1226,50,0,0
+	animation3.pattern1,overlayfast,1270,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,1226,50,0,0
+	animation3.pattern5,overlayfast,1270,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface1221
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face221.png,129,36
+}
+
+surface1222
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face222.png,129,36
+}
+
+surface1223
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face223.png,129,36
+}
+
+surface1224
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face224.png,129,36
+}
+
+surface1225
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face225.png,129,36
+}
+
+surface1226
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face226.png,129,36
+}
+
+surface1227
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face227.png,129,36
+}
+
+surface1228
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face228.png,129,36
+}
+
+surface1229
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face229.png,129,36
+}
+
+surface1270
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face270.png,129,36
+}
+
+
+surface1239
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face239.png,129,36
+}
+
+
+surface1300
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face300.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,1306,0,0,0
+	animation1.pattern1,overlayfast,1360,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,1306,30,0,0
+	animation2.pattern1,overlayfast,1360,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,1306,50,0,0
+	animation3.pattern1,overlayfast,1360,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,1306,50,0,0
+	animation3.pattern5,overlayfast,1360,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface1301
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face301.png,129,36
+}
+
+surface1302
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face302.png,129,36
+}
+
+surface1303
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face303.png,129,36
+}
+
+surface1304
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face304.png,129,36
+}
+
+surface1305
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face305.png,129,36
+}
+
+surface1306
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face306.png,129,36
+}
+
+surface1307
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face307.png,129,36
+}
+
+surface1308
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face308.png,129,36
+}
+
+surface1309
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face309.png,129,36
+}
+
+surface1360
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face360.png,129,36
+}
+
+
+
+surface1320
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face320.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,1326,0,0,0
+	animation1.pattern1,overlayfast,1370,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,1326,30,0,0
+	animation2.pattern1,overlayfast,1370,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,1326,50,0,0
+	animation3.pattern1,overlayfast,1370,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,1326,50,0,0
+	animation3.pattern5,overlayfast,1370,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface1321
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face321.png,129,36
+}
+
+surface1322
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face322.png,129,36
+}
+
+surface1323
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face323.png,129,36
+}
+
+surface1324
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face324.png,129,36
+}
+
+surface1325
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face325.png,129,36
+}
+
+surface1326
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face326.png,129,36
+}
+
+surface1327
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face327.png,129,36
+}
+
+surface1328
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face328.png,129,36
+}
+
+surface1329
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face329.png,129,36
+}
+
+surface1370
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face370.png,129,36
+}
+
+
+surface1339
+{
+	element0,overlay,surface1000.png,0,0
+	element1,overlayfast,face339.png,129,36
+}
+
+
+//乳寄せ--------------------------------------------------------------------------
+
+
+surface2000
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face000.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,2006,0,0,0
+	animation1.pattern1,overlayfast,2060,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,2006,30,0,0
+	animation2.pattern1,overlayfast,2060,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,2006,50,0,0
+	animation3.pattern1,overlayfast,2060,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,2006,50,0,0
+	animation3.pattern5,overlayfast,2060,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface2001
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face001.png,129,36
+}
+
+surface2002
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face002.png,129,36
+}
+
+surface2003
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face003.png,129,36
+}
+
+surface2004
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face004.png,129,36
+}
+
+surface2005
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face005.png,129,36
+}
+
+surface2006
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face006.png,129,36
+}
+
+surface2007
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face007.png,129,36
+}
+
+surface2008
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face008.png,129,36
+}
+
+surface2009
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face009.png,129,36
+}
+
+surface2060
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face060.png,129,36
+}
+
+
+
+surface2020
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face020.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,2026,0,0,0
+	animation1.pattern1,overlayfast,2070,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,2026,30,0,0
+	animation2.pattern1,overlayfast,2070,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,2026,50,0,0
+	animation3.pattern1,overlayfast,2070,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,2026,50,0,0
+	animation3.pattern5,overlayfast,2070,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface2021
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face021.png,129,36
+}
+
+surface2022
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face022.png,129,36
+}
+
+surface2023
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face023.png,129,36
+}
+
+surface2024
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face024.png,129,36
+}
+
+surface2025
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face025.png,129,36
+}
+
+surface2026
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face026.png,129,36
+}
+
+surface2027
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face027.png,129,36
+}
+
+surface2028
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face028.png,129,36
+}
+
+surface2029
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face029.png,129,36
+}
+
+surface2070
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face070.png,129,36
+}
+
+
+
+surface2030
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face030.png,129,36
+}
+
+surface2034
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face034.png,129,36
+}
+
+surface2035
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face035.png,129,36
+}
+
+surface2039
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face039.png,129,36
+}
+
+
+surface2100
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face100.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,2106,0,0,0
+	animation1.pattern1,overlayfast,2160,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,2106,30,0,0
+	animation2.pattern1,overlayfast,2160,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,2106,50,0,0
+	animation3.pattern1,overlayfast,2160,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,2106,50,0,0
+	animation3.pattern5,overlayfast,2160,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface2101
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face101.png,129,36
+}
+
+surface2102
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face102.png,129,36
+}
+
+surface2103
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face103.png,129,36
+}
+
+surface2104
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face104.png,129,36
+}
+
+surface2105
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face105.png,129,36
+}
+
+surface2106
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face106.png,129,36
+}
+
+surface2107
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face107.png,129,36
+}
+
+surface2108
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face108.png,129,36
+}
+
+surface2109
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face109.png,129,36
+}
+
+surface2160
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face160.png,129,36
+}
+
+
+
+surface2120
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face120.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,2126,0,0,0
+	animation1.pattern1,overlayfast,2170,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,2126,30,0,0
+	animation2.pattern1,overlayfast,2170,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,2126,50,0,0
+	animation3.pattern1,overlayfast,2170,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,2126,50,0,0
+	animation3.pattern5,overlayfast,2170,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface2121
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face121.png,129,36
+}
+
+surface2122
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face122.png,129,36
+}
+
+surface2123
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face123.png,129,36
+}
+
+surface2124
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face124.png,129,36
+}
+
+surface2125
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face125.png,129,36
+}
+
+surface2126
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face126.png,129,36
+}
+
+surface2127
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face127.png,129,36
+}
+
+surface2128
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face128.png,129,36
+}
+
+surface2129
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face129.png,129,36
+}
+
+surface2170
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face170.png,129,36
+}
+
+
+
+surface2130
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face130.png,129,36
+}
+
+surface2134
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face134.png,129,36
+}
+
+surface2135
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face135.png,129,36
+}
+
+surface2139
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face139.png,129,36
+}
+
+
+surface2200
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face200.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,2206,0,0,0
+	animation1.pattern1,overlayfast,2260,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,2206,30,0,0
+	animation2.pattern1,overlayfast,2260,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,2206,50,0,0
+	animation3.pattern1,overlayfast,2260,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,2206,50,0,0
+	animation3.pattern5,overlayfast,2260,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface2201
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face201.png,129,36
+}
+
+surface2202
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face202.png,129,36
+}
+
+surface2203
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face203.png,129,36
+}
+
+surface2204
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face204.png,129,36
+}
+
+surface2205
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face205.png,129,36
+}
+
+surface2206
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face206.png,129,36
+}
+
+surface2207
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face207.png,129,36
+}
+
+surface2208
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face208.png,129,36
+}
+
+surface2209
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face209.png,129,36
+}
+
+surface2260
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face260.png,129,36
+}
+
+
+
+surface2220
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face220.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,2226,0,0,0
+	animation1.pattern1,overlayfast,2270,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,2226,30,0,0
+	animation2.pattern1,overlayfast,2270,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,2226,50,0,0
+	animation3.pattern1,overlayfast,2270,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,2226,50,0,0
+	animation3.pattern5,overlayfast,2270,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface2221
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face221.png,129,36
+}
+
+surface2222
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face222.png,129,36
+}
+
+surface2223
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face223.png,129,36
+}
+
+surface2224
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face224.png,129,36
+}
+
+surface2225
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face225.png,129,36
+}
+
+surface2226
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face226.png,129,36
+}
+
+surface2227
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face227.png,129,36
+}
+
+surface2228
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face228.png,129,36
+}
+
+surface2229
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face229.png,129,36
+}
+
+surface2270
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face270.png,129,36
+}
+
+
+surface2239
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face239.png,129,36
+}
+
+
+surface2300
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face300.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,2306,0,0,0
+	animation1.pattern1,overlayfast,2360,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,2306,30,0,0
+	animation2.pattern1,overlayfast,2360,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,2306,50,0,0
+	animation3.pattern1,overlayfast,2360,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,2306,50,0,0
+	animation3.pattern5,overlayfast,2360,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface2301
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face301.png,129,36
+}
+
+surface2302
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face302.png,129,36
+}
+
+surface2303
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face303.png,129,36
+}
+
+surface2304
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face304.png,129,36
+}
+
+surface2305
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face305.png,129,36
+}
+
+surface2306
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face306.png,129,36
+}
+
+surface2307
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face307.png,129,36
+}
+
+surface2308
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face308.png,129,36
+}
+
+surface2309
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face309.png,129,36
+}
+
+surface2360
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face360.png,129,36
+}
+
+
+
+surface2320
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face320.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,2326,0,0,0
+	animation1.pattern1,overlayfast,2370,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,2326,30,0,0
+	animation2.pattern1,overlayfast,2370,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,2326,50,0,0
+	animation3.pattern1,overlayfast,2370,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,2326,50,0,0
+	animation3.pattern5,overlayfast,2370,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface2321
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face321.png,129,36
+}
+
+surface2322
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face322.png,129,36
+}
+
+surface2323
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face323.png,129,36
+}
+
+surface2324
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face324.png,129,36
+}
+
+surface2325
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face325.png,129,36
+}
+
+surface2326
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face326.png,129,36
+}
+
+surface2327
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face327.png,129,36
+}
+
+surface2328
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face328.png,129,36
+}
+
+surface2329
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face329.png,129,36
+}
+
+surface2370
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face370.png,129,36
+}
+
+
+surface2339
+{
+	element0,overlay,surface2000.png,0,0
+	element1,overlayfast,face339.png,129,36
+}
+
+
+
+//指立て-----------------------------------------------------------------------------
+
+
+surface3000
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face000.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,3006,0,0,0
+	animation1.pattern1,overlayfast,3060,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,3006,30,0,0
+	animation2.pattern1,overlayfast,3060,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,3006,50,0,0
+	animation3.pattern1,overlayfast,3060,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,3006,50,0,0
+	animation3.pattern5,overlayfast,3060,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface3001
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face001.png,129,36
+}
+
+surface3002
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face002.png,129,36
+}
+
+surface3003
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face003.png,129,36
+}
+
+surface3004
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face004.png,129,36
+}
+
+surface3005
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face005.png,129,36
+}
+
+surface3006
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face006.png,129,36
+}
+
+surface3007
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face007.png,129,36
+}
+
+surface3008
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face008.png,129,36
+}
+
+surface3009
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face009.png,129,36
+}
+
+surface3060
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face060.png,129,36
+}
+
+
+
+surface3020
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face020.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,3026,0,0,0
+	animation1.pattern1,overlayfast,3070,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,3026,30,0,0
+	animation2.pattern1,overlayfast,3070,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,3026,50,0,0
+	animation3.pattern1,overlayfast,3070,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,3026,50,0,0
+	animation3.pattern5,overlayfast,3070,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface3021
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face021.png,129,36
+}
+
+surface3022
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face022.png,129,36
+}
+
+surface3023
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face023.png,129,36
+}
+
+surface3024
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face024.png,129,36
+}
+
+surface3025
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face025.png,129,36
+}
+
+surface3026
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face026.png,129,36
+}
+
+surface3027
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face027.png,129,36
+}
+
+surface3028
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face028.png,129,36
+}
+
+surface3029
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face029.png,129,36
+}
+
+surface3070
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face070.png,129,36
+}
+
+
+
+surface3030
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face030.png,129,36
+}
+
+surface3034
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face034.png,129,36
+}
+
+surface3035
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face035.png,129,36
+}
+
+surface3039
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face039.png,129,36
+}
+
+
+surface3100
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face100.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,3106,0,0,0
+	animation1.pattern1,overlayfast,3160,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,3106,30,0,0
+	animation2.pattern1,overlayfast,3160,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,3106,50,0,0
+	animation3.pattern1,overlayfast,3160,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,3106,50,0,0
+	animation3.pattern5,overlayfast,3160,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface3101
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face101.png,129,36
+}
+
+surface3102
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face102.png,129,36
+}
+
+surface3103
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face103.png,129,36
+}
+
+surface3104
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face104.png,129,36
+}
+
+surface3105
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face105.png,129,36
+}
+
+surface3106
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face106.png,129,36
+}
+
+surface3107
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face107.png,129,36
+}
+
+surface3108
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face108.png,129,36
+}
+
+surface3109
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face109.png,129,36
+}
+
+surface3160
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face160.png,129,36
+}
+
+
+
+surface3120
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face120.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,3126,0,0,0
+	animation1.pattern1,overlayfast,3170,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,3126,30,0,0
+	animation2.pattern1,overlayfast,3170,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,3126,50,0,0
+	animation3.pattern1,overlayfast,3170,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,3126,50,0,0
+	animation3.pattern5,overlayfast,3170,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface3121
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face121.png,129,36
+}
+
+surface3122
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face122.png,129,36
+}
+
+surface3123
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face123.png,129,36
+}
+
+surface3124
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face124.png,129,36
+}
+
+surface3125
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face125.png,129,36
+}
+
+surface3126
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face126.png,129,36
+}
+
+surface3127
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face127.png,129,36
+}
+
+surface3128
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face128.png,129,36
+}
+
+surface3129
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face129.png,129,36
+}
+
+surface3170
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face170.png,129,36
+}
+
+
+
+surface3130
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face130.png,129,36
+}
+
+surface3134
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face134.png,129,36
+}
+
+surface3135
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face135.png,129,36
+}
+
+surface3139
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face139.png,129,36
+}
+
+
+surface3200
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face200.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,3206,0,0,0
+	animation1.pattern1,overlayfast,3260,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,3206,30,0,0
+	animation2.pattern1,overlayfast,3260,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,3206,50,0,0
+	animation3.pattern1,overlayfast,3260,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,3206,50,0,0
+	animation3.pattern5,overlayfast,3260,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface3201
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face201.png,129,36
+}
+
+surface3202
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face202.png,129,36
+}
+
+surface3203
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face203.png,129,36
+}
+
+surface3204
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face204.png,129,36
+}
+
+surface3205
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face205.png,129,36
+}
+
+surface3206
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face206.png,129,36
+}
+
+surface3207
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face207.png,129,36
+}
+
+surface3208
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face208.png,129,36
+}
+
+surface3209
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face209.png,129,36
+}
+
+surface3260
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face260.png,129,36
+}
+
+
+
+surface3220
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face220.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,3226,0,0,0
+	animation1.pattern1,overlayfast,3270,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,3226,30,0,0
+	animation2.pattern1,overlayfast,3270,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,3226,50,0,0
+	animation3.pattern1,overlayfast,3270,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,3226,50,0,0
+	animation3.pattern5,overlayfast,3270,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface3221
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face221.png,129,36
+}
+
+surface3222
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face222.png,129,36
+}
+
+surface3223
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face223.png,129,36
+}
+
+surface3224
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face224.png,129,36
+}
+
+surface3225
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face225.png,129,36
+}
+
+surface3226
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face226.png,129,36
+}
+
+surface3227
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face227.png,129,36
+}
+
+surface3228
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face228.png,129,36
+}
+
+surface3229
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face229.png,129,36
+}
+
+surface3270
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face270.png,129,36
+}
+
+
+surface3239
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face239.png,129,36
+}
+
+
+surface3300
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face300.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,3306,0,0,0
+	animation1.pattern1,overlayfast,3360,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,3306,30,0,0
+	animation2.pattern1,overlayfast,3360,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,3306,50,0,0
+	animation3.pattern1,overlayfast,3360,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,3306,50,0,0
+	animation3.pattern5,overlayfast,3360,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface3301
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face301.png,129,36
+}
+
+surface3302
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face302.png,129,36
+}
+
+surface3303
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face303.png,129,36
+}
+
+surface3304
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face304.png,129,36
+}
+
+surface3305
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face305.png,129,36
+}
+
+surface3306
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face306.png,129,36
+}
+
+surface3307
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face307.png,129,36
+}
+
+surface3308
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face308.png,129,36
+}
+
+surface3309
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face309.png,129,36
+}
+
+surface3360
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face360.png,129,36
+}
+
+
+
+surface3320
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face320.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,3326,0,0,0
+	animation1.pattern1,overlayfast,3370,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,3326,30,0,0
+	animation2.pattern1,overlayfast,3370,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,3326,50,0,0
+	animation3.pattern1,overlayfast,3370,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,3326,50,0,0
+	animation3.pattern5,overlayfast,3370,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface3321
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face321.png,129,36
+}
+
+surface3322
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face322.png,129,36
+}
+
+surface3323
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face323.png,129,36
+}
+
+surface3324
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face324.png,129,36
+}
+
+surface3325
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face325.png,129,36
+}
+
+surface3326
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face326.png,129,36
+}
+
+surface3327
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face327.png,129,36
+}
+
+surface3328
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face328.png,129,36
+}
+
+surface3329
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face329.png,129,36
+}
+
+surface3370
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face370.png,129,36
+}
+
+
+surface3339
+{
+	element0,overlay,surface3000.png,0,0
+	element1,overlayfast,face339.png,129,36
+}
+
+
+//胸かかえ---------------------------------------------------------------------------
+
+
+surface4000
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face000.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,4006,0,0,0
+	animation1.pattern1,overlayfast,4060,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,4006,30,0,0
+	animation2.pattern1,overlayfast,4060,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,4006,50,0,0
+	animation3.pattern1,overlayfast,4060,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,4006,50,0,0
+	animation3.pattern5,overlayfast,4060,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface4001
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face001.png,129,36
+}
+
+surface4002
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face002.png,129,36
+}
+
+surface4003
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face003.png,129,36
+}
+
+surface4004
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face004.png,129,36
+}
+
+surface4005
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face005.png,129,36
+}
+
+surface4006
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face006.png,129,36
+}
+
+surface4007
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face007.png,129,36
+}
+
+surface4008
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face008.png,129,36
+}
+
+surface4009
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face009.png,129,36
+}
+
+surface4060
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face060.png,129,36
+}
+
+
+
+surface4020
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face020.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,4026,0,0,0
+	animation1.pattern1,overlayfast,4070,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,4026,30,0,0
+	animation2.pattern1,overlayfast,4070,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,4026,50,0,0
+	animation3.pattern1,overlayfast,4070,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,4026,50,0,0
+	animation3.pattern5,overlayfast,4070,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface4021
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face021.png,129,36
+}
+
+surface4022
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face022.png,129,36
+}
+
+surface4023
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face023.png,129,36
+}
+
+surface4024
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face024.png,129,36
+}
+
+surface4025
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face025.png,129,36
+}
+
+surface4026
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face026.png,129,36
+}
+
+surface4027
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face027.png,129,36
+}
+
+surface4028
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face028.png,129,36
+}
+
+surface4029
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face029.png,129,36
+}
+
+surface4070
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face070.png,129,36
+}
+
+
+
+surface4030
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face030.png,129,36
+}
+
+surface4034
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face034.png,129,36
+}
+
+surface4035
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face035.png,129,36
+}
+
+surface4039
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face039.png,129,36
+}
+
+
+surface4100
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face100.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,4106,0,0,0
+	animation1.pattern1,overlayfast,4160,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,4106,30,0,0
+	animation2.pattern1,overlayfast,4160,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,4106,50,0,0
+	animation3.pattern1,overlayfast,4160,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,4106,50,0,0
+	animation3.pattern5,overlayfast,4160,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface4101
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face101.png,129,36
+}
+
+surface4102
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face102.png,129,36
+}
+
+surface4103
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face103.png,129,36
+}
+
+surface4104
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face104.png,129,36
+}
+
+surface4105
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face105.png,129,36
+}
+
+surface4106
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face106.png,129,36
+}
+
+surface4107
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face107.png,129,36
+}
+
+surface4108
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face108.png,129,36
+}
+
+surface4109
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face109.png,129,36
+}
+
+surface4160
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face160.png,129,36
+}
+
+
+
+surface4120
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face120.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,4126,0,0,0
+	animation1.pattern1,overlayfast,4170,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,4126,30,0,0
+	animation2.pattern1,overlayfast,4170,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,4126,50,0,0
+	animation3.pattern1,overlayfast,4170,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,4126,50,0,0
+	animation3.pattern5,overlayfast,4170,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface4121
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face121.png,129,36
+}
+
+surface4122
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face122.png,129,36
+}
+
+surface4123
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face123.png,129,36
+}
+
+surface4124
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face124.png,129,36
+}
+
+surface4125
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face125.png,129,36
+}
+
+surface4126
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face126.png,129,36
+}
+
+surface4127
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face127.png,129,36
+}
+
+surface4128
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face128.png,129,36
+}
+
+surface4129
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face129.png,129,36
+}
+
+surface4170
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face170.png,129,36
+}
+
+
+
+surface4130
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face130.png,129,36
+}
+
+surface4134
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face134.png,129,36
+}
+
+surface4135
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face135.png,129,36
+}
+
+surface4139
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face139.png,129,36
+}
+
+
+surface4200
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face200.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,4206,0,0,0
+	animation1.pattern1,overlayfast,4260,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,4206,30,0,0
+	animation2.pattern1,overlayfast,4260,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,4206,50,0,0
+	animation3.pattern1,overlayfast,4260,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,4206,50,0,0
+	animation3.pattern5,overlayfast,4260,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface4201
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face201.png,129,36
+}
+
+surface4202
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face202.png,129,36
+}
+
+surface4203
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face203.png,129,36
+}
+
+surface4204
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face204.png,129,36
+}
+
+surface4205
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face205.png,129,36
+}
+
+surface4206
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face206.png,129,36
+}
+
+surface4207
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face207.png,129,36
+}
+
+surface4208
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face208.png,129,36
+}
+
+surface4209
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face209.png,129,36
+}
+
+surface4260
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face260.png,129,36
+}
+
+
+
+surface4220
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face220.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,4226,0,0,0
+	animation1.pattern1,overlayfast,4270,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,4226,30,0,0
+	animation2.pattern1,overlayfast,4270,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,4226,50,0,0
+	animation3.pattern1,overlayfast,4270,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,4226,50,0,0
+	animation3.pattern5,overlayfast,4270,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface4221
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face221.png,129,36
+}
+
+surface4222
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face222.png,129,36
+}
+
+surface4223
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face223.png,129,36
+}
+
+surface4224
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face224.png,129,36
+}
+
+surface4225
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face225.png,129,36
+}
+
+surface4226
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face226.png,129,36
+}
+
+surface4227
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face227.png,129,36
+}
+
+surface4228
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face228.png,129,36
+}
+
+surface4229
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face229.png,129,36
+}
+
+surface4270
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face270.png,129,36
+}
+
+
+surface4239
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face239.png,129,36
+}
+
+
+surface4300
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face300.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,4306,0,0,0
+	animation1.pattern1,overlayfast,4360,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,4306,30,0,0
+	animation2.pattern1,overlayfast,4360,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,4306,50,0,0
+	animation3.pattern1,overlayfast,4360,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,4306,50,0,0
+	animation3.pattern5,overlayfast,4360,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface4301
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face301.png,129,36
+}
+
+surface4302
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face302.png,129,36
+}
+
+surface4303
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face303.png,129,36
+}
+
+surface4304
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face304.png,129,36
+}
+
+surface4305
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face305.png,129,36
+}
+
+surface4306
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face306.png,129,36
+}
+
+surface4307
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face307.png,129,36
+}
+
+surface4308
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face308.png,129,36
+}
+
+surface4309
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face309.png,129,36
+}
+
+surface4360
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face360.png,129,36
+}
+
+
+
+surface4320
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face320.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,4326,0,0,0
+	animation1.pattern1,overlayfast,4370,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,4326,30,0,0
+	animation2.pattern1,overlayfast,4370,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,4326,50,0,0
+	animation3.pattern1,overlayfast,4370,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,4326,50,0,0
+	animation3.pattern5,overlayfast,4370,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface4321
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face321.png,129,36
+}
+
+surface4322
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face322.png,129,36
+}
+
+surface4323
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face323.png,129,36
+}
+
+surface4324
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face324.png,129,36
+}
+
+surface4325
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face325.png,129,36
+}
+
+surface4326
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face326.png,129,36
+}
+
+surface4327
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face327.png,129,36
+}
+
+surface4328
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face328.png,129,36
+}
+
+surface4329
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face329.png,129,36
+}
+
+surface4370
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face370.png,129,36
+}
+
+
+surface4339
+{
+	element0,overlay,surface4000.png,0,0
+	element1,overlayfast,face339.png,129,36
+}
+
+
+//スカートつまみ----------------------------------------------------------------------
+
+
+surface5000
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face000.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,5006,0,0,0
+	animation1.pattern1,overlayfast,5060,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,5006,30,0,0
+	animation2.pattern1,overlayfast,5060,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,5006,50,0,0
+	animation3.pattern1,overlayfast,5060,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,5006,50,0,0
+	animation3.pattern5,overlayfast,5060,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface5001
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face001.png,129,36
+}
+
+surface5002
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face002.png,129,36
+}
+
+surface5003
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face003.png,129,36
+}
+
+surface5004
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face004.png,129,36
+}
+
+surface5005
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face005.png,129,36
+}
+
+surface5006
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face006.png,129,36
+}
+
+surface5007
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face007.png,129,36
+}
+
+surface5008
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face008.png,129,36
+}
+
+surface5009
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face009.png,129,36
+}
+
+surface5060
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face060.png,129,36
+}
+
+
+
+surface5020
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face020.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,5026,0,0,0
+	animation1.pattern1,overlayfast,5070,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,5026,30,0,0
+	animation2.pattern1,overlayfast,5070,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,5026,50,0,0
+	animation3.pattern1,overlayfast,5070,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,5026,50,0,0
+	animation3.pattern5,overlayfast,5070,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface5021
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face021.png,129,36
+}
+
+surface5022
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face022.png,129,36
+}
+
+surface5023
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face023.png,129,36
+}
+
+surface5024
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face024.png,129,36
+}
+
+surface5025
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face025.png,129,36
+}
+
+surface5026
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face026.png,129,36
+}
+
+surface5027
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face027.png,129,36
+}
+
+surface5028
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face028.png,129,36
+}
+
+surface5029
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face029.png,129,36
+}
+
+surface5070
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face070.png,129,36
+}
+
+
+
+surface5030
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face030.png,129,36
+}
+
+surface5034
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face034.png,129,36
+}
+
+surface5035
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face035.png,129,36
+}
+
+surface5039
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face039.png,129,36
+}
+
+
+surface5100
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face100.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,5106,0,0,0
+	animation1.pattern1,overlayfast,5160,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,5106,30,0,0
+	animation2.pattern1,overlayfast,5160,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,5106,50,0,0
+	animation3.pattern1,overlayfast,5160,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,5106,50,0,0
+	animation3.pattern5,overlayfast,5160,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface5101
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face101.png,129,36
+}
+
+surface5102
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face102.png,129,36
+}
+
+surface5103
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face103.png,129,36
+}
+
+surface5104
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face104.png,129,36
+}
+
+surface5105
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face105.png,129,36
+}
+
+surface5106
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face106.png,129,36
+}
+
+surface5107
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face107.png,129,36
+}
+
+surface5108
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face108.png,129,36
+}
+
+surface5109
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face109.png,129,36
+}
+
+surface5160
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face160.png,129,36
+}
+
+
+
+surface5120
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face120.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,5126,0,0,0
+	animation1.pattern1,overlayfast,5170,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,5126,30,0,0
+	animation2.pattern1,overlayfast,5170,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,5126,50,0,0
+	animation3.pattern1,overlayfast,5170,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,5126,50,0,0
+	animation3.pattern5,overlayfast,5170,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface5121
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face121.png,129,36
+}
+
+surface5122
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face122.png,129,36
+}
+
+surface5123
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face123.png,129,36
+}
+
+surface5124
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face124.png,129,36
+}
+
+surface5125
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face125.png,129,36
+}
+
+surface5126
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face126.png,129,36
+}
+
+surface5127
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face127.png,129,36
+}
+
+surface5128
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face128.png,129,36
+}
+
+surface5129
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face129.png,129,36
+}
+
+surface5170
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face170.png,129,36
+}
+
+
+
+surface5130
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face130.png,129,36
+}
+
+surface5134
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face134.png,129,36
+}
+
+surface5135
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face135.png,129,36
+}
+
+surface5139
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face139.png,129,36
+}
+
+
+surface5200
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face200.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,5206,0,0,0
+	animation1.pattern1,overlayfast,5260,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,5206,30,0,0
+	animation2.pattern1,overlayfast,5260,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,5206,50,0,0
+	animation3.pattern1,overlayfast,5260,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,5206,50,0,0
+	animation3.pattern5,overlayfast,5260,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface5201
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face201.png,129,36
+}
+
+surface5202
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face202.png,129,36
+}
+
+surface5203
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face203.png,129,36
+}
+
+surface5204
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face204.png,129,36
+}
+
+surface5205
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face205.png,129,36
+}
+
+surface5206
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face206.png,129,36
+}
+
+surface5207
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face207.png,129,36
+}
+
+surface5208
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face208.png,129,36
+}
+
+surface5209
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face209.png,129,36
+}
+
+surface5260
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face260.png,129,36
+}
+
+
+
+surface5220
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face220.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,5226,0,0,0
+	animation1.pattern1,overlayfast,5270,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,5226,30,0,0
+	animation2.pattern1,overlayfast,5270,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,5226,50,0,0
+	animation3.pattern1,overlayfast,5270,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,5226,50,0,0
+	animation3.pattern5,overlayfast,5270,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface5221
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face221.png,129,36
+}
+
+surface5222
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face222.png,129,36
+}
+
+surface5223
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face223.png,129,36
+}
+
+surface5224
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face224.png,129,36
+}
+
+surface5225
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face225.png,129,36
+}
+
+surface5226
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face226.png,129,36
+}
+
+surface5227
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face227.png,129,36
+}
+
+surface5228
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face228.png,129,36
+}
+
+surface5229
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face229.png,129,36
+}
+
+surface5270
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face270.png,129,36
+}
+
+
+surface5239
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face239.png,129,36
+}
+
+
+surface5300
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face300.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,5306,0,0,0
+	animation1.pattern1,overlayfast,5360,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,5306,30,0,0
+	animation2.pattern1,overlayfast,5360,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,5306,50,0,0
+	animation3.pattern1,overlayfast,5360,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,5306,50,0,0
+	animation3.pattern5,overlayfast,5360,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface5301
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face301.png,129,36
+}
+
+surface5302
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face302.png,129,36
+}
+
+surface5303
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face303.png,129,36
+}
+
+surface5304
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face304.png,129,36
+}
+
+surface5305
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face305.png,129,36
+}
+
+surface5306
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face306.png,129,36
+}
+
+surface5307
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face307.png,129,36
+}
+
+surface5308
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face308.png,129,36
+}
+
+surface5309
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face309.png,129,36
+}
+
+surface5360
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face360.png,129,36
+}
+
+
+
+surface5320
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face320.png,129,36
+
+	animation1.interval,never
+	animation1.pattern0,overlayfast,5326,0,0,0
+	animation1.pattern1,overlayfast,5370,50,0,0
+	animation1.pattern2,overlay,-1,50,0,0
+
+	animation2.interval,never
+	animation2.pattern0,overlayfast,5326,30,0,0
+	animation2.pattern1,overlayfast,5370,200,0,0
+	animation2.pattern2,overlay,-1,50,0,0
+
+	animation3.interval,never
+	animation3.pattern0,overlayfast,5326,50,0,0
+	animation3.pattern1,overlayfast,5370,40,0,0
+	animation3.pattern2,overlay,-1,30,0,0
+	animation3.pattern4,overlayfast,5326,50,0,0
+	animation3.pattern5,overlayfast,5370,80,0,0
+	animation3.pattern8,overlay,-1,50,0,0
+
+	animation10.interval,random,4
+	animation10.pattern0,alternativestart,(1,2,3)
+}
+
+
+surface5321
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face321.png,129,36
+}
+
+surface5322
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face322.png,129,36
+}
+
+surface5323
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face323.png,129,36
+}
+
+surface5324
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face324.png,129,36
+}
+
+surface5325
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face325.png,129,36
+}
+
+surface5326
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face326.png,129,36
+}
+
+surface5327
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face327.png,129,36
+}
+
+surface5328
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face328.png,129,36
+}
+
+surface5329
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face329.png,129,36
+}
+
+surface5370
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face370.png,129,36
+}
+
+
+surface5339
+{
+	element0,overlay,surface5000.png,0,0
+	element1,overlayfast,face339.png,129,36
+}

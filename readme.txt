@@ -35,3 +35,7 @@ https://izayou.blog.shinobi.jp/Entry/71/9D%E8%A7%92
 Freeshell "月夜"
 by jumei http://blog.chixi.jp/10137/diary/95519/
 https://wikiwiki.jp/feeshell/月夜
+
+Freeshell "1/f(エフブンノイチ)"
+by 吉野桜 http://www24.big.or.jp/~tir/
+https://wikiwiki.jp/feeshell/1/f(エフブンノイチ)

@@ -1,0 +1,4 @@
+charset,Shift_JIS
+type,shell
+name,1/f(エフブンノイチ)
+directory,pink_noise
