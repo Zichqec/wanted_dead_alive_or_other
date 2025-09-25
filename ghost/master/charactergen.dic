@@ -8,6 +8,7 @@ shells : array
 	"vampire"
 	"antlers"
 	"michael"
+	"moonlight"
 }
 
 OnGenerateNewCharacter

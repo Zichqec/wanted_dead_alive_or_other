@@ -1,6 +1,6 @@
 charset,Shift_JIS
 craftman,jumei
-name,ŒŽ–é
+name,moonlight
 type,shell
 craftmanw,jumei
 craftmanurl,
