@@ -328,3 +328,20 @@ longer
 	"quieter"
 	"hungrier"
 }
+
+gravedirt
+{
+	"grave dirt"
+	"graveyard dirt"
+	"bone ash"
+	"brick dust"
+	"feather dust"
+	"peppermint"
+	"powdered mugwort"
+	"nettles"
+	"wood ash"
+	"benzoin"
+	"salt"
+	"pepper"
+	"mustard seeds"
+}
