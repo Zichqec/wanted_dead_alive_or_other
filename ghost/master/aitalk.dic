@@ -12,7 +12,7 @@ OnAiTalk
 		DialogueDraw[LSO] = IARRAY
 		
 		if _pick == "Shell"; LastTalk = ShellTalk
-		else; LastTalk = "\0\![set,serikotalk,false]" + RandomTalk
+		else; LastTalk = "\0\![set,serikotalk,false]\f[italic,1]" + RandomTalk + "\f[italic,false]"
 	}
 	LastTalk
 }
