@@ -27,3 +27,7 @@ https://wikiwiki.jp/feeshell/ようこそヴァンパイア
 Freeshell "枯枝角"
 by ３号生 http://deceit.ikaduchi.com/
 https://wikiwiki.jp/feeshell/%E6%9E%AF%E6%9E%9D%E8%A7%92
+
+Freeshell "みかえる小蔭"
+by 瑠璃蝶 https://izayou.blog.shinobi.jp
+https://izayou.blog.shinobi.jp/Entry/71/

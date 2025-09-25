@@ -1,0 +1,8 @@
+charset,Shift_JIS
+craftman,ruricho
+craftmanw,—Ú—ž’±
+craftmanurl,https://izayou.blog.shinobi.jp
+id,mikaerukokage
+name,michael
+type,shell
+seriko.use_self_alpha,1

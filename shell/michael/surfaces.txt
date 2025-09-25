@@ -1,0 +1,121 @@
+charset,Shift_JIS
+
+descript
+{
+	version,1
+}
+
+
+
+// ベース
+
+surface0-9
+{
+	element0,base,surface5000.png,0,0
+	element1,overlay,surface0.png,0,0
+}
+
+surface10
+{
+	element0,base,surface10.png,0,0
+}
+
+surface20-29
+{
+	element0,base,surface5000.png,0,0
+	element1,overlay,surface6000.png,0,0
+}
+
+surface30-39
+{
+	element0,base,surface5000.png,0,0
+	element1,overlay,surface6001.png,0,0
+}
+
+surface40-49
+{
+	element0,base,surface5000.png,0,0
+	element1,overlay,surface6002.png,0,0
+}
+
+surface50-59
+{
+	element0,base,surface5000.png,0,0
+	element1,overlay,surface6003.png,0,0
+
+	animation0.interval,runonce
+	animation0.pattern0,overlay,6005,0,0,0
+}
+
+surface60-69
+{
+	element0,base,surface5000.png,0,0
+	element1,overlay,surface6004.png,0,0
+}
+
+
+//1000眉
+//2000目
+//3000口
+//4000感情
+//5000髪
+
+
+// 表情設定
+// 
+
+
+//口
+surface0,20,30,40,50,60
+{
+	element3,overlay,surface3000.png,0,0
+}
+
+surface1,21,31,41,51,61
+{
+	element2,overlay,surface4001.png,0,0
+	element3,overlay,surface3001.png,0,0
+}
+
+surface2,22,32,42,52,62
+{
+	element2,overlay,surface4002.png,0,0
+	element3,overlay,surface3002.png,0,0
+}
+
+surface3,23,33,43,53,63
+{
+	element2,overlay,surface4003.png,0,0
+	element3,overlay,surface3003.png,0,0
+}
+
+surface4,24,34,44,54,64
+{
+	element2,overlay,surface4000.png,0,0
+	element3,overlay,surface3004.png,0,0
+}
+
+surface5,25,35,45,55,65
+{
+	element3,overlay,surface3005.png,0,0
+}
+
+surface6,26,36,46,56,66
+{
+	element3,overlay,surface3006.png,0,0
+}
+
+surface7,27,37,47,57,67
+{
+	element3,overlay,surface3007.png,0,0
+}
+
+surface8,28,38,48,58,68
+{
+	element3,overlay,surface3008.png,0,0
+}
+
+surface9,29,39,49,59,69
+{
+	element3,overlay,surface3009.png,0,0
+}
