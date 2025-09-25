@@ -28,4 +28,12 @@ RandomTalk : nonoverlap_pool
 	"The line has gotten %(longer) since I last checked."
 	"Ah, I should check the %(bandage) inventory."
 	"...? Sounds like something is rampaging in the other room... Is it getting louder?\n\n \f[bold,1]THUD! CRUNCH!\n\n \f[bold,default]... The alarms haven't been triggered, so it's probably fine... Just act normal..."
+	"Is that smell me, or... no, I shouldn't ask."
+	"Come on, pen. Don't do this to me. I know there's still ink in there."
+	"Even failures produce useful data, though it is not always the data one expects."
+	"My focus has been wavering intermittently... Perhaps one of the candidates has an aura of befuddlement."
+	"If there were some way to find the ultimate test subject, capable of replicating a myriad of conditions on command, countless hours of work could be redirected onto more important matters.\n\n ... An enticing thought, but if one exists, it has yet to reveal itself... The hunt must continue."
+	"... Did I forget to clean the %(gravedirt) from the rug?"
+	"Is my leg itching because my leg is itchy, or is it itching because the insects are back..."
+	"If interviews can be completed at an average time of 12.5 minutes, then across a single work week, 576 test subjects could be acquired. More than enough for weeks of uninterrupted experimentation.\n\n ... 120 hours of interviews may require more stimulants than currently available."
 }
