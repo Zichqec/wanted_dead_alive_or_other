@@ -28,4 +28,21 @@ RandomTalk : nonoverlap_pool
 	"The line has gotten %(longer) since I last checked."
 	"Ah, I should check the %(bandage) inventory."
 	"...? Sounds like something is rampaging in the other room... Is it getting louder?\n\n \f[bold,1]THUD! CRUNCH!\n\n \f[bold,default]... The alarms haven't been triggered, so it's probably fine... Just act normal..."
+	
+	if AcceptedCandidatesToday + RejectedCandidatesToday < 5
+	{
+		"The night is still young... but there are many candidates waiting in line. I should make a determination soon."
+	}
+	elseif AcceptedCandidatesToday > RejectedCandidatesToday * 2
+	{
+		"There are many good potentials today... I almost wonder if I should rearrange the schedule to make better use of them."
+	}
+	elseif RejectedCandidatesToday > AcceptedCandidatesToday * 2
+	{
+		"The pickings so far have been poor... I should refine the criteria listed on my advertisement."
+	}
+	else
+	{
+		"Not many standout candidates in either direction so far... It's to be expected with a self-selected group, but it does make this process a bit more of a chore."
+	}
 }
