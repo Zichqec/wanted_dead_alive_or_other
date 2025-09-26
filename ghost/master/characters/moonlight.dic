@@ -262,7 +262,7 @@ PrimaryDiet.moonlight
 //How would you like to be compensated for your assistance today?
 HowCompensate.moonlight
 {
-	"\0\b[0]\s[8]I am organizing a great banquet for my mistress, the moon... \w8\s[18]I believe she will be most pleased with several blood sacrifices.\n\n \w8\w8\s[16]When your experiment has concluded, I would like you to turn the other participants over to me so that I may bring them to the Lunar Feast. \s[1]It is convenient, no?"
+	"\0\b[0]\s[8]I am organizing a great banquet for my mistress, the moon... \w8\s[18]I believe she will be most pleased with several blood sacrifices.\n\n \w8\w8\s[16]When your experiment has concluded, I would like you to turn the other participants over to me so that I may bring them to the Lunar Feast. \s[1]It is convenient for your purposes as well, no?"
 	"\0\b[0]\s[2]The shrine I attend to offers regular blood sacrifices to our mistress, the moon. \w8\s[9]However, we have lost some of our suppliers recently... \s[8]so, I am here in hopes of making a deal.\n\n \w8\s[0]You perform these experiments on a fairly regular basis, do you not? \s[1]I would like for you to divert the occasional still-living subject to us.\n\n \w8\s[2]It may prove mutually beneficial if you have anything you need... disposed of."
 	"\0\b[0]\s[0]Oh, nothing too involved... \s[2]I just want you to come out into the woods for a walk with me afterwards. \s[1]Alone... under the moonlight.\n\n \w8\s[18]You'll get to meet my mistress and bask in her light... \s[16]Won't that be wonderful?"
 }
