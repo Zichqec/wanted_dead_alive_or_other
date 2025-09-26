@@ -1,4 +1,24 @@
-﻿
+﻿Necromancy is a complicated field with many facets to explore. And while the theory itself is fascinating, examples in the real world are rarely so clean and clear cut. Practical, hands-on experimentation is a must if you want to make any real progress.
+
+Thankfully, with the right advertising and a willingness to make a few back-room deals, it's easy to attract a crowd of... enthusiastic... participants.
+
+Then begins the task of interviewing each one to determine suitability for the experiment in question, and to assess the candidate's scientific value vs the cost of the compensation they request...
+
+It's tiring work.
+
+
+Made for Idea Adoption Jam 2025 by:
+
+Galla https://gallathegalla.github.io/gtg-ghosts/
+Miss https://justmissart.carrd.co/
+Zichqec https://ukagaka.zichqec.com/
+
+Original idea by okuajub:
+"You are a necromancer, interviewing applicants from your job listing for an experiment. Not all of them have to be breathing."
+
+
+———————————————————— Materials used ————————————————————
+Thank you very much to every freeshell author listed here! Your work is incredible, and without it this ghost would not have been possible.
 
 Freeshell "ふわもこ魔族"
 by 笙はくさむのぶもり https://rocketsalad.studio.site/
