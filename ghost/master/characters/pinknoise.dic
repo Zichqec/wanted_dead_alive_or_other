@@ -26,7 +26,17 @@ Rejected.pinknoise
 
 RandomTalk.pinknoise : nonoverlap
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[5035]This is so much fun!"
+	"\0\b[0]\s[1008]Feel free to take as much time as you need to make a decision. \s[1009]I'm patient."
+	"\0\b[0]\s[3026]I made sure to pack an extra blanket this time. No more chills for me!"
+	"\0\b[0]\s[1008]Hey... would you mind... \s[1009]signing this %(pencil) I found? \w8\s[2035]I want a nice souvenir of this visit!"
+	"\0\b[0]\s[2035]I bet you're going to get great results with this experiment."
+	
+	"\0\b[0]\s[2026]It smells %(dusty)... \w8\s[1035]Hehe~!"
+	"\0\b[0]\s[4034]Aw man, I spent more time in line than I thought, and now I'm kinda hungry... \w8\s[2008]You have snacks in the fridge, right? \s[2035]I'll pay you back!"
+	"\0\b[0]\s[3006]The line was especially %(unruly) today. \w8\s[3000]You should consider updating your advertisement."
+	"\0\b[0]\s[2070]Hmmmm...\n\n \w8\w8\w8\w8\s[3035]Sorry, my mind was totally somewhere else! \s[2025]Were we doing something?"
+	"\0\b[0]\s[2026]Maybe next time I'll bring %(acandle)..."
 }
 
 //Name?
@@ -97,101 +107,134 @@ RequireFoodWaterCharging.pinknoise
 AllergicReactions.pinknoise
 {
 	"\0\b[0]\s[2026]Nope."
-	"\0\b[0]\s[3035]Oh yeah, we found out for sure last time, didn't we?"
+	"\0\b[0]\s[3035]Oh yeah, we confirmed that I'm not last time, didn't we?"
+	"\0\b[0]\s[1026]Not at all."
 }
 
 //Are you immortal?
 Immortal.pinknoise
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[2035]Well... with your help, maybe!"
+	"\0\b[0]\s[1070]Not in a way that interferes with your work."
+	"\0\b[0]\s[2035]You know how that's going!"
 }
 
 //How many times on average do you regenerate limbs in a year?
 RegenerateLimbs.pinknoise
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[1027]I don't really regenerate them... \w8\s[2035]but you're often stitching them back onto me!"
+	"\0\b[0]\s[2035]Nope, we tested that before!"
+	"\0\b[0]\s[2009]Never!"
 }
 
 //Do you have an active agreement or similar with (word group)?
 ActiveAgreement.pinknoise
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[2035]Nope!"
+	"\0\b[0]\s[2009]I'm not interested in agreements with anyone else."
+	"\0\b[0]\s[3035]Why would I?"
 }
 
 //How tall are you, and are you flexible about it?
 HowTall.pinknoise
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[5035]Of course I'm flexible, you know that!"
+	"\0\b[0]\s[5035]Ooh, let's make me taller again!"
+	"\0\b[0]\s[2035]I can be however tall you want me to be!"
 }
 
 //On a scale of 1 to 100, how many pounds of mass are you willing to potentially lose during the course of this experiment?
 LoseMass.pinknoise
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[35]100! You can take as much as you want!"
+	"\0\b[0]\s[2026]The same as usual. \s[2035]100, you can do whatever you need to."
+	"\0\b[0]\s[2009]100. \s[2035]It's not like I'm using it for anything else!"
 }
 
 //Would you describe yourself as being made of flesh?
 MadeOfFlesh.pinknoise
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[2009]Sure."
+	"\0\b[0]\s[2035]That's what you told me before I left last time!"
+	"\0\b[0]\s[1035]You said it's fine if I keep saying that!"
 }
 
 //Do you often use your (bodypart)?
 OftenUseBodyPart.pinknoise
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[2009]Oh, those old things? \s[3035]You can have 'em!"
+	"\0\b[0]\s[1035]I used to, but then you did something with them that made them not work so well, so I've stopped for the time being."
+	"\0\b[0]\s[1026]Sure I do. \s[1035]But if you have a use for them, they're yours!"
 }
 
 //On a scale of 1 to 10, how much do you prioritize maintaining your current form?
 PrioritizeCurrentForm.pinknoise
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[2070]Hmm... \s[2035]1."
+	"\0\b[0]\s[1009]1. \s[1035]If I had to choose between my current form and coming back for another experiment, I'd choose the experiment every time!"
+	"\0\b[0]\s[3035]You know I'm not worried about that!"
 }
 
 //How long have you resided in this reality?
 ResidedThisReality.pinknoise
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[1026]My whole life. \w8\s[1035]But I'll go wherever you are!"
+	"\0\b[0]\s[1035]Since the day I was born!"
+	"\0\b[0]\s[2035]My whole life, but I wouldn't mind traveling if you wanted to see someplace else!"
 }
 
 //Where do you see yourself in 10 years? Would it change if (word group)?
 SeeSelfTenYears.pinknoise
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[1005]Hmm... \w8\s[1170]mmm... \w8\w8\s[1135]Nope, I'm sure my plans won't be changing at all!"
+	"\0\b[0]\s[1035]You'll see!"
+	"\0\b[0]\s[3035]I've got lots of plans for the future!"
 }
 
 //Are you currently taking any medications?
 TakingMeds.pinknoise
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[1035]Oh, I stashed my daily meds in your medicine cabinet so I'd be prepared!"
+	"\0\b[0]\s[1009]The same ones as before, no change."
+	"\0\b[0]\s[2030]That reminds me, I'm getting low and have to head to the pharmacy later..."
 }
 
 //On a scale of 1 to 10, how likely are you to start rotting on a hot day?
 LikelyToRot.pinknoise
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[3035]Last time you told me you'd put it at about a 4 these days!"
+	"\0\b[0]\s[2008]4. \w8\s[2026]Every time you stitch me up, the potential for rot becomes a little greater... \w8\s[2035]Or at least, that's what you said when I asked last time!"
+	"\0\b[0]\s[1035]4!"
 }
 
 //Do you have prior history with eldritch horrors?
 HistoryEldritchHorrors.pinknoise
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[1035]Nope!"
+	"\0\b[0]\s[2035]Not unless you count!"
+	"\0\b[0]\s[3026]I don't really get out much, so it's not a concern."
 }
 
 //Are there any colors or textures that should be kept out of your enclosure?
 ColorsTextures.pinknoise
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[1035]Just the usual ones!"
+	"\0\b[0]\s[35]No need to worry, I'll head to my usual room and it won't be a problem!"
+	"\0\b[0]\s[2035]It's so nice of you to ask even though you already know!"
 }
 
 //What does your diet primarily consist of currently, and how willing are you to tolerate a permanent change?
 PrimaryDiet.pinknoise
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[1035]Oh, yeah, we went over my new diet last time!"
+	"\0\b[0]\s[5035]I'm good with whatever!"
+	"\0\b[0]\s[1009]It's all good. \s[2035]I don't mind mixing things up again!"
 }
 
 //How would you like to be compensated for your assistance today?
 HowCompensate.pinknoise
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[2035]Oh, no need for that! \s[2009]Just being here is compensation enough."
+	"\0\b[0]\s[1026]Oh, I just have an itty bitty, teeny tiny little request... \w8\s[3035]I want one of those sheets of paper off your clipboard! \s[1009]One of the grimy ones, thanks."
+	"\0\b[0]\s[5035]I want to watch while you work with the other subjects~! \w8\s[2026]That's all."
 }

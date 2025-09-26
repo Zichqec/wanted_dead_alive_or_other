@@ -561,3 +561,45 @@ paste
 "smoothie-like consistency"
 "multitude of individually sealed bags"
 }
+
+pencil
+{
+	"pencil"
+	"pen"
+	"empty bottle"
+	"scrap of paper"
+	"shard of glass"
+}
+
+dusty
+{
+	"dusty"
+	"grimy"
+	"like bloodstains"
+	"like %(honey)"
+	"like %(gravedirt)"
+	"like flies"
+	"like rot"
+	"moldy"
+	"sweaty"
+}
+
+unruly
+{
+	"unruly"
+	"long"
+	"tense"
+	"weird"
+	"demon-filled"
+}
+
+acandle
+{
+	"a candle"
+	"a card"
+	"flowers"
+	"some fresh bread"
+	"a notebook"
+	"some paper"
+	"some scented soaps"
+}
