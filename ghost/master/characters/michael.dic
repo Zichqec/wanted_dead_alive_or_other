@@ -108,7 +108,7 @@ ActiveAgreement.michael
 //How tall are you, and are you flexible about it?
 HowTall.michael
 {
-	"\0\b[0]\s[0]10. \s[6]Not because I think you'll go through with it, but because I'd like to see you try. \s[8]Cut into the wrong bone and it might very well explode! \s[38]Exciting, isn't it?"
+	"\0\b[0]\s[0]Very. \s[6]Not because I think you'll go through with it, but because I'd like to see you try. \s[8]Cut into the wrong bone and it might very well explode! \s[38]Exciting, isn't it?"
 	"\0\b[0]\s[28]You can't even calculate my height when we're in your own office? \s[26]You really are losing your touch, aren't you? Perhaps you should get yourself... \s[28]a calculator! Ha! Imagine!"
 }
 
