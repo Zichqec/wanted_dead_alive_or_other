@@ -213,7 +213,9 @@ EncodeMorse
 			if _output != ""; _output += " "
 			_letter = SUBSTR(_word,_i,1)
 			_index = ASEARCH(TOUPPER(_letter),_letterlist)
-			_output += _codelist[_index]
+			
+			if _index == -1; _output += "#"
+			else; _output += _codelist[_index]
 		}
 	}
 	_output
@@ -298,8 +300,9 @@ MorseList : array
 	"-|-....-"
 	'"|.-..-.'
 	"@|.--.-."
-	"!|-.-.--" //Nonstandard, but probably common enough to want?
+	"!|-.-.--" //Nonstandard, but probably common enough to want
 }
+
 
 
 /*
