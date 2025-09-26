@@ -6,3 +6,12 @@ id,mikaerukokage
 name,michael
 type,shell
 seriko.use_self_alpha,1
+
+sakura.bindoption0.group,Flask,mustselect
+sakura.bindgroup0.name,Flask,Clear
+sakura.bindgroup1.name,Flask,Red
+sakura.bindgroup2.name,Flask,Orange
+sakura.bindgroup3.name,Flask,Yellow
+sakura.bindgroup4.name,Flask,Green
+sakura.bindgroup5.name,Flask,Blue
+sakura.bindgroup6.name,Flask,Purple

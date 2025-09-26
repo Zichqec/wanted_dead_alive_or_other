@@ -43,8 +43,26 @@ surface50-59
 	element0,base,surface5000.png,0,0
 	element1,overlay,surface6003.png,0,0
 
-	animation0.interval,runonce
-	animation0.pattern0,overlay,6005,0,0,0
+	animation0.interval,bind
+	animation0.pattern0,overlay,10000,0,0,0
+	
+	animation1.interval,bind
+	animation1.pattern0,overlay,10001,0,0,0
+	
+	animation2.interval,bind
+	animation2.pattern0,overlay,10002,0,0,0
+	
+	animation3.interval,bind
+	animation3.pattern0,overlay,10003,0,0,0
+	
+	animation4.interval,bind
+	animation4.pattern0,overlay,10004,0,0,0
+	
+	animation5.interval,bind
+	animation5.pattern0,overlay,10005,0,0,0
+	
+	animation6.interval,bind
+	animation6.pattern0,overlay,10006,0,0,0
 }
 
 surface60-69
@@ -118,4 +136,39 @@ surface8,28,38,48,58,68
 surface9,29,39,49,59,69
 {
 	element3,overlay,surface3009.png,0,0
+}
+
+surface10000
+{
+	element0,overlay,flask_colors/clear.png,0,0
+}
+
+surface10001
+{
+	element0,overlay,flask_colors/red.png,0,0
+}
+
+surface10002
+{
+	element0,overlay,flask_colors/orange.png,0,0
+}
+
+surface10003
+{
+	element0,overlay,flask_colors/yellow.png,0,0
+}
+
+surface10004
+{
+	element0,overlay,flask_colors/green.png,0,0
+}
+
+surface10005
+{
+	element0,overlay,flask_colors/blue.png,0,0
+}
+
+surface10006
+{
+	element0,overlay,flask_colors/purple.png,0,0
 }
