@@ -303,8 +303,6 @@ MorseList : array
 	"!|-.-.--" //Nonstandard, but probably common enough to want
 }
 
-
-
 /*
 	REVISED:
 	-1. Collected no responses, act as though this session did not happen (as it likely happened by mistake)
@@ -411,7 +409,6 @@ emdash
 }
 
 //—————————————————————————————— Right click menu links ——————————————————————————————
-
 //Takes an array of alternating names and urls, and formats them for use with the right click menu
 FormatLinks : all
 {
@@ -443,7 +440,7 @@ On_sakura.portalsites
 
 portalsites_sakura : array
 {
-	//""; ""
+	"Leave a Review"; "https://docs.google.com/forms/d/e/1FAIpQLSe1hcIjoxgzboN5UscQ9juKl7eo7THZReinORQnVC9pJUY2Ag/viewform"
 }
 
 On_shellrootbutton.visible
