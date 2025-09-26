@@ -7,17 +7,17 @@ version,0
 
 surface.append0-100,!10
 {
-collision0,179,8,240,92,Horn
-collision1,272,12,318,90,Horn
-collision2,363,238,452,306,Hand
-collision4,62,387,105,454,Hand
-collision5,153,92,216,154,Ear
-collision6,75,352,151,493,Tail
-collision7,7,438,90,494,Tail
-collision9,243,144,273,168,Mouth
-collision10,179,51,314,121,Head
-collision11,156,420,233,550,Leg
-collision12,225,424,285,550,Leg
+//collision0,179,8,240,92,Horn
+//collision1,272,12,318,90,Horn
+//collision2,363,238,452,306,Hand
+//collision4,62,387,105,454,Hand
+//collision5,153,92,216,154,Ear
+//collision6,75,352,151,493,Tail
+//collision7,7,438,90,494,Tail
+//collision9,243,144,273,168,Mouth
+//collision10,179,51,314,121,Head
+//collision11,156,420,233,550,Leg
+//collision12,225,424,285,550,Leg
 }
 
 surface000

@@ -32,3 +32,4 @@ menu.sidebar.alignment,bottom
 
 sakura.bindgroup1000.name,Blossoms,Blossoms
 
+sakura.menu,hidden

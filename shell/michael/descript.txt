@@ -15,3 +15,5 @@ sakura.bindgroup3.name,Flask,Yellow
 sakura.bindgroup4.name,Flask,Green
 sakura.bindgroup5.name,Flask,Blue
 sakura.bindgroup6.name,Flask,Purple
+
+sakura.menu,hidden

@@ -7,7 +7,7 @@ version,1
 
 surface.append0-24
 {
-collision0,79,3,169,40,“ª
-collision1,101,132,154,186,Žè
+//collision0,79,3,169,40,“ª
+//collision1,101,132,154,186,Žè
 }
 

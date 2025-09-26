@@ -34,4 +34,4 @@ sakura.bindoption.group,’…‚¹‘Ö‚¦,multiple
 sakura.bindgroup2.name,’…‚¹‘Ö‚¦,Šá‘Ñ
 sakura.bindgroup3.name,’…‚¹‘Ö‚¦,–‚–@w
 
-
+sakura.menu,hidden

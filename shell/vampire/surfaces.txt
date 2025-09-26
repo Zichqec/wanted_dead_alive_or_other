@@ -316,15 +316,15 @@ animation201.pattern0,overlay,1002,0,0,0
 //ÅîÅîê≥ñ ÅîÅî//
 surface.append0-9,20-58
 {
-collision0,240,28,349,72,Head
-collision1,289,127,323,160,Face
-collision2,242,129,257,159,Face
-collision3,252,153,294,167,Lip
-collision4,248,74,294,99,Deko
-collision5,193,281,337,334,Bust
-collision6,10,486,117,555,Hand
-collision7,211,528,258,585,XXX
-collision8,239,113,247,133,Ear
-collision9,333,104,356,143,Ear
+//collision0,240,28,349,72,Head
+//collision1,289,127,323,160,Face
+//collision2,242,129,257,159,Face
+//collision3,252,153,294,167,Lip
+//collision4,248,74,294,99,Deko
+//collision5,193,281,337,334,Bust
+//collision6,10,486,117,555,Hand
+//collision7,211,528,258,585,XXX
+//collision8,239,113,247,133,Ear
+//collision9,333,104,356,143,Ear
 }
 
