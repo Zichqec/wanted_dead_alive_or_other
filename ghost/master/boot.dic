@@ -90,6 +90,7 @@ OnInitialize
 		LastTalk = ""
 		AcceptedCandidatesToday = 0
 		RejectedCandidatesToday = 0
+		MichaelToday = 0
 		RecentShells = IARRAY
 		ShellsSinceLastMichael = 0
 	}
