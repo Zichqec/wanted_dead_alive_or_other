@@ -144,6 +144,7 @@ OnSeeOldResponses : all
 	_d = "\f[italic,default]\f[color,default]"
 	
 	"\f[align,center]\f[height,+2]\f[bold,1]Candidate #%(_candidatenum)\f[bold,default]\f[height,default]\n %(_statusdisplay) \n\f[align,left]"
+	//if SHIORI3FW.DebugMode; "%(_candidateinfo)\n"
 	
 	switch reference0 <= 0
 	{
@@ -167,7 +168,8 @@ OnSeeOldResponses : all
 		
 		if _candidateshell == "fluffydemon" && _candidatevariant == "2"
 		{
-			"%(_c)%(DecodeMorse(_answers[_i]))%(_d)\n\n"
+			if _answers[_i] == "N/A"; "%(_c)%(_answers[_i])%(_d)\n\n"
+			else; "%(_c)%(DecodeMorse(_answers[_i]))%(_d)\n\n"
 		}
 		else; "%(_c)%(_answers[_i])%(_d)\n\n"
 	}
