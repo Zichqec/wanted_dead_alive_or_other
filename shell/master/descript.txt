@@ -2,8 +2,8 @@ charset,UTF-8
 type,shell
 
 name,master
-craftman,
-craftmanw,
-craftmanurl,
+craftman,Miss
+craftmanw,Miss
+craftmanurl,https://justmissart.carrd.co/
 
 seriko.use_self_alpha,1
