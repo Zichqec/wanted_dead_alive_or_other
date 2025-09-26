@@ -431,7 +431,9 @@ On_sakura.recommendsites
 
 recommendsites_sakura : array
 {
-	"Link label";	"https://link.example.com/link/to/whatever/here/"
+	"Galla";	"https://gallathegalla.github.io/gtg-ghosts/"
+	"Miss";		"https://justmissart.carrd.co/"
+	"Zichqec";	"https://ukagaka.zichqec.com/"
 }
 
 On_sakura.portalsites 
@@ -439,9 +441,7 @@ On_sakura.portalsites
 	FormatLinks(portalsites_sakura)
 }
 
-//These are the websites linked in the second option of the sakura's right click menu. Same as above
 portalsites_sakura : array
 {
-	"Another link label";	"https://link.example.com/link/to/whatever/here/again/"
-	"A third link label";	"https://link.example.com/link/to/whatever/a/third/time/you/can/add/as/many/as/you/want/"
+	//""; ""
 }
