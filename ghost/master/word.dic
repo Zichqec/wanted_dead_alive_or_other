@@ -676,3 +676,83 @@ allgoodcandidatesfiltered
 	"complete chaos outside"
 	"all sorts of vermin showing up"
 }
+
+Hendecagon
+{
+	"Hendecagon"
+	"Dodecagon"
+	"Enneagon"
+	"Pentakaidecagon"
+	"Icosagon"
+	"Digon"
+	"Milliagon"
+	"Octacontagon"
+	"Henagon"
+	"Decakismyriagon"
+	"Quadrilateral"
+	"Aperiogon"
+	"Triangle"
+}
+
+pens
+{
+	"pens"
+	"sticky notes "
+	"tweezers"
+	"highlighters"
+	"snacks"
+	"books"
+	"fungi"
+	"bottled memories"
+	"nail clippings"
+	"keys"
+}
+
+obsession
+{
+	"obsession"
+	"paranoia"
+	"an easily distracted mind"
+	"a lack of discipline"
+	"threats may soon appear"
+	"fear"
+	"insecurity"
+	"inferiority complex"
+}
+
+fetchingcoffee
+{
+	"fetching my coffee"
+	"cleaning the floors"
+	"folding the laundry"
+	"emptying the vats"
+	"alphabetizing the stationary"
+	"opening the door for me"
+	"sniff checking my lab coats"
+}
+
+gumballs
+{
+	"gumballs"
+	"gummy worms"
+	"fish hooks arranged in a neat row by color and size"
+	"rubber bands"
+	"demon bile"
+	"catnip"
+	"ice cubes"
+	"dice"
+	"chocolate coins"
+	"clicky pens"
+	"unclicky pens"
+	"beige corn flakes"
+	"post-it notes"
+	"nail clippings"
+	"chia seeds"
+	"whiskers"
+	"pencil erasers"
+	"pencil shavings"
+	"used matches"
+	"chewed gum"
+	"yarn"
+	"replica %(bodyparts)"
+}

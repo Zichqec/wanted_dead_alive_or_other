@@ -21,7 +21,11 @@ Rejected.michael
 
 RandomTalk.michael : nonoverlap
 {
-	"\0\b[0]\s[8]bitch"
+	"\0\b[0]\s[37]All of the pomp and circumstance is what's wrong with this little ""necromancy"" hobby of yours, if you weren't aware. \s[27]You've got so much showmanship involved, so much time wasted with those advertisements, and putting on this pretty little interviewer face of yours. \s[31]Then the ritual! Sigils and spells and supplies, it's endless!\n\n \s[28]This is all further proof that, unlike with the ""art"" of ""necromancy"", true progress can only be found within the study of the Necrotic Sciences."
+	"\0\b[0]\s[29]What is that... thing you're doodling? Some sort of polygon? \s[27]Why does it have so many sides?\n\n \s[1]...? %(Hendecagon)?\n\n \s[3]You've made that up... \w8That isn't real..."
+	"\0\b[0]\s[38]Yoink!\n\n \s[8]Oh, don't look at me like that. \s[26]I know that you know that I know that you know that I take your good %(pens) whenever I'm here. \s[35]It's part of the procedure."
+	"\0\b[0]\s[29]If I were you, I would consider creating a secretary to help manage the line out there. \s[9]People get so restless when left to their own devices.\n\n \s[20]Granted, seating may help as well. Or the availability of any drinks, \w8or snacks, \w8or restroom, \w8or scratching post, \w8or any entertainment whatsoever..."
+	"\0\b[0]\s[69]Hmm... mhm... \w[66]fascinating... ""Subject's attention... is fixated on me... whenever I move... \s[68]Behavior suggests... %(obsession)..."""
 }
 
 //Name?
@@ -80,6 +84,7 @@ AllergicReactions.michael
 {
 	"\0\b[0]\s[26]If it makes things inconvenient for you? Yes."
 	"\0\b[0]\s[9]You'd like it if I were, wouldn't you? \s[6]Tragically, my immune system has completely normal responses to all known allergens. \s[36]And, I have medications for the unknown ones!"
+	"\0\b[0]\s[9]Ah? \s[29]Allergic reactions? \s[26]Quite the facinating little quirk of the immune system. And such a variety of symptoms! \s[25]There truly is a treasure trove of tests one could perform in this regard!\n\n \s[30]As for myself, ha, no. \s[38]No, I haven't had any reactions since I surgically removed my allergies!"
 }
 
 //Are you immortal?
@@ -146,35 +151,37 @@ SeeSelfTenYears.michael
 //Are you currently taking any medications?
 TakingMeds.michael
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[28]Oh! That just gave me a fantastic idea!\n\n \s[38]What if, instead of \f[italic,1]me\f[italic,default] listing my medications for \f[italic,1]you\f[italic,default] to review... \s[36]You tell me what you want me to take, and I'll tell you what assuredly horrific thing will happen to me if I do!"
 }
 
 //On a scale of 1 to 10, how likely are you to start rotting on a hot day?
 LikelyToRot.michael
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[27]... Are you inquiring about ""rotting"" in the sense of one's health status, or in the sense of heat sensitivity?\n\n \s[9]I'm sure you're aware that vague or difficult to understand questionnaires can completely contaminate a data pool. \s[29]Or, to put it another way...\n\n \s[37]If you mean to ask if someone is dead, or suffering from some manner of necrotizing tissue, then ask that. \s[39]But if you mean to ask how likely someone is to die from the heat and then naturally begin to rot, that's going to get you completely different answers.\n\n \s[7]And, yes, I \f[italic,1]am\f[italic,default] irritated after explaining all of that."
 }
 
 //Do you have prior history with eldritch horrors?
 HistoryEldritchHorrors.michael
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[9]Yes, yes. Eldritch horrors, eldritch horses, eldritch hornets, \s[27]eldritch hills, eldritch harps, eldritch hawks, \s[31]eldritch hats, eldritch houses, eldritch hardware, \s[29]eldritch highways, eldritch hares, eldritch hospitals, \s[26]eldritch hearts, eldritch helicopters, eldritch hamburgers..."
 }
 
 //Are there any colors or textures that should be kept out of your enclosure?
 ColorsTextures.michael
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[6]Yes, actually. \s[20]Whatever color describes all of your... \w8\s[28]everything. \s[38]Keep that one away from me."
 }
 
 //What does your diet primarily consist of currently, and how willing are you to tolerate a permanent change?
 PrimaryDiet.michael
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[9]Currently? \w8\w8\s[0]Your annoyance.\n\n \w8\w8\s[6]No, I'm not looking for that to change."
 }
 
 //How would you like to be compensated for your assistance today?
 HowCompensate.michael
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[67]I want your funding.\n\n \s[62]I don't know who in their right mind is funneling the vaults of money you need to keep this mess running. \s[68]And, despite my morbid, ha, curiosity, I don't \f[italic,1]really\f[italic,default] care, either!\n\n \s[69]But I do want it. \w8\w8\s[66]At minimum, I would say that half of your mysteriously acquired funding henceforth would be sufficient for my participation."
+	"\0\b[0]\s[35]The most important part of our negotiation! \s[30]Allow me to keep this simple...\n\n \w8\w8\s[36]I'll take you as my eternal servant, and \f[italic,1]you\f[italic,default] will do what I command, when I command it.\n\n \w8\s[20]Now, now, don't look so dour about it! \s[28]I'm not a monster! \s[26]I won't make you do anything beyond your capabilities, and I won't punish you for complaining. \s[0]You might even enjoy it. Perhaps you'll find %(fetchingcoffee) to be more rewarding than you expect."
+	"\0\b[0]\s[26]50 lbs. of %(gumballs), delivered to my doorstep within the week. \w8\w8\w8\s[28]No, I will not elaborate! \s[38]Take it or leave it!"
 }
