@@ -18,7 +18,7 @@ Questions : array
 	"How tall are you, and are you flexible about it?"
 	"On a scale of 1 to 100, how many pounds of mass are you willing to potentially lose during the course of this experiment?"
 	"Would you describe yourself as being made of flesh?"
-	"Do you often use your %(bodypart)?"
+	"Do you often use your %(bodyparts)?"
 	"On a scale of 1 to 10, how much do you prioritize maintaining your current form?"
 	"How long have you resided in this reality?"
 	"Where do you see yourself in 10 years? Would it change if %(concerningoutcome)?"
@@ -166,7 +166,7 @@ concerningoutcome
 {
 	"you were permanently ejected from this reality"
 	"the planet cracked open like an egg"
-	"your %(bodypart) shrunk by 50-60%"
+	"your %(bodyparts) shrunk by 50-60%"
 	"time dilation turned every minute into an entire day"
 	"you had a voice in your head constantly listing out various facts about your internal state, such as your internal bodily temperature and how many minutes since you last slept"
 	"you were upside down"
@@ -506,7 +506,7 @@ alldied
 {
 	"all died"
 	"rejected my offer to stay on for another experiment for further compensation"
-	"run out of usable %(bodypart)"
+	"run out of usable %(bodyparts)"
 	"gotten lost beyond the veil"
 	"melted together into a horrible mutant that now lives in the basement with the others"
 	"punched a hole in the wall and escaped"
@@ -514,7 +514,7 @@ alldied
 	"stopped breathing"
 	"decided to return home to their families"
 	"freaked out and demanded to be let go"
-	"been so upset about learning how useful %(bodypart) are"
+	"been so upset about learning how useful %(bodyparts) are"
 	"disappeared mysteriously"
 	"vanished without a trace"
 	"gotten into the solvents"
@@ -523,7 +523,7 @@ alldied
 madegoodpracticematerial
 {
 	"they made good practice material"
-	"I was able to get some %(bodypart) for later use"
+	"I was able to get some %(bodyparts) for later use"
 	"I got a chance to practice some of my lesser-used techniques"
 	"they agreed to leave good reviews"
 	"I got to demo some new techniques that may help with later work"
