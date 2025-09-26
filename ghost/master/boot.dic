@@ -13,6 +13,9 @@ OnFirstBoot : all
 	RejectedCandidatesTotal = 0
 	RejectedCandidatesToday = 0
 	RejectedCandidatesLast = 0
+	MichaelTotal = 0
+	MichaelToday = 0
+	MichaelLast = 0
 	Candidate.Variant = 0
 	Candidate.Num = 0
 	Candidate.Status = -1 //-1 undetermined, 0 rejected, 1 accepted, 2 michael??

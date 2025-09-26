@@ -331,10 +331,10 @@ CalculateExperimentSuccess
 	LOGGING("====================================================================")
 	_acceptednum = 0
 	_rejectednum = 0
+	_michaelnum = 0
 	_gooddecisions = 0
 	_baddecisions = 0
 	_noanswers = 0
-	_responsenum = ARRAYSIZE(PreviousResponses)
 	//Don't forget michael lol, he does NOT count towards ANYTHING
 	
 	foreach PreviousResponses; _response
@@ -345,7 +345,9 @@ CalculateExperimentSuccess
 		
 		if _candidatestatus == 0; _rejectednum++
 		elseif _candidatestatus == 1; _acceptednum++
+		elseif _candidatestatus == 2; _michaelnum++
 		//NO MICHAEL ... actually TODO maybe he needs to count as a rejection? But also a good decision... hm!
+		//I guess not otherwise he'll really throw things off lol
 		
 		_asked = 0
 		foreach _answers; _answer
@@ -362,15 +364,18 @@ CalculateExperimentSuccess
 	
 	AcceptedCandidatesLast = _acceptednum
 	RejectedCandidatesLast = _rejectednum
+	MichaelLast = _michaelnum
+	
+	_nonmichaels = _acceptednum + _rejectednum
 	
 	if _acceptednum == 0; 0 //"Accepted no candidates"
 	elseif _acceptednum < 5; 1 //"Not enough candidates"
 	elseif _acceptednum == _noanswers; 2 //"No filtering"
 	else
 	{
-		_rejectionsrequired = CEIL(TOREAL(_responsenum) / 3)
-		_gooddecisionsrequired = CEIL(TOREAL(_responsenum) / 2)
-		_verygooddecisionsrequired = (CEIL(TOREAL(_responsenum) / 3) * 2) //2/3 I hope?
+		_rejectionsrequired = CEIL(TOREAL(_nonmichaels) / 3)
+		_gooddecisionsrequired = CEIL(TOREAL(_nonmichaels) / 2)
+		_verygooddecisionsrequired = (CEIL(TOREAL(_nonmichaels) / 3) * 2) //2/3 I hope?
 		
 		LOGGING("_gooddecisions: %(_gooddecisions)")
 		LOGGING("_gooddecisionsrequired: %(_gooddecisionsrequired)")

@@ -86,7 +86,16 @@ OnAskQuestion : all
 OnNextCandidate : all
 {
 	"\t"
-	if reference0 == "accept"
+	if CurrentShell == "michael"
+	{
+		Candidate.Status = 2
+		MichaelTotal++
+		MichaelToday++
+		
+		if reference0 == "accept"; Accepted.michael
+		else; Rejected.michael
+	}
+	elseif reference0 == "accept"
 	{
 		Candidate.Status = 1
 		AcceptedCandidatesTotal++
@@ -126,10 +135,10 @@ OnSeeOldResponses : all
 	_candidateshell = _candidateinfo[2]
 	_candidatevariant = _candidateinfo[3]
 	
-	_statusdisplay = "[VANISHED]"
+	_statusdisplay = "[VANISHED]" //Shouldn't appear
 	if _candidatestatus == 0; _statusdisplay = "[REJECTED]"
 	elseif _candidatestatus == 1; _statusdisplay = "[ACCEPTED]"
-	elseif _candidatestatus == 2; _statusdisplay = "[MICHAEL]" //???
+	elseif _candidatestatus == 2; _statusdisplay = "[CONDEMNED]"
 	
 	_c = "\f[color,disable]\f[italic,1]"
 	_d = "\f[italic,default]\f[color,default]"
@@ -175,12 +184,14 @@ OnViewStats : all
 	
 	"Candidates accepted: %(AcceptedCandidatesToday)\n"
 	"Candidates rejected: %(RejectedCandidatesToday)\n"
+	if MichaelToday > 0; "Michael: %(MichaelToday)\n"
 	"\n\n"
 	
 	"\f[align,center]\f[height,+2]\f[bold,1]Previous experiment\f[bold,default]\f[height,default]\n\f[align,left]\n"
 	
 	"Candidates accepted: %(AcceptedCandidatesLast)\n"
 	"Candidates rejected: %(RejectedCandidatesLast)\n"
+	if MichaelLast > 0; "Michael: %(RejectedCandidatesLast)\n"
 	"\n"
 	_resultnum = LastExperimentResult
 	_result = "\f[bold,1]Inconclusive\f[bold,default] %(emdash) No experiment could be performed due to no candidates being accepted."
@@ -197,6 +208,7 @@ OnViewStats : all
 	
 	"Candidates accepted: %(AcceptedCandidatesTotal)\n"
 	"Candidates rejected: %(RejectedCandidatesTotal)\n"
+	if MichaelTotal > 0; "Michael: %(MichaelTotal)\n"
 	"\n"
 	
 	_successes = ExperimentResults[4] + ExperimentResults[5]
