@@ -370,7 +370,7 @@ PrimaryDiet.vampire
 //How would you like to be compensated for your assistance today?
 HowCompensate.vampire
 {
-	"\0\b[0]\s[2]Ah... my request is quite simple. \w8\s[8]I would like a modest sample of blood from each of the other applicants you approve, stored securely in discrete blood bags and stowed in a chilled container for transport to my home.\n\n \w8\w8\s[2]This should be a simple matter, no?"
+	"\0\b[0]\s[2]Ah... my request is quite simple. \w8\s[8]I would like a modest sample of blood from each of the other applicants you approve, stored securely in discrete blood bags and stowed in a chilled container for transport to my home.\n\n \w8\w8\s[2]This should be a simple matter for one such as yourself, I hope?"
 	"\0\b[0]\s[2]Yes, compensation... \s[8]I would like the opportunity to speak with the other participants in this experiment, to create my own deals with them.\n\n \w8\w8\s[2]Worry not, I'll not interfere with your plans... no agreements of mine will come into effect until we have dispersed."
 	"\0\b[0]\s[2]Hm... yes, now that I have had a chance to assess you for myself, I do believe you would be suitable. \w8\s[0]I am seeking new vampiric companions and wish to extend this opportunity to you.\n\n \w8\w8\s[8]Yes, indeed, you may consider this your own interview as well. \s[9]Accept me, and I will accept you into my fold... \s[21]You will live a life filled with the greatest finery the world has to offer, with a stable blood supply and safety from the harsh rays of the sun.\n\n \w8\w8\s[2]You may take time to consider my offer... I understand that the prospect of embracing immortality is a daunting one when you are used to thinking on a human timescale."
 }
