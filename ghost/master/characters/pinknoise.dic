@@ -14,7 +14,7 @@ Accepted.pinknoise
 {
 	"\0\b[0]\s[5035]Hooray! \s[2035]I'm so glad we'll be spending time together!%(br)\w8\s[1008]I'll just wait over here out of the way, don't mind me!"
 	"\0\b[0]\s[2035]Yay! \s[5035]I did it, I did it! \s[3035]I knew I'd convince you!\n\n \w8\w8\s[1009]I'll go and get my stuff set up in my room straight away."
-	"\0\b[0]\s[]"
+	"\0\b[0]\s[2035]Great! \w8\s[1009]I'll just be over there, then, watching the rest of your interviews. \w8\s[5035]Good luck!"
 }
 
 Rejected.pinknoise
