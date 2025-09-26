@@ -530,3 +530,34 @@ madegoodpracticematerial
 	"I got a chance to organize some of my paperwork a bit better"
 	"they didn't scream"
 }
+
+besetonfire
+{
+"be set on fire"
+"have to search for every last finger in the bellies of the local bass"
+"meet the dumpster again, in a %(paste) this time"
+"be turned into a wax statue"
+"be fed to the monsters in the basement"
+"have a curse placed on me for a thousand years"
+"be tied up and hung from the ceiling by my feet"
+"have all of my limbs rearranged"
+"become a massive contamination in the local water source that causes innumerable cases of deadly infections"
+"become an unsolvable mystery in 60 years when someone decides to rennovate their yard and uncovers humanoid bones beneath the shed"
+"be the direct cause of lung cancer in some poor unknown chimney sweep"
+"left in a vat of %(honey)"
+"poisoned with righteous fury like the vermin I am"
+"be subject to a double hemispherectomy"
+"be sacrificed to one of the much more pleasant demons waiting in line"
+"be beaten to death with your own two hands, so help you, you have reached your limit and it is time to get personal"
+}
+
+paste
+{
+"paste"
+"powder"
+"mush"
+"mince"
+"pile of diced meat cubes"
+"smoothie-like consistency"
+"multitude of individually sealed bags"
+}
