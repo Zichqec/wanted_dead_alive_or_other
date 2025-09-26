@@ -33,3 +33,4 @@ sakura.bindgroup5.default,0
 sakura.bindgroup6.default,0
 
 sakura.menu,hidden
+menu,hidden

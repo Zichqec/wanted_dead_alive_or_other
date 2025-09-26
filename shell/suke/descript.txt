@@ -4,3 +4,6 @@ name,suke
 type,shell
 craftmanw,Nollety
 craftmanurl,http://nore.bake-neko.net/
+
+sakura.menu,hidden
+menu,hidden

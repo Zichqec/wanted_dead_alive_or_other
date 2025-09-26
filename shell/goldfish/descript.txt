@@ -26,3 +26,6 @@ menu.background.font.color.b,40
 menu.foreground.font.color.r,20
 menu.foreground.font.color.g,25
 menu.foreground.font.color.b,30
+
+sakura.menu,hidden
+menu,hidden

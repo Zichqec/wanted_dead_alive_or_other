@@ -40,3 +40,6 @@ menu.disable.font.color.g,135
 menu.disable.font.color.b,135
 
 seriko.use_self_alpha,1
+
+sakura.menu,hidden
+menu,hidden

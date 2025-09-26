@@ -25,4 +25,5 @@ sakura.bindgroup200.default,1
 sakura.bindoption1.group,Šç,multiple
 
 sakura.menu,hidden
+menu,hidden
 //####•K—v‚È‚¯‚ê‚Îí‚Á‚Ä‰º‚³‚¢

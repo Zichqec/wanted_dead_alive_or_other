@@ -7,3 +7,6 @@ craftmanw,Miss
 craftmanurl,https://justmissart.carrd.co/
 
 seriko.use_self_alpha,1
+
+sakura.menu,hidden
+menu,hidden

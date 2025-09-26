@@ -445,3 +445,8 @@ portalsites_sakura : array
 {
 	//""; ""
 }
+
+On_shellrootbutton.visible
+{
+	0
+}
