@@ -1,21 +1,27 @@
 SurfaceRestore.pinknoise
 {
-	"\1\s[-1]\0\s[0]"
+	"\1\s[-1]\0\s[1008]"
 }
 
 Greeting.pinknoise
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[1008]... Hello again."
+	"\0\b[0]\s[2035]Hi!"
+	"\0\b[0]\s[39]The line out there is \f[italic,1]so\f[italic,default] long... \w8\s[70]but... \s[2035]It was worth it to see you again!"
 }
 
 Accepted.pinknoise
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[5035]Hooray! \s[2035]I'm so glad we'll be spending time together! \w8\s[1008]I'll just wait over here out of the way, don't mind me!"
+	"\0\b[0]\s[2035]Yay! \s[5035]I did it, I did it! \s[3035]I knew I'd convince you!\n\n \w8\w8\s[1009]I'll go and get my stuff set up in my room straight away."
+	"\0\b[0]\s[]"
 }
 
 Rejected.pinknoise
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[5034]No way! \s[5033]You can't be serious...\n\n \w8\w8\s[1009]Well, it's ok. \s[1035]I'll get back in line!"
+	"\0\b[0]\s[2034]No?? \w8\s[4004]But why not...?\n\n \w8\w8\w8\s[4006]... Alright, well, \w4\s[2009]I'll make it work. \s[2035]You'll see!"
+	"\0\b[0]\s[2030]I thought you might say that... \w8\s[3000]Sometimes you're really predictable, you know!\n\n \w8\w8\s[4029]Well, it is what it is... \s[4028]Once you've made up your mind, you never change it, at least until I've gone out the door. \w8\s[35]So, I'll be back later in case you reconsider!"
 }
 
 RandomTalk.pinknoise : nonoverlap
@@ -26,55 +32,72 @@ RandomTalk.pinknoise : nonoverlap
 //Name?
 Name.pinknoise
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[2035]Oh, it's just me!"
+	"\0\b[0]\s[1009]Oh, you know..."
+	"\0\b[0]\s[5035]Haha, you're always asking me that!"
 }
 
 //Age?
 Age.pinknoise
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[1070]I've told you this one before..."
+	"\0\b[0]\s[2035]It hasn't changed since last time!"
+	"\0\b[0]\s[1020]The same as before."
 }
 
 //Is this your first time working with us?
 FirstTime.pinknoise
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[5035]Haha, good one!"
+	"\0\b[0]\s[5035]Oh, we've worked together lots of times before!"
+	"\0\b[0]\s[2009]Of course we work together! \s[5035]But if it makes you feel better to ask, I'll keep answering!"
 }
 
 //Have you died before?
 DiedBefore.pinknoise
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[1070]Well... \w8\s[1035]you keep track of that yourself, don't you?"
+	"\0\b[0]\s[2035]Oh yeah, I keep track in my diary!"
+	"\0\b[0]\s[5035]Of course, all the time!"
 }
 
 //Are you currently under the effect of any curses?
 AnyCurses.pinknoise
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[1009]Nothing new!"
+	"\0\b[0]\s[1020]Just the usual!"
+	"\0\b[0]\s[5035]Only the ones you've already got on file for me!"
 }
 
 //Do you have any peculiarities with your body parts that we should be aware of?
 PeculiaritiesBodyParts.pinknoise
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[2002]Ummm... \w8\w8\s[3002]you said something about this last time and now I don't remember. \w8\w8\s[2035]Oopsie!"
+	"\0\b[0]\s[1021]Not really!"
+	"\0\b[0]\s[5035]If there's anything of note, I'm sure you remember it!"
 }
 
 //Do you have your own teeth? If 'no', and you have teeth upon your person, are they from a reputable source?
 OwnTeeth.pinknoise
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[2002]I still have some of them, yeah. \w8\s[5035]You took the others, but that's fine!"
+	"\0\b[0]\s[2035]I have some of them! \w8\s[3009]You have the others."
+	"\0\b[0]\s[2009]I still have the ones you left me with!"
 }
 
 //Do you require food, water, and/or charging (electrical or otherwise) for the duration of your stay?
 RequireFoodWaterCharging.pinknoise
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[5035]The usual, please!"
+	"\0\b[0]\s[1009]You know what I like."
+	"\0\b[0]\s[1035]Nothing fancy, just the usual, thanks!"
 }
 
 //Do you have allergic reactions to (word group)?
 AllergicReactions.pinknoise
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[2026]Nope."
+	"\0\b[0]\s[3035]Oh yeah, we found out for sure last time, didn't we?"
 }
 
 //Are you immortal?

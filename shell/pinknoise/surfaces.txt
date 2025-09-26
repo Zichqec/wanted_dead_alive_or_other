@@ -3,6 +3,8 @@ charset,Shift_JIS
 descript
 {
 	version,1
+	//satolist.palette.offset,119,9
+	//satolist.palette.frame,100,100
 }
 
 //sakura‘¤G‚è”»’è
