@@ -5,136 +5,142 @@ SurfaceRestore.michael
 
 Greeting.michael
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[69]Stains... unchanged... Protective dust layer... untouched... Smell... \s[66]vile, as always...\n\n \w8\w8\s[68]Oh, have you decided to grace me with your attention? What a joy! \s[6]I was noting how \f[italic,1]spectacularly\f[italic,default] your janitorial staff have been taking care of the place. \s[29]A little less than \f[italic,1]sterile\f[italic,default] conditons, isn't it? \s[6]Ah, but we know better than to expect much from your minions, don't we?\n\n \s[0]Let's get down to business, then!"
+	"\0\b[0]\s[8]My turn? Perfect! I have something to speak with you about.\n\n \s[56]Take a look at this. I took it upon myself to conduct a little experiment while you had me waiting. \s[50]Did you know that if you took a little spit, or equivalent bodily fluid, from every single person in line right now, it would average out to \f[italic,1]this\f[italic,default] color and consistency? \s[55]Fascinating, isn't it?\n\n \s[59]I will say... \s[52]it tastes absolutely disgusting.\n\n \s[56]However, you can have my results and methodology if \f[italic,1]you\f[italic,default] give it a taste."
 }
 
 Accepted.michael
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[26]Oh? I'm surprised. \s[20]I wasn't sure if you were in the mood to accept that you need my expertise if you're going to make any progress on your current thesis.\n\n \s[47]Do you mind if I smoke? \w8\w8\s[48]Ha! Like I care what you say. \n\nAha, ha... \s[46]Eheheh...\n\n \w8\s[47]...\n\n \w8\w8\w8\s[49]No, of course I'm not going to \f[italic,1]participate\f[italic,default]. \s[47]I have more important things to do than spend an assuredly inefficient number of weeks... \s[42]\f[italic,1]humoring you\f[italic,default].\n\n \s[46]I've played with you quite enough for one day. This has been a fun break, but I really must get back to work! \s[48]Until next time!"
 }
 
 Rejected.michael
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[6]Yes, yes, I'm ""a poor fit for the current study"", my ""described physiology does not match what is required"" for your planned experiments, and if I ever come back, I will... \s[21]""%(besetonfire)"". \s[35]Nothing I haven't heard before.\n\n \s[0]Your originality, or lackthereof, is a disappointment. \s[6]As is always the case.\n\n \s[68]Regardless, I've gotten what I came for! \s[66]Every visit further confirms how hopeless it is to think that you would \f[italic,1]ever\f[italic,default] develop your procedures in a positive manner.\n\n \s[60]I'll be sure to nail the paper to your door once it's published. \s[68]Until next time!"
 }
 
 RandomTalk.michael : nonoverlap
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[8]bitch"
 }
 
 //Name?
 Name.michael
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[30]The true question at hand is:\w8 what \f[italic,1]is\f[italic,default] a name? \s[36]Or rather, what is the \f[italic,1]purpose\f[italic,default] of a name? \w8\s[38]To identify one another, of course!\n\n \s[20]Do you mean to tell me that, after all these years we've known one another, you still struggle to identify who I am? \s[26]How strange, seeing as I seem to recall a certain someone, specifically you, casting a hex on a certain someone else, specifically me, so that you could find me regardless of what name or face I happen to be using.\n\n \s[6]I've always found it to be concerningly obsessive of you... \s[5]and, admittedly, flattering.\n\n \s[9]But to think you would suggest you no longer have such a hex in place! \s[7]That we have been reduced to such a... banal social exchange as to... \s[3]As to need to ask for one another's names! \s[23]What cruel fate has reduced you so?\n\n \s[21]Worry not, \f[italic,1]old friend\f[italic,default]. You can count on me to help you regain your former intellect.\n\n \s[20]... \s[30]Given how little there is to recover, this shouldn't be too difficult."
 }
 
 //Age?
 Age.michael
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[26]If we're judging by my abundant wisdom and breadth of knowledge, then \f[italic,1]much\f[italic,default] older than \f[italic,1]you\f[italic,default]."
+	"\0\b[0]\s[26]If we're judging by my robust physique and enviable hairline, then \f[italic,1]much\f[italic,default] younger than \f[italic,1]you\f[italic,default]."
+	"\0\b[0]\s[6]Guess.\n\n \s[26]No, really. \w8\s[28]\f[bold,1]guess\f[bold,default].\n\n \w8\w8\s[8]Ha! Wrong! Better luck next time."
 }
 
 //Is this your first time working with us?
 FirstTime.michael
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[4]Working with \f[italic,1]you\f[italic,default]? \s[24]\f[bold,1]Me\f[bold,default] working with \f[italic,1]you\f[italic,default]?\n\n \s[64]I \f[italic,1]have\f[italic,default] to write this down. ""Necromancer... was intentionally funny... for the first time... ever."""
+	"\0\b[0]\s[8]Aha! No! \s[28]I never have, and never will. \s[26]Working \f[italic,1]against\f[italic,default] you, however, and in your own facilities? \s[20]Naturally, we've done this many, many times before."
 }
 
 //Have you died before?
 DiedBefore.michael
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[7]I would think \f[italic,1]you\f[italic,default], of all people, would know the answer to that.\n\n \s[30]But since you do not, I'll make this perfectly clear:\w8 \s[38]Many attempts have been made! \s[36]Many have succeeded!\n\n \s[37]\f[bold,1]None\f[bold,default] have \f[italic,1]kept\f[italic,default] me dead... \s[20]but you're welcome to continue trying."
 }
 
 //Are you currently under the effect of any curses?
 AnyCurses.michael
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[29]Only the ones you've put on me.\n\n \s[20]I presume I don't need to remind you what those are."
 }
 
 //Do you have any peculiarities with your body parts that we should be aware of?
 PeculiaritiesBodyParts.michael
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[6]Of course.\n\n \s[0]... Why would I ever tell you what they are? \s[38]It's exponentially more fun to catch you by surprise!"
 }
 
 //Do you have your own teeth? If 'no', and you have teeth upon your person, are they from a reputable source?
 OwnTeeth.michael
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[28]These? They're originals! \s[25]You may have stopped seeing our dentist, but I haven't. \s[28]And as always, my diligence pays off!\n\n \s[26]Now, where have \f[italic,1]your\f[italic,default] original teeth gone, hm? \s[30]I haven't seen them in quite some time. You didn't lose them, did you?\n\n \s[20]What a waste."
 }
 
 //Do you require food, water, and/or charging (electrical or otherwise) for the duration of your stay?
 RequireFoodWaterCharging.michael
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[1]As far as you're concerned, I require absolutely nothing.\n\n \s[7]How does the saying go? Sneak poison into my breakfast, shame on me. \s[27]Sneak poison into my sports drink, also shame on me. I should have seen that one coming. \s[21]Sneak poison into my birthday cake, I will admit, a triple shame on me, regardless of how good it tasted. \s[24]Sneak poison into my cold medicine... quadruple shame on me. It was a mistake to call you while I was ill.\n\n \s[31]However! You are \f[bold,1]not\f[bold,default] getting away with it again!"
 }
 
 //Do you have allergic reactions to (word group)?
 AllergicReactions.michael
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[26]If it makes things inconvenient for you? Yes."
+	"\0\b[0]\s[9]You'd like it if I were, wouldn't you? \s[6]Tragically, my immune system has completely normal responses to all known allergens. \s[36]And, I have medications for the unknown ones!"
 }
 
 //Are you immortal?
 Immortal.michael
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[26]Since you've killed me before, I can't be.\n\n \s[28]Then again, if I'm still alive, I must be!\n\n \s[25]What should we make of that, hm?"
 }
 
 //How many times on average do you regenerate limbs in a year?
 RegenerateLimbs.michael
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[20]What a clever question! \s[26]One I cannot answer without giving you far more information than I'd like you to have.\n\n \s[39]After all, you've already learned from our previous encounters what my natural rate of regeneration is. \s[37]If I tell you the honest answer, you'll be able to use that to figure out what my capacity for tool assisted regeneration is. \s[27]If you figure out the capacity, you can then estimate the space required for that much machinery, and knowing \f[italic,1]that\f[italic,default], you can then compare those numbers to your poorly crafted blueprints of my various laboratories that I know you have inside your desk.\n\n \s[1]Giving you enough information from a single question to know where you need to target your attacks in order to incapacitate me for as long as possible? \s[2]Bleh! What a nightmare!\n\n \s[7]No, I don't think I want to give you the chance. Ask a different one."
 }
 
 //Do you have an active agreement or similar with (word group)?
 ActiveAgreement.michael
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[7]No. \w8\w8\w8\w8\s[26]What? Were you expecting more elaboration? \s[28]Perhaps some gloating about how much more personable I am, and how many more contracts I have under my belt?\n\n \s[0]So sorry to disappoint, \s[7]but I don't conduct my business like you do."
 }
 
 //How tall are you, and are you flexible about it?
 HowTall.michael
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[0]10. \s[6]Not because I think you'll go through with it, but because I'd like to see you try. \s[8]Cut into the wrong bone and it might very well explode! \s[38]Exciting, isn't it?"
+	"\0\b[0]\s[28]You can't even calculate my height when we're in your own office? \s[26]You really are losing your touch, aren't you? Perhaps you should get yourself... \s[28]a calculator! Ha! Imagine!"
 }
 
 //On a scale of 1 to 100, how many pounds of mass are you willing to potentially lose during the course of this experiment?
 LoseMass.michael
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[6]My form has been streamlined through many years of intricate effort. Unlike some people, \s[8]specifically you, \s[6]every ounce of muscle, bone, fat, organs, and implants in my body exist to ensure that everything I do, I do with a body that I have deemed most suitable for my work. \s[38]Furthermore...!\n\n \s[39]... Ah. \s[29]Wait a moment... \s[27]You mean that you plan to amputate some limbs, don't you?\n\n \w8\w8\w8\s[0]Yes, this is acceptable."
 }
 
 //Would you describe yourself as being made of flesh?
 MadeOfFlesh.michael
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[29]85% yes, 15% no. \s[30]Specificity is important."
 }
 
 //Do you often use your (bodypart)?
 OftenUseBodyPart.michael
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[26]Yes, indeed. I'm afraid I don't have any spares for you. \s[28]Poor thing!"
 }
 
 //On a scale of 1 to 10, how much do you prioritize maintaining your current form?
 PrioritizeCurrentForm.michael
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[0]Surely you can see that my form is perfectly suited for most needs?\n\n \s[27]... Perhaps you can't, considering the one you've chosen to maintain. \s[31]At minimum, I strongly suggest you reconsider your current number of fingers."
 }
 
 //How long have you resided in this reality?
 ResidedThisReality.michael
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[29]I've been known to take the occasional vacation outside of it, but as for my primary place of residence? \s[20]It has always been this, our currently shared reality.\n\n \s[36]I can hardly call any reality home if it doesn't have such an easy target for me to perturb! \s[38]I specifically mean you, of course. Ha!"
 }
 
 //Where do you see yourself in 10 years? Would it change if (word group)?
 SeeSelfTenYears.michael
 {
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[27]I've bounced back from worse circumstances than that before. A few complications to sort out, but... \s[36]I'm certain I and my labs would be back up and running in no time."
 }
 
 //Are you currently taking any medications?
