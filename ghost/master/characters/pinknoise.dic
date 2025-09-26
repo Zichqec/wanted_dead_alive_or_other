@@ -6,8 +6,8 @@ SurfaceRestore.pinknoise
 Greeting.pinknoise
 {
 	"\0\b[0]\s[1008]... Hello again."
-	"\0\b[0]\s[2035]Hi!"
-	"\0\b[0]\s[39]The line out there is \f[italic,1]so\f[italic,default] long... \w8\s[70]but... \s[2035]It was worth it to see you again!"
+	"\0\b[0]\s[2035]Hi! I got bored and came to see you again!"
+	"\0\b[0]\s[1008]... \w8\s[39]The line out there is \f[italic,1]so\f[italic,default] long... \w8\s[70]but... \s[2035]It was worth it to see you again!"
 }
 
 Accepted.pinknoise
