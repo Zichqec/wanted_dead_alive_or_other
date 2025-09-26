@@ -183,5 +183,5 @@ HowCompensate.michael
 {
 	"\0\b[0]\s[67]I want your funding.\n\n \s[62]I don't know who in their right mind is funneling the vaults of money you need to keep this mess running. \s[68]And, despite my morbid, ha, curiosity, I don't \f[italic,1]really\f[italic,default] care, either!\n\n \s[69]But I do want it. \w8\w8\s[66]At minimum, I would say that half of your mysteriously acquired funding henceforth would be sufficient for my participation."
 	"\0\b[0]\s[35]The most important part of our negotiation! \s[30]Allow me to keep this simple...\n\n \w8\w8\s[36]I'll take you as my eternal servant, and \f[italic,1]you\f[italic,default] will do what I command, when I command it.\n\n \w8\s[20]Now, now, don't look so dour about it! \s[28]I'm not a monster! \s[26]I won't make you do anything beyond your capabilities, and I won't punish you for complaining. \s[0]You might even enjoy it. Perhaps you'll find %(fetchingcoffee) to be more rewarding than you expect."
-	"\0\b[0]\s[26]50 lbs. of %(gumballs), delivered to my doorstep within the week. \w8\w8\w8\s[28]No, I will not elaborate! \s[38]Take it or leave it!"
+	"\0\b[0]\s[26]50 lbs.\_w[0] of %(gumballs), delivered to my doorstep within the week. \w8\w8\w8\s[28]No, I will not elaborate! \s[38]Take it or leave it!"
 }
