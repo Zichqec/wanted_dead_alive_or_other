@@ -15,7 +15,7 @@ Miss https://justmissart.carrd.co/
 Zichqec https://ukagaka.zichqec.com/
 
 
-Original idea by okuajub:
+Original idea by okuajub https://okuajub-netspace.neocities.org/
 "You are a necromancer, interviewing applicants from your job listing for an experiment. Not all of them have to be breathing."
 
 
