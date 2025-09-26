@@ -603,3 +603,76 @@ acandle
 	"some paper"
 	"some scented soaps"
 }
+
+worms
+{
+	"worms"
+	"ants"
+	"wolves"
+	"rats"
+	"demons"
+}
+
+feedingschedule
+{
+	"feeding schedule"
+	"temperature"
+	"next round of inoculations"
+	"question list for next time"
+	"water supply"
+	"vat"
+	"recipe"
+	"timing of the tests"
+	"feeding contraptions"
+	"sprinkler system"
+}
+
+sulfur
+{
+	"sulfur"
+	"%(gravedirt)"
+	"tongue depressors"
+	"leather"
+	"zip ties"
+	"garbage bags"
+	"milk"
+	"eggs"
+	"bug spray"
+	"insecticide"
+	"hydrogen peroxide"
+	"anti-itch cream"
+	"worms"
+	"chalk"
+	"flour"
+	"toothpicks"
+	"gold flake"
+}
+
+wontneeditnow
+{
+	"won't need it now"
+	"that was a bad idea"
+	"that's not working"
+	"I've had a thousand better ideas since I wrote it"
+	"let's pretend I never wrote that"
+	"not even sure how that got there"
+	"that's irrelevant now"
+}
+
+thinkingthreeinterviewsahead
+{
+	"thinking three interviews ahead"
+	"feeling sleepy"
+	"needing a third cup of coffee"
+	"feeling my brain shut down"
+	"mentally checked out and ready for a nap"
+}
+
+allgoodcandidatesfiltered
+{
+	"all of the good candidates being filtered out"
+	"an excessive number of demons in the candidate pool"
+	"an even longer line than there is at present"
+	"complete chaos outside"
+	"all sorts of vermin showing up"
+}

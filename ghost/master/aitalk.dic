@@ -50,6 +50,11 @@ MichaelTalk : nonoverlap_pool
 	"Why is this my lot in life?"
 	"Don't look at him... Don't let him take delight in your torment..."
 	"All I ask is to %(beleftalone), and do I get it? No I do not."
+	"Leave. \w8\f[italic,1]Leave. \w8\f[bold,1]Leave. \w8LEAVE.\f[bold,default]\f[italic,default]"
+	"Perhaps if I invite the next candidate in he'll get the hint... \w8\w8Who am I kidding, not a chance."
+	"I wonder if any of the candidates would like his skull as a prize..."
+	"If I created a perfect clone of him, I wonder if that would set him properly on edge... \w8\w8That would mean having two of him, though. Unacceptable."
+	"I'll feed him to the %(worms)."
 }
 
 RandomTalk : nonoverlap_pool
@@ -78,6 +83,11 @@ RandomTalk : nonoverlap_pool
 	"It would be ideal if this experiment didn't result in further %(damagetothewalls). \w8\w8Unlikely, but ideal."
 	"We can't always get what we want... but, we might be able to make do with a large enough sample size."
 	"I wonder, would I get higher quality applicants if I %(advertisedontv)?"
+	"I may have to make some adjustments to the %(feedingschedule)..."
+	"Right, almost out of %(sulfur), better get that on the list..."
+	"Scratch that off the list, %(wontneeditnow)..."
+	"This process is so dull that I'm already %(thinkingthreeinterviewsahead)..."
+	"I wonder if some of this process can be automated... \w8Definitely not, I am certain that would lead to %(allgoodcandidatesfiltered)."
 	
 	if AcceptedCandidatesToday + RejectedCandidatesToday < 5
 	{
