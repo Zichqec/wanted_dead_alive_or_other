@@ -16,7 +16,7 @@ Accepted.michael
 
 Rejected.michael
 {
-	"\0\b[0]\s[6]Yes, yes, I'm ""a poor fit for the current study"", my ""described physiology does not match what is required"" for your planned experiments, and if I ever come back, I will... \s[21]""%(besetonfire)"". \s[35]Nothing I haven't heard before.\n\n \s[0]Your originality, or lackthereof, is a disappointment. \s[6]As is always the case.\n\n \s[68]Regardless, I've gotten what I came for! \s[66]Every visit further confirms how hopeless it is to think that you would \f[italic,1]ever\f[italic,default] develop your procedures in a positive manner.\n\n \s[60]I'll be sure to nail the paper to your door once it's published. \s[68]Until next time!"
+	"\0\b[0]\s[6]Yes, yes, I'm ""a poor fit for the current study"", my%(br)""described physiology does not match what is required"" for your planned experiments, and if I ever come back, I will... \s[21]""%(besetonfire)"". \s[35]Nothing I haven't heard before.\n\n \s[0]Your originality, or lackthereof, is a disappointment. \s[6]As is always the case.\n\n \s[68]Regardless, I've gotten what I came for! \s[66]Every visit further confirms how hopeless it is to think that you would \f[italic,1]ever\f[italic,default] develop your procedures in a positive manner.\n\n \s[60]I'll be sure to nail the paper to your door once it's published. \s[68]Until next time!"
 }
 
 RandomTalk.michael : nonoverlap

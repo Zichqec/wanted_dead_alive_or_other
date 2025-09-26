@@ -19,7 +19,7 @@ Accepted.pinknoise
 
 Rejected.pinknoise
 {
-	"\0\b[0]\s[5034]No way! \s[5033]You can't be serious...\n\n \w8\w8\s[1009]Well, it's ok. \s[1035]I'll get back in line!"
+	"\0\b[0]\s[5034]No way! \s[5030]You can't be serious...\n\n \w8\w8\s[1009]Well, it's ok. \s[1035]I'll get back in line!"
 	"\0\b[0]\s[2034]No?? \w8\s[4004]But why not...?\n\n \w8\w8\w8\s[4006]... Alright, well, \w4\s[2009]I'll make it work. \s[2035]You'll see!"
 	"\0\b[0]\s[2030]I thought you might say that... \w8\s[3000]Sometimes you're really predictable, you know!\n\n \w8\w8\s[4029]Well, it is what it is... \s[4028]Once you've made up your mind, you never change it, at least until I've gone out the door. \w8\s[35]So, I'll be back later in case you reconsider!"
 }

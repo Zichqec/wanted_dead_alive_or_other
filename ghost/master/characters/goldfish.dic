@@ -5,7 +5,7 @@ SurfaceRestore.goldfish
 
 Greeting.goldfish
 {
-	"\0\b[0]\s[0]Greetings. \s[103]My name is %(bowl.namefirst) %(bowl.namelast). \s[503]It is a pleasure to make your acquaintance.\n\n \s[302]I have come here to escort my client, he has taken an interest in your work and the promised rewards.\n\n \s[102]Your patience is appreciated as I translate between you and he."
+	"\0\b[0]\s[0]Greetings. \s[103]My name is %(bowl.namefirst) %(bowl.namelast). \s[503]It is a pleasure to make your acquaintance.\n\n \s[302]I have come here to escort my client; he has taken an interest in your work and the promised rewards.\n\n \s[102]Your patience is appreciated as I translate between you and he."
 	"\0\b[0]\s[103]Greetings, we are pleased to make your acquaintance.%(br)\s[102]My name is %(bowl.namefirst) %(bowl.namelast), and I am here as escort for my client. \s[106]He has expressed interest in your advertisement, and wished to partake in this interview process.\n\n \s[500]Your patience is appreciated as I translate messages for both your understanding."
 	"\0\b[0]\s[202]Ah... please be careful not to splash.\n\n \s[500]My apologies. My name is %(bowl.namefirst) %(bowl.namelast), I am here as escort for my client. \s[302]We saw your advertisement, and he wished to try for the opportunity himself.\n\n \s[103]It is an exciting prospect. Do forgive us if some amount of water is lost on the floor..."
 }
