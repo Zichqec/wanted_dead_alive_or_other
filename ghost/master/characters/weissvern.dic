@@ -260,7 +260,7 @@ MadeOfFlesh.weissvern
 	"\0\b[0]\s[0]Sure, I don't see why not!"
 }
 
-//Do you often use your (bodypart)?
+//Do you often use your (bodyparts)?
 OftenUseBodyPart.weissvern
 {
 	"\0\b[0]\s[7]... \_w[2000]\s[42]Is that a human thing?"

@@ -516,7 +516,7 @@ MadeOfFlesh.fluffydemon
 	}
 }
 
-//Do you often use your (bodypart)?
+//Do you often use your (bodyparts)?
 OftenUseBodyPart.fluffydemon
 {
 	if Candidate.Variant == 1

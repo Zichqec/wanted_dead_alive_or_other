@@ -249,7 +249,7 @@ MadeOfFlesh.antlers
 	"\0\b[0]\s[8]The hunters would like to think so."
 }
 
-//Do you often use your (bodypart)?
+//Do you often use your (bodyparts)?
 OftenUseBodyPart.antlers
 {
 	"\0\b[0]\s[5]I don't often have need for such things."

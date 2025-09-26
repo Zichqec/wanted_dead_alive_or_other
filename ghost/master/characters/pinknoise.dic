@@ -159,7 +159,7 @@ MadeOfFlesh.pinknoise
 	"\0\b[0]\s[1035]You said it's fine if I keep saying that!"
 }
 
-//Do you often use your (bodypart)?
+//Do you often use your (bodyparts)?
 OftenUseBodyPart.pinknoise
 {
 	"\0\b[0]\s[2009]Oh, those old things? \s[3035]You can have 'em!"

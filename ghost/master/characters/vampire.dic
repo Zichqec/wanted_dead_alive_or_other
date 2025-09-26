@@ -295,7 +295,7 @@ MadeOfFlesh.vampire
 	"\0\b[0]\s[2]Vampiric flesh, but flesh nonetheless."
 }
 
-//Do you often use your (bodypart)?
+//Do you often use your (bodyparts)?
 OftenUseBodyPart.vampire
 {
 	"\0\b[0]\s[2]I believe you misunderstand what it is to be a vampire..."

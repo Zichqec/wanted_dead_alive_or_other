@@ -113,7 +113,7 @@ MadeOfFlesh.TEMPLATE
 	//"\0\b[0]\s[0]"
 }
 
-//Do you often use your (bodypart)?
+//Do you often use your (bodyparts)?
 OftenUseBodyPart.TEMPLATE
 {
 	//"\0\b[0]\s[0]"

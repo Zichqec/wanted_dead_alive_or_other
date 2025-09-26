@@ -246,7 +246,7 @@ MadeOfFlesh.goldfish
 	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[108]Yes. However, he claims to have ingested some small plastic pieces when he was smaller... \s[303]He wishes for you to be aware of this in case it classes him differently."
 }
 
-//Do you often use your (bodypart)?
+//Do you often use your (bodyparts)?
 OftenUseBodyPart.goldfish
 {
 	"\0\b[0]\s[102]...\n\n \w8\w8...\n\n \w8\w8\s[103]He has never heard of this concept."

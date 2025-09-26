@@ -119,7 +119,7 @@ MadeOfFlesh.michael
 	"\0\b[0]\s[29]85% yes, 15% no. \s[30]Specificity is important."
 }
 
-//Do you often use your (bodypart)?
+//Do you often use your (bodyparts)?
 OftenUseBodyPart.michael
 {
 	"\0\b[0]\s[26]Yes, indeed. I'm afraid I don't have any spares for you. \s[28]Poor thing!"

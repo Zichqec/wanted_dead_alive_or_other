@@ -234,7 +234,7 @@ MadeOfFlesh.bluemesh
 	"\0\b[0]\s[24]Sure, for the most part."
 }
 
-//Do you often use your (bodypart)?
+//Do you often use your (bodyparts)?
 OftenUseBodyPart.bluemesh
 {
 	"\0\b[0]\s[3]Hmm... \w8\w8\s[29]Not so much these days, after the removal procedure at 18..."

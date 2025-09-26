@@ -199,7 +199,7 @@ MadeOfFlesh.suke
 	"\0\b[0]\s[26]I used to be, once upon a time. \s[22]These days it's much more difficult to say for certain."
 }
 
-//Do you often use your (bodypart)?
+//Do you often use your (bodyparts)?
 OftenUseBodyPart.suke
 {
 	"\0\b[0]\s[25]Hm... in a physical sense? No, not really.\n\n \s[26]In a metaphorical sense, all the time."
