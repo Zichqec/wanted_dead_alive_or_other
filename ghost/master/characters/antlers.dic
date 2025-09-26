@@ -230,7 +230,7 @@ HowTall.antlers
 {
 	"\0\b[0]\s[3]Hm... \s[5]I suppose I have to be, since it technically changes when my antlers grow in. \s[8]Currently I am quite tall..."
 	"\0\b[0]\s[0]I would tell you that I am as tall as the rock I passed by yesterday, or tall enough to reach the low hanging branches of the apple tree I visited last week without having to climb... \s[6]But I don't suppose those are useful measures for you without a reference."
-	"\0\b[0]\s[3]I don't know how height is measured in this civilisation, \w4\s[0]but regardless, my total stature fluctuates as my antlers grow in and shed."
+	"\0\b[0]\s[3]I am uncertain how height is measured in this civilisation, \w4\s[0]but regardless, my total stature fluctuates as my antlers grow in and shed."
 }
 
 //On a scale of 1 to 100, how many pounds of mass are you willing to potentially lose during the course of this experiment?
