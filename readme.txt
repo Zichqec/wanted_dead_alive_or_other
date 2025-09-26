@@ -7,11 +7,13 @@ Then begins the task of interviewing each one to determine suitability for the e
 It's tiring work.
 
 
+——————————————————————— Credits ————————————————————————
 Made for Idea Adoption Jam 2025 by:
 
 Galla https://gallathegalla.github.io/gtg-ghosts/
 Miss https://justmissart.carrd.co/
 Zichqec https://ukagaka.zichqec.com/
+
 
 Original idea by okuajub:
 "You are a necromancer, interviewing applicants from your job listing for an experiment. Not all of them have to be breathing."
