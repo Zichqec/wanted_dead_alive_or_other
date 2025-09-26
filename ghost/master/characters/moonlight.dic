@@ -104,7 +104,7 @@ AnyCurses.moonlight
 {
 	"\0\b[0]\s[2]I am blessed by the moon. It is not a curse."
 	"\0\b[0]\s[12]Some would say that... \s[1]I would say they are wrong."
-	"\0\b[0]\s[8]Were the moon full tonight, you would see my true form... \s[18]The wolf inside.\n\n \w8\s[23]Track the moon carefully, dear friend, as I am liable to lose myself in its gaze."
+	"\0\b[0]\s[8]Were the moon full tonight, you would see my true form... \s[18]The wolf inside.\n\n \w8\s[23]Track the moon carefully, dear friend, as I am liable to lose myself in her gaze."
 }
 
 //Do you have any peculiarities with your body parts that we should be aware of?
