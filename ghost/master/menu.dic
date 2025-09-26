@@ -196,15 +196,16 @@ OnViewStats : all
 	if MichaelLast > 0; "Michael: %(RejectedCandidatesLast)\n"
 	"\n"
 	_resultnum = LastExperimentResult
-	_result = "\f[bold,1]Inconclusive\f[bold,default] %(emdash) No experiment could be performed due to no candidates being accepted."
-	if _resultnum == 1; _result = "\f[bold,1]Inconclusive\f[bold,default] %(emdash) Insufficient sample size for accurate results."
-	if _resultnum == 2; _result = "\f[bold,1]Failure\f[bold,default] %(emdash) Candidates were completely unfiltered, and unsuitable for their purpose."
-	if _resultnum == 3; _result = "\f[bold,1]Failure\f[bold,default] %(emdash) Candidates were not well vetted, and some were unsuitable for their purpose."
-	if _resultnum == 4; _result = "\f[bold,1]Success\f[bold,default] %(emdash) Many candidates were fit for purpose. Results could be improved with better filtering, so that candidates which become problematic can be removed without reducing the sample size too much."
-	if _resultnum == 5; _result = "\f[bold,1]Success\f[bold,default] %(emdash) Most candidates were fit for purpose, and candidates which became problematic were easily removed while maintaining a good sample size."
+	_result = ""
+	if _resultnum == 0; _result = "\f[bold,1]Inconclusive\f[bold,default] %(emdash) No experiment could be performed due to no candidates being accepted."
+	elseif _resultnum == 1; _result = "\f[bold,1]Inconclusive\f[bold,default] %(emdash) Insufficient sample size for accurate results."
+	elseif _resultnum == 2; _result = "\f[bold,1]Failure\f[bold,default] %(emdash) Candidates were completely unfiltered, and unsuitable for their purpose."
+	elseif _resultnum == 3; _result = "\f[bold,1]Failure\f[bold,default] %(emdash) Candidates were not well vetted, and some were unsuitable for their purpose."
+	elseif _resultnum == 4; _result = "\f[bold,1]Success\f[bold,default] %(emdash) Many candidates were fit for purpose. Results could be improved with better filtering, so that candidates which become problematic can be removed without reducing the sample size too much."
+	elseif _resultnum == 5; _result = "\f[bold,1]Success\f[bold,default] %(emdash) Most candidates were fit for purpose, and candidates which became problematic were easily removed while maintaining a good sample size."
 	
-	"Result: %(_result)"
-	"\n\n"
+	if _result != ""; "Result: %(_result)\n"
+	"\n"
 	
 	"\f[align,center]\f[height,+2]\f[bold,1]All experiments\f[bold,default]\f[height,default]\n\f[align,left]\n"
 	
