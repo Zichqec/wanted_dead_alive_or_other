@@ -94,7 +94,7 @@ FirstTime.moonlight
 //Have you died before?
 DiedBefore.moonlight
 {
-	"\0\b[0]\s[9]Hm... it's a little hard to say. \s[11]I had one experience many moons ago that could perhaps be considered a ""death""... though not in the truest sense. \w8\s[12]I am sorry if it is confusing, I am not sure how to explain it in clearer terms."
+	"\0\b[0]\s[9]Hm... it's a little hard to say. \s[11]I had one experience, many moons ago, that could perhaps be considered a ""death""... though not in the truest sense. \w8\s[12]I am sorry if it is confusing, I am not sure how to explain it in clearer terms."
 	"\0\b[0]\s[3]No, I have never had an experience like that."
 	"\0\b[0]\s[3]I have come close on occasion. \s[4]I have seen the other side, brushed against it briefly... \s[5]but I have never stepped across."
 }
