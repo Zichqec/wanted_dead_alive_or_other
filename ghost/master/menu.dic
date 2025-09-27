@@ -193,7 +193,7 @@ OnViewStats : all
 	
 	"Candidates accepted: %(AcceptedCandidatesLast)\n"
 	"Candidates rejected: %(RejectedCandidatesLast)\n"
-	if MichaelLast > 0; "Michael: %(RejectedCandidatesLast)\n"
+	if MichaelLast > 0; "Michael: %(MichaelLast)\n"
 	"\n"
 	_resultnum = LastExperimentResult
 	_result = ""
