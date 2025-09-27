@@ -13,7 +13,7 @@ Greeting.moonlight
 Accepted.moonlight
 {
 	"\0\b[0]\s[2]Wonderful... \s[18]the moon will be pleased. \w8\s[0]I shall await further instruction."
-	"\0\b[0]\s[1]Excellent... \s[2]I am glad we could come to an agreement. \s[18]The moon will be pleased with my success."
+	"\0\b[0]\s[1]Excellent... \s[2]I am glad we could come to an agreement.%(br)\s[18]The moon will be pleased with my success."
 	"\0\b[0]\s[2]I can see I was correct to come here... \s[0]Thank you. \s[16]The moon will be most pleased with my efforts..."
 }
 
