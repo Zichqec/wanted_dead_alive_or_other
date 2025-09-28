@@ -756,3 +756,33 @@ gumballs
 	"yarn"
 	"replica %(bodyparts)"
 }
+
+amagazine
+{
+	"Science Made Simple"
+	"Necromancer's Digest"
+	"Undead Review"
+	"Experience Death"
+	"Laboratory Living"
+	"The Coffin Chronicle"
+	"Vat Reports"
+	"Ethically Dubious Designs"
+	"New Mutant Pursuit"
+	"Cooking Without A Stomach"
+	"The Graverobber's Post"
+	"Reanimation Weekly"
+}
+
+donethecrossword
+{
+	"completed the crossword"
+	"struck through everything in the word search"
+	"circled all the objects in the hidden pictures"
+	"solved the Sudoku"
+	"unscrambled the word scrambles"
+	"colored in all of the pictures"
+	"circled the differences in the Spot the Differences game"
+	"filled in the Mad Libs"
+	"drawn the solution to the maze"
+	"scribbled funny hats into all of the photos"
+}
