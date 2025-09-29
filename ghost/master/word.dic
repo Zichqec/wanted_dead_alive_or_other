@@ -611,6 +611,15 @@ worms
 	"wolves"
 	"rats"
 	"demons"
+	"crows"
+	"beetles"
+	"lions"
+	"hyenas"
+	"maggots"
+	"parasitic wasps"
+	"gophers"
+	"abyssal wyrm"
+	"vultures"
 }
 
 feedingschedule
