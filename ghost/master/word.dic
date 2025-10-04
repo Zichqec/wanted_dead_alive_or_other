@@ -805,3 +805,27 @@ asandboxtree
 	"a collection of white-rot fungi"
 	"jimson weed"
 }
+
+fridge
+{
+	"fridge"
+	"sink"
+	"floorboards"
+	"cupboards"
+	"drawer"
+	"bucket"
+	"vat"
+	"test tubes"
+	"beaker"
+	"flower pot"
+	"cage"
+	"jar"
+	"jug"
+	"barrel"
+	"pocket"
+	"maw"
+	"vents"
+	"letter"
+	"computer"
+	"hand"
+}

@@ -92,6 +92,7 @@ RandomTalk.fluffydemon : nonoverlap
 		"\0\b[0]\s[6]Keekeke... Smells like %(demonsmells)..."
 		"\0\b[0]\s[5]Kukukuku... Take your time... I do not tire... but you will..."
 		"\0\b[0]\s[4]Kekekekekek... Why are you so far away... Come closer..."
+		"\0\b[0]\s[5]Kukukuku... What's in the %(fridge)... Lets find out... Together... Keekeke..."
 	}
 	elseif Candidate.Variant == 2
 	{
