@@ -191,7 +191,7 @@ MadeOfFlesh.moonlight
 OftenUseBodyPart.moonlight
 {
 	"\0\b[0]\s[2]I do use ""mine""... \s[1]in a sense."
-	"\0\b[0]\s[1]I suppose so, though not all would consider them ""mine""..."
+	"\0\b[0]\s[1]I suppose so, though not all would consider them%(br)""mine""..."
 	"\0\b[0]\s[2]Indeed, they are quite important for various rituals, so I always make sure to have a good supply on hand..."
 }
 
