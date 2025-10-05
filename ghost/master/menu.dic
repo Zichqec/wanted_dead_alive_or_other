@@ -215,8 +215,8 @@ OnViewStats : all
 	"\n"
 	
 	_successes = ExperimentResults[4] + ExperimentResults[5]
-	_failures =  ExperimentResults[2]
-	_inconclusives = ExperimentResults[0] + ExperimentResults[1] + ExperimentResults[3]
+	_failures = ExperimentResults[2] + ExperimentResults[3]
+	_inconclusives = ExperimentResults[0] + ExperimentResults[1]
 	"Successful experiments: %(_successes)\n"
 	"Inconclusive experiments: %(_inconclusives)\n"
 	"Failed experiments: %(_failures)\n"
