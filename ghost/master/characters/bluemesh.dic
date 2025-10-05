@@ -263,7 +263,7 @@ SeeSelfTenYears.bluemesh
 {
 	"\0\b[0]\s[2]... Yeah, I might have to rethink some things. What exactly are we doing again?"
 	"\0\b[0]\s[3]Honestly? Probably at the body shop... \s[22]Can't imagine anything will change that."
-	"\0\b[2]... \w8\w8\s[8]That's a joke, right? \s[22]You're joking, of course you are."
+	"\0\b[0]\s[2]... \w8\w8\s[8]That's a joke, right? \s[22]You're joking, of course you are."
 }
 
 //Are you currently taking any medications?
