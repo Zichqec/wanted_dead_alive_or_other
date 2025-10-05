@@ -795,3 +795,37 @@ donethecrossword
 	"drawn the solution to the maze"
 	"scribbled funny hats into all of the photos"
 }
+
+asandboxtree
+{
+	"a sandbox tree"
+	"an algae tank"
+	"angel's trumpets"
+	"stinging nettle"
+	"a collection of white-rot fungi"
+	"jimson weed"
+}
+
+fridge
+{
+	"fridge"
+	"sink"
+	"floorboards"
+	"cupboards"
+	"drawer"
+	"bucket"
+	"vat"
+	"test tubes"
+	"beaker"
+	"flower pot"
+	"cage"
+	"jar"
+	"jug"
+	"barrel"
+	"pocket"
+	"maw"
+	"vents"
+	"letter"
+	"computer"
+	"hand"
+}
