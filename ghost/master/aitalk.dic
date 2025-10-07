@@ -89,6 +89,30 @@ RandomTalk : nonoverlap_pool
 	"This process is so dull that I'm already %(thinkingthreeinterviewsahead)..."
 	"I wonder if some of this process can be automated... \w8Definitely not, I am certain that would lead to %(allgoodcandidatesfiltered)."
 	
+	"I'll %(sortthosepapers) eventually... Someday when I'm not so far behind."
+	"Ah, I'd wondered where this note had gotten to. I'll have to make sure I attach that to the last report..."
+	"Maybe I should take a break... \w8\w8No, if I start thinking like that I'll never get through this. Keep going and it will be over sooner..."
+	"Need to get this over with soon and sit down, my %(backhurts)..."
+	"Going to have to %(crossreference) all of these..."
+	
+	"The %(notesare) piling up today..."
+	//"Sometimes a poor %(temperament) can be made up for with %()"
+	"My notes have been %(longer) than usual today."
+	"We're going to pretend that scrawl looks like a word. I'll remember what it means, it's fine."
+	"Might have to get together another bribe sooner than expected... \w8\w8The cost of scientific research is steep."
+	
+	"I'll need to make sure %(theincinerator) is still in good working order..."
+	"I wonder if a second clipboard would help, or if it would just make things more complicated..."
+	"I hope I don't start interviewing candidates in my dreams again. Nobody deserves such cruelty."
+	"Ah... there I go dreaming about the ideal set of %(bodyparts) again. One day, I'll glimpse perfection and put it through its paces... but it is unlikely to be today, or even tomorrow."
+	"Since I %(putupthatnewwall), %(noisecomplaintshave) been reduced by %(RAND(86)+10)%."
+	
+	// ""
+	// ""
+	// ""
+	// ""
+	// ""
+	
 	if AcceptedCandidatesToday + RejectedCandidatesToday < 5
 	{
 		"The night is still young... but there are many candidates waiting in line. I should make a determination soon."
@@ -101,7 +125,7 @@ RandomTalk : nonoverlap_pool
 	{
 		"The pickings so far have been poor... I should refine the criteria listed on my advertisement."
 	}
-	else
+	else //TODO hum... this can reappear after one of the others have been chosen
 	{
 		"Not many standout candidates in either direction so far... It's to be expected with a self-selected group, but it does make this process a bit more of a chore."
 	}

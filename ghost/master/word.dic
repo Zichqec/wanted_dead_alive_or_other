@@ -459,6 +459,7 @@ thelandlord
 	"the flower shop next door"
 	"the underworld"
 	"the mayor"
+	"the auditor"
 }
 
 advertisedontv
@@ -493,6 +494,20 @@ getthestainsout
 	"track down all the families and inform them of... what transpired"
 	"get all of the questionnaires filled in without them copying each other's answers"
 	"bind their souls"
+	"get all the equipment clean again"
+	"clean all the dishware"
+	"take stock of everything and find out how many of my supplies were ruined"
+	"get them all out the door once I was done with them"
+	"make %(thelandlord) happy again"
+	"pick up all the pieces and figure out what belonged to who"
+	"get everything labeled, and even then the labels ended up being incorrect"
+	"explain it all away and make %(thelandlord) stop hounding me"
+	"get all the bags %(inthedumpster)"
+	"clean the %(bloodspray) off the ceiling"
+	"replenish my stock of %(gravedirt)"
+	"plug all the new leaks"
+	"tie up all the loose ends and get them out the door"
+	"take headcounts, what with how they refused to sit still or stand in any sort of line"
 }
 
 stains
@@ -500,6 +515,25 @@ stains
 	"stains"
 	"smell"
 	"blood"
+}
+
+inthedumpster
+{
+	"in the dumpster"
+	"outside"
+	"emptied into the incinerator"
+	"up out of the basement"
+}
+
+bloodspray
+{
+	"blood spray"
+	"ink stains"
+	"mac and cheese"
+	"demonic sigils"
+	"food"
+	"fur"
+	"ooze"
 }
 
 alldied
@@ -518,17 +552,79 @@ alldied
 	"disappeared mysteriously"
 	"vanished without a trace"
 	"gotten into the solvents"
+	"chickened out at the thought of participating in another round of experiments"
+	"become traumatized and left"
+	"sworn to never participate in another experiment ever again"
+	"made a pact with each other to try and kill me if I didn't let them go"
+	"all made pacts with one of the demons standing in line and had to leave after the experiment concluded"
+	"called %(thelandlord) to complain"
+	"snuck in a camera and had to be... removed"
+	"all been in the mess hall when it collapsed"
+	"run away screaming as soon as the experiment term ended"
+	"developed an irrational fear of %(needles)"
+}
+
+needles
+{
+	"needles"
+	"soap"
+	"%(gravedirt)"
+	"blood"
+	"clipboards"
+	"necromancy"
+	"cotton swabs"
+	"enclosed spaces"
+	"the dark"
 }
 
 madegoodpracticematerial
 {
-	"they made good practice material"
 	"I was able to get some %(bodyparts) for later use"
-	"I got a chance to practice some of my lesser-used techniques"
-	"they agreed to leave good reviews"
-	"I got to demo some new techniques that may help with later work"
-	"I got a chance to organize some of my paperwork a bit better"
-	"they didn't scream"
+	"I got %(chancetopractice)"
+	"they %(didntscream)"
+	"I didn't waste the %(gravedirt) I've been saving"
+	"%(thelandlord) won't come knocking today"
+	"I still have plenty of %(hay)"
+	"the %(freezeris) now well-stocked"
+}
+
+chancetopractice
+{
+	"a chance to practice some of my lesser-used techniques"
+	"to demo some new techniques that may help with later work"
+	"a chance to organize some of my paperwork a bit better"
+	"to catch up on some sleep"
+	"some new items for my to-do list that look promising"
+	"to scratch some things off my to-do list"
+	"some time to decompress"
+	"an idea of how many more candidates I'll need to approach this particular topic again in the future"
+	"to answer a burning question about %(bodyparts) that I've had for many years now"
+	"to prove to %(thelandlord) that my experiments are harmless"
+}
+
+didntscream
+{
+	"didn't scream"
+	"agreed to leave good reviews"
+	"made good practice material"
+	"gave me some ideas for future experiments"
+	"didn't break anything"
+	"didn't set the room on fire"
+	"yielded some decent %(bodyparts)"
+	"had interesting %(bodyparts) to look at"
+	"were mostly well-behaved"
+	"sat still and let me do my work in peace"
+	"won't be missed"
+	"were easy to dispose of"
+}
+
+freezeris
+{
+	"freezer is"
+	"pantry is"
+	"medical kit is"
+	"eyewash station is"
+	"%(bandage) supply is"
 }
 
 besetonfire
@@ -828,4 +924,102 @@ fridge
 	"letter"
 	"computer"
 	"hand"
+}
+
+sortthosepapers
+{
+	"sort through those papers"
+	"get a better filing system"
+	"dust in here"
+	"clean the sink"
+	"unclog that drain"
+	"fix that broken tile"
+}
+
+backhurts
+{
+	"back hurts"
+	"spine hurts again"
+	"fingers are aching"
+	"knee is making unpleasant sounds"
+}
+
+crossreference
+{
+	"cross reference"
+	"collate"
+	"bind"
+	"re-examine"
+	"double check the spelling on"
+	"duplicate"
+	"verify"
+	"alphabetize"
+	"mark"
+	"adjust"
+	"type up"
+	"%(ANY('double,triple,quadruple')) check"
+	"get clearance for"
+	"order enough %(hay) for"
+	"shred"
+}
+
+notesare
+{
+	"notes are"
+	"leaves are"
+	"dust is"
+	"discarded pens are"
+	"scribbles are"
+	"ink blots are"
+	"doodles are"
+}
+
+theincinerator
+{
+	"the incinerator"
+	"the blender"
+	"the mixer"
+	"the chest freezer in the basement"
+	"the fire extinguisher"
+}
+
+putupthatnewwall
+{
+	"put up that new wall"
+	"cleared out the basement"
+	"upgraded the enclosures"
+	"replaced the vat"
+	"got the new hallucinogenics in"
+	"got more anesthetic"
+	"cleaned the kitchen and got mold treatments done"
+	"changed the main protein source in the meals"
+	"stopped putting %(thosemushrooms) in the food"
+}
+
+noisecomplaintshave
+{
+	"noise complaints have"
+	"bad reviews have"
+	"casualties have"
+	"fatalities have"
+	"escapes have"
+	"emergency amputations have"
+	"complaints to %(thelandlord) have"
+	"calls to the police have"
+	"the number of %(bandages) used per test subject has" //... has or have??
+}
+
+bandages
+{
+	"bandages"
+	"cotton swabs"
+	"syringes"
+}
+
+thosemushrooms
+{
+	"those mushrooms"
+	"worms"
+	"%(gravedirt)"
+	"%(hay)"
 }
