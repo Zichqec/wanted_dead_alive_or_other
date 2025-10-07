@@ -313,12 +313,12 @@ MorseList : array
 	4. Did ok, decent sample size
 	5. Filtered well, excellent sample size
 	
-	If accepted no candidates: fail for reason 1
-	If not met minimum number of candidates: fail for reason 2
-	If all candidates have 0 questions asked: fail for reason 3
-	If not enough candidates were rejected OR the number of bad decisions is too great: fail for reason 4
-	If number of good decisions is decent: succeed for reason 5
-	If number of good decisions is very high: succeed for reason 6
+	If accepted no candidates: fail for reason 0
+	If not met minimum number of candidates: fail for reason 1
+	If all candidates have 0 questions asked: fail for reason 2
+	If not enough candidates were rejected OR the number of bad decisions is too great: fail for reason 3
+	If number of good decisions is decent: succeed for reason 4
+	If number of good decisions is very high: succeed for reason 5
 	
 	Numbers (may be adjusted later):
 	Minimum candidates required for an experiment: 5
@@ -358,6 +358,8 @@ CalculateExperimentSuccess
 		
 		//10 questions seen at a time, 15 expected N/A
 		if _asked == 0; _noanswers++
+		//TODO need to make sure michael does not block the "accepted everyone" response -- sidenote, should that response include even if you ask them questions? hm -- I think that change will solve this bug as a side benefit
+		//I think I would like for the "no checks" response to fail you even if you ask questions. Asking questions but not rejecting anyone is still a fail... and it should be clear about that because the dialogue tells you to reject some, it doesn't say to ask questions
 		
 		if _asked >= 6; _gooddecisions++
 		else; _baddecisions++
