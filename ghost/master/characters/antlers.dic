@@ -37,6 +37,18 @@ RandomTalk.antlers : nonoverlap
 	"\0\b[0]\s[4]Is that %(agiantrat)...? \w8\w8... \s[8]Well, it's none of my business."
 	"\0\b[0]\s[5]I wonder, does this place feel as oppressive to you as it does to me, or is this your oasis where you feel at ease...?"
 	"\0\b[0]\s[6]The wind does not reach indoors very well... \w8\s[3]It is strange to feel so disconnected from it. \s[2]So... boxed in.\n\n \w8\w8\s[8]I am certain I will return to my wanderings soon enough... nothing could truly keep me from them for long."
+	
+	"\0\b[0]\s[3]... Strange smells..."
+	"\0\b[0]\s[6]The winds howl far above... \w8\s[8]One day, they will reclaim this space."
+	"\0\b[0]\s[3]... \w8\w8\s[5]What sort of creature has left those tracks in the corner? \w8\s[8]A monster of some kind...?"
+	"\0\b[0]\s[6]The air tastes... \f[italic,1]stale\f[italic,default] here."
+	"\0\b[0]\s[4]How many have felt trapped between these walls...?"
+	
+	"\0\b[0]\s[5]I hope my participation will not require me to wield one of those writing sticks you are using. \s[8]I have seen them before, but never learned to use them myself..."
+	"\0\b[0]\s[3]Hmm... \w8\w8\s[4]It appears that much of this space is disused. \w8\w8\s[6]I wonder, what is the purpose of claiming such a large area, then...?"
+	"\0\b[0]\s[5]Perhaps some time in the woods would do you well. \s[8]The air is fresher there, and there is space for the mind to wander..."
+	"\0\b[0]\s[4]It is hard to tell the passage of time in this place... \s[3]I wonder, how long before the sun rises again?"
+	"\0\b[0]\s[5]Though I do not wish to remain in the city, I do at least feel safe from the hunters here. \w8\w8\s[8]Perhaps not safe overall, but the hunters are unlikely to search this area."
 }
 
 setofrabbittracks
@@ -59,6 +71,14 @@ agiantrat
 	"a mushroom growing out of the floorboards"
 	"a sacrificial sigil"
 	"a muffled cry for help"
+}
+
+stale
+{
+	"stale"
+	"foul"
+	"dry"
+	"ill"
 }
 
 //Name?
