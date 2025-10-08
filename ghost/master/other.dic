@@ -98,6 +98,11 @@ br
 	else; " "
 }
 
+Capitalize
+{
+	TOUPPER(SUBSTR(_argv[0],0,1)) + SUBSTR(_argv[0],1,STRLEN(_argv[0]))
+}
+
 //[character ID, category name, part name, option, on-1/off-0, thumbnail path]
 OnNotifyDressupInfo
 {

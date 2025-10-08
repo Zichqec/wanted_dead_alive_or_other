@@ -41,7 +41,7 @@ RandomTalk.antlers : nonoverlap
 	"\0\b[0]\s[3]... Strange smells..."
 	"\0\b[0]\s[6]The winds howl far above... \w8\s[8]One day, they will reclaim this space."
 	"\0\b[0]\s[3]... \w8\w8\s[5]What sort of creature has left those tracks in the corner? \w8\s[8]A monster of some kind...?"
-	"\0\b[0]\s[6]The air tastes... \f[italic,1]stale\f[italic,default] here."
+	"\0\b[0]\s[6]The air tastes... \f[italic,1]%(stale)\f[italic,default] here."
 	"\0\b[0]\s[4]How many have felt trapped between these walls...?"
 	
 	"\0\b[0]\s[5]I hope my participation will not require me to wield one of those writing sticks you are using. \s[8]I have seen them before, but never learned to use them myself..."
@@ -79,6 +79,11 @@ stale
 	"foul"
 	"dry"
 	"ill"
+	"heavy"
+	"thick"
+	"lifeless"
+	"sour"
+	"bitter"
 }
 
 //Name?

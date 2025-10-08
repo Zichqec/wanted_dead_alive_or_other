@@ -96,16 +96,16 @@ RandomTalk : nonoverlap_pool
 	"Going to have to %(crossreference) all of these..."
 	
 	"The %(notesare) piling up today..."
-	//"Sometimes a poor %(temperament) can be made up for with %()"
+	"Sometimes poor %(temperament) can be made up for with %(lessons)."
 	"My notes have been %(longer) than usual today."
-	"We're going to pretend that scrawl looks like a word. I'll remember what it means, it's fine."
+	"We're going to pretend that scrawl looks like a word.%(br)I'll remember what it means, it's fine."
 	"Might have to get together another bribe sooner than expected... \w8\w8The cost of scientific research is steep."
 	
 	"I'll need to make sure %(theincinerator) is still in good working order..."
 	"I wonder if a second clipboard would help, or if it would just make things more complicated..."
 	"I hope I don't start interviewing candidates in my dreams again. Nobody deserves such cruelty."
 	"Ah... there I go dreaming about the ideal set of %(bodyparts) again. One day, I'll glimpse perfection and put it through its paces... but it is unlikely to be today, or even tomorrow."
-	"Since I %(putupthatnewwall), %(noisecomplaintshave) been reduced by %(RAND(86)+10)%."
+	"%(Capitalize(noisecomplaintsare)) down by %(RAND(86)+10)% since I %(putupthatnewwall)."
 	
 	// ""
 	// ""

@@ -572,7 +572,7 @@ needles
 	"blood"
 	"clipboards"
 	"necromancy"
-	"cotton swabs"
+	"%(bandages)"
 	"enclosed spaces"
 	"the dark"
 }
@@ -934,6 +934,7 @@ sortthosepapers
 	"clean the sink"
 	"unclog that drain"
 	"fix that broken tile"
+	"disinfect the surgical tools"
 }
 
 backhurts
@@ -942,6 +943,10 @@ backhurts
 	"spine hurts again"
 	"fingers are aching"
 	"knee is making unpleasant sounds"
+	"hips are starting to disintegrate"
+	"toes are threatening to fall off"
+	"shoulders sound like a rock tumbler"
+	"neck is becoming a maraca"
 }
 
 crossreference
@@ -972,6 +977,13 @@ notesare
 	"scribbles are"
 	"ink blots are"
 	"doodles are"
+	"damage reports are"
+	"incident reports are"
+	"papers destined for the shredder are"
+	"number of times I wish I had clones of myself is"
+	"number of naps I need is"
+	"amount I want a juice box is"
+	"need to sneeze is"
 }
 
 theincinerator
@@ -981,6 +993,11 @@ theincinerator
 	"the mixer"
 	"the chest freezer in the basement"
 	"the fire extinguisher"
+	"at least 1 of the emergency flashlights"
+	"the backup vat"
+	"the emergency oxygen supply"
+	"the anti-rival-scientist trapdoor"
+	"the secret teleportation circle"
 }
 
 putupthatnewwall
@@ -996,17 +1013,17 @@ putupthatnewwall
 	"stopped putting %(thosemushrooms) in the food"
 }
 
-noisecomplaintshave
+noisecomplaintsare
 {
-	"noise complaints have"
-	"bad reviews have"
-	"casualties have"
-	"fatalities have"
-	"escapes have"
-	"emergency amputations have"
-	"complaints to %(thelandlord) have"
-	"calls to the police have"
-	"the number of %(bandages) used per test subject has" //... has or have??
+	"noise complaints are"
+	"bad reviews are"
+	"casualties are"
+	"fatalities are"
+	"escapes are"
+	"emergency amputations are"
+	"complaints to %(thelandlord) are"
+	"calls to the police are"
+	"the number of %(bandages) used per test subject is"
 }
 
 bandages
@@ -1014,6 +1031,9 @@ bandages
 	"bandages"
 	"cotton swabs"
 	"syringes"
+	"stitches"
+	"earplugs"
+	"eyedrops"
 }
 
 thosemushrooms
@@ -1022,4 +1042,44 @@ thosemushrooms
 	"worms"
 	"%(gravedirt)"
 	"%(hay)"
+	"confetti"
+	"capsule cameras"
+	"sedatives"
+	"stimulants"
+}
+
+temperament
+{
+	"temperament"
+	"attitude"
+	"cooperation"
+	"communication"
+	"behavior"
+	"coordination"
+}
+
+lessons
+{
+	"lessons on how to be a better test subject"
+	"%(bodyparts) of a high enough quality"
+	"enough unexpected results that it makes the experiment more interesting than it would be otherwise"
+	"time in the vat"
+	"careful clauses in the contract that mean I don't have to pay the requested compensation in full"
+	"enough medication"
+	"a well-forged document"
+	"a few extra organs"
+	"a walk outside where I don't have to deal with it"
+	"other useful skills, such as %(resistancetopain)"
+}
+
+resistancetopain
+{
+	"resistance to pain"
+	"extreme stamina"
+	"low requirements to maintain life"
+	"the ability to maneuver and understand orders even after a concussion"
+	"explosive blood"
+	"a disinclination to complain"
+	"a bite strong enough to pierce metal"
+	"laser eyes"
 }
