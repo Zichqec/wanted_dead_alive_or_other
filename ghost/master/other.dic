@@ -410,6 +410,13 @@ emdash
 	"\f[name,calibri]—\f[name,default]"
 }
 
+On_getaistate : all
+{
+	"%(OUTPUTNUM('RandomTalk')),%(OUTPUTNUM('MichaelTalk'))," + OUTPUTNUM("RandomTalk.%(CurrentShell)")
+	C_BYTE1
+	"NecroTalk,MichaelTalk,ShellTalk"
+}
+
 //—————————————————————————————— Right click menu links ——————————————————————————————
 //Takes an array of alternating names and urls, and formats them for use with the right click menu
 FormatLinks : all
