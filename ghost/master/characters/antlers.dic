@@ -48,7 +48,7 @@ RandomTalk.antlers : nonoverlap
 	"\0\b[0]\s[3]Hmm... \w8\w8\s[4]It appears that much of this space is disused. \w8\w8\s[6]I wonder, what is the purpose of claiming such a large area, then...?"
 	"\0\b[0]\s[5]Perhaps some time in the woods would do you well. \s[8]The air is fresher there, and there is space for the mind to wander..."
 	"\0\b[0]\s[4]It is hard to tell the passage of time in this place... \s[3]I wonder, how long before the sun rises again?"
-	"\0\b[0]\s[5]Though I do not wish to remain in the city, I do at least feel safe from the hunters here. \w8\w8\s[8]Perhaps not safe overall, but the hunters are unlikely to search this area."
+	"\0\b[0]\s[5]Though I do not wish to remain in the city, I do at least feel safe from the hunters here. \w8\w8\s[8]Perhaps not safe overall, but they are unlikely to search this area."
 }
 
 setofrabbittracks
