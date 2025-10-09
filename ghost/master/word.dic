@@ -1026,6 +1026,19 @@ noisecomplaintsare
 	"the number of %(bandages) used per test subject is"
 }
 
+noisecomplaints
+{
+	"noise complaints"
+	"bad reviews"
+	"casualties"
+	"fatalities"
+	"escapes"
+	"emergency amputations"
+	"complaints to %(thelandlord)"
+	"calls to the police"
+	"the number of %(bandages) used per test subject"
+}
+
 bandages
 {
 	"bandages"
@@ -1082,4 +1095,63 @@ resistancetopain
 	"a disinclination to complain"
 	"a bite strong enough to pierce metal"
 	"laser eyes"
+}
+
+wringhisneck
+{
+	"wring his neck"
+	"break his toes"
+	"snap his arms in two"
+	"smash his skull"
+	"rip his head off"
+}
+
+thatceilingfanwillfall
+{
+	"that ceiling fan will fall and come crashing down on someone's head"
+	"I'll have to drain the vat and give it a good scrub"
+	"%(thelandlord) isn't going to buy my excuses"
+	"the containment unit in the other room is going to fail"
+	"the rats are going to chew their way back in here"
+	"I'm going to have to make good on all these pacts"
+	"I'm going to have to replace my %(bodyparts) again"
+}
+
+thepolice
+{
+	"the police"
+	"a street race"
+	"a concert"
+	"the nightclub letting out"
+	"a sudden hailstorm"
+	"another fire across the street"
+	"the zombies coming to pay me another visit"
+	"a demonic summoning"
+	"\f[italic,default]him\f[italic,1]"
+	"thunder in the distance"
+}
+
+stacksofpaper
+{
+	"stacks of paper"
+	"piles of unopened mail"
+	"patches of mold"
+	"fungi"
+	"stacks of unreviewed reports"
+	"piles of unsorted receipts"
+	"cracks in the wall"
+}
+
+explode
+{
+	"explode"
+	"die"
+	"shrivel up"
+	"wither away"
+	"disintegrate and become one with the floor tiles"
+	"call the police and have him removed from the premises"
+	"staple him to the wall"
+	"go warm up the compactor, just for him"
+	"move to the other side of the planet and practice necromancy there"
+	"go cry in the corner once he's left"
 }

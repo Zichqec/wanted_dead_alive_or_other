@@ -55,6 +55,11 @@ MichaelTalk : nonoverlap_pool
 	"I wonder if any of the candidates would like his skull as a prize..."
 	"If I created a perfect clone of him, I wonder if that would set him properly on edge... \w8\w8That would mean having two of him, though. Unacceptable."
 	"I'll feed him to the %(worms)."
+	"I will %(wringhisneck)."
+	"If I tear his %(bodyparts) out maybe he won't come back."
+	"What have I done so wrong to deserve this fate? \w8Last experiment aside."
+	"Maybe I need to start looking into ways to rid myself of him that aren't \f[italic,default]technically\f[italic,1] death..."
+	"I'm going to %(explode)."
 }
 
 RandomTalk : nonoverlap_pool
@@ -107,11 +112,11 @@ RandomTalk : nonoverlap_pool
 	"Ah... there I go dreaming about the ideal set of %(bodyparts) again. One day, I'll glimpse perfection and put it through its paces... but it is unlikely to be today, or even tomorrow."
 	"%(Capitalize(noisecomplaintsare)) down by %(RAND(86)+10)% since I %(putupthatnewwall)."
 	
-	// ""
-	// ""
-	// ""
-	// ""
-	// ""
+	"If I set aside %((RAND(6) + 1) * 5) minutes of cleaning time every %(ANY('Sun,Mon,Tues,Wednes,Thurs,Fri,Satur'))day, I could get this mess cleaned up in...\n\n \w8\w8... Well. I guess I might at least keep the mess from getting \f[italic,default]worse\f[italic,1]..."
+	"One of these days %(thatceilingfanwillfall).\n\n \w8\w8We'll cross that bridge when we come to it."
+	"What is that noise outside...? \w8Is the line getting rowdy,%(br)or is it %(thepolice)..."
+	"These %(stacksofpaper) just keep growing..."
+	"I wonder how much it would cost to hire someone to clean this place up...\n\n On one hand, I might be able to improve my efficiency and reduce %(noisecomplaints).\n\n \w8On the other, the cost of keeping information from leaking outside will be steep... \w8Additionally, any efficiency improvements would probably be negated by my equipment being rearranged into an order I am unfamiliar with. If I want this place clean, I will have to do it myself...\n\n \w8The eternal dilemma."
 	
 	if AcceptedCandidatesToday + RejectedCandidatesToday < 5
 	{

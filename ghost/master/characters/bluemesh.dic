@@ -15,6 +15,7 @@ Accepted.bluemesh
 	"\0\b[0]\s[22]Yes! Got it, woohoo!"
 	"\0\b[0]\s[22]Alright, sold!"
 	"\0\b[0]\s[22]Score! This is gonna be great."
+	"\0\b[0]\s[22]Yes! My bestie is gonna be SO jealous that I got this deal."
 }
 
 Rejected.bluemesh
@@ -37,6 +38,18 @@ RandomTalk.bluemesh : nonoverlap
 	_girl = "girl"; if Candidate.Num % 2 == 1; _girl = "boy"
 	"\0\b[0]\s[22]This is so sick, my %(_girl)friend is never gonna believe me."
 	"\0\b[0]\s[3]Is this interview gonna go on for much longer? \s[29]I'm kinda getting bored..."
+	
+	"\0\b[0]\s[2]Uhh... Y-you've got something, uh, crawling out of your..."
+	"\0\b[0]\s[3]... Nobody saw me come in here, right...?"
+	"\0\b[0]\s[24]You should get %(abionicarm), it'd really improve your whole look."
+	"\0\b[0]\s[3]You don't have any super strong magnets in here, do you? \s[29]I don't want to take any risks."
+	"\0\b[0]\s[24]Can I look at your notes later? I wanna see how I'm scoring."
+	
+	//"\0\b[0]\s[0]"
+	//"\0\b[0]\s[0]"
+	//"\0\b[0]\s[0]"
+	//"\0\b[0]\s[0]"
+	//"\0\b[0]\s[0]"
 }
 
 somebionics
@@ -50,6 +63,31 @@ somebionics
 	"a chunky set of speakers"
 	"more piercings"
 	"more skull decorations"
+}
+
+abionicarm
+{
+	"a bionic arm"
+	"a set of carbon fiber teeth"
+	"a full back tattoo"
+	"a nose ring"
+	"some piercings"
+	"a tattoo on your face"
+	"a set of bionic legs"
+	"a set of those fancy bionic eyes"
+	"your hair dyed"
+	"a %(slimmer) pair of glasses"
+	"hair extensions"
+	"your head shaved"
+}
+
+slimmer
+{
+	"slimmer"
+	"chunkier"
+	"rounder"
+	"more squarish"
+	"better"
 }
 
 //Name?
