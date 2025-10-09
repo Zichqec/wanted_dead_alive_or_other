@@ -1115,6 +1115,21 @@ thatceilingfanwillfall
 	"the rats are going to chew their way back in here"
 	"I'm going to have to make good on all these pacts"
 	"I'm going to have to replace my %(bodyparts) again"
+	"the %(electriccompany) will close out my tab and I'll have to actually pay all those bills I've missed"
+}
+
+electriccompany
+{
+	"electric company"
+	"water company"
+	"sewer services"
+	"waste disposal services"
+	"morgue"
+	"necromancer's association"
+	"magic shop"
+	"herbalist"
+	"paper suppliers"
+	"office supply store"
 }
 
 thepolice
@@ -1129,6 +1144,9 @@ thepolice
 	"a demonic summoning"
 	"\f[italic,default]him\f[italic,1]"
 	"thunder in the distance"
+	"the protesters again"
+	"that popular food truck"
+	"the dog walker"
 }
 
 stacksofpaper
@@ -1140,6 +1158,7 @@ stacksofpaper
 	"stacks of unreviewed reports"
 	"piles of unsorted receipts"
 	"cracks in the wall"
+	"water stains"
 }
 
 explode
