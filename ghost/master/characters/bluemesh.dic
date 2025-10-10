@@ -45,9 +45,9 @@ RandomTalk.bluemesh : nonoverlap
 	"\0\b[0]\s[3]You don't have any super strong magnets in here, do you? \s[29]I don't want to take any risks."
 	"\0\b[0]\s[24]Can I look at your notes later? I wanna see how I'm scoring."
 	
-	//"\0\b[0]\s[0]"
-	//"\0\b[0]\s[0]"
-	//"\0\b[0]\s[0]"
+	"\0\b[0]\s[3]What a dump, this place is messier than my %(nansbasement)."
+	"\0\b[0]\s[29]Is that your half-eaten lunch over there...?"
+	"\0\b[0]\s[4]... \w8\w8\s[8]There's %(acentipede) on your floor. \s[24]I'm not gonna step on it, it's your problem, not mine."
 	//"\0\b[0]\s[0]"
 	//"\0\b[0]\s[0]"
 }
@@ -89,6 +89,25 @@ slimmer
 	"more squarish"
 	"better"
 	"digital"
+}
+
+nansbasement
+{
+	_girl = "girl"; if Candidate.Num % 2 == 1; _girl = "boy"
+	"nan's basement"
+	"dad's shed"
+	"%(_girl)friend's car"
+	"grandpa's garage"
+	"stepmom's attic"
+}
+
+acentipede
+{
+	"a centipede"
+	"an ant"
+	"a spider"
+	"a leech"
+	"a daddy long-legs"
 }
 
 //Name?
