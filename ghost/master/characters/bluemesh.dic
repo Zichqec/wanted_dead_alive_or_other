@@ -45,7 +45,7 @@ RandomTalk.bluemesh : nonoverlap
 	"\0\b[0]\s[3]You don't have any super strong magnets in here, do you? \s[29]I don't want to take any risks."
 	"\0\b[0]\s[24]Can I look at your notes later? I wanna see how I'm scoring."
 	
-	"\0\b[0]\s[3]What a dump, this place is messier than my %(nansbasement)."
+	"\0\b[0]\s[3]What a dump, this place %(ismessier) than my %(nansbasement)."
 	"\0\b[0]\s[29]Is that your half-eaten lunch over there...?"
 	"\0\b[0]\s[4]... \w8\w8\s[8]There's %(acentipede) on your floor. \s[24]I'm not gonna step on it, it's your problem, not mine."
 	//"\0\b[0]\s[0]"
@@ -91,6 +91,36 @@ slimmer
 	"digital"
 }
 
+ismessier
+{
+	"is messier"
+	"has a worse mold problem"
+	"smells worse"
+	"has more piles of stuff"
+	"has more ghosts"
+	"feels more cramped"
+	"has more water damage"
+	"has a worse infestation of dust bunnies"
+	"needs cleaning from top to bottom, even more"
+	"has more leaking pipes"
+	"smells like %(rottingfood). \s[29]I didn't think any place could be smellier"
+}
+
+rottingfood
+{
+	"rotting food"
+	"something died"
+	"mold"
+	"mildew"
+	"something electrical is burning"
+	"wet dog"
+	"stinky socks"
+	"burning hair"
+	"someone's been sick for weeks"
+	"a swamp"
+	"toenails"
+}
+
 nansbasement
 {
 	_girl = "girl"; if Candidate.Num % 2 == 1; _girl = "boy"
@@ -108,6 +138,13 @@ acentipede
 	"a spider"
 	"a leech"
 	"a daddy long-legs"
+	"an earwig"
+	"a beetle"
+	"a cicada"
+	"a cricket"
+	"a worm"
+	"a millipede"
+	"a pill bug"
 }
 
 //Name?
