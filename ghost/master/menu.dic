@@ -1,5 +1,6 @@
 OnMouseDoubleClick
 {
+	//TODO currently, if you somehow get it stuck on the clipboard, it will snap into a new shell when you double click... which is good! I think this happens because of surfacerestore. That is a good fallback behavior. However, I wonder if I should explicitly add something to handle this a bit more gracefully...?
 	if reference5 == 0 && reference3 == 0; OnSakuraMenu //Left clicking sakura
 }
 
