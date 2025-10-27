@@ -123,7 +123,7 @@ Immortal.pinknoise
 RegenerateLimbs.pinknoise
 {
 	"\0\b[0]\s[1027]I don't really regenerate them... \w8\s[2035]but you're often stitching them back onto me!"
-	"\0\b[0]\s[2035]Nope, we tested that before!"
+	"\0\b[0]\s[2035]Not at all, we tested that before!"
 	"\0\b[0]\s[2009]Never!"
 }
 
