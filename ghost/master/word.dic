@@ -1176,3 +1176,18 @@ explode
 	"move to the other side of the planet and practice necromancy there"
 	"go cry in the corner once he's left"
 }
+
+viraldisease
+{
+	"viral disease"
+	"parasite"
+	"bacterial infection"
+	"skin infection"
+	"necrotizing virus"
+	"fungal infection"
+	"respiratory condition"
+	"broken femur"
+	"abcess"
+	"case of sepsis"
+	"transmission of heartworms"
+}

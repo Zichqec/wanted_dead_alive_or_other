@@ -7,6 +7,7 @@ Greeting.michael
 {
 	"\0\b[0]\s[69]Stains... unchanged... Protective dust layer... untouched... Smell... \s[66]vile, as always...\n\n \w8\w8\s[68]Oh, have you decided to grace me with your attention? What a joy! \s[6]I was noting how \f[italic,1]spectacularly\f[italic,default] your janitorial staff have been taking care of the place. \s[29]A little less than \f[italic,1]sterile\f[italic,default] conditons, isn't it? \s[6]Ah, but we know better than to expect much from your minions, don't we?\n\n \s[0]Let's get down to business, then!"
 	"\0\b[0]\s[8]My turn? Perfect! I have something to speak with you about.\n\n \s[56]Take a look at this. I took it upon myself to conduct a little experiment while you had me waiting. \s[50]Did you know that if you took a little spit, or equivalent bodily fluid, from every single person in line right now, it would average out to \f[italic,1]this\f[italic,default] color and consistency? \s[55]Fascinating, isn't it?\n\n \s[59]I will say... \s[52]it tastes absolutely disgusting.\n\n \s[56]However, you can have my results and methodology if \f[italic,1]you\f[italic,default] give it a taste."
+	"\0\b[0]\s[26]Well, well, well, well, well, well, well. We meet again! \s[28]And it only took a modest amount of cutting in line.\n\n \s[0]I did get bitten for my trouble, and a potential %(viraldisease), but risk comes with all worthwhile endeavours. \s[5]And I find interrupting your day to be \f[italic,1]very\f[italic,default] worthwhile."
 }
 
 Accepted.michael
