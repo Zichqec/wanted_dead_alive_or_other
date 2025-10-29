@@ -64,6 +64,11 @@ On_homeurl
 	"https://raw.githubusercontent.com/Zichqec/wanted_dead_alive_or_other/refs/heads/main/"
 }
 
+ghostver
+{
+	"1.0.1"
+}
+
 FadeIn : all
 {
 	for _i = 0; _i < 100; _i++
